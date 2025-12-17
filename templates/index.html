@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placenta Research Database</title>
+    <meta name="description" content="Searchable database of placenta gene expression studies and metadata">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Placenta Research Database</h1>
+            <p class="subtitle">Curated repository of placenta gene expression studies</p>
+        </header>
+
+        <!-- Search Section at Top -->
+        <div class="search-container">
+            <form action="/" method="GET" class="search-form" id="searchForm">
+                <div class="search-row">
+                    <input type="text" name="q" placeholder="Search by GSE ID, organism, title, or any field..."
+                        value="{{ query }}" class="search-input" autofocus>
+                    <button type="submit" class="search-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                        Search
+                    </button>
+                </div>
+
+                <!-- Filter Toggle Button -->
+                <button type="button" class="filter-toggle" onclick="toggleFilters()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+                    </svg>
+                    Filter by Category
+                    <span class="filter-count" id="filterCount"></span>
+                </button>
+
+                <!-- Collapsible Filter Panel -->
+                <div class="filter-panel" id="filterPanel">
+                    <div class="filter-group">
+                        <h4>Organism</h4>
+                        <div class="checkbox-group">
+                            {% for organism in filter_options.organisms %}
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="organism" value="{{ organism }}" {% if organism in
+                                    selected_organisms %}checked{% endif %}>
+                                <span class="checkbox-text">{{ organism }}</span>
+                            </label>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Data Type</h4>
+                        <div class="checkbox-group">
+                            {% for data_type in filter_options.data_types %}
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="data_type" value="{{ data_type }}" {% if data_type in
+                                    selected_data_types %}checked{% endif %}>
+                                <span class="checkbox-text">{{ data_type }}</span>
+                            </label>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Library Strategy</h4>
+                        <div class="checkbox-group">
+                            {% for strategy in filter_options.library_strategies %}
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="library_strategy" value="{{ strategy }}" {% if strategy in
+                                    selected_strategies %}checked{% endif %}>
+                                <span class="checkbox-text">{{ strategy }}</span>
+                            </label>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                    <div class="filter-actions">
+                        <button type="submit" class="apply-filters-btn">Apply Filters</button>
+                        <a href="/" class="clear-filters-btn">Clear All</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Results Info -->
+        <div class="results-info">
+            {% if query or selected_organisms or selected_data_types or selected_strategies %}
+            <p>Found <strong>{{ data.total }}</strong> results
+                {% if query %}for "<em>{{ query }}</em>"{% endif %}
+                {% if selected_organisms or selected_data_types or selected_strategies %}
+                with active filters
+                {% endif %}
+            </p>
+            {% else %}
+            <p>Showing <strong>{{ data.total }}</strong> placenta gene expression studies</p>
+            {% endif %}
+        </div>
+
+        <!-- Results Grid -->
+        <div class="results-grid">
+            {% for entry in data.results %}
+            <article class="entry-card">
+                <div class="card-header">
+                    <a href="/entry/{{ entry.object_id }}" class="gse-id">{{ entry.gse_id }}</a>
+                </div>
+                <h2 class="card-title">
+                    <a href="/entry/{{ entry.object_id }}">
+                        {{ entry.title[:100] }}{% if entry.title|length > 100 %}...{% endif %}
+                    </a>
+                </h2>
+                <div class="card-meta">
+                    {% if entry.organism %}
+                    <span class="meta-item organism">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"></path>
+                        </svg>
+                        {{ entry.organism }}
+                    </span>
+                    {% endif %}
+                    {% if entry.sample_size %}
+                    <span class="meta-item samples">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        {{ entry.sample_size }} samples
+                    </span>
+                    {% endif %}
+                    {% if entry.library_strategy %}
+                    <span class="meta-item strategy">{{ entry.library_strategy }}</span>
+                    {% endif %}
+                </div>
+                {% if entry.data_type %}
+                <p class="card-type">{{ entry.data_type }}</p>
+                {% endif %}
+                <a href="/entry/{{ entry.object_id }}" class="view-details">View Details →</a>
+            </article>
+            {% else %}
+            <div class="no-results">
+                <p>No entries found. Try a different search term or adjust your filters.</p>
+            </div>
+            {% endfor %}
+        </div>
+
+        {% if data.total_pages > 1 %}
+        <nav class="pagination">
+            {% if data.page > 1 %}
+            <a href="?q={{ query }}&page={{ data.page - 1 }}{% for o in selected_organisms %}&organism={{ o }}{% endfor %}{% for d in selected_data_types %}&data_type={{ d }}{% endfor %}{% for s in selected_strategies %}&library_strategy={{ s }}{% endfor %}"
+                class="page-link prev">← Previous</a>
+            {% endif %}
+
+            <span class="page-info">Page {{ data.page }} of {{ data.total_pages }}</span>
+
+            {% if data.page < data.total_pages %} <a
+                href="?q={{ query }}&page={{ data.page + 1 }}{% for o in selected_organisms %}&organism={{ o }}{% endfor %}{% for d in selected_data_types %}&data_type={{ d }}{% endfor %}{% for s in selected_strategies %}&library_strategy={{ s }}{% endfor %}"
+                class="page-link next">Next →</a>
+                {% endif %}
+        </nav>
+        {% endif %}
+
+        <footer>
+            <p>Placenta Research Database • Powered by GEO data</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleFilters() {
+            const panel = document.getElementById('filterPanel');
+            panel.classList.toggle('open');
+        }
+
+        // Update filter count badge
+        function updateFilterCount() {
+            const checkboxes = document.querySelectorAll('.filter-panel input[type="checkbox"]:checked');
+            const countEl = document.getElementById('filterCount');
+            if (checkboxes.length > 0) {
+                countEl.textContent = checkboxes.length;
+                countEl.style.display = 'inline-flex';
+            } else {
+                countEl.style.display = 'none';
+            }
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function () {
+            updateFilterCount();
+
+            // Add change listeners to checkboxes
+            document.querySelectorAll('.filter-panel input[type="checkbox"]').forEach(function (cb) {
+                cb.addEventListener('change', updateFilterCount);
+            });
+
+            // Open filter panel if filters are active
+            const hasActiveFilters = document.querySelectorAll('.filter-panel input[type="checkbox"]:checked').length > 0;
+            if (hasActiveFilters) {
+                document.getElementById('filterPanel').classList.add('open');
+            }
+        });
+    </script>
+</body>
+
+</html>
