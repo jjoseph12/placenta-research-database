@@ -28,7 +28,6 @@ def index():
     if selected_strategies:
         filters['library_strategies'] = selected_strategies
     
-    # Always show entries on homepage (no longer "Google style" empty homepage)
     data = search_with_filters(query=query, filters=filters if filters else None, page=page)
     
     # Get filter options for the checkbox UI
