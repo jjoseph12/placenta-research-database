@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Index - Placenta Study Atlas</title>
+    <meta name="description" content="GEO placental studies with workbook evidence notes and source links">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:wght@600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    {% macro page_href(page_num) -%}
+    ?q={{ query|urlencode }}&page={{ page_num }}
+    {%- for value in selected_filters.organism %}&organism={{ value|urlencode }}{% endfor -%}
+    {%- for value in selected_filters.data_type %}&data_type={{ value|urlencode }}{% endfor -%}
+    {%- for value in selected_filters.library_strategy %}&library_strategy={{ value|urlencode }}{% endfor -%}
+    {%- for value in selected_filters.trimester %}&trimester={{ value|urlencode }}{% endfor -%}
+    {%- for value in selected_filters.country %}&country={{ value|urlencode }}{% endfor -%}
+    {%- for value in selected_filters.evidence %}&evidence={{ value|urlencode }}{% endfor -%}
+    {%- endmacro %}
+    {% macro export_href() -%}
+    /repository/export.csv?q={{ query|urlencode }}
+    {%- for value in selected_filters.organism %}&organism={{ value|urlencode }}{% endfor -%}
+    {%- for value in selected_filters.data_type %}&data_type={{ value|urlencode }}{% endfor -%}
+    {%- for value in selected_filters.library_strategy %}&library_strategy={{ value|urlencode }}{% endfor -%}
+    {%- for value in selected_filters.trimester %}&trimester={{ value|urlencode }}{% endfor -%}
+    {%- for value in selected_filters.country %}&country={{ value|urlencode }}{% endfor -%}
+    {%- for value in selected_filters.evidence %}&evidence={{ value|urlencode }}{% endfor -%}
+    {%- endmacro %}
+
+    <nav class="topbar">
+        <a class="brand" href="/">Placenta Study Atlas</a>
+        <div class="nav-links">
+            <a href="/">Index</a>
+            <a class="active" href="/repository">Studies</a>
+        </div>
+    </nav>
+
+    <main class="repository-shell">
+        <section class="repository-main">
+            <div class="repository-header">
+                <div>
+                    <p class="eyebrow">GEO placenta studies</p>
+                    <h1>Studies</h1>
+                </div>
+                <form class="repository-search" action="/repository" method="GET">
+                    <input class="search-input" type="search" name="q" value="{{ query }}"
+                        placeholder="GSE ID, title, organism, assay, phenotype">
+                    {% for value in selected_filters.organism %}
+                    <input type="hidden" name="organism" value="{{ value }}">
+                    {% endfor %}
+                    {% for value in selected_filters.data_type %}
+                    <input type="hidden" name="data_type" value="{{ value }}">
+                    {% endfor %}
+                    {% for value in selected_filters.library_strategy %}
+                    <input type="hidden" name="library_strategy" value="{{ value }}">
+                    {% endfor %}
+                    {% for value in selected_filters.trimester %}
+                    <input type="hidden" name="trimester" value="{{ value }}">
+                    {% endfor %}
+                    {% for value in selected_filters.country %}
+                    <input type="hidden" name="country" value="{{ value }}">
+                    {% endfor %}
+                    {% for value in selected_filters.evidence %}
+                    <input type="hidden" name="evidence" value="{{ value }}">
+                    {% endfor %}
+                    <button class="primary-btn" type="submit">Find</button>
+                </form>
+            </div>
+
+            <div class="repository-layout">
+            <aside class="filter-rail">
+                <div class="filter-heading">
+                    <span>Narrow studies</span>
+                    <em>
+                        {% if active_filter_count %}
+                        {{ active_filter_count }} selected
+                        {% else %}
+                        Organism, trimester, assay, country, evidence
+                        {% endif %}
+                    </em>
+                </div>
+
+                {% if active_filter_count %}
+                <a class="filter-clear" href="/repository">Clear selected</a>
+                {% endif %}
+
+                <form id="repositoryFilters" action="/repository" method="GET">
+                    <input type="hidden" name="q" value="{{ query }}">
+
+                    <details class="filter-section" open>
+                        <summary>Workbook evidence</summary>
+                        {% for item in filter_options.evidence %}
+                        <label>
+                            <input type="checkbox" name="evidence" value="{{ item.value }}"
+                                {% if item.value in selected_filters.evidence %}checked{% endif %}>
+                            <span>{{ item.label }}</span>
+                            <em>{{ item.count }}</em>
+                        </label>
+                        {% endfor %}
+                    </details>
+
+                    <details class="filter-section">
+                        <summary>Organism</summary>
+                        {% for item in filter_options.organisms %}
+                        <label>
+                            <input type="checkbox" name="organism" value="{{ item.value }}"
+                                {% if item.value in selected_filters.organism %}checked{% endif %}>
+                            <span>{{ item.value }}</span>
+                            <em>{{ item.count }}</em>
+                        </label>
+                        {% endfor %}
+                    </details>
+
+                    <details class="filter-section">
+                        <summary>Pregnancy trimester</summary>
+                        {% for item in filter_options.trimesters %}
+                        <label>
+                            <input type="checkbox" name="trimester" value="{{ item.value }}"
+                                {% if item.value in selected_filters.trimester %}checked{% endif %}>
+                            <span>{{ item.value }}</span>
+                            <em>{{ item.count }}</em>
+                        </label>
+                        {% endfor %}
+                    </details>
+
+                    <details class="filter-section">
+                        <summary>Data type</summary>
+                        {% for item in filter_options.data_types %}
+                        <label>
+                            <input type="checkbox" name="data_type" value="{{ item.value }}"
+                                {% if item.value in selected_filters.data_type %}checked{% endif %}>
+                            <span>{{ item.value }}</span>
+                            <em>{{ item.count }}</em>
+                        </label>
+                        {% endfor %}
+                        {% if filter_options.data_types_more %}
+                        <details class="filter-more">
+                            <summary>More data types</summary>
+                            {% for item in filter_options.data_types_more %}
+                            <label>
+                                <input type="checkbox" name="data_type" value="{{ item.value }}"
+                                    {% if item.value in selected_filters.data_type %}checked{% endif %}>
+                                <span>{{ item.value }}</span>
+                                <em>{{ item.count }}</em>
+                            </label>
+                            {% endfor %}
+                        </details>
+                        {% endif %}
+                    </details>
+
+                    <details class="filter-section">
+                        <summary>Library strategy</summary>
+                        {% for item in filter_options.library_strategies %}
+                        <label>
+                            <input type="checkbox" name="library_strategy" value="{{ item.value }}"
+                                {% if item.value in selected_filters.library_strategy %}checked{% endif %}>
+                            <span>{{ item.value }}</span>
+                            <em>{{ item.count }}</em>
+                        </label>
+                        {% endfor %}
+                        {% if filter_options.library_strategies_more %}
+                        <details class="filter-more">
+                            <summary>More library strategies</summary>
+                            {% for item in filter_options.library_strategies_more %}
+                            <label>
+                                <input type="checkbox" name="library_strategy" value="{{ item.value }}"
+                                    {% if item.value in selected_filters.library_strategy %}checked{% endif %}>
+                                <span>{{ item.value }}</span>
+                                <em>{{ item.count }}</em>
+                            </label>
+                            {% endfor %}
+                        </details>
+                        {% endif %}
+                    </details>
+
+                    <details class="filter-section">
+                        <summary>Sample country</summary>
+                        {% for item in filter_options.countries %}
+                        <label>
+                            <input type="checkbox" name="country" value="{{ item.value }}"
+                                {% if item.value in selected_filters.country %}checked{% endif %}>
+                            <span>{{ item.value }}</span>
+                            <em>{{ item.count }}</em>
+                        </label>
+                        {% endfor %}
+                        {% if filter_options.countries_more %}
+                        <details class="filter-more">
+                            <summary>More countries</summary>
+                            {% for item in filter_options.countries_more %}
+                            <label>
+                                <input type="checkbox" name="country" value="{{ item.value }}"
+                                    {% if item.value in selected_filters.country %}checked{% endif %}>
+                                <span>{{ item.value }}</span>
+                                <em>{{ item.count }}</em>
+                            </label>
+                            {% endfor %}
+                        </details>
+                        {% endif %}
+                    </details>
+
+                    <div class="filter-actions-sticky">
+                        <button class="primary-btn full-width" type="submit">Update list</button>
+                        {% if active_filter_count %}
+                        <a class="secondary-btn full-width" href="/repository">Start over</a>
+                        {% endif %}
+                    </div>
+                </form>
+            </aside>
+
+            <div class="repository-results">
+            <div class="result-toolbar">
+                <div>
+                    <strong>{{ "{:,}".format(data.total) }}</strong>
+                    <span>studies shown</span>
+                    {% if query %}<span>matching "{{ query }}"</span>{% endif %}
+                </div>
+                <a class="toolbar-link" href="{{ export_href() }}">Download CSV</a>
+                {% if active_filter_count %}
+                <div class="active-chips">
+                    {% for group, values in selected_filters.items() %}
+                    {% for value in values %}
+                    <span>
+                        {% if group == "evidence" and value == "linked" %}
+                        Workbook evidence linked
+                        {% elif group == "evidence" and value == "supplement_repair" %}
+                        Supplement repair finding
+                        {% else %}
+                        {{ value }}
+                        {% endif %}
+                    </span>
+                    {% endfor %}
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+
+            <div class="study-list" aria-label="Study results">
+                {% for entry in data.results %}
+                <article class="study-result">
+                    <div class="study-result-main">
+                        <a class="gse-link" href="/entry/{{ entry.object_id }}">{{ entry.gse_id }}</a>
+                        <a class="study-title" href="/entry/{{ entry.object_id }}">{{ entry.title|display }}</a>
+                        <p class="study-result-meta">
+                            {{ entry.organism|display }}{% if entry.sample_size %} &middot; {{ entry.sample_size }} samples{% endif %}{% if entry.pregnancy_trimester %} &middot; {{ entry.pregnancy_trimester }}{% endif %}
+                        </p>
+                    </div>
+
+                    <dl class="study-result-fields">
+                        <div>
+                            <dt>Assay</dt>
+                            <dd>{{ entry.data_type|display }}</dd>
+                        </div>
+                        <div>
+                            <dt>Strategy</dt>
+                            <dd>{{ entry.library_strategy|display }}</dd>
+                        </div>
+                        <div>
+                            <dt>Sample country</dt>
+                            <dd>{{ (entry.sample_country or entry.country)|display }}</dd>
+                        </div>
+                    </dl>
+
+                    <div class="study-result-trail">
+                        <div class="evidence-cell">
+                            {% if entry.evidence_count %}
+                            <a href="/entry/{{ entry.object_id }}#evidence">{{ entry.evidence_count }} evidence notes</a>
+                            {% if entry.repair_count %}
+                            <span>{{ entry.repair_count }} supplement repair</span>
+                            {% endif %}
+                            {% else %}
+                            <span>Evidence not linked</span>
+                            {% endif %}
+                        </div>
+                        <div class="link-actions">
+                            <a href="/entry/{{ entry.object_id }}">Record</a>
+                            {% if entry.evidence_count %}
+                            <a href="/entry/{{ entry.object_id }}#evidence">Evidence</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </article>
+                {% else %}
+                <div class="empty-state">
+                    No studies found. Try clearing selected filters or using a broader term.
+                </div>
+                {% endfor %}
+            </div>
+
+            {% if data.total_pages > 1 %}
+            <nav class="pagination" aria-label="Pagination">
+                {% if data.page > 1 %}
+                <a class="secondary-btn" href="{{ page_href(data.page - 1) }}">Previous</a>
+                {% endif %}
+                <span>Page {{ data.page }} of {{ data.total_pages }}</span>
+                {% if data.page < data.total_pages %}
+                <a class="secondary-btn" href="{{ page_href(data.page + 1) }}">Next</a>
+                {% endif %}
+            </nav>
+            {% endif %}
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        Placenta Study Atlas. GEO records with workbook evidence notes.
+    </footer>
+</body>
+
+</html>

@@ -17,3 +17,4 @@ ENV/
 
 # Local development
 *.log
+geo_metadata.db

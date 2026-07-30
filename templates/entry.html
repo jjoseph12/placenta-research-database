@@ -4,209 +4,305 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ entry.title[:60] }}{% if entry.title|length > 60 %}...{% endif %} - Placenta Research Database</title>
+    <title>{{ entry.gse_id }} - Placenta Study Atlas</title>
     <meta name="description" content="{{ entry.title }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:wght@600;700&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <nav class="breadcrumb">
-            <a href="/">← Back to Search</a>
-        </nav>
+    <nav class="topbar">
+        <a class="brand" href="/">Placenta Study Atlas</a>
+        <div class="nav-links">
+            <a href="/">Index</a>
+            <a class="active" href="/repository">Studies</a>
+        </div>
+    </nav>
 
-        <article class="entry-detail">
-            <header class="entry-header">
-                <div class="entry-id-row">
-                    <h1 class="gse-id-large">{{ entry.gse_id }}</h1>
-                </div>
-                <h2 class="entry-title">{{ entry.title }}</h2>
-            </header>
+    <main class="detail-shell">
+        <a class="back-link" href="/repository">Back to studies</a>
 
-            <div class="entry-sections">
-                <!-- Quick Info Section -->
-                <section class="info-section quick-info">
-                    <h3>Quick Info</h3>
-                    <div class="info-grid">
-                        <div class="info-item">
-                            <span class="label">Organism</span>
-                            <span class="value">{{ entry.organism or 'N/A' }}</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">Sample Size</span>
-                            <span class="value">{{ entry.sample_size or 'N/A' }}</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">Data Type</span>
-                            <span class="value">{{ entry.data_type or 'N/A' }}</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">Library Strategy</span>
-                            <span class="value">{{ entry.library_strategy or 'N/A' }}</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">Library Source</span>
-                            <span class="value">{{ entry.library_source or 'N/A' }}</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">Instrument</span>
-                            <span class="value">{{ entry.instrument_model or 'N/A' }}</span>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Characteristics Section -->
-                {% if entry.characteristics %}
-                <section class="info-section">
-                    <h3>Sample Characteristics</h3>
-                    <p class="long-text">{{ entry.characteristics }}</p>
-                </section>
-                {% endif %}
-
-                <!-- Assay Description Section -->
-                {% if entry.assay_description %}
-                <section class="info-section">
-                    <h3>Assay Description</h3>
-                    <p class="long-text">{{ entry.assay_description }}</p>
-                </section>
-                {% endif %}
-
-                <!-- Extraction Protocol Section -->
-                {% if entry.extraction_protocol %}
-                <section class="info-section">
-                    <h3>Extraction Protocol</h3>
-                    <p class="long-text protocol">{{ entry.extraction_protocol }}</p>
-                </section>
-                {% endif %}
-
-                <!-- IDs and Links Section -->
-                <section class="info-section">
-                    <h3>External Links & IDs</h3>
-                    <div class="links-grid">
-                        <div class="link-item">
-                            <span class="label">GEO Series</span>
-                            <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc={{ entry.gse_id }}"
-                                target="_blank" class="external-link">
-                                {{ entry.gse_id }} ↗
-                            </a>
-                        </div>
-                        {% if entry.platform_id %}
-                        <div class="link-item">
-                            <span class="label">Platform ID</span>
-                            <span class="value">{{ entry.platform_id }}</span>
-                        </div>
-                        {% endif %}
-                        {% if entry.sra_study_id %}
-                        <div class="link-item">
-                            <span class="label">SRA Study</span>
-                            <a href="https://www.ncbi.nlm.nih.gov/sra/?term={{ entry.sra_study_id }}" target="_blank"
-                                class="external-link">
-                                {{ entry.sra_study_id }} ↗
-                            </a>
-                        </div>
-                        {% endif %}
-                        {% if entry.bioproject_id %}
-                        <div class="link-item">
-                            <span class="label">BioProject</span>
-                            <a href="https://www.ncbi.nlm.nih.gov/bioproject/{{ entry.bioproject_id }}" target="_blank"
-                                class="external-link">
-                                {{ entry.bioproject_id }} ↗
-                            </a>
-                        </div>
-                        {% endif %}
-                        {% if entry.pmid and entry.pmid == entry.pmid %}
-                        <div class="link-item">
-                            <span class="label">PubMed</span>
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/{{ entry.pmid|int }}/" target="_blank"
-                                class="external-link">
-                                PMID: {{ entry.pmid|int }} ↗
-                            </a>
-                        </div>
-                        {% endif %}
-                        {% if entry.pmcid %}
-                        <div class="link-item">
-                            <span class="label">PMC</span>
-                            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/{{ entry.pmcid }}/" target="_blank"
-                                class="external-link">
-                                {{ entry.pmcid }} ↗
-                            </a>
-                        </div>
-                        {% endif %}
-                        {% if entry.doi %}
-                        <div class="link-item">
-                            <span class="label">DOI</span>
-                            <a href="https://doi.org/{{ entry.doi }}" target="_blank" class="external-link">
-                                {{ entry.doi }} ↗
-                            </a>
-                        </div>
-                        {% endif %}
-                    </div>
-                </section>
-
-                <!-- Contact & Submission Section -->
-                <section class="info-section">
-                    <h3>Submission Information</h3>
-                    <div class="info-grid">
-                        <div class="info-item">
-                            <span class="label">Organization</span>
-                            <span class="value">{{ entry.organization_name or 'N/A' }}</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">Contact</span>
-                            <span class="value">{{ entry.contact_name or 'N/A' }}</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">Email</span>
-                            <span class="value">{{ entry.email or 'N/A' }}</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">Country</span>
-                            <span class="value">{{ entry.country or 'N/A' }}</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">Submitted</span>
-                            <span class="value">{{ entry.submission_date or 'N/A' }}</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">Last Updated</span>
-                            <span class="value">{{ entry.last_update_date or 'N/A' }}</span>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- File Types Section -->
-                {% if entry.file_types %}
-                <section class="info-section">
-                    <h3>Available File Types</h3>
-                    <p class="value">{{ entry.file_types }}</p>
-                </section>
-                {% endif %}
-
-                <!-- SuperSeries Section -->
-                {% if entry.superseries %}
-                <section class="info-section">
-                    <h3>SuperSeries</h3>
-                    <p class="value">{{ entry.superseries }}</p>
-                </section>
-                {% endif %}
+        <article class="detail-hero">
+            <div>
+                <p class="eyebrow">Study record</p>
+                <h1>{{ entry.gse_id|display("GEO study") }}</h1>
+                <p>{{ entry.title|display }}</p>
             </div>
-
-            <div class="entry-navigation">
-                {% if entry.object_id > 1 %}
-                <a href="/entry/{{ entry.object_id - 1 }}" class="nav-link prev">← Previous Entry</a>
+            <div class="source-actions" aria-label="Source links">
+                <a href="#evidence">Evidence notes</a>
+                {% if entry.gse_id %}
+                <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc={{ entry.gse_id }}"
+                    target="_blank" rel="noopener">Open GEO</a>
                 {% endif %}
-                <a href="/" class="nav-link home">Back to Search</a>
-                <a href="/entry/{{ entry.object_id + 1 }}" class="nav-link next">Next Entry →</a>
+                {% if entry.pmid and entry.pmid == entry.pmid %}
+                <a href="https://pubmed.ncbi.nlm.nih.gov/{{ entry.pmid|int }}/" target="_blank"
+                    rel="noopener">PubMed</a>
+                {% endif %}
+                {% if entry.doi %}
+                <a href="https://doi.org/{{ entry.doi }}" target="_blank" rel="noopener">DOI</a>
+                {% endif %}
             </div>
         </article>
 
-        <footer>
-            <p>Placenta Research Database • Powered by GEO data</p>
-        </footer>
-    </div>
+        <section class="record-strip" aria-label="Study summary">
+            <div>
+                <span>Organism</span>
+                <strong>{{ entry.organism|display }}</strong>
+            </div>
+            <div>
+                <span>Samples</span>
+                <strong>{{ entry.sample_size|display("N/A") }}</strong>
+            </div>
+            <div>
+                <span>Data type</span>
+                <strong>{{ entry.data_type|display }}</strong>
+            </div>
+            <div>
+                <span>Library strategy</span>
+                <strong>{{ entry.library_strategy|display }}</strong>
+            </div>
+            <div>
+                <span>Trimester</span>
+                <strong>{{ entry.pregnancy_trimester|display }}</strong>
+            </div>
+            <div>
+                <span>Sample country</span>
+                <strong>{{ (entry.sample_country or entry.country)|display }}</strong>
+            </div>
+        </section>
+
+        <section class="record-layout">
+            <section class="record-section geo-section">
+                <div class="section-heading">
+                    <p class="eyebrow">GEO record</p>
+                    <h2>Sample, assay, and methods</h2>
+                </div>
+                <div class="technical-grid">
+                    <div class="field-group sample-group wide-group">
+                        <h3>Sample characteristics</h3>
+                        <p class="long-text">{{ entry.characteristics|display }}</p>
+                    </div>
+
+                    <div class="field-group">
+                        <h3>Assay and platform</h3>
+                        <dl class="field-list">
+                            <div><dt>Extracted molecule</dt><dd>{{ entry.extracted_molecule|display }}</dd></div>
+                            <div><dt>Library source</dt><dd>{{ entry.library_source|display }}</dd></div>
+                            <div><dt>Library selection</dt><dd>{{ entry.library_selection|display }}</dd></div>
+                            <div><dt>Instrument model</dt><dd>{{ entry.instrument_model|display }}</dd></div>
+                            <div><dt>Platform ID</dt><dd>{{ entry.platform_id|display }}</dd></div>
+                            <div><dt>SRA Study ID</dt><dd>{{ entry.sra_study_id|display }}</dd></div>
+                            <div><dt>BioProject ID</dt><dd>{{ entry.bioproject_id|display }}</dd></div>
+                            <div><dt>File types</dt><dd>{{ entry.file_types|display }}</dd></div>
+                        </dl>
+                    </div>
+
+                    <div class="field-group">
+                        <h3>Submission information</h3>
+                        <dl class="field-list">
+                            <div><dt>Organization</dt><dd>{{ entry.organization_name|display }}</dd></div>
+                            <div><dt>Contact</dt><dd>{{ entry.contact_name|display }}</dd></div>
+                            <div><dt>Email</dt><dd>{{ entry.email|display }}</dd></div>
+                            <div><dt>Submitter country</dt><dd>{{ entry.country|display }}</dd></div>
+                            <div><dt>Hospital / center</dt><dd>{{ entry.hospital_center|display }}</dd></div>
+                            <div><dt>Submitted</dt><dd>{{ entry.submission_date|display }}</dd></div>
+                            <div><dt>Last updated</dt><dd>{{ entry.last_update_date|display }}</dd></div>
+                            <div><dt>Supervisor / PI</dt><dd>{{ entry.supervisor_name|display }}</dd></div>
+                            <div><dt>Supervisor email</dt><dd>{{ entry.supervisor_email|display }}</dd></div>
+                        </dl>
+                    </div>
+
+                    {% if entry.assay_description or entry.extraction_protocol or entry.data_processing %}
+                    <div class="field-group methods-group">
+                        <h3>Methods text</h3>
+                        {% if entry.assay_description %}
+                        <h4>Assay description</h4>
+                        <p class="long-text">{{ entry.assay_description }}</p>
+                        {% endif %}
+                        {% if entry.extraction_protocol %}
+                        <h4>Extraction protocol</h4>
+                        <p class="long-text">{{ entry.extraction_protocol }}</p>
+                        {% endif %}
+                        {% if entry.data_processing %}
+                        <h4>Data processing</h4>
+                        <p class="long-text">{{ entry.data_processing }}</p>
+                        {% endif %}
+                    </div>
+                    {% endif %}
+                </div>
+            </section>
+
+            <aside class="record-aside" aria-label="Study source notes">
+                <section class="source-note">
+                    <p class="eyebrow">Source notes</p>
+                    <div class="provenance-list">
+                        <div>
+                            <strong>GEO metadata</strong>
+                            <p>Core study, assay, platform, contact, and submission fields come from GEO metadata.</p>
+                        </div>
+                        <div>
+                            <strong>Publication links</strong>
+                            <p>
+                                {% if entry.pmid or entry.pmcid or entry.doi %}
+                                PMID, PMC, or DOI identifiers are available for source inspection.
+                                {% else %}
+                                No PMID, PMC, or DOI identifier is currently recorded.
+                                {% endif %}
+                            </p>
+                        </div>
+                        <div>
+                            <strong>Workbook notes</strong>
+                            <p>
+                                {% if evidence_summary.evidence_count %}
+                                {{ evidence_summary.evidence_count }} evidence notes are linked to this GEO study.
+                                {% else %}
+                                Pregnancy-specific values should be reviewed against the source paper when precision matters.
+                                {% endif %}
+                            </p>
+                        </div>
+                        {% if evidence_summary.repair_count %}
+                        <div>
+                            <strong>Supplement repair</strong>
+                            <p>{{ evidence_summary.repair_count }} supplement repair findings are linked to this GEO study.</p>
+                        </div>
+                        {% endif %}
+                    </div>
+                </section>
+
+                <section class="source-links-block">
+                    <p class="eyebrow">Identifiers</p>
+                    <div class="external-grid">
+                        {% if entry.gse_id %}
+                        <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc={{ entry.gse_id }}" target="_blank"
+                            rel="noopener">GEO: {{ entry.gse_id }}</a>
+                        {% endif %}
+                        {% if entry.pmid and entry.pmid == entry.pmid %}
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/{{ entry.pmid|int }}/" target="_blank"
+                            rel="noopener">PMID: {{ entry.pmid|int }}</a>
+                        {% endif %}
+                        {% if entry.pmcid %}
+                        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/{{ entry.pmcid }}/" target="_blank"
+                            rel="noopener">PMC: {{ entry.pmcid }}</a>
+                        {% endif %}
+                        {% if entry.doi %}
+                        <a href="https://doi.org/{{ entry.doi }}" target="_blank" rel="noopener">DOI: {{ entry.doi }}</a>
+                        {% endif %}
+                    </div>
+                </section>
+            </aside>
+        </section>
+
+        <section class="record-section curation-section">
+            <div class="section-heading">
+                <p class="eyebrow">Workbook-reviewed fields</p>
+                <h2>Pregnancy, phenotype, and sample context</h2>
+            </div>
+            <div class="technical-grid">
+                <div class="field-group">
+                    <h3>Pregnancy timing and participants</h3>
+                    <dl class="field-list">
+                        <div><dt>Birthweight provided</dt><dd>{{ entry.birthweight_provided|display }}</dd></div>
+                        <div><dt>GA at delivery provided</dt><dd>{{ entry.ga_delivery_provided|display }}</dd></div>
+                        <div><dt>GA at delivery weeks</dt><dd>{{ entry.ga_delivery_weeks|display }}</dd></div>
+                        <div><dt>GA at collection provided</dt><dd>{{ entry.ga_collection_provided|display }}</dd></div>
+                        <div><dt>GA at collection weeks</dt><dd>{{ entry.ga_collection_weeks|display }}</dd></div>
+                        <div><dt>Offspring sex provided</dt><dd>{{ entry.sex_provided|display }}</dd></div>
+                        <div><dt>Parity provided</dt><dd>{{ entry.parity_provided|display }}</dd></div>
+                        <div><dt>Gravidity provided</dt><dd>{{ entry.gravidity_provided|display }}</dd></div>
+                        <div><dt>Race / ethnicity provided</dt><dd>{{ entry.race_ethnicity_provided|display }}</dd></div>
+                        <div><dt>Genetic ancestry provided</dt><dd>{{ entry.genetic_ancestry_provided|display }}</dd></div>
+                        <div><dt>Mode of delivery provided</dt><dd>{{ entry.delivery_mode_provided|display }}</dd></div>
+                    </dl>
+                </div>
+
+                <div class="field-group">
+                    <h3>Phenotypes and complications</h3>
+                    <dl class="field-list">
+                        <div><dt>Complication samples collected</dt><dd>{{ entry.pregnancy_complications_collected|display }}</dd></div>
+                        <div><dt>Pregnancy complications</dt><dd>{{ entry.pregnancy_complications_list|display }}</dd></div>
+                        <div><dt>Fetal complications listed</dt><dd>{{ entry.fetal_complications_listed|display }}</dd></div>
+                        <div><dt>Fetal complications</dt><dd>{{ entry.fetal_complications_list|display }}</dd></div>
+                        <div><dt>Other phenotypes</dt><dd>{{ entry.other_phenotypes|display }}</dd></div>
+                        <div><dt>Main topic</dt><dd>{{ entry.main_topic|display }}</dd></div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <details class="evidence-ledger" id="evidence">
+            <summary>
+                <span>
+                    <span class="eyebrow">Workbook excerpt</span>
+                    <strong>Source evidence</strong>
+                </span>
+                <span class="evidence-counts">
+                    <span>{{ evidence_summary.evidence_count }} evidence notes linked</span>
+                    <span>{{ evidence_summary.repair_count }} supplement repair findings</span>
+                </span>
+            </summary>
+
+            <div class="evidence-body">
+                {% if evidence %}
+                <div class="evidence-list">
+                    {% for item in evidence %}
+                    <article class="evidence-row">
+                        <div class="evidence-field">
+                            <span>Workbook field</span>
+                            <strong>{{ item.question|display }}</strong>
+                        </div>
+                        <div class="evidence-answer">
+                            <span>Reviewed answer</span>
+                            <strong>{{ item.answer|display }}</strong>
+                        </div>
+                        <div class="evidence-source">
+                            <span>Source excerpt</span>
+                            <blockquote>{{ item.quote|display("No direct quote recorded for this answer.") }}</blockquote>
+                            <footer>
+                            {% if item.source %}<span>{{ item.source }}</span>{% endif %}
+                            {% if item.evidence_source_type %}<span>{{ item.evidence_source_type }}</span>{% endif %}
+                            {% if item.confidence %}<span>{{ item.confidence }} confidence</span>{% endif %}
+                            {% if item.pmcid %}<span>{{ item.pmcid }}</span>{% endif %}
+                            {% if item.doi %}<span>{{ item.doi }}</span>{% endif %}
+                            </footer>
+                        </div>
+                    </article>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <p class="empty-evidence">No workbook evidence notes are linked to this GEO study yet.</p>
+                {% endif %}
+
+                {% if supplement_repairs %}
+                <div class="repair-list">
+                    <h3>Supplement repair notes</h3>
+                    {% for repair in supplement_repairs %}
+                    <article class="repair-row">
+                        <strong>{{ repair.question|display }}</strong>
+                        <div>
+                            <span>{{ repair.merge_action|display("Reviewed") }}: {{ repair.supplement_answer|display }}</span>
+                            <p>{{ repair.quote|display("No supplement quote recorded.") }}</p>
+                        </div>
+                    </article>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+        </details>
+
+        <nav class="entry-navigation">
+            {% if entry.object_id > 1 %}
+            <a class="secondary-btn" href="/entry/{{ entry.object_id - 1 }}">Previous study</a>
+            {% endif %}
+            <a class="secondary-btn" href="/repository">Studies</a>
+            <a class="secondary-btn" href="/entry/{{ entry.object_id + 1 }}">Next study</a>
+        </nav>
+    </main>
+
+    <footer class="site-footer">
+        Placenta Study Atlas. GEO records with workbook evidence notes.
+    </footer>
 </body>
 
 </html>
