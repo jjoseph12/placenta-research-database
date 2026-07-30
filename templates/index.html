@@ -67,44 +67,6 @@
             </div>
         </section>
 
-        <section class="field-map" aria-label="Workbook field map">
-            <div class="field-map-heading">
-                <p class="eyebrow">Review workbook structure</p>
-                <h2>Field guide</h2>
-            </div>
-
-            <div class="field-row">
-                <strong>Study identity</strong>
-                <span>GSE accession, title, organism, submitter, source country, sample count</span>
-                <a href="{{ site_base|default('/') }}repository{{ page_suffix|default('') }}">All studies</a>
-            </div>
-            <div class="field-row">
-                <strong>Assay and files</strong>
-                <span>Data type, library strategy, platform, SRA/BioProject IDs, file resources</span>
-                <a href="{{ site_base|default('/') }}repository{{ page_suffix|default('') }}?data_type=Expression+profiling+by+array">Assay index</a>
-            </div>
-            <div class="field-row">
-                <strong>Pregnancy timing</strong>
-                <span>Trimester, gestational age at delivery, gestational age at sample collection</span>
-                <a href="{{ site_base|default('/') }}repository{{ page_suffix|default('') }}?trimester=Term">Timing fields</a>
-            </div>
-            <div class="field-row">
-                <strong>Maternal and fetal metadata</strong>
-                <span>Birthweight, offspring sex, parity, gravidity, ancestry, maternal and paternal measures</span>
-                <a href="{{ site_base|default('/') }}repository{{ page_suffix|default('') }}?q=birthweight">Metadata fields</a>
-            </div>
-            <div class="field-row">
-                <strong>Phenotypes and complications</strong>
-                <span>Pregnancy complications, fetal complications, other phenotypes, mode of delivery</span>
-                <a href="{{ site_base|default('/') }}repository{{ page_suffix|default('') }}?q=complication">Phenotype fields</a>
-            </div>
-            <div class="field-row">
-                <strong>Publication evidence</strong>
-                <span>PMID, PMCID, DOI, open-access status, evidence quotes, supplement repair notes</span>
-                <a href="{{ site_base|default('/') }}repository{{ page_suffix|default('') }}?q=PMCID">Publication-linked records</a>
-            </div>
-        </section>
-
     </main>
 
     <footer class="site-footer">
