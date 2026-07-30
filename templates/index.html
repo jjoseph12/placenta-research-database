@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Placenta Study Atlas</title>
     <meta name="description" content="GEO placental gene expression studies with workbook evidence notes">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ site_base|default('/') }}static/style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:wght@600;700&display=swap"
         rel="stylesheet">
@@ -14,10 +14,10 @@
 
 <body>
     <nav class="topbar">
-        <a class="brand" href="/">Placenta Study Atlas</a>
+        <a class="brand" href="{{ site_base|default('/') }}">Placenta Study Atlas</a>
         <div class="nav-links">
-            <a class="active" href="/">Index</a>
-            <a href="/repository">Studies</a>
+            <a class="active" href="{{ site_base|default('/') }}">Index</a>
+            <a href="{{ site_base|default('/') }}repository{{ page_suffix|default('') }}">Studies</a>
         </div>
     </nav>
 
@@ -33,7 +33,7 @@
                     workbook.
                 </p>
             </div>
-            <form action="/repository" method="GET" class="atlas-search">
+            <form action="{{ site_base|default('/') }}repository{{ page_suffix|default('') }}" method="GET" class="atlas-search">
                 <label for="atlas-search-input">Find a study or field</label>
                 <div class="search-row">
                     <input id="atlas-search-input" class="search-input" type="search" name="q"
@@ -41,9 +41,9 @@
                     <button class="primary-btn" type="submit">Find</button>
                 </div>
                 <div class="quick-links">
-                    <a href="/repository">All indexed studies</a>
-                    <a href="/repository?organism=Homo+sapiens">Human placenta studies</a>
-                    <a href="/repository?trimester=Term">Term placenta studies</a>
+                    <a href="{{ site_base|default('/') }}repository{{ page_suffix|default('') }}">All indexed studies</a>
+                    <a href="{{ site_base|default('/') }}repository{{ page_suffix|default('') }}?organism=Homo+sapiens">Human placenta studies</a>
+                    <a href="{{ site_base|default('/') }}repository{{ page_suffix|default('') }}?trimester=Term">Term placenta studies</a>
                 </div>
             </form>
         </section>
@@ -76,32 +76,32 @@
             <div class="field-row">
                 <strong>Study identity</strong>
                 <span>GSE accession, title, organism, submitter, source country, sample count</span>
-                <a href="/repository">All studies</a>
+                <a href="{{ site_base|default('/') }}repository{{ page_suffix|default('') }}">All studies</a>
             </div>
             <div class="field-row">
                 <strong>Assay and files</strong>
                 <span>Data type, library strategy, platform, SRA/BioProject IDs, file resources</span>
-                <a href="/repository?data_type=Expression+profiling+by+array">Assay index</a>
+                <a href="{{ site_base|default('/') }}repository{{ page_suffix|default('') }}?data_type=Expression+profiling+by+array">Assay index</a>
             </div>
             <div class="field-row">
                 <strong>Pregnancy timing</strong>
                 <span>Trimester, gestational age at delivery, gestational age at sample collection</span>
-                <a href="/repository?trimester=Term">Timing fields</a>
+                <a href="{{ site_base|default('/') }}repository{{ page_suffix|default('') }}?trimester=Term">Timing fields</a>
             </div>
             <div class="field-row">
                 <strong>Maternal and fetal metadata</strong>
                 <span>Birthweight, offspring sex, parity, gravidity, ancestry, maternal and paternal measures</span>
-                <a href="/repository?q=birthweight">Metadata fields</a>
+                <a href="{{ site_base|default('/') }}repository{{ page_suffix|default('') }}?q=birthweight">Metadata fields</a>
             </div>
             <div class="field-row">
                 <strong>Phenotypes and complications</strong>
                 <span>Pregnancy complications, fetal complications, other phenotypes, mode of delivery</span>
-                <a href="/repository?q=complication">Phenotype fields</a>
+                <a href="{{ site_base|default('/') }}repository{{ page_suffix|default('') }}?q=complication">Phenotype fields</a>
             </div>
             <div class="field-row">
                 <strong>Publication evidence</strong>
                 <span>PMID, PMCID, DOI, open-access status, evidence quotes, supplement repair notes</span>
-                <a href="/repository?q=PMCID">Publication-linked records</a>
+                <a href="{{ site_base|default('/') }}repository{{ page_suffix|default('') }}?q=PMCID">Publication-linked records</a>
             </div>
         </section>
 

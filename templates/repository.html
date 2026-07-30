@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Index - Placenta Study Atlas</title>
     <meta name="description" content="GEO placental studies with workbook evidence notes and source links">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ site_base|default('/') }}static/style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:wght@600;700&display=swap"
         rel="stylesheet">
 </head>
 
-<body>
+<body data-site-base="{{ site_base|default('/') }}" data-page-suffix="{{ page_suffix|default('') }}">
     {% macro page_href(page_num) -%}
     ?q={{ query|urlencode }}&page={{ page_num }}
     {%- for value in selected_filters.organism %}&organism={{ value|urlencode }}{% endfor -%}
@@ -33,10 +33,10 @@
     {%- endmacro %}
 
     <nav class="topbar">
-        <a class="brand" href="/">Placenta Study Atlas</a>
+        <a class="brand" href="{{ site_base|default('/') }}">Placenta Study Atlas</a>
         <div class="nav-links">
-            <a href="/">Index</a>
-            <a class="active" href="/repository">Studies</a>
+            <a href="{{ site_base|default('/') }}">Index</a>
+            <a class="active" href="{{ site_base|default('/') }}repository{{ page_suffix|default('') }}">Studies</a>
         </div>
     </nav>
 
@@ -47,7 +47,7 @@
                     <p class="eyebrow">GEO placenta studies</p>
                     <h1>Studies</h1>
                 </div>
-                <form class="repository-search" action="/repository" method="GET">
+                <form class="repository-search" action="{{ site_base|default('/') }}repository{{ page_suffix|default('') }}" method="GET">
                     <input class="search-input" type="search" name="q" value="{{ query }}"
                         placeholder="GSE ID, title, organism, assay, phenotype">
                     {% for value in selected_filters.organism %}
@@ -85,11 +85,11 @@
                     </em>
                 </div>
 
-                {% if active_filter_count %}
-                <a class="filter-clear" href="/repository">Clear selected</a>
-                {% endif %}
+                <a class="filter-clear" id="clearFilters"
+                    href="{{ site_base|default('/') }}repository{{ page_suffix|default('') }}"
+                    {% if not active_filter_count %}hidden{% endif %}>Clear selected</a>
 
-                <form id="repositoryFilters" action="/repository" method="GET">
+                <form id="repositoryFilters" action="{{ site_base|default('/') }}repository{{ page_suffix|default('') }}" method="GET">
                     <input type="hidden" name="q" value="{{ query }}">
 
                     <details class="filter-section" open>
@@ -205,9 +205,9 @@
 
                     <div class="filter-actions-sticky">
                         <button class="primary-btn full-width" type="submit">Update list</button>
-                        {% if active_filter_count %}
-                        <a class="secondary-btn full-width" href="/repository">Start over</a>
-                        {% endif %}
+                        <a class="secondary-btn full-width" id="startOver"
+                            href="{{ site_base|default('/') }}repository{{ page_suffix|default('') }}"
+                            {% if not active_filter_count %}hidden{% endif %}>Start over</a>
                     </div>
                 </form>
             </aside>
@@ -215,13 +215,12 @@
             <div class="repository-results">
             <div class="result-toolbar">
                 <div>
-                    <strong>{{ "{:,}".format(data.total) }}</strong>
+                    <strong id="resultCount">{{ "{:,}".format(data.total) }}</strong>
                     <span>studies shown</span>
-                    {% if query %}<span>matching "{{ query }}"</span>{% endif %}
+                    <span id="resultContext">{% if query %}matching "{{ query }}"{% endif %}</span>
                 </div>
-                <a class="toolbar-link" href="{{ export_href() }}">Download CSV</a>
-                {% if active_filter_count %}
-                <div class="active-chips">
+                <a class="toolbar-link" id="downloadCsv" href="{% if static_site|default(false) %}#{% else %}{{ export_href() }}{% endif %}">Download CSV</a>
+                <div class="active-chips" id="activeChips"{% if not active_filter_count %} hidden{% endif %}>
                     {% for group, values in selected_filters.items() %}
                     {% for value in values %}
                     <span>
@@ -236,15 +235,14 @@
                     {% endfor %}
                     {% endfor %}
                 </div>
-                {% endif %}
             </div>
 
             <div class="study-list" aria-label="Study results">
                 {% for entry in data.results %}
                 <article class="study-result">
                     <div class="study-result-main">
-                        <a class="gse-link" href="/entry/{{ entry.object_id }}">{{ entry.gse_id }}</a>
-                        <a class="study-title" href="/entry/{{ entry.object_id }}">{{ entry.title|display }}</a>
+                        <a class="gse-link" href="{{ site_base|default('/') }}entry/{{ entry.object_id }}{{ page_suffix|default('') }}">{{ entry.gse_id }}</a>
+                        <a class="study-title" href="{{ site_base|default('/') }}entry/{{ entry.object_id }}{{ page_suffix|default('') }}">{{ entry.title|display }}</a>
                         <p class="study-result-meta">
                             {{ entry.organism|display }}{% if entry.sample_size %} &middot; {{ entry.sample_size }} samples{% endif %}{% if entry.pregnancy_trimester %} &middot; {{ entry.pregnancy_trimester }}{% endif %}
                         </p>
@@ -268,7 +266,7 @@
                     <div class="study-result-trail">
                         <div class="evidence-cell">
                             {% if entry.evidence_count %}
-                            <a href="/entry/{{ entry.object_id }}#evidence">{{ entry.evidence_count }} evidence notes</a>
+                            <a href="{{ site_base|default('/') }}entry/{{ entry.object_id }}{{ page_suffix|default('') }}#evidence">{{ entry.evidence_count }} evidence notes</a>
                             {% if entry.repair_count %}
                             <span>{{ entry.repair_count }} supplement repair</span>
                             {% endif %}
@@ -277,9 +275,9 @@
                             {% endif %}
                         </div>
                         <div class="link-actions">
-                            <a href="/entry/{{ entry.object_id }}">Record</a>
+                            <a href="{{ site_base|default('/') }}entry/{{ entry.object_id }}{{ page_suffix|default('') }}">Record</a>
                             {% if entry.evidence_count %}
-                            <a href="/entry/{{ entry.object_id }}#evidence">Evidence</a>
+                            <a href="{{ site_base|default('/') }}entry/{{ entry.object_id }}{{ page_suffix|default('') }}#evidence">Evidence</a>
                             {% endif %}
                         </div>
                     </div>
@@ -291,14 +289,22 @@
                 {% endfor %}
             </div>
 
+            <div class="empty-state" id="repositoryEmpty" hidden>
+                No studies found. Try clearing selected filters or using a broader term.
+            </div>
+
             {% if data.total_pages > 1 %}
-            <nav class="pagination" aria-label="Pagination">
+            <nav class="pagination" id="repositoryPagination" aria-label="Pagination">
                 {% if data.page > 1 %}
-                <a class="secondary-btn" href="{{ page_href(data.page - 1) }}">Previous</a>
+                <a class="secondary-btn" id="previousPage" href="{{ page_href(data.page - 1) }}">Previous</a>
+                {% else %}
+                <a class="secondary-btn" id="previousPage" href="#" hidden>Previous</a>
                 {% endif %}
-                <span>Page {{ data.page }} of {{ data.total_pages }}</span>
+                <span id="pageStatus">Page {{ data.page }} of {{ data.total_pages }}</span>
                 {% if data.page < data.total_pages %}
-                <a class="secondary-btn" href="{{ page_href(data.page + 1) }}">Next</a>
+                <a class="secondary-btn" id="nextPage" href="{{ page_href(data.page + 1) }}">Next</a>
+                {% else %}
+                <a class="secondary-btn" id="nextPage" href="#" hidden>Next</a>
                 {% endif %}
             </nav>
             {% endif %}
@@ -310,6 +316,9 @@
     <footer class="site-footer">
         Placenta Study Atlas. GEO records with workbook evidence notes.
     </footer>
+    {% if static_site|default(false) %}
+    <script src="{{ site_base|default('/') }}static/repository.js" defer></script>
+    {% endif %}
 </body>
 
 </html>

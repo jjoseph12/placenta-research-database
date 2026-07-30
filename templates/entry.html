@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ entry.gse_id }} - Placenta Study Atlas</title>
     <meta name="description" content="{{ entry.title }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ site_base|default('/') }}static/style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:wght@600;700&display=swap"
         rel="stylesheet">
@@ -14,15 +14,15 @@
 
 <body>
     <nav class="topbar">
-        <a class="brand" href="/">Placenta Study Atlas</a>
+        <a class="brand" href="{{ site_base|default('/') }}">Placenta Study Atlas</a>
         <div class="nav-links">
-            <a href="/">Index</a>
-            <a class="active" href="/repository">Studies</a>
+            <a href="{{ site_base|default('/') }}">Index</a>
+            <a class="active" href="{{ site_base|default('/') }}repository{{ page_suffix|default('') }}">Studies</a>
         </div>
     </nav>
 
     <main class="detail-shell">
-        <a class="back-link" href="/repository">Back to studies</a>
+        <a class="back-link" href="{{ site_base|default('/') }}repository{{ page_suffix|default('') }}">Back to studies</a>
 
         <article class="detail-hero">
             <div>
@@ -293,10 +293,12 @@
 
         <nav class="entry-navigation">
             {% if entry.object_id > 1 %}
-            <a class="secondary-btn" href="/entry/{{ entry.object_id - 1 }}">Previous study</a>
+            <a class="secondary-btn" href="{{ site_base|default('/') }}entry/{{ entry.object_id - 1 }}{{ page_suffix|default('') }}">Previous study</a>
             {% endif %}
-            <a class="secondary-btn" href="/repository">Studies</a>
-            <a class="secondary-btn" href="/entry/{{ entry.object_id + 1 }}">Next study</a>
+            <a class="secondary-btn" href="{{ site_base|default('/') }}repository{{ page_suffix|default('') }}">Studies</a>
+            {% if entry.object_id < total_entries|default(entry.object_id + 1) %}
+            <a class="secondary-btn" href="{{ site_base|default('/') }}entry/{{ entry.object_id + 1 }}{{ page_suffix|default('') }}">Next study</a>
+            {% endif %}
         </nav>
     </main>
 
