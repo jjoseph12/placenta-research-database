@@ -1,0 +1,1892 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Index - Placenta Study Atlas</title>
+    <meta name="description" content="GEO placental studies with workbook evidence notes and source links">
+    <link rel="stylesheet" href="/placenta-research-database/static/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:wght@600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body data-site-base="/placenta-research-database/" data-page-suffix=".html">
+    
+    
+
+    <nav class="topbar">
+        <a class="brand" href="/placenta-research-database/">Placenta Study Atlas</a>
+        <div class="nav-links">
+            <a href="/placenta-research-database/">Index</a>
+            <a class="active" href="/placenta-research-database/repository.html">Studies</a>
+        </div>
+    </nav>
+
+    <main class="repository-shell">
+        <section class="repository-main">
+            <div class="repository-header">
+                <div>
+                    <p class="eyebrow">GEO placenta studies</p>
+                    <h1>Studies</h1>
+                </div>
+                <form class="repository-search" action="/placenta-research-database/repository.html" method="GET">
+                    <input class="search-input" type="search" name="q" value=""
+                        placeholder="GSE ID, title, organism, assay, phenotype">
+                    
+                    
+                    
+                    
+                    
+                    
+                    <button class="primary-btn" type="submit">Find</button>
+                </form>
+            </div>
+
+            <div class="repository-layout">
+            <aside class="filter-rail">
+                <div class="filter-heading">
+                    <span>Narrow studies</span>
+                    <em>
+                        
+                        Organism, trimester, assay, country, evidence
+                        
+                    </em>
+                </div>
+
+                <a class="filter-clear" id="clearFilters"
+                    href="/placenta-research-database/repository.html"
+                    hidden>Clear selected</a>
+
+                <form id="repositoryFilters" action="/placenta-research-database/repository.html" method="GET">
+                    <input type="hidden" name="q" value="">
+
+                    <details class="filter-section" open>
+                        <summary>Workbook evidence</summary>
+                        
+                        <label>
+                            <input type="checkbox" name="evidence" value="linked"
+                                >
+                            <span>Workbook evidence linked</span>
+                            <em>1194</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="evidence" value="supplement_repair"
+                                >
+                            <span>Supplement repair finding</span>
+                            <em>6</em>
+                        </label>
+                        
+                    </details>
+
+                    <details class="filter-section">
+                        <summary>Organism</summary>
+                        
+                        <label>
+                            <input type="checkbox" name="organism" value="Homo sapiens"
+                                >
+                            <span>Homo sapiens</span>
+                            <em>815</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="organism" value="Mus musculus"
+                                >
+                            <span>Mus musculus</span>
+                            <em>624</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="organism" value="Bos taurus"
+                                >
+                            <span>Bos taurus</span>
+                            <em>73</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="organism" value="Rattus norvegicus"
+                                >
+                            <span>Rattus norvegicus</span>
+                            <em>48</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="organism" value="Sus scrofa"
+                                >
+                            <span>Sus scrofa</span>
+                            <em>17</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="organism" value="Macaca mulatta"
+                                >
+                            <span>Macaca mulatta</span>
+                            <em>16</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="organism" value="Oryctolagus cuniculus"
+                                >
+                            <span>Oryctolagus cuniculus</span>
+                            <em>5</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="organism" value="Macaca nemestrina"
+                                >
+                            <span>Macaca nemestrina</span>
+                            <em>1</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="organism" value="Notamacropus eugenii"
+                                >
+                            <span>Notamacropus eugenii</span>
+                            <em>1</em>
+                        </label>
+                        
+                    </details>
+
+                    <details class="filter-section">
+                        <summary>Pregnancy trimester</summary>
+                        
+                        <label>
+                            <input type="checkbox" name="trimester" value="1st"
+                                >
+                            <span>1st</span>
+                            <em>254</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="trimester" value="Term"
+                                >
+                            <span>Term</span>
+                            <em>200</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="trimester" value="2nd"
+                                >
+                            <span>2nd</span>
+                            <em>69</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="trimester" value="Premature"
+                                >
+                            <span>Premature</span>
+                            <em>64</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="trimester" value="3rd"
+                                >
+                            <span>3rd</span>
+                            <em>55</em>
+                        </label>
+                        
+                    </details>
+
+                    <details class="filter-section">
+                        <summary>Data type</summary>
+                        
+                        <label>
+                            <input type="checkbox" name="data_type" value="Expression profiling by high throughput sequencing"
+                                >
+                            <span>Expression profiling by high throughput sequencing</span>
+                            <em>958</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="data_type" value="Expression profiling by array"
+                                >
+                            <span>Expression profiling by array</span>
+                            <em>623</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="data_type" value="Methylation profiling by high throughput sequencing"
+                                >
+                            <span>Methylation profiling by high throughput sequencing</span>
+                            <em>125</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="data_type" value="Genome binding/occupancy profiling by high throughput sequencing"
+                                >
+                            <span>Genome binding/occupancy profiling by high throughput sequencing</span>
+                            <em>115</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="data_type" value="Methylation profiling by array"
+                                >
+                            <span>Methylation profiling by array</span>
+                            <em>52</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="data_type" value="Other"
+                                >
+                            <span>Other</span>
+                            <em>30</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="data_type" value="Non-coding RNA profiling by high throughput sequencing"
+                                >
+                            <span>Non-coding RNA profiling by high throughput sequencing</span>
+                            <em>28</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="data_type" value="Non-coding RNA profiling by array"
+                                >
+                            <span>Non-coding RNA profiling by array</span>
+                            <em>15</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="data_type" value="Methylation profiling by genome tiling array"
+                                >
+                            <span>Methylation profiling by genome tiling array</span>
+                            <em>7</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="data_type" value="Third-party reanalysis"
+                                >
+                            <span>Third-party reanalysis</span>
+                            <em>5</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="data_type" value="Genome binding/occupancy profiling by genome tiling array"
+                                >
+                            <span>Genome binding/occupancy profiling by genome tiling array</span>
+                            <em>4</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="data_type" value="Genome variation profiling by high throughput sequencing"
+                                >
+                            <span>Genome variation profiling by high throughput sequencing</span>
+                            <em>4</em>
+                        </label>
+                        
+                        
+                        <details class="filter-more">
+                            <summary>More data types</summary>
+                            
+                            <label>
+                                <input type="checkbox" name="data_type" value="Genome variation profiling by SNP array"
+                                    >
+                                <span>Genome variation profiling by SNP array</span>
+                                <em>3</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="data_type" value="Genome variation profiling by genome tiling array"
+                                    >
+                                <span>Genome variation profiling by genome tiling array</span>
+                                <em>2</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="data_type" value="Expression profiling by SAGE"
+                                    >
+                                <span>Expression profiling by SAGE</span>
+                                <em>1</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="data_type" value="Expression profiling by genome tiling array"
+                                    >
+                                <span>Expression profiling by genome tiling array</span>
+                                <em>1</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="data_type" value="Genome variation profiling by array"
+                                    >
+                                <span>Genome variation profiling by array</span>
+                                <em>1</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="data_type" value="Non-coding RNA profiling by genome tiling array"
+                                    >
+                                <span>Non-coding RNA profiling by genome tiling array</span>
+                                <em>1</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="data_type" value="Protein profiling by Mass Spec"
+                                    >
+                                <span>Protein profiling by Mass Spec</span>
+                                <em>1</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="data_type" value="Protein profiling by protein array"
+                                    >
+                                <span>Protein profiling by protein array</span>
+                                <em>1</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="data_type" value="SNP genotyping by SNP array"
+                                    >
+                                <span>SNP genotyping by SNP array</span>
+                                <em>1</em>
+                            </label>
+                            
+                        </details>
+                        
+                    </details>
+
+                    <details class="filter-section">
+                        <summary>Library strategy</summary>
+                        
+                        <label>
+                            <input type="checkbox" name="library_strategy" value="RNA-Seq"
+                                >
+                            <span>RNA-Seq</span>
+                            <em>945</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="library_strategy" value="Bisulfite-Seq"
+                                >
+                            <span>Bisulfite-Seq</span>
+                            <em>105</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="library_strategy" value="ChIP-Seq"
+                                >
+                            <span>ChIP-Seq</span>
+                            <em>93</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="library_strategy" value="OTHER"
+                                >
+                            <span>OTHER</span>
+                            <em>59</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="library_strategy" value="ATAC-seq"
+                                >
+                            <span>ATAC-seq</span>
+                            <em>39</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="library_strategy" value="miRNA-Seq"
+                                >
+                            <span>miRNA-Seq</span>
+                            <em>16</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="library_strategy" value="MeDIP-Seq"
+                                >
+                            <span>MeDIP-Seq</span>
+                            <em>13</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="library_strategy" value="DNase-Hypersensitivity"
+                                >
+                            <span>DNase-Hypersensitivity</span>
+                            <em>3</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="library_strategy" value="Hi-C"
+                                >
+                            <span>Hi-C</span>
+                            <em>3</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="library_strategy" value="RIP-Seq"
+                                >
+                            <span>RIP-Seq</span>
+                            <em>3</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="library_strategy" value="WGS"
+                                >
+                            <span>WGS</span>
+                            <em>3</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="library_strategy" value="ncRNA-Seq"
+                                >
+                            <span>ncRNA-Seq</span>
+                            <em>2</em>
+                        </label>
+                        
+                        
+                        <details class="filter-more">
+                            <summary>More library strategies</summary>
+                            
+                            <label>
+                                <input type="checkbox" name="library_strategy" value="FAIRE-seq"
+                                    >
+                                <span>FAIRE-seq</span>
+                                <em>1</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="library_strategy" value="MRE-Seq"
+                                    >
+                                <span>MRE-Seq</span>
+                                <em>1</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="library_strategy" value="ssRNA-seq"
+                                    >
+                                <span>ssRNA-seq</span>
+                                <em>1</em>
+                            </label>
+                            
+                        </details>
+                        
+                    </details>
+
+                    <details class="filter-section">
+                        <summary>Sample country</summary>
+                        
+                        <label>
+                            <input type="checkbox" name="country" value="United States"
+                                >
+                            <span>United States</span>
+                            <em>607</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="country" value="China"
+                                >
+                            <span>China</span>
+                            <em>256</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="country" value="Japan"
+                                >
+                            <span>Japan</span>
+                            <em>109</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="country" value="United Kingdom"
+                                >
+                            <span>United Kingdom</span>
+                            <em>94</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="country" value="Canada"
+                                >
+                            <span>Canada</span>
+                            <em>88</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="country" value="Germany"
+                                >
+                            <span>Germany</span>
+                            <em>49</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="country" value="France"
+                                >
+                            <span>France</span>
+                            <em>47</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="country" value="Australia"
+                                >
+                            <span>Australia</span>
+                            <em>34</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="country" value="Austria"
+                                >
+                            <span>Austria</span>
+                            <em>30</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="country" value="Israel"
+                                >
+                            <span>Israel</span>
+                            <em>28</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="country" value="Spain"
+                                >
+                            <span>Spain</span>
+                            <em>21</em>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" name="country" value="Switzerland"
+                                >
+                            <span>Switzerland</span>
+                            <em>16</em>
+                        </label>
+                        
+                        
+                        <details class="filter-more">
+                            <summary>More countries</summary>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Finland"
+                                    >
+                                <span>Finland</span>
+                                <em>11</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Singapore"
+                                    >
+                                <span>Singapore</span>
+                                <em>11</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="South Korea"
+                                    >
+                                <span>South Korea</span>
+                                <em>11</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Italy"
+                                    >
+                                <span>Italy</span>
+                                <em>10</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="India"
+                                    >
+                                <span>India</span>
+                                <em>8</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Netherlands"
+                                    >
+                                <span>Netherlands</span>
+                                <em>8</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="New Zealand"
+                                    >
+                                <span>New Zealand</span>
+                                <em>8</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Not Provided"
+                                    >
+                                <span>Not Provided</span>
+                                <em>8</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Belgium"
+                                    >
+                                <span>Belgium</span>
+                                <em>7</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Sweden"
+                                    >
+                                <span>Sweden</span>
+                                <em>6</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Taiwan"
+                                    >
+                                <span>Taiwan</span>
+                                <em>6</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Estonia"
+                                    >
+                                <span>Estonia</span>
+                                <em>5</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Poland"
+                                    >
+                                <span>Poland</span>
+                                <em>5</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="CA"
+                                    >
+                                <span>CA</span>
+                                <em>4</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Czech Republic"
+                                    >
+                                <span>Czech Republic</span>
+                                <em>4</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Hungary"
+                                    >
+                                <span>Hungary</span>
+                                <em>4</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Norway"
+                                    >
+                                <span>Norway</span>
+                                <em>4</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Argentina"
+                                    >
+                                <span>Argentina</span>
+                                <em>3</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Brazil"
+                                    >
+                                <span>Brazil</span>
+                                <em>3</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Hong Kong"
+                                    >
+                                <span>Hong Kong</span>
+                                <em>2</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Iran"
+                                    >
+                                <span>Iran</span>
+                                <em>2</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Mexico"
+                                    >
+                                <span>Mexico</span>
+                                <em>2</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Pakistan"
+                                    >
+                                <span>Pakistan</span>
+                                <em>2</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="People&#39;s Republic of China"
+                                    >
+                                <span>People&#39;s Republic of China</span>
+                                <em>2</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Bolivia"
+                                    >
+                                <span>Bolivia</span>
+                                <em>1</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Chile"
+                                    >
+                                <span>Chile</span>
+                                <em>1</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Denmark"
+                                    >
+                                <span>Denmark</span>
+                                <em>1</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="England"
+                                    >
+                                <span>England</span>
+                                <em>1</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="FR"
+                                    >
+                                <span>FR</span>
+                                <em>1</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Iceland"
+                                    >
+                                <span>Iceland</span>
+                                <em>1</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Jordan"
+                                    >
+                                <span>Jordan</span>
+                                <em>1</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Kentucky"
+                                    >
+                                <span>Kentucky</span>
+                                <em>1</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Korea"
+                                    >
+                                <span>Korea</span>
+                                <em>1</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Malawi"
+                                    >
+                                <span>Malawi</span>
+                                <em>1</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="P.R. China"
+                                    >
+                                <span>P.R. China</span>
+                                <em>1</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Republic of Korea"
+                                    >
+                                <span>Republic of Korea</span>
+                                <em>1</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="South Africa"
+                                    >
+                                <span>South Africa</span>
+                                <em>1</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Thailand"
+                                    >
+                                <span>Thailand</span>
+                                <em>1</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="The Netherlands"
+                                    >
+                                <span>The Netherlands</span>
+                                <em>1</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Türkiye"
+                                    >
+                                <span>Türkiye</span>
+                                <em>1</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Uganda"
+                                    >
+                                <span>Uganda</span>
+                                <em>1</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="Western European"
+                                    >
+                                <span>Western European</span>
+                                <em>1</em>
+                            </label>
+                            
+                            <label>
+                                <input type="checkbox" name="country" value="the Netherlands"
+                                    >
+                                <span>the Netherlands</span>
+                                <em>1</em>
+                            </label>
+                            
+                        </details>
+                        
+                    </details>
+
+                    <div class="filter-actions-sticky">
+                        <button class="primary-btn full-width" type="submit">Update list</button>
+                        <a class="secondary-btn full-width" id="startOver"
+                            href="/placenta-research-database/repository.html"
+                            hidden>Start over</a>
+                    </div>
+                </form>
+            </aside>
+
+            <div class="repository-results">
+            <div class="result-toolbar">
+                <div>
+                    <strong id="resultCount">1,721</strong>
+                    <span>studies shown</span>
+                    <span id="resultContext"></span>
+                </div>
+                <a class="toolbar-link" id="downloadCsv" href="#">Download CSV</a>
+                <div class="active-chips" id="activeChips" hidden>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+
+            <div class="study-list" aria-label="Study results">
+                
+                <article class="study-result">
+                    <div class="study-result-main">
+                        <a class="gse-link" href="/placenta-research-database/entry/1.html">GSE185119</a>
+                        <a class="study-title" href="/placenta-research-database/entry/1.html">Gene expression profiling of trophoblastic organoid from the placental villi of intrauterine and tubal ectopic pregnancies</a>
+                        <p class="study-result-meta">
+                            Homo sapiens &middot; 9 samples
+                        </p>
+                    </div>
+
+                    <dl class="study-result-fields">
+                        <div>
+                            <dt>Assay</dt>
+                            <dd>Expression profiling by high throughput sequencing</dd>
+                        </div>
+                        <div>
+                            <dt>Strategy</dt>
+                            <dd>RNA-Seq</dd>
+                        </div>
+                        <div>
+                            <dt>Sample country</dt>
+                            <dd>China</dd>
+                        </div>
+                    </dl>
+
+                    <div class="study-result-trail">
+                        <div class="evidence-cell">
+                            
+                            <span>Evidence not linked</span>
+                            
+                        </div>
+                        <div class="link-actions">
+                            <a href="/placenta-research-database/entry/1.html">Record</a>
+                            
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="study-result">
+                    <div class="study-result-main">
+                        <a class="gse-link" href="/placenta-research-database/entry/2.html">GSE214007</a>
+                        <a class="study-title" href="/placenta-research-database/entry/2.html">The Transcriptome Analysis Reveals the Underlying Mechanism of Low Fetal Weight due to Prenatal High Estradiol Exposure in Mice</a>
+                        <p class="study-result-meta">
+                            Mus musculus &middot; 12 samples
+                        </p>
+                    </div>
+
+                    <dl class="study-result-fields">
+                        <div>
+                            <dt>Assay</dt>
+                            <dd>Expression profiling by high throughput sequencing</dd>
+                        </div>
+                        <div>
+                            <dt>Strategy</dt>
+                            <dd>RNA-Seq</dd>
+                        </div>
+                        <div>
+                            <dt>Sample country</dt>
+                            <dd>China</dd>
+                        </div>
+                    </dl>
+
+                    <div class="study-result-trail">
+                        <div class="evidence-cell">
+                            
+                            <span>Evidence not linked</span>
+                            
+                        </div>
+                        <div class="link-actions">
+                            <a href="/placenta-research-database/entry/2.html">Record</a>
+                            
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="study-result">
+                    <div class="study-result-main">
+                        <a class="gse-link" href="/placenta-research-database/entry/3.html">GSE272695</a>
+                        <a class="study-title" href="/placenta-research-database/entry/3.html">Decidual natural killer cells promote extravillus trophoblast developmental pathways: evidence from trophoblast organoid co-cultures</a>
+                        <p class="study-result-meta">
+                            Homo sapiens &middot; 11 samples
+                        </p>
+                    </div>
+
+                    <dl class="study-result-fields">
+                        <div>
+                            <dt>Assay</dt>
+                            <dd>Expression profiling by high throughput sequencing</dd>
+                        </div>
+                        <div>
+                            <dt>Strategy</dt>
+                            <dd>RNA-Seq</dd>
+                        </div>
+                        <div>
+                            <dt>Sample country</dt>
+                            <dd>Canada</dd>
+                        </div>
+                    </dl>
+
+                    <div class="study-result-trail">
+                        <div class="evidence-cell">
+                            
+                            <span>Evidence not linked</span>
+                            
+                        </div>
+                        <div class="link-actions">
+                            <a href="/placenta-research-database/entry/3.html">Record</a>
+                            
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="study-result">
+                    <div class="study-result-main">
+                        <a class="gse-link" href="/placenta-research-database/entry/4.html">GSE247712</a>
+                        <a class="study-title" href="/placenta-research-database/entry/4.html">Distinct roles of SOX9 in self-renewal of progenitors and mesenchymal transition of the endothelium</a>
+                        <p class="study-result-meta">
+                            Homo sapiens &middot; 16 samples &middot; Term
+                        </p>
+                    </div>
+
+                    <dl class="study-result-fields">
+                        <div>
+                            <dt>Assay</dt>
+                            <dd>Genome binding/occupancy profiling by high throughput sequencing, Expression profiling by high throughput sequencing</dd>
+                        </div>
+                        <div>
+                            <dt>Strategy</dt>
+                            <dd>ATAC-seq, RNA-Seq</dd>
+                        </div>
+                        <div>
+                            <dt>Sample country</dt>
+                            <dd>Australia</dd>
+                        </div>
+                    </dl>
+
+                    <div class="study-result-trail">
+                        <div class="evidence-cell">
+                            
+                            <a href="/placenta-research-database/entry/4.html#evidence">30 evidence notes</a>
+                            
+                            
+                        </div>
+                        <div class="link-actions">
+                            <a href="/placenta-research-database/entry/4.html">Record</a>
+                            
+                            <a href="/placenta-research-database/entry/4.html#evidence">Evidence</a>
+                            
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="study-result">
+                    <div class="study-result-main">
+                        <a class="gse-link" href="/placenta-research-database/entry/5.html">GSE247711</a>
+                        <a class="study-title" href="/placenta-research-database/entry/5.html">Distinct roles of SOX9 in self-renewal of progenitors and mesenchymal transition of the endothelium [RNA-seq]</a>
+                        <p class="study-result-meta">
+                            Homo sapiens &middot; 8 samples &middot; Term
+                        </p>
+                    </div>
+
+                    <dl class="study-result-fields">
+                        <div>
+                            <dt>Assay</dt>
+                            <dd>Expression profiling by high throughput sequencing</dd>
+                        </div>
+                        <div>
+                            <dt>Strategy</dt>
+                            <dd>RNA-Seq</dd>
+                        </div>
+                        <div>
+                            <dt>Sample country</dt>
+                            <dd>Australia</dd>
+                        </div>
+                    </dl>
+
+                    <div class="study-result-trail">
+                        <div class="evidence-cell">
+                            
+                            <a href="/placenta-research-database/entry/5.html#evidence">30 evidence notes</a>
+                            
+                            
+                        </div>
+                        <div class="link-actions">
+                            <a href="/placenta-research-database/entry/5.html">Record</a>
+                            
+                            <a href="/placenta-research-database/entry/5.html#evidence">Evidence</a>
+                            
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="study-result">
+                    <div class="study-result-main">
+                        <a class="gse-link" href="/placenta-research-database/entry/6.html">GSE230783</a>
+                        <a class="study-title" href="/placenta-research-database/entry/6.html">Extracellular Vesicle contents of mouse trophoblast cells and their predicted influence on fetal brain development</a>
+                        <p class="study-result-meta">
+                            Mus musculus &middot; No
+                        </p>
+                    </div>
+
+                    <dl class="study-result-fields">
+                        <div>
+                            <dt>Assay</dt>
+                            <dd>Expression profiling by high throughput sequencing</dd>
+                        </div>
+                        <div>
+                            <dt>Strategy</dt>
+                            <dd>RNA-Seq</dd>
+                        </div>
+                        <div>
+                            <dt>Sample country</dt>
+                            <dd>USA</dd>
+                        </div>
+                    </dl>
+
+                    <div class="study-result-trail">
+                        <div class="evidence-cell">
+                            
+                            <span>Evidence not linked</span>
+                            
+                        </div>
+                        <div class="link-actions">
+                            <a href="/placenta-research-database/entry/6.html">Record</a>
+                            
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="study-result">
+                    <div class="study-result-main">
+                        <a class="gse-link" href="/placenta-research-database/entry/7.html">GSE232526</a>
+                        <a class="study-title" href="/placenta-research-database/entry/7.html">Regenerative trophoblast models are largely in concordance with trophoblasts from peri-implantation human embryos while maintaining subtle differences</a>
+                        <p class="study-result-meta">
+                            Homo sapiens
+                        </p>
+                    </div>
+
+                    <dl class="study-result-fields">
+                        <div>
+                            <dt>Assay</dt>
+                            <dd>Expression profiling by high throughput sequencing</dd>
+                        </div>
+                        <div>
+                            <dt>Strategy</dt>
+                            <dd>RNA-Seq</dd>
+                        </div>
+                        <div>
+                            <dt>Sample country</dt>
+                            <dd>USA</dd>
+                        </div>
+                    </dl>
+
+                    <div class="study-result-trail">
+                        <div class="evidence-cell">
+                            
+                            <span>Evidence not linked</span>
+                            
+                        </div>
+                        <div class="link-actions">
+                            <a href="/placenta-research-database/entry/7.html">Record</a>
+                            
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="study-result">
+                    <div class="study-result-main">
+                        <a class="gse-link" href="/placenta-research-database/entry/8.html">GSE270174</a>
+                        <a class="study-title" href="/placenta-research-database/entry/8.html">Trajectory modeling of first trimester placenta highlight differences between cytotrophoblast progenitors and trophoblast stem cells</a>
+                        <p class="study-result-meta">
+                            Homo sapiens &middot; 47 samples &middot; 1st
+                        </p>
+                    </div>
+
+                    <dl class="study-result-fields">
+                        <div>
+                            <dt>Assay</dt>
+                            <dd>Expression profiling by high throughput sequencing, Other</dd>
+                        </div>
+                        <div>
+                            <dt>Strategy</dt>
+                            <dd>RNA-Seq, OTHER</dd>
+                        </div>
+                        <div>
+                            <dt>Sample country</dt>
+                            <dd>United States</dd>
+                        </div>
+                    </dl>
+
+                    <div class="study-result-trail">
+                        <div class="evidence-cell">
+                            
+                            <a href="/placenta-research-database/entry/8.html#evidence">30 evidence notes</a>
+                            
+                            
+                        </div>
+                        <div class="link-actions">
+                            <a href="/placenta-research-database/entry/8.html">Record</a>
+                            
+                            <a href="/placenta-research-database/entry/8.html#evidence">Evidence</a>
+                            
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="study-result">
+                    <div class="study-result-main">
+                        <a class="gse-link" href="/placenta-research-database/entry/9.html">GSE270170</a>
+                        <a class="study-title" href="/placenta-research-database/entry/9.html">Trajectory modeling of first trimester placenta highlight differences between cytotrophoblast progenitors and trophoblast stem cells [scRNA-seq]</a>
+                        <p class="study-result-meta">
+                            Homo sapiens &middot; 10 samples &middot; 1st
+                        </p>
+                    </div>
+
+                    <dl class="study-result-fields">
+                        <div>
+                            <dt>Assay</dt>
+                            <dd>Expression profiling by high throughput sequencing</dd>
+                        </div>
+                        <div>
+                            <dt>Strategy</dt>
+                            <dd>RNA-Seq</dd>
+                        </div>
+                        <div>
+                            <dt>Sample country</dt>
+                            <dd>United States</dd>
+                        </div>
+                    </dl>
+
+                    <div class="study-result-trail">
+                        <div class="evidence-cell">
+                            
+                            <a href="/placenta-research-database/entry/9.html#evidence">30 evidence notes</a>
+                            
+                            
+                        </div>
+                        <div class="link-actions">
+                            <a href="/placenta-research-database/entry/9.html">Record</a>
+                            
+                            <a href="/placenta-research-database/entry/9.html#evidence">Evidence</a>
+                            
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="study-result">
+                    <div class="study-result-main">
+                        <a class="gse-link" href="/placenta-research-database/entry/10.html">GSE232692</a>
+                        <a class="study-title" href="/placenta-research-database/entry/10.html">Rapid retinoic acid-induced trophectoderm model from human induced pluripotent stem cells</a>
+                        <p class="study-result-meta">
+                            Homo sapiens &middot; No
+                        </p>
+                    </div>
+
+                    <dl class="study-result-fields">
+                        <div>
+                            <dt>Assay</dt>
+                            <dd>Expression profiling by high throughput sequencing</dd>
+                        </div>
+                        <div>
+                            <dt>Strategy</dt>
+                            <dd>RNA-Seq</dd>
+                        </div>
+                        <div>
+                            <dt>Sample country</dt>
+                            <dd>United States</dd>
+                        </div>
+                    </dl>
+
+                    <div class="study-result-trail">
+                        <div class="evidence-cell">
+                            
+                            <span>Evidence not linked</span>
+                            
+                        </div>
+                        <div class="link-actions">
+                            <a href="/placenta-research-database/entry/10.html">Record</a>
+                            
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="study-result">
+                    <div class="study-result-main">
+                        <a class="gse-link" href="/placenta-research-database/entry/11.html">GSE248127</a>
+                        <a class="study-title" href="/placenta-research-database/entry/11.html">Single-cell transcriptional response of placenta to the ablation of Caveolin-1 in mice: insights into the regulation of brain-placental axis</a>
+                        <p class="study-result-meta">
+                            Mus musculus &middot; 5 samples &middot; No
+                        </p>
+                    </div>
+
+                    <dl class="study-result-fields">
+                        <div>
+                            <dt>Assay</dt>
+                            <dd>Expression profiling by high throughput sequencing</dd>
+                        </div>
+                        <div>
+                            <dt>Strategy</dt>
+                            <dd>RNA-Seq</dd>
+                        </div>
+                        <div>
+                            <dt>Sample country</dt>
+                            <dd>Switzerland</dd>
+                        </div>
+                    </dl>
+
+                    <div class="study-result-trail">
+                        <div class="evidence-cell">
+                            
+                            <a href="/placenta-research-database/entry/11.html#evidence">30 evidence notes</a>
+                            
+                            
+                        </div>
+                        <div class="link-actions">
+                            <a href="/placenta-research-database/entry/11.html">Record</a>
+                            
+                            <a href="/placenta-research-database/entry/11.html#evidence">Evidence</a>
+                            
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="study-result">
+                    <div class="study-result-main">
+                        <a class="gse-link" href="/placenta-research-database/entry/12.html">GSE248126</a>
+                        <a class="study-title" href="/placenta-research-database/entry/12.html">Single-cell transcriptional response of placenta to the ablation of Caveolin-1 in mice: insights into the regulation of brain-placental axis [scRNA-Seq]</a>
+                        <p class="study-result-meta">
+                            Mus musculus &middot; 2 samples &middot; No
+                        </p>
+                    </div>
+
+                    <dl class="study-result-fields">
+                        <div>
+                            <dt>Assay</dt>
+                            <dd>Expression profiling by high throughput sequencing</dd>
+                        </div>
+                        <div>
+                            <dt>Strategy</dt>
+                            <dd>RNA-Seq</dd>
+                        </div>
+                        <div>
+                            <dt>Sample country</dt>
+                            <dd>Switzerland</dd>
+                        </div>
+                    </dl>
+
+                    <div class="study-result-trail">
+                        <div class="evidence-cell">
+                            
+                            <a href="/placenta-research-database/entry/12.html#evidence">30 evidence notes</a>
+                            
+                            
+                        </div>
+                        <div class="link-actions">
+                            <a href="/placenta-research-database/entry/12.html">Record</a>
+                            
+                            <a href="/placenta-research-database/entry/12.html#evidence">Evidence</a>
+                            
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="study-result">
+                    <div class="study-result-main">
+                        <a class="gse-link" href="/placenta-research-database/entry/13.html">GSE248093</a>
+                        <a class="study-title" href="/placenta-research-database/entry/13.html">Single-cell transcriptional response of placenta to the ablation of Caveolin-1 in mice: insights into the regulation of brain-placental axis [bulk RNA-seq]</a>
+                        <p class="study-result-meta">
+                            Mus musculus &middot; 3 samples &middot; No
+                        </p>
+                    </div>
+
+                    <dl class="study-result-fields">
+                        <div>
+                            <dt>Assay</dt>
+                            <dd>Expression profiling by high throughput sequencing</dd>
+                        </div>
+                        <div>
+                            <dt>Strategy</dt>
+                            <dd>RNA-Seq</dd>
+                        </div>
+                        <div>
+                            <dt>Sample country</dt>
+                            <dd>Switzerland</dd>
+                        </div>
+                    </dl>
+
+                    <div class="study-result-trail">
+                        <div class="evidence-cell">
+                            
+                            <a href="/placenta-research-database/entry/13.html#evidence">30 evidence notes</a>
+                            
+                            
+                        </div>
+                        <div class="link-actions">
+                            <a href="/placenta-research-database/entry/13.html">Record</a>
+                            
+                            <a href="/placenta-research-database/entry/13.html#evidence">Evidence</a>
+                            
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="study-result">
+                    <div class="study-result-main">
+                        <a class="gse-link" href="/placenta-research-database/entry/14.html">GSE233557</a>
+                        <a class="study-title" href="/placenta-research-database/entry/14.html">Global transcriptomic analysis of placenta from women with gestational SARS-CoV-2 infection during the 3rd trimester of pregnancy</a>
+                        <p class="study-result-meta">
+                            Homo sapiens &middot; 27 samples &middot; Term
+                        </p>
+                    </div>
+
+                    <dl class="study-result-fields">
+                        <div>
+                            <dt>Assay</dt>
+                            <dd>Expression profiling by high throughput sequencing</dd>
+                        </div>
+                        <div>
+                            <dt>Strategy</dt>
+                            <dd>RNA-Seq</dd>
+                        </div>
+                        <div>
+                            <dt>Sample country</dt>
+                            <dd>Sweden</dd>
+                        </div>
+                    </dl>
+
+                    <div class="study-result-trail">
+                        <div class="evidence-cell">
+                            
+                            <a href="/placenta-research-database/entry/14.html#evidence">33 evidence notes</a>
+                            
+                            
+                        </div>
+                        <div class="link-actions">
+                            <a href="/placenta-research-database/entry/14.html">Record</a>
+                            
+                            <a href="/placenta-research-database/entry/14.html#evidence">Evidence</a>
+                            
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="study-result">
+                    <div class="study-result-main">
+                        <a class="gse-link" href="/placenta-research-database/entry/15.html">GSE254847</a>
+                        <a class="study-title" href="/placenta-research-database/entry/15.html">Sex-Specific DNA Methylation and Gene Expression Changes in Mouse Placentas After Early Preimplantation Alcohol Exposure</a>
+                        <p class="study-result-meta">
+                            Mus musculus &middot; 32 samples
+                        </p>
+                    </div>
+
+                    <dl class="study-result-fields">
+                        <div>
+                            <dt>Assay</dt>
+                            <dd>Methylation profiling by high throughput sequencing, Expression profiling by high throughput sequencing</dd>
+                        </div>
+                        <div>
+                            <dt>Strategy</dt>
+                            <dd>Bisulfite-Seq, RNA-Seq</dd>
+                        </div>
+                        <div>
+                            <dt>Sample country</dt>
+                            <dd>Canada</dd>
+                        </div>
+                    </dl>
+
+                    <div class="study-result-trail">
+                        <div class="evidence-cell">
+                            
+                            <span>Evidence not linked</span>
+                            
+                        </div>
+                        <div class="link-actions">
+                            <a href="/placenta-research-database/entry/15.html">Record</a>
+                            
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="study-result">
+                    <div class="study-result-main">
+                        <a class="gse-link" href="/placenta-research-database/entry/16.html">GSE254846</a>
+                        <a class="study-title" href="/placenta-research-database/entry/16.html">Sex-Specific DNA Methylation and Gene Expression Changes in Mouse Placentas After Early Preimplantation Alcohol Exposure[RNA-Seq]</a>
+                        <p class="study-result-meta">
+                            Mus musculus &middot; 16 samples
+                        </p>
+                    </div>
+
+                    <dl class="study-result-fields">
+                        <div>
+                            <dt>Assay</dt>
+                            <dd>Expression profiling by high throughput sequencing</dd>
+                        </div>
+                        <div>
+                            <dt>Strategy</dt>
+                            <dd>RNA-Seq</dd>
+                        </div>
+                        <div>
+                            <dt>Sample country</dt>
+                            <dd>Canada</dd>
+                        </div>
+                    </dl>
+
+                    <div class="study-result-trail">
+                        <div class="evidence-cell">
+                            
+                            <span>Evidence not linked</span>
+                            
+                        </div>
+                        <div class="link-actions">
+                            <a href="/placenta-research-database/entry/16.html">Record</a>
+                            
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="study-result">
+                    <div class="study-result-main">
+                        <a class="gse-link" href="/placenta-research-database/entry/17.html">GSE254845</a>
+                        <a class="study-title" href="/placenta-research-database/entry/17.html">Sex-Specific DNA Methylation and Gene Expression Changes in Mouse Placentas After Early Preimplantation Alcohol Exposure[Methyl-Seq]</a>
+                        <p class="study-result-meta">
+                            Mus musculus &middot; 16 samples
+                        </p>
+                    </div>
+
+                    <dl class="study-result-fields">
+                        <div>
+                            <dt>Assay</dt>
+                            <dd>Methylation profiling by high throughput sequencing</dd>
+                        </div>
+                        <div>
+                            <dt>Strategy</dt>
+                            <dd>Bisulfite-Seq</dd>
+                        </div>
+                        <div>
+                            <dt>Sample country</dt>
+                            <dd>Canada</dd>
+                        </div>
+                    </dl>
+
+                    <div class="study-result-trail">
+                        <div class="evidence-cell">
+                            
+                            <span>Evidence not linked</span>
+                            
+                        </div>
+                        <div class="link-actions">
+                            <a href="/placenta-research-database/entry/17.html">Record</a>
+                            
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="study-result">
+                    <div class="study-result-main">
+                        <a class="gse-link" href="/placenta-research-database/entry/18.html">GSE212505</a>
+                        <a class="study-title" href="/placenta-research-database/entry/18.html">Single-Cell Analysis of Placenta Accreta Spectrum: Novel Contribution of Endothelial Cells to the Pathogenesis of Disease</a>
+                        <p class="study-result-meta">
+                            Homo sapiens &middot; 8 samples
+                        </p>
+                    </div>
+
+                    <dl class="study-result-fields">
+                        <div>
+                            <dt>Assay</dt>
+                            <dd>Expression profiling by high throughput sequencing</dd>
+                        </div>
+                        <div>
+                            <dt>Strategy</dt>
+                            <dd>RNA-Seq</dd>
+                        </div>
+                        <div>
+                            <dt>Sample country</dt>
+                            <dd>USA</dd>
+                        </div>
+                    </dl>
+
+                    <div class="study-result-trail">
+                        <div class="evidence-cell">
+                            
+                            <a href="/placenta-research-database/entry/18.html#evidence">32 evidence notes</a>
+                            
+                            
+                        </div>
+                        <div class="link-actions">
+                            <a href="/placenta-research-database/entry/18.html">Record</a>
+                            
+                            <a href="/placenta-research-database/entry/18.html#evidence">Evidence</a>
+                            
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="study-result">
+                    <div class="study-result-main">
+                        <a class="gse-link" href="/placenta-research-database/entry/19.html">GSE236675</a>
+                        <a class="study-title" href="/placenta-research-database/entry/19.html">Placenta accreta spectrum disorder at single cell resolution: a loss of boundary limits in the uterine endothelium and decidua.</a>
+                        <p class="study-result-meta">
+                            Homo sapiens &middot; 36 samples
+                        </p>
+                    </div>
+
+                    <dl class="study-result-fields">
+                        <div>
+                            <dt>Assay</dt>
+                            <dd>Expression profiling by high throughput sequencing</dd>
+                        </div>
+                        <div>
+                            <dt>Strategy</dt>
+                            <dd>RNA-Seq</dd>
+                        </div>
+                        <div>
+                            <dt>Sample country</dt>
+                            <dd>USA</dd>
+                        </div>
+                    </dl>
+
+                    <div class="study-result-trail">
+                        <div class="evidence-cell">
+                            
+                            <span>Evidence not linked</span>
+                            
+                        </div>
+                        <div class="link-actions">
+                            <a href="/placenta-research-database/entry/19.html">Record</a>
+                            
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="study-result">
+                    <div class="study-result-main">
+                        <a class="gse-link" href="/placenta-research-database/entry/20.html">GSE224116</a>
+                        <a class="study-title" href="/placenta-research-database/entry/20.html">The placenta has an active role in maintaining fetal homeostasis following maternal immune activation</a>
+                        <p class="study-result-meta">
+                            Mus musculus &middot; 167 samples &middot; 3rd
+                        </p>
+                    </div>
+
+                    <dl class="study-result-fields">
+                        <div>
+                            <dt>Assay</dt>
+                            <dd>Expression profiling by high throughput sequencing</dd>
+                        </div>
+                        <div>
+                            <dt>Strategy</dt>
+                            <dd>RNA-Seq</dd>
+                        </div>
+                        <div>
+                            <dt>Sample country</dt>
+                            <dd>France</dd>
+                        </div>
+                    </dl>
+
+                    <div class="study-result-trail">
+                        <div class="evidence-cell">
+                            
+                            <a href="/placenta-research-database/entry/20.html#evidence">31 evidence notes</a>
+                            
+                            
+                        </div>
+                        <div class="link-actions">
+                            <a href="/placenta-research-database/entry/20.html">Record</a>
+                            
+                            <a href="/placenta-research-database/entry/20.html#evidence">Evidence</a>
+                            
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="study-result">
+                    <div class="study-result-main">
+                        <a class="gse-link" href="/placenta-research-database/entry/21.html">GSE221691</a>
+                        <a class="study-title" href="/placenta-research-database/entry/21.html">GATA2 mitotic bookmarking is required for definitive hematopoiesis [scRNA-seq]</a>
+                        <p class="study-result-meta">
+                            Homo sapiens &middot; No
+                        </p>
+                    </div>
+
+                    <dl class="study-result-fields">
+                        <div>
+                            <dt>Assay</dt>
+                            <dd>Expression profiling by high throughput sequencing</dd>
+                        </div>
+                        <div>
+                            <dt>Strategy</dt>
+                            <dd>RNA-Seq</dd>
+                        </div>
+                        <div>
+                            <dt>Sample country</dt>
+                            <dd>Sweden</dd>
+                        </div>
+                    </dl>
+
+                    <div class="study-result-trail">
+                        <div class="evidence-cell">
+                            
+                            <span>Evidence not linked</span>
+                            
+                        </div>
+                        <div class="link-actions">
+                            <a href="/placenta-research-database/entry/21.html">Record</a>
+                            
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="study-result">
+                    <div class="study-result-main">
+                        <a class="gse-link" href="/placenta-research-database/entry/22.html">GSE163286</a>
+                        <a class="study-title" href="/placenta-research-database/entry/22.html">A Single Trophoblast Layer Acts as the Gatekeeper at the Endothelial-Hematopoietic Crossroad in the Placenta</a>
+                        <p class="study-result-meta">
+                            Mus musculus &middot; 4 samples &middot; No
+                        </p>
+                    </div>
+
+                    <dl class="study-result-fields">
+                        <div>
+                            <dt>Assay</dt>
+                            <dd>Expression profiling by high throughput sequencing</dd>
+                        </div>
+                        <div>
+                            <dt>Strategy</dt>
+                            <dd>RNA-Seq</dd>
+                        </div>
+                        <div>
+                            <dt>Sample country</dt>
+                            <dd>United States</dd>
+                        </div>
+                    </dl>
+
+                    <div class="study-result-trail">
+                        <div class="evidence-cell">
+                            
+                            <a href="/placenta-research-database/entry/22.html#evidence">32 evidence notes</a>
+                            
+                            
+                        </div>
+                        <div class="link-actions">
+                            <a href="/placenta-research-database/entry/22.html">Record</a>
+                            
+                            <a href="/placenta-research-database/entry/22.html#evidence">Evidence</a>
+                            
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="study-result">
+                    <div class="study-result-main">
+                        <a class="gse-link" href="/placenta-research-database/entry/23.html">GSE205581</a>
+                        <a class="study-title" href="/placenta-research-database/entry/23.html">Intrinsic sexual dimorphism in the placenta determines the differential response to benzene exposure</a>
+                        <p class="study-result-meta">
+                            Mus musculus &middot; 20 samples &middot; No
+                        </p>
+                    </div>
+
+                    <dl class="study-result-fields">
+                        <div>
+                            <dt>Assay</dt>
+                            <dd>Expression profiling by high throughput sequencing</dd>
+                        </div>
+                        <div>
+                            <dt>Strategy</dt>
+                            <dd>RNA-Seq</dd>
+                        </div>
+                        <div>
+                            <dt>Sample country</dt>
+                            <dd>United States</dd>
+                        </div>
+                    </dl>
+
+                    <div class="study-result-trail">
+                        <div class="evidence-cell">
+                            
+                            <a href="/placenta-research-database/entry/23.html#evidence">32 evidence notes</a>
+                            
+                            
+                        </div>
+                        <div class="link-actions">
+                            <a href="/placenta-research-database/entry/23.html">Record</a>
+                            
+                            <a href="/placenta-research-database/entry/23.html#evidence">Evidence</a>
+                            
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="study-result">
+                    <div class="study-result-main">
+                        <a class="gse-link" href="/placenta-research-database/entry/24.html">GSE217041</a>
+                        <a class="study-title" href="/placenta-research-database/entry/24.html">A key role for NLRP3 signaling in preterm labor and birth driven by the alarmin S100B</a>
+                        <p class="study-result-meta">
+                            Mus musculus &middot; 20 samples &middot; Premature
+                        </p>
+                    </div>
+
+                    <dl class="study-result-fields">
+                        <div>
+                            <dt>Assay</dt>
+                            <dd>Expression profiling by high throughput sequencing</dd>
+                        </div>
+                        <div>
+                            <dt>Strategy</dt>
+                            <dd>RNA-Seq</dd>
+                        </div>
+                        <div>
+                            <dt>Sample country</dt>
+                            <dd>Not reported</dd>
+                        </div>
+                    </dl>
+
+                    <div class="study-result-trail">
+                        <div class="evidence-cell">
+                            
+                            <a href="/placenta-research-database/entry/24.html#evidence">30 evidence notes</a>
+                            
+                            
+                        </div>
+                        <div class="link-actions">
+                            <a href="/placenta-research-database/entry/24.html">Record</a>
+                            
+                            <a href="/placenta-research-database/entry/24.html#evidence">Evidence</a>
+                            
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="study-result">
+                    <div class="study-result-main">
+                        <a class="gse-link" href="/placenta-research-database/entry/25.html">GSE235157</a>
+                        <a class="study-title" href="/placenta-research-database/entry/25.html">Global Epigenome and Transcriptome Maps of Human Trophoblast Cell Lineage Development [RNA-Seq II]</a>
+                        <p class="study-result-meta">
+                            Homo sapiens
+                        </p>
+                    </div>
+
+                    <dl class="study-result-fields">
+                        <div>
+                            <dt>Assay</dt>
+                            <dd>Expression profiling by high throughput sequencing</dd>
+                        </div>
+                        <div>
+                            <dt>Strategy</dt>
+                            <dd>RNA-Seq</dd>
+                        </div>
+                        <div>
+                            <dt>Sample country</dt>
+                            <dd>USA</dd>
+                        </div>
+                    </dl>
+
+                    <div class="study-result-trail">
+                        <div class="evidence-cell">
+                            
+                            <span>Evidence not linked</span>
+                            
+                        </div>
+                        <div class="link-actions">
+                            <a href="/placenta-research-database/entry/25.html">Record</a>
+                            
+                        </div>
+                    </div>
+                </article>
+                
+            </div>
+
+            <div class="empty-state" id="repositoryEmpty" hidden>
+                No studies found. Try clearing selected filters or using a broader term.
+            </div>
+
+            
+            <nav class="pagination" id="repositoryPagination" aria-label="Pagination">
+                
+                <a class="secondary-btn" id="previousPage" href="#" hidden>Previous</a>
+                
+                <span id="pageStatus">Page 1 of 69</span>
+                
+                <a class="secondary-btn" id="nextPage" href="?q=&page=2">Next</a>
+                
+            </nav>
+            
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        Placenta Study Atlas. GEO records with workbook evidence notes.
+    </footer>
+    
+    <script src="/placenta-research-database/static/repository.js" defer></script>
+    
+</body>
+
+</html>

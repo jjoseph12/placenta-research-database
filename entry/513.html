@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSE267870 - Placenta Study Atlas</title>
+    <meta name="description" content="Temporal effects of BMP4 on mouse embryonic and extraembryonic development">
+    <link rel="stylesheet" href="/placenta-research-database/static/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:wght@600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="topbar">
+        <a class="brand" href="/placenta-research-database/">Placenta Study Atlas</a>
+        <div class="nav-links">
+            <a href="/placenta-research-database/">Index</a>
+            <a class="active" href="/placenta-research-database/repository.html">Studies</a>
+        </div>
+    </nav>
+
+    <main class="detail-shell">
+        <a class="back-link" href="/placenta-research-database/repository.html">Back to studies</a>
+
+        <article class="detail-hero">
+            <div>
+                <p class="eyebrow">Study record</p>
+                <h1>GSE267870</h1>
+                <p>Temporal effects of BMP4 on mouse embryonic and extraembryonic development</p>
+            </div>
+            <div class="source-actions" aria-label="Source links">
+                <a href="#evidence">Evidence notes</a>
+                
+                <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE267870"
+                    target="_blank" rel="noopener">Open GEO</a>
+                
+                
+                <a href="https://pubmed.ncbi.nlm.nih.gov/39294373/" target="_blank"
+                    rel="noopener">PubMed</a>
+                
+                
+                <a href="https://doi.org/10.1038/s41586-024-07937-5" target="_blank" rel="noopener">DOI</a>
+                
+            </div>
+        </article>
+
+        <section class="record-strip" aria-label="Study summary">
+            <div>
+                <span>Organism</span>
+                <strong>Mus musculus</strong>
+            </div>
+            <div>
+                <span>Samples</span>
+                <strong>0</strong>
+            </div>
+            <div>
+                <span>Data type</span>
+                <strong>Expression profiling by high throughput sequencing</strong>
+            </div>
+            <div>
+                <span>Library strategy</span>
+                <strong>RNA-Seq</strong>
+            </div>
+            <div>
+                <span>Trimester</span>
+                <strong>Not reported</strong>
+            </div>
+            <div>
+                <span>Sample country</span>
+                <strong>United States</strong>
+            </div>
+        </section>
+
+        <section class="record-layout">
+            <section class="record-section geo-section">
+                <div class="section-heading">
+                    <p class="eyebrow">GEO record</p>
+                    <h2>Sample, assay, and methods</h2>
+                </div>
+                <div class="technical-grid">
+                    <div class="field-group sample-group wide-group">
+                        <h3>Sample characteristics</h3>
+                        <p class="long-text">tissue: Mouse embryo | genotype: Wildtype embryo | developmental stage: E4.5 - E8.5 | genotype: Extraembryonic-ectoderm-specific Elf5 KO embryos | developmental stage: E6.5 - E8.5 | genotype: Host cells and injected mESC-derived Bmp4 KO cells | genotype: Bmp4 KO Heterozygous (C57BL/6x129) | genotype: transgenic OCT4-EGFP reporter cells | genotype: Ex utero cultured embryo | developmental stage: E7.5 - E8.5</p>
+                    </div>
+
+                    <div class="field-group">
+                        <h3>Assay and platform</h3>
+                        <dl class="field-list">
+                            <div><dt>Extracted molecule</dt><dd>total RNA</dd></div>
+                            <div><dt>Library source</dt><dd>transcriptomic single cell</dd></div>
+                            <div><dt>Library selection</dt><dd>cDNA</dd></div>
+                            <div><dt>Instrument model</dt><dd>Illumina NextSeq 500, Illumina NovaSeq 6000</dd></div>
+                            <div><dt>Platform ID</dt><dd>GPL19057, GPL24247</dd></div>
+                            <div><dt>SRA Study ID</dt><dd>Not reported</dd></div>
+                            <div><dt>BioProject ID</dt><dd>PRJNA1113575</dd></div>
+                            <div><dt>File types</dt><dd>tar, gz</dd></div>
+                        </dl>
+                    </div>
+
+                    <div class="field-group">
+                        <h3>Submission information</h3>
+                        <dl class="field-list">
+                            <div><dt>Organization</dt><dd>Weizmann Institute of Science</dd></div>
+                            <div><dt>Contact</dt><dd>Markus Mittnenzweig</dd></div>
+                            <div><dt>Email</dt><dd>markus.mittnenzweig@weizmann.ac.il</dd></div>
+                            <div><dt>Submitter country</dt><dd>Israel</dd></div>
+                            <div><dt>Hospital / center</dt><dd>Weizmann Institute of Science</dd></div>
+                            <div><dt>Submitted</dt><dd>05/20/2024</dd></div>
+                            <div><dt>Last updated</dt><dd>11/22/2024</dd></div>
+                            <div><dt>Supervisor / PI</dt><dd>Yonatan Stelzer</dd></div>
+                            <div><dt>Supervisor email</dt><dd>yonatan.stelzer@weizmann.ac.il</dd></div>
+                        </dl>
+                    </div>
+
+                    
+                    <div class="field-group methods-group">
+                        <h3>Methods text</h3>
+                        
+                        <h4>Assay description</h4>
+                        <p class="long-text">We individually imaged each embryo and performed index-sorting for them with subsequent plate-based scRNA-seq (MARS-seq). For ex utero cultured embryos, we pooled 5 embryos and performed 10x single-cell RNA-seq on them for two time points (late streak and head fold stage embryos). For further analysis of mutant/perturbation data, query data was compared to an already established dataset [Mittnenzweig et al. Cell 2021] that was further enriched in this study. The projection of query cells over the atlas resulted in best matching WT embryos that were used to calculate time, cell state composition and differential gene expression between query and atlas cells.</p>
+                        
+                        
+                        <h4>Extraction protocol</h4>
+                        <p class="long-text">Genetically manipulated embryos were dissected in ice-cold 1×PBS, followed by imaging in a drop of DMEM medium supplemented with 10% foetal bovine serum (FBS) under a Nikon Eclipse Ti2 inverted microscope. Embryos were then rinsed in ice-cold 1×PBS, transferred into an Eppendorf tube containing 35 µl 0.25% Trypsin/0.02% EDTA Solution A, and incubated at 37 °C for 5 min with 2-3 times pipetting. Trypsinization was stopped by adding 10% FBS/DMEM medium. Cell suspensions were filtered through a 35 µm strainer before sorting. Single-cell cDNA libraries were prepared using the MARS-Seq method as described (Keren-Shaul et al., 2019). Briefly, reverse transcription was performed in individual wells of the sorted 384-well plate to get complementary DNA (cDNA). Subsequently, all liquid from each 384-well plate was pooled and converted to double-stranded DNA, transcribed using T7 RNA polymerase, and fragmented. A unique plate adaptor was added to each library to be sequenced together, and RNA::ssDNA (plate adaptor) ligation was performed. The purified ligates were applied to a second RT step with a primer complementary to the ligated adaptor, and the library is completed by cDNA enrichment through PCR amplification. Library concentration and profile were evaluated before sequencing. 10x ex utero: Cultured embryos were prepared for sequencing at different developmental stages after two days in culture: late streak and early head fold, assessed by light microscopy. Six similar embryos were selected for each developmental stage, pooled and dissociated using Trypsin-EDTA solution A 0.25% (Biological Industries; 030501B) for 5 minutes at 37℃. Trypsin was neutralized with media including 10% FBS and cells were washed and re-suspended in 1x PBS (calcium and magnesium free) with 400 μg/ml BSA. Cell suspension was than filtered with a 100 μm cell strainer to avoid cell clumps. Single cell viability was determined by trypan blue staining, before being diluted to a final concentration of 1000 cells/μl. Single-cell RNA-seq libraries were generated for each pool of embryos separately using 10x Genomics Chromium v3 system (5000 cell target cell recovery) and sequenced on Illumina NovaSeq 6000 platform according to the manufacturer’s instructions.</p>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </section>
+
+            <aside class="record-aside" aria-label="Study source notes">
+                <section class="source-note">
+                    <p class="eyebrow">Source notes</p>
+                    <div class="provenance-list">
+                        <div>
+                            <strong>GEO metadata</strong>
+                            <p>Core study, assay, platform, contact, and submission fields come from GEO metadata.</p>
+                        </div>
+                        <div>
+                            <strong>Publication links</strong>
+                            <p>
+                                
+                                PMID, PMC, or DOI identifiers are available for source inspection.
+                                
+                            </p>
+                        </div>
+                        <div>
+                            <strong>Workbook notes</strong>
+                            <p>
+                                
+                                Pregnancy-specific values should be reviewed against the source paper when precision matters.
+                                
+                            </p>
+                        </div>
+                        
+                    </div>
+                </section>
+
+                <section class="source-links-block">
+                    <p class="eyebrow">Identifiers</p>
+                    <div class="external-grid">
+                        
+                        <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE267870" target="_blank"
+                            rel="noopener">GEO: GSE267870</a>
+                        
+                        
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/39294373/" target="_blank"
+                            rel="noopener">PMID: 39294373</a>
+                        
+                        
+                        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11485214/" target="_blank"
+                            rel="noopener">PMC: PMC11485214</a>
+                        
+                        
+                        <a href="https://doi.org/10.1038/s41586-024-07937-5" target="_blank" rel="noopener">DOI: 10.1038/s41586-024-07937-5</a>
+                        
+                    </div>
+                </section>
+            </aside>
+        </section>
+
+        <section class="record-section curation-section">
+            <div class="section-heading">
+                <p class="eyebrow">Workbook-reviewed fields</p>
+                <h2>Pregnancy, phenotype, and sample context</h2>
+            </div>
+            <div class="technical-grid">
+                <div class="field-group">
+                    <h3>Pregnancy timing and participants</h3>
+                    <dl class="field-list">
+                        <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
+                        <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
+                        <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
+                        <div><dt>GA at collection provided</dt><dd>Yes</dd></div>
+                        <div><dt>GA at collection weeks</dt><dd>4.5</dd></div>
+                        <div><dt>Offspring sex provided</dt><dd>Not reported</dd></div>
+                        <div><dt>Parity provided</dt><dd>Not reported</dd></div>
+                        <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
+                        <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
+                        <div><dt>Genetic ancestry provided</dt><dd>Yes</dd></div>
+                        <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
+                    </dl>
+                </div>
+
+                <div class="field-group">
+                    <h3>Phenotypes and complications</h3>
+                    <dl class="field-list">
+                        <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
+                        <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
+                        <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
+                        <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
+                        <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
+                        <div><dt>Main topic</dt><dd>This paper develops a temporal single-cell model of mouse gastrulation to map differentiation in embryonic and extraembryonic lineages, revealing that ExE specification involves early spatial and transcriptional bifurcation and that early BMP4 signaling from chorion progenitors is required for proper differentiation of uncommitted ectoplacental cone cells.</dd></div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <details class="evidence-ledger" id="evidence">
+            <summary>
+                <span>
+                    <span class="eyebrow">Workbook excerpt</span>
+                    <strong>Source evidence</strong>
+                </span>
+                <span class="evidence-counts">
+                    <span>0 evidence notes linked</span>
+                    <span>0 supplement repair findings</span>
+                </span>
+            </summary>
+
+            <div class="evidence-body">
+                
+                <p class="empty-evidence">No workbook evidence notes are linked to this GEO study yet.</p>
+                
+
+                
+            </div>
+        </details>
+
+        <nav class="entry-navigation">
+            
+            <a class="secondary-btn" href="/placenta-research-database/entry/512.html">Previous study</a>
+            
+            <a class="secondary-btn" href="/placenta-research-database/repository.html">Studies</a>
+            
+            <a class="secondary-btn" href="/placenta-research-database/entry/514.html">Next study</a>
+            
+        </nav>
+    </main>
+
+    <footer class="site-footer">
+        Placenta Study Atlas. GEO records with workbook evidence notes.
+    </footer>
+</body>
+
+</html>

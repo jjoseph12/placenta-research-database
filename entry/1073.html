@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSE75748 - Placenta Study Atlas</title>
+    <meta name="description" content="Snapshot and temporal scRNA-seq of progenitor cells to dissect human embryonic stem cells entry into endoderm progenitors">
+    <link rel="stylesheet" href="/placenta-research-database/static/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:wght@600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="topbar">
+        <a class="brand" href="/placenta-research-database/">Placenta Study Atlas</a>
+        <div class="nav-links">
+            <a href="/placenta-research-database/">Index</a>
+            <a class="active" href="/placenta-research-database/repository.html">Studies</a>
+        </div>
+    </nav>
+
+    <main class="detail-shell">
+        <a class="back-link" href="/placenta-research-database/repository.html">Back to studies</a>
+
+        <article class="detail-hero">
+            <div>
+                <p class="eyebrow">Study record</p>
+                <h1>GSE75748</h1>
+                <p>Snapshot and temporal scRNA-seq of progenitor cells to dissect human embryonic stem cells entry into endoderm progenitors</p>
+            </div>
+            <div class="source-actions" aria-label="Source links">
+                <a href="#evidence">Evidence notes</a>
+                
+                <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE75748"
+                    target="_blank" rel="noopener">Open GEO</a>
+                
+                
+                <a href="https://pubmed.ncbi.nlm.nih.gov/27534536/" target="_blank"
+                    rel="noopener">PubMed</a>
+                
+                
+                <a href="https://doi.org/10.1186/s13059-016-1033-x" target="_blank" rel="noopener">DOI</a>
+                
+            </div>
+        </article>
+
+        <section class="record-strip" aria-label="Study summary">
+            <div>
+                <span>Organism</span>
+                <strong>Homo sapiens</strong>
+            </div>
+            <div>
+                <span>Samples</span>
+                <strong>71</strong>
+            </div>
+            <div>
+                <span>Data type</span>
+                <strong>Expression profiling by high throughput sequencing</strong>
+            </div>
+            <div>
+                <span>Library strategy</span>
+                <strong>RNA-Seq</strong>
+            </div>
+            <div>
+                <span>Trimester</span>
+                <strong>Not reported</strong>
+            </div>
+            <div>
+                <span>Sample country</span>
+                <strong>Not reported</strong>
+            </div>
+        </section>
+
+        <section class="record-layout">
+            <section class="record-section geo-section">
+                <div class="section-heading">
+                    <p class="eyebrow">GEO record</p>
+                    <h2>Sample, assay, and methods</h2>
+                </div>
+                <div class="technical-grid">
+                    <div class="field-group sample-group wide-group">
+                        <h3>Sample characteristics</h3>
+                        <p class="long-text">passage: passage 30-35 | facs sorting: not sorted | facs sorting: FACS sorted by CXCR4+ | facs sorting: FACS sorted by CD31+/CD34+ | passage: passage 8-12 | facs sorting: FACS sorted by mCherry+ | facs sorting: FACS sorted by TROP2+</p>
+                    </div>
+
+                    <div class="field-group">
+                        <h3>Assay and platform</h3>
+                        <dl class="field-list">
+                            <div><dt>Extracted molecule</dt><dd>total RNA</dd></div>
+                            <div><dt>Library source</dt><dd>transcriptomic</dd></div>
+                            <div><dt>Library selection</dt><dd>cDNA</dd></div>
+                            <div><dt>Instrument model</dt><dd>Illumina HiSeq 2500</dd></div>
+                            <div><dt>Platform ID</dt><dd>GPL16791</dd></div>
+                            <div><dt>SRA Study ID</dt><dd>SRP067036</dd></div>
+                            <div><dt>BioProject ID</dt><dd>PRJNA305280</dd></div>
+                            <div><dt>File types</dt><dd>gz</dd></div>
+                        </dl>
+                    </div>
+
+                    <div class="field-group">
+                        <h3>Submission information</h3>
+                        <dl class="field-list">
+                            <div><dt>Organization</dt><dd>Morgridge Institute for Research</dd></div>
+                            <div><dt>Contact</dt><dd>Ning Leng</dd></div>
+                            <div><dt>Email</dt><dd>lengning1@gmail.com</dd></div>
+                            <div><dt>Submitter country</dt><dd>USA</dd></div>
+                            <div><dt>Hospital / center</dt><dd>Morgridge Institute for Research</dd></div>
+                            <div><dt>Submitted</dt><dd>12/07/2015</dd></div>
+                            <div><dt>Last updated</dt><dd>05/15/2019</dd></div>
+                            <div><dt>Supervisor / PI</dt><dd>James A. Thomson</dd></div>
+                            <div><dt>Supervisor email</dt><dd>jthomson@morgridge.org</dd></div>
+                        </dl>
+                    </div>
+
+                    
+                    <div class="field-group methods-group">
+                        <h3>Methods text</h3>
+                        
+                        <h4>Assay description</h4>
+                        <p class="long-text">Total 1018 single cells from snapshot progenitors and 758 single cells from time couse profiling. Matchd population bulk RNA-seq samples for both the progenitors snapshot (19 samples) and time course profiling (15 samples) also included in this submission. These data set are used to detect the transitioning phase from mesendoderm to definitive endoderm.</p>
+                        
+                        
+                        <h4>Extraction protocol</h4>
+                        <p class="long-text">Single-cell suspentions were loaded onto a medium size (10-17 μm) C1 Single-Cell Auto Prep IFC (Fluidigm), and cell-loading script was performed according to the manufacturer’s instructions. Full-length single-cell cDNA libraries generated by the SMARTer PCR cDNA Synthesis kit (Clontech) and the Advantage 2 PCR kit (Clontech) performed in the C1 system. For scRNA-seq, diluted single-cell cDNA libraries were fragmented and amplified using the Nextera XT DNA Sample Preparation Kit and the Nextera XT DNA Sample Preparation Index Kit (Illumina). Libraries were multiplexed at 24 libraries per lane, and single-end reads of 67-bp sequencing was performed on an Illumina HiSeq 2500 system. For bulk RNAseq, mRNA is isolated from purified 100 ng total RNA using oligo-dT beads. Isolated mRNA is fragmented in reverse transcription buffer with heat and then reverse-transcribed with SmartScribe reverse transcriptase using a random hexamer oligo.After reverse transcription, RNA is removed by RNaseA and RNaseH treatment. A partial Illumina 5′ adaptor is then ligated to the single stranded cDNA using T4 RNA ligase 1 and incubated overnight at 22°C. After purification, ligated cDNA is amplified by 18 cycles of PCR using oligos that contain full Illumina adaptors. Indexed cDNA libraries are pooled and sequenced on an Illumina HiSeq2500 with a single 51 bp read and a 10 bp index read.</p>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </section>
+
+            <aside class="record-aside" aria-label="Study source notes">
+                <section class="source-note">
+                    <p class="eyebrow">Source notes</p>
+                    <div class="provenance-list">
+                        <div>
+                            <strong>GEO metadata</strong>
+                            <p>Core study, assay, platform, contact, and submission fields come from GEO metadata.</p>
+                        </div>
+                        <div>
+                            <strong>Publication links</strong>
+                            <p>
+                                
+                                PMID, PMC, or DOI identifiers are available for source inspection.
+                                
+                            </p>
+                        </div>
+                        <div>
+                            <strong>Workbook notes</strong>
+                            <p>
+                                
+                                30 evidence notes are linked to this GEO study.
+                                
+                            </p>
+                        </div>
+                        
+                    </div>
+                </section>
+
+                <section class="source-links-block">
+                    <p class="eyebrow">Identifiers</p>
+                    <div class="external-grid">
+                        
+                        <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE75748" target="_blank"
+                            rel="noopener">GEO: GSE75748</a>
+                        
+                        
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/27534536/" target="_blank"
+                            rel="noopener">PMID: 27534536</a>
+                        
+                        
+                        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4989499/" target="_blank"
+                            rel="noopener">PMC: PMC4989499</a>
+                        
+                        
+                        <a href="https://doi.org/10.1186/s13059-016-1033-x" target="_blank" rel="noopener">DOI: 10.1186/s13059-016-1033-x</a>
+                        
+                    </div>
+                </section>
+            </aside>
+        </section>
+
+        <section class="record-section curation-section">
+            <div class="section-heading">
+                <p class="eyebrow">Workbook-reviewed fields</p>
+                <h2>Pregnancy, phenotype, and sample context</h2>
+            </div>
+            <div class="technical-grid">
+                <div class="field-group">
+                    <h3>Pregnancy timing and participants</h3>
+                    <dl class="field-list">
+                        <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
+                        <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
+                        <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
+                        <div><dt>GA at collection provided</dt><dd>Not reported</dd></div>
+                        <div><dt>GA at collection weeks</dt><dd>Not reported</dd></div>
+                        <div><dt>Offspring sex provided</dt><dd>Not reported</dd></div>
+                        <div><dt>Parity provided</dt><dd>Not reported</dd></div>
+                        <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
+                        <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
+                        <div><dt>Genetic ancestry provided</dt><dd>Not reported</dd></div>
+                        <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
+                    </dl>
+                </div>
+
+                <div class="field-group">
+                    <h3>Phenotypes and complications</h3>
+                    <dl class="field-list">
+                        <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
+                        <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
+                        <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
+                        <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
+                        <div><dt>Other phenotypes</dt><dd>Pluripotency, Differentiation</dd></div>
+                        <div><dt>Main topic</dt><dd>This paper analyzes the transcriptomes of human embryonic stem cell-derived lineage-specific progenitors by single-cell RNA-sequencing (scRNA-seq) to identify a definitive endoderm (DE) transcriptomic signature and novel regulators of the mesendoderm transition to DE.</dd></div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <details class="evidence-ledger" id="evidence">
+            <summary>
+                <span>
+                    <span class="eyebrow">Workbook excerpt</span>
+                    <strong>Source evidence</strong>
+                </span>
+                <span class="evidence-counts">
+                    <span>30 evidence notes linked</span>
+                    <span>0 supplement repair findings</span>
+                </span>
+            </summary>
+
+            <div class="evidence-body">
+                
+                <div class="evidence-list">
+                    
+                    <article class="evidence-row">
+                        <div class="evidence-field">
+                            <span>Workbook field</span>
+                            <strong>Main topic of the publication</strong>
+                        </div>
+                        <div class="evidence-answer">
+                            <span>Reviewed answer</span>
+                            <strong>The study analyzes the transcriptomes of human embryonic stem cell-derived lineage-specific progenitors using single-cell RNA-sequencing (scRNA-seq) to identify novel regulators of definitive endoderm differentiation.</strong>
+                        </div>
+                        <div class="evidence-source">
+                            <span>Source excerpt</span>
+                            <blockquote>Here, we analyze the transcriptomes of human embryonic stem cell-derived lineage-specific progenitors by single-cell RNA-sequencing (scRNA-seq).</blockquote>
+                            <footer>
+                            <span>Abstract</span>
+                            <span>Paper/supplement prompt</span>
+                            <span>high confidence</span>
+                            <span>PMC4989499</span>
+                            <span>10.1186/s13059-016-1033-x</span>
+                            </footer>
+                        </div>
+                    </article>
+                    
+                    <article class="evidence-row">
+                        <div class="evidence-field">
+                            <span>Workbook field</span>
+                            <strong>Sampling timing during pregnancy</strong>
+                        </div>
+                        <div class="evidence-answer">
+                            <span>Reviewed answer</span>
+                            <strong>Not Provided</strong>
+                        </div>
+                        <div class="evidence-source">
+                            <span>Source excerpt</span>
+                            <blockquote>No direct quote recorded for this answer.</blockquote>
+                            <footer>
+                            
+                            <span>Paper/supplement prompt</span>
+                            <span>high confidence</span>
+                            <span>PMC4989499</span>
+                            <span>10.1186/s13059-016-1033-x</span>
+                            </footer>
+                        </div>
+                    </article>
+                    
+                    <article class="evidence-row">
+                        <div class="evidence-field">
+                            <span>Workbook field</span>
+                            <strong>Samples collected at single pregnancy time point (yes/no)</strong>
+                        </div>
+                        <div class="evidence-answer">
+                            <span>Reviewed answer</span>
+                            <strong>Not reported</strong>
+                        </div>
+                        <div class="evidence-source">
+                            <span>Source excerpt</span>
+                            <blockquote>No direct quote recorded for this answer.</blockquote>
+                            <footer>
+                            
+                            <span>Paper/supplement prompt</span>
+                            <span>high confidence</span>
+                            <span>PMC4989499</span>
+                            <span>10.1186/s13059-016-1033-x</span>
+                            </footer>
+                        </div>
+                    </article>
+                    
+                    <article class="evidence-row">
+                        <div class="evidence-field">
+                            <span>Workbook field</span>
+                            <strong>Gestational Age at delivery provided (yes/no)</strong>
+                        </div>
+                        <div class="evidence-answer">
+                            <span>Reviewed answer</span>
+                            <strong>Not reported</strong>
+                        </div>
+                        <div class="evidence-source">
+                            <span>Source excerpt</span>
+                            <blockquote>No direct quote recorded for this answer.</blockquote>
+                            <footer>
+                            
+                            <span>Paper/supplement prompt</span>
+                            <span>high confidence</span>
+                            <span>PMC4989499</span>
+                            <span>10.1186/s13059-016-1033-x</span>
+                            </footer>
+                        </div>
+                    </article>
+                    
+                    <article class="evidence-row">
+                        <div class="evidence-field">
+                            <span>Workbook field</span>
+                            <strong>Gestational Age at sample collection provided (yes/no)</strong>
+                        </div>
+                        <div class="evidence-answer">
+                            <span>Reviewed answer</span>
+                            <strong>Not reported</strong>
+                        </div>
+                        <div class="evidence-source">
+                            <span>Source excerpt</span>
+                            <blockquote>No direct quote recorded for this answer.</blockquote>
+                            <footer>
+                            
+                            <span>Paper/supplement prompt</span>
+                            <span>high confidence</span>
+                            <span>PMC4989499</span>
+                            <span>10.1186/s13059-016-1033-x</span>
+                            </footer>
+                        </div>
+                    </article>
+                    
+                    <article class="evidence-row">
+                        <div class="evidence-field">
+                            <span>Workbook field</span>
+                            <strong>Birthweight of offspring provided (yes/no)</strong>
+                        </div>
+                        <div class="evidence-answer">
+                            <span>Reviewed answer</span>
+                            <strong>Not reported</strong>
+                        </div>
+                        <div class="evidence-source">
+                            <span>Source excerpt</span>
+                            <blockquote>No direct quote recorded for this answer.</blockquote>
+                            <footer>
+                            
+                            <span>Paper/supplement prompt</span>
+                            <span>high confidence</span>
+                            <span>PMC4989499</span>
+                            <span>10.1186/s13059-016-1033-x</span>
+                            </footer>
+                        </div>
+                    </article>
+                    
+                    <article class="evidence-row">
+                        <div class="evidence-field">
+                            <span>Workbook field</span>
+                            <strong>Samples from pregnancy complications collected</strong>
+                        </div>
+                        <div class="evidence-answer">
+                            <span>Reviewed answer</span>
+                            <strong>Not reported</strong>
+                        </div>
+                        <div class="evidence-source">
+                            <span>Source excerpt</span>
+                            <blockquote>No direct quote recorded for this answer.</blockquote>
+                            <footer>
+                            
+                            <span>Paper/supplement prompt</span>
+                            <span>high confidence</span>
+                            <span>PMC4989499</span>
+                            <span>10.1186/s13059-016-1033-x</span>
+                            </footer>
+                        </div>
+                    </article>
+                    
+                    <article class="evidence-row">
+                        <div class="evidence-field">
+                            <span>Workbook field</span>
+                            <strong>Pregnancy complications in data set (list)</strong>
+                        </div>
+                        <div class="evidence-answer">
+                            <span>Reviewed answer</span>
+                            <strong>Not reported</strong>
+                        </div>
+                        <div class="evidence-source">
+                            <span>Source excerpt</span>
+                            <blockquote>No direct quote recorded for this answer.</blockquote>
+                            <footer>
+                            
+                            <span>Paper/supplement prompt</span>
+                            <span>high confidence</span>
+                            <span>PMC4989499</span>
+                            <span>10.1186/s13059-016-1033-x</span>
+                            </footer>
+                        </div>
+                    </article>
+                    
+                    <article class="evidence-row">
+                        <div class="evidence-field">
+                            <span>Workbook field</span>
+                            <strong>Fetal complications listed (yes/no)</strong>
+                        </div>
+                        <div class="evidence-answer">
+                            <span>Reviewed answer</span>
+                            <strong>Not reported</strong>
+                        </div>
+                        <div class="evidence-source">
+                            <span>Source excerpt</span>
+                            <blockquote>No direct quote recorded for this answer.</blockquote>
+                            <footer>
+                            
+                            <span>Paper/supplement prompt</span>
+                            <span>high confidence</span>
+                            <span>PMC4989499</span>
+                            <span>10.1186/s13059-016-1033-x</span>
+                            </footer>
+                        </div>
+                    </article>
+                    
+                    <article class="evidence-row">
+                        <div class="evidence-field">
+                            <span>Workbook field</span>
+                            <strong>Fetal complications in data set (list)</strong>
+                        </div>
+                        <div class="evidence-answer">
+                            <span>Reviewed answer</span>
+                            <strong>Not reported</strong>
+                        </div>
+                        <div class="evidence-source">
+                            <span>Source excerpt</span>
+                            <blockquote>No direct quote recorded for this answer.</blockquote>
+                            <footer>
+                            
+                            <span>Paper/supplement prompt</span>
+                            <span>high confidence</span>
+                            <span>PMC4989499</span>
+                            <span>10.1186/s13059-016-1033-x</span>
+                            </footer>
+                        </div>
+                    </article>
+                    
+                </div>
+                
+
+                
+            </div>
+        </details>
+
+        <nav class="entry-navigation">
+            
+            <a class="secondary-btn" href="/placenta-research-database/entry/1072.html">Previous study</a>
+            
+            <a class="secondary-btn" href="/placenta-research-database/repository.html">Studies</a>
+            
+            <a class="secondary-btn" href="/placenta-research-database/entry/1074.html">Next study</a>
+            
+        </nav>
+    </main>
+
+    <footer class="site-footer">
+        Placenta Study Atlas. GEO records with workbook evidence notes.
+    </footer>
+</body>
+
+</html>
