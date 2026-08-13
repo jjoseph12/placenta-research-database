@@ -21,26 +21,19 @@
     <main class="page-shell">
         <section class="atlas-hero">
             <div class="atlas-hero-copy">
-                <p class="eyebrow">GEO placental studies</p>
+                <p class="eyebrow">GEO study index</p>
                 <h1>Placenta Study Atlas</h1>
                 <p class="hero-copy">
-                    Browse placental gene expression studies with the fields reviewers
-                    usually need close at hand: pregnancy timing, sample context,
-                    assay details, publication links, and the notes from the review
-                    workbook.
+                    Search placental studies by organism, pregnancy timing, assay,
+                    phenotype, or publication.
                 </p>
             </div>
             <form action="/placenta-research-database/repository.html" method="GET" class="atlas-search">
-                <label for="atlas-search-input">Find a study or field</label>
+                <label for="atlas-search-input">Search studies</label>
                 <div class="search-row">
                     <input id="atlas-search-input" class="search-input" type="search" name="q"
                         placeholder="GSE ID, title, organism, assay, phenotype">
                     <button class="primary-btn" type="submit">Find</button>
-                </div>
-                <div class="quick-links">
-                    <a href="/placenta-research-database/repository.html">All indexed studies</a>
-                    <a href="/placenta-research-database/repository.html?organism=Homo+sapiens">Human placenta studies</a>
-                    <a href="/placenta-research-database/repository.html?trimester=Term">Term placenta studies</a>
                 </div>
             </form>
         </section>
@@ -66,9 +59,6 @@
 
     </main>
 
-    <footer class="site-footer">
-        Placenta Study Atlas. GEO records with workbook evidence notes.
-    </footer>
 </body>
 
 </html>
