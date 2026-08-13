@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ entry.gse_id }} - Placenta Study Atlas</title>
     <meta name="description" content="{{ entry.title }}">
-    <link rel="stylesheet" href="{{ site_base|default('/') }}static/style.css?v=20260813-6">
+    <link rel="stylesheet" href="{{ site_base|default('/') }}static/style.css?v=20260813-8">
 </head>
 
 <body>
@@ -25,12 +25,6 @@
             <div>
                 <p class="detail-accession">{{ entry.gse_id|display("Study record") }}</p>
                 <h1>{{ entry.title|display }}</h1>
-            </div>
-            <div class="source-actions" aria-label="Source links">
-                {% if entry.gse_id %}
-                <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc={{ entry.gse_id }}"
-                    target="_blank" rel="noopener">Open GEO</a>
-                {% endif %}
             </div>
         </article>
 
