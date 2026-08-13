@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Index - Placenta Study Atlas</title>
     <meta name="description" content="GEO placental studies with workbook evidence notes and source links">
-    <link rel="stylesheet" href="{{ site_base|default('/') }}static/style.css?v=20260813-4">
+    <link rel="stylesheet" href="{{ site_base|default('/') }}static/style.css?v=20260813-5">
 </head>
 
 <body data-site-base="{{ site_base|default('/') }}" data-page-suffix="{{ page_suffix|default('') }}">
@@ -212,7 +212,6 @@
             <div class="results-columns" aria-hidden="true">
                 <span>Study</span>
                 <span>Assay details</span>
-                <span>Sources</span>
             </div>
 
             <div class="study-list" aria-label="Study results">
@@ -241,24 +240,6 @@
                         </div>
                     </dl>
 
-                    <div class="study-result-trail">
-                        <div class="evidence-cell">
-                            {% if entry.evidence_count %}
-                            <a href="{{ site_base|default('/') }}entry/{{ entry.object_id }}{{ page_suffix|default('') }}#evidence">{{ entry.evidence_count }} evidence notes</a>
-                            {% if entry.repair_count %}
-                            <span>{{ entry.repair_count }} supplement repair</span>
-                            {% endif %}
-                            {% else %}
-                            <span>Evidence not linked</span>
-                            {% endif %}
-                        </div>
-                        <div class="link-actions">
-                            <a href="{{ site_base|default('/') }}entry/{{ entry.object_id }}{{ page_suffix|default('') }}">Record</a>
-                            {% if entry.evidence_count %}
-                            <a href="{{ site_base|default('/') }}entry/{{ entry.object_id }}{{ page_suffix|default('') }}#evidence">Evidence</a>
-                            {% endif %}
-                        </div>
-                    </div>
                 </article>
                 {% else %}
                 <div class="empty-state">
@@ -292,7 +273,7 @@
     </main>
 
     {% if static_site|default(false) %}
-    <script src="{{ site_base|default('/') }}static/repository.js?v=20260813-2" defer></script>
+    <script src="{{ site_base|default('/') }}static/repository.js?v=20260813-3" defer></script>
     {% endif %}
 </body>
 

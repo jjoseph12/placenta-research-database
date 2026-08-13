@@ -519,8 +519,8 @@ button.primary-btn {
 
 .results-columns {
     display: grid;
-    grid-template-columns: minmax(0, 1.45fr) minmax(270px, 0.9fr) minmax(145px, 0.42fr);
-    gap: 26px;
+    grid-template-columns: minmax(0, 1.5fr) minmax(300px, 0.9fr);
+    gap: 34px;
     padding: 15px 14px 8px;
     color: var(--faint);
     font-size: 11px;
@@ -533,8 +533,8 @@ button.primary-btn {
 
 .study-result {
     display: grid;
-    grid-template-columns: minmax(0, 1.45fr) minmax(270px, 0.9fr) minmax(145px, 0.42fr);
-    gap: 26px;
+    grid-template-columns: minmax(0, 1.5fr) minmax(300px, 0.9fr);
+    gap: 34px;
     align-items: start;
     padding: 18px 14px;
     border-bottom: 1px solid var(--line-soft);
@@ -544,8 +544,7 @@ button.primary-btn {
     background: #fafcfc;
 }
 
-.study-result-main,
-.study-result-trail {
+.study-result-main {
     min-width: 0;
 }
 
@@ -600,40 +599,6 @@ button.primary-btn {
     font-size: 12px;
     line-height: 1.4;
     overflow-wrap: anywhere;
-}
-
-.study-result-trail {
-    display: grid;
-    gap: 10px;
-    justify-items: start;
-}
-
-.evidence-cell a,
-.evidence-cell span {
-    display: block;
-    color: var(--muted);
-    font-size: 11px;
-    font-weight: 600;
-}
-
-.evidence-cell a {
-    color: var(--brand);
-}
-
-.evidence-cell span + span {
-    margin-top: 3px;
-}
-
-.link-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.link-actions a {
-    color: var(--brand);
-    font-size: 12px;
-    font-weight: 650;
 }
 
 .empty-state {
@@ -1111,15 +1076,6 @@ button.primary-btn {
         grid-template-columns: minmax(0, 1.3fr) minmax(230px, 0.9fr);
     }
 
-    .results-columns span:last-child,
-    .study-result-trail {
-        grid-column: 2;
-    }
-
-    .results-columns span:last-child {
-        display: none;
-    }
-
     .record-strip {
         grid-template-columns: repeat(3, minmax(0, 1fr));
         row-gap: 18px;
@@ -1312,13 +1268,6 @@ button.primary-btn {
         grid-template-columns: 1fr;
         gap: 14px;
         padding: 17px 4px;
-    }
-
-    .study-result-trail {
-        grid-column: auto;
-        grid-template-columns: minmax(0, 1fr) auto;
-        align-items: end;
-        width: 100%;
     }
 
     .study-result-fields div {

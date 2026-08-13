@@ -87,13 +87,6 @@
         if (record.sample_size) meta.push(`${escapeHtml(record.sample_size)} samples`);
         if (record.pregnancy_trimester) meta.push(escapeHtml(record.pregnancy_trimester));
 
-        const evidence = record.evidence_count
-            ? `<a href="${entryUrl(record, "#evidence")}">${record.evidence_count} evidence notes</a>`
-                + (record.repair_count
-                    ? `<span>${record.repair_count} supplement repair</span>`
-                    : "")
-            : "<span>Evidence not linked</span>";
-
         return `
             <article class="study-result">
                 <div class="study-result-main">
@@ -106,15 +99,6 @@
                     <div><dt>Strategy</dt><dd>${escapeHtml(display(record.library_strategy))}</dd></div>
                     <div><dt>Sample country</dt><dd>${escapeHtml(display(record.sample_country))}</dd></div>
                 </dl>
-                <div class="study-result-trail">
-                    <div class="evidence-cell">${evidence}</div>
-                    <div class="link-actions">
-                        <a href="${entryUrl(record)}">Record</a>
-                        ${record.evidence_count
-                            ? `<a href="${entryUrl(record, "#evidence")}">Evidence</a>`
-                            : ""}
-                    </div>
-                </div>
             </article>`;
     };
 
