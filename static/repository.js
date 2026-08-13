@@ -8,12 +8,7 @@
         "library_strategy",
         "trimester",
         "country",
-        "evidence",
     ];
-    const filterLabels = {
-        linked: "Workbook evidence linked",
-        supplement_repair: "Supplement repair finding",
-    };
 
     const escapeHtml = (value) => String(value ?? "")
         .replaceAll("&", "&amp;")
@@ -81,13 +76,6 @@
     const matchesFilters = (record, filters) => {
         for (const [name, selected] of Object.entries(filters)) {
             if (!selected.length) continue;
-            if (name === "evidence") {
-                const matchesEvidence = selected.some((value) =>
-                    (value === "linked" && record.evidence_count > 0)
-                    || (value === "supplement_repair" && record.repair_count > 0));
-                if (!matchesEvidence) return false;
-                continue;
-            }
             const values = record.filters[name] || [];
             if (!selected.some((value) => values.includes(value))) return false;
         }
@@ -136,14 +124,14 @@
         const heading = document.querySelector(".filter-heading em");
         heading.textContent = count
             ? `${count} selected`
-            : "Organism, trimester, assay, country, evidence";
+            : "Organism, trimester, assay, country";
 
         document.querySelector("#clearFilters").hidden = !count && !query;
         document.querySelector("#startOver").hidden = !count && !query;
 
         const chips = document.querySelector("#activeChips");
         chips.innerHTML = selected
-            .map((value) => `<span>${escapeHtml(filterLabels[value] || value)}</span>`)
+            .map((value) => `<span>${escapeHtml(value)}</span>`)
             .join("");
         chips.hidden = !selected.length;
     };

@@ -36,7 +36,6 @@
                     
                     
                     
-                    
                     <button class="primary-btn" type="submit">Find</button>
                 </form>
             </div>
@@ -47,7 +46,7 @@
                     <span>Narrow studies</span>
                     <em>
                         
-                        Organism, trimester, assay, country, evidence
+                        Organism, trimester, assay, country
                         
                     </em>
                 </div>
@@ -58,25 +57,6 @@
 
                 <form id="repositoryFilters" action="/placenta-research-database/repository.html" method="GET">
                     <input type="hidden" name="q" value="">
-
-                    <details class="filter-section" open>
-                        <summary>Workbook evidence</summary>
-                        
-                        <label>
-                            <input type="checkbox" name="evidence" value="linked"
-                                >
-                            <span>Workbook evidence linked</span>
-                            <em>1194</em>
-                        </label>
-                        
-                        <label>
-                            <input type="checkbox" name="evidence" value="supplement_repair"
-                                >
-                            <span>Supplement repair finding</span>
-                            <em>6</em>
-                        </label>
-                        
-                    </details>
 
                     <details class="filter-section">
                         <summary>Organism</summary>
@@ -874,19 +854,6 @@
                 </div>
                 <a class="toolbar-link" id="downloadCsv" href="#">Download CSV</a>
                 <div class="active-chips" id="activeChips" hidden>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                 </div>
             </div>
 
@@ -1885,7 +1852,7 @@
     </main>
 
     
-    <script src="/placenta-research-database/static/repository.js" defer></script>
+    <script src="/placenta-research-database/static/repository.js?v=20260813-2" defer></script>
     
 </body>
 
