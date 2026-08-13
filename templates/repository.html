@@ -17,7 +17,6 @@
     {%- for value in selected_filters.library_strategy %}&library_strategy={{ value|urlencode }}{% endfor -%}
     {%- for value in selected_filters.trimester %}&trimester={{ value|urlencode }}{% endfor -%}
     {%- for value in selected_filters.country %}&country={{ value|urlencode }}{% endfor -%}
-    {%- for value in selected_filters.evidence %}&evidence={{ value|urlencode }}{% endfor -%}
     {%- endmacro %}
     {% macro export_href() -%}
     /repository/export.csv?q={{ query|urlencode }}
@@ -26,7 +25,6 @@
     {%- for value in selected_filters.library_strategy %}&library_strategy={{ value|urlencode }}{% endfor -%}
     {%- for value in selected_filters.trimester %}&trimester={{ value|urlencode }}{% endfor -%}
     {%- for value in selected_filters.country %}&country={{ value|urlencode }}{% endfor -%}
-    {%- for value in selected_filters.evidence %}&evidence={{ value|urlencode }}{% endfor -%}
     {%- endmacro %}
 
     <nav class="topbar">
@@ -62,9 +60,6 @@
                     {% for value in selected_filters.country %}
                     <input type="hidden" name="country" value="{{ value }}">
                     {% endfor %}
-                    {% for value in selected_filters.evidence %}
-                    <input type="hidden" name="evidence" value="{{ value }}">
-                    {% endfor %}
                     <button class="primary-btn" type="submit">Find</button>
                 </form>
             </div>
@@ -77,7 +72,7 @@
                         {% if active_filter_count %}
                         {{ active_filter_count }} selected
                         {% else %}
-                        Organism, trimester, assay, country, evidence
+                        Organism, trimester, assay, country
                         {% endif %}
                     </em>
                 </div>
@@ -88,18 +83,6 @@
 
                 <form id="repositoryFilters" action="{{ site_base|default('/') }}repository{{ page_suffix|default('') }}" method="GET">
                     <input type="hidden" name="q" value="{{ query }}">
-
-                    <details class="filter-section" open>
-                        <summary>Workbook evidence</summary>
-                        {% for item in filter_options.evidence %}
-                        <label>
-                            <input type="checkbox" name="evidence" value="{{ item.value }}"
-                                {% if item.value in selected_filters.evidence %}checked{% endif %}>
-                            <span>{{ item.label }}</span>
-                            <em>{{ item.count }}</em>
-                        </label>
-                        {% endfor %}
-                    </details>
 
                     <details class="filter-section">
                         <summary>Organism</summary>
@@ -219,17 +202,11 @@
                 <a class="toolbar-link" id="downloadCsv" href="{% if static_site|default(false) %}#{% else %}{{ export_href() }}{% endif %}">Download CSV</a>
                 <div class="active-chips" id="activeChips"{% if not active_filter_count %} hidden{% endif %}>
                     {% for group, values in selected_filters.items() %}
+                    {% if group != "evidence" %}
                     {% for value in values %}
-                    <span>
-                        {% if group == "evidence" and value == "linked" %}
-                        Workbook evidence linked
-                        {% elif group == "evidence" and value == "supplement_repair" %}
-                        Supplement repair finding
-                        {% else %}
-                        {{ value }}
-                        {% endif %}
-                    </span>
+                    <span>{{ value }}</span>
                     {% endfor %}
+                    {% endif %}
                     {% endfor %}
                 </div>
             </div>
@@ -317,7 +294,7 @@
     </main>
 
     {% if static_site|default(false) %}
-    <script src="{{ site_base|default('/') }}static/repository.js" defer></script>
+    <script src="{{ site_base|default('/') }}static/repository.js?v=20260813-2" defer></script>
     {% endif %}
 </body>
 
