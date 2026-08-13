@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ entry.gse_id }} - Placenta Study Atlas</title>
     <meta name="description" content="{{ entry.title }}">
-    <link rel="stylesheet" href="{{ site_base|default('/') }}static/style.css?v=20260813-4">
+    <link rel="stylesheet" href="{{ site_base|default('/') }}static/style.css?v=20260813-6">
 </head>
 
 <body>
@@ -282,13 +282,41 @@
             </aside>
         </section>
 
-        <nav class="entry-navigation">
-            {% if entry.object_id > 1 %}
-            <a class="secondary-btn" href="{{ site_base|default('/') }}entry/{{ entry.object_id - 1 }}{{ page_suffix|default('') }}">Previous study</a>
+        {% set current_record = entry.object_id %}
+        {% set final_record = total_entries|default(entry.object_id) %}
+        <nav class="entry-navigation" aria-label="Study record pages">
+            {% if current_record > 1 %}
+            <a class="entry-page-link entry-page-arrow"
+                href="{{ site_base|default('/') }}entry/{{ current_record - 1 }}{{ page_suffix|default('') }}"
+                aria-label="Previous record" title="Previous record">&lsaquo;</a>
             {% endif %}
-            <a class="secondary-btn" href="{{ site_base|default('/') }}repository{{ page_suffix|default('') }}">Studies</a>
-            {% if entry.object_id < total_entries|default(entry.object_id + 1) %}
-            <a class="secondary-btn" href="{{ site_base|default('/') }}entry/{{ entry.object_id + 1 }}{{ page_suffix|default('') }}">Next study</a>
+
+            {% if current_record > 3 %}
+            <a class="entry-page-link" href="{{ site_base|default('/') }}entry/1{{ page_suffix|default('') }}">1</a>
+            {% if current_record > 4 %}<span class="entry-page-ellipsis" aria-hidden="true">...</span>{% endif %}
+            {% endif %}
+
+            {% for record_number in range(current_record - 2, current_record + 3) %}
+            {% if record_number >= 1 and record_number <= final_record %}
+            {% if record_number == current_record %}
+            <span class="entry-page-link is-current" aria-current="page">{{ record_number }}</span>
+            {% else %}
+            <a class="entry-page-link"
+                href="{{ site_base|default('/') }}entry/{{ record_number }}{{ page_suffix|default('') }}">{{ record_number }}</a>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+
+            {% if current_record < final_record - 2 %}
+            {% if current_record < final_record - 3 %}<span class="entry-page-ellipsis" aria-hidden="true">...</span>{% endif %}
+            <a class="entry-page-link"
+                href="{{ site_base|default('/') }}entry/{{ final_record }}{{ page_suffix|default('') }}">{{ final_record }}</a>
+            {% endif %}
+
+            {% if current_record < final_record %}
+            <a class="entry-page-link entry-page-arrow"
+                href="{{ site_base|default('/') }}entry/{{ current_record + 1 }}{{ page_suffix|default('') }}"
+                aria-label="Next record" title="Next record">&rsaquo;</a>
             {% endif %}
         </nav>
     </main>
