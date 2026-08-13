@@ -7,9 +7,6 @@
     <title>Study Index - Placenta Study Atlas</title>
     <meta name="description" content="GEO placental studies with workbook evidence notes and source links">
     <link rel="stylesheet" href="{{ site_base|default('/') }}static/style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:wght@600;700&display=swap"
-        rel="stylesheet">
 </head>
 
 <body data-site-base="{{ site_base|default('/') }}" data-page-suffix="{{ page_suffix|default('') }}">
@@ -235,6 +232,12 @@
                     {% endfor %}
                     {% endfor %}
                 </div>
+            </div>
+
+            <div class="results-columns" aria-hidden="true">
+                <span>Study</span>
+                <span>Assay details</span>
+                <span>Sources</span>
             </div>
 
             <div class="study-list" aria-label="Study results">
