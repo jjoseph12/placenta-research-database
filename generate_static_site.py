@@ -61,6 +61,8 @@ def _normalize_base_path(value):
 
 def _write_text(path, content):
     path.parent.mkdir(parents=True, exist_ok=True)
+    if path.suffix == ".html":
+        content = "\n".join(line.rstrip() for line in content.splitlines()) + "\n"
     path.write_text(content, encoding="utf-8")
 
 
