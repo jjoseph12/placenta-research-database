@@ -201,13 +201,11 @@
                 </div>
                 <a class="toolbar-link" id="downloadCsv" href="{% if static_site|default(false) %}#{% else %}{{ export_href() }}{% endif %}">Download CSV</a>
                 <div class="active-chips" id="activeChips"{% if not active_filter_count %} hidden{% endif %}>
-                    {% for group, values in selected_filters.items() %}
-                    {% if group != "evidence" %}
-                    {% for value in values %}
+                    {%- for group, values in selected_filters.items() if group != "evidence" %}
+                    {%- for value in values %}
                     <span>{{ value }}</span>
-                    {% endfor %}
-                    {% endif %}
-                    {% endfor %}
+                    {%- endfor %}
+                    {%- endfor %}
                 </div>
             </div>
 
