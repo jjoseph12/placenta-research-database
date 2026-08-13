@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GSE199024 - Placenta Study Atlas</title>
     <meta name="description" content="The Fgf/Erf/NCoR1/2 repressive axis controls trophoblast cell fate">
-    <link rel="stylesheet" href="/placenta-research-database/static/style.css">
+    <link rel="stylesheet" href="/placenta-research-database/static/style.css?v=20260813-4">
 </head>
 
 <body>
@@ -27,18 +27,10 @@
                 <h1>The Fgf/Erf/NCoR1/2 repressive axis controls trophoblast cell fate</h1>
             </div>
             <div class="source-actions" aria-label="Source links">
-                <a href="#evidence">Evidence notes</a>
-                
+
                 <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE199024"
                     target="_blank" rel="noopener">Open GEO</a>
-                
-                
-                <a href="https://pubmed.ncbi.nlm.nih.gov/37137875/" target="_blank"
-                    rel="noopener">PubMed</a>
-                
-                
-                <a href="https://doi.org/10.1038/s41467-023-38101-8" target="_blank" rel="noopener">DOI</a>
-                
+
             </div>
         </article>
 
@@ -70,408 +62,470 @@
         </section>
 
         <section class="record-layout">
-            <section class="record-section geo-section">
-                <div class="section-heading">
-                    <p class="eyebrow">GEO record</p>
-                    <h2>Sample, assay, and methods</h2>
-                </div>
-                <div class="technical-grid">
-                    <div class="field-group sample-group wide-group">
-                        <h3>Sample characteristics</h3>
-                        <p class="long-text">cell type: mouse trophoblast stem cells (mTSCs) | differentiation state: 24h differentiation with PD (PD) | modification: Tbl1xKO-empty_vector | parental cell line: TSGFP | differentiation state: self-renewal (SR) | modification: ErfKO | parental cell line: TSGFP-ErfV5 | modification: Tbl1xKO-Tbl1x_rescue | modification: ErfKO-Erf_rescue | modification: Tbl1xKO | modification: WT | modification: shControl | modification: shErf | modification: shTbl1x | differentiation state: 25h differentiation with PD (PD) | chip antibody: none | chip antibody: anti-H3K4me3 (Diagenode/C15410003) | chip antibody: Anti-H3K27ac (Diagenode/C15410196) | chip antibody: anti-Ncor2 (Abcam/ ab5802) | chip antibody: anti-Ncor1 (Abcam/ab3482) | chip antibody: anti-Tbl1x (Proteintech/13540-1-AP) | chip antibody: anti-V5 Agarose Affinity Gel (Sigma-Aldrich/ A7345) | cell type: trophoblast stem cells (mTSCs) | differentiation state: day0 | differentiation state: day2 | differentiation state: day4 | differentiation state: day6 | differentiation state: 3h differentiation with PD (PD3)</p>
-                    </div>
+            <div class="record-content">
+                <details class="record-panel" id="study-details">
+                    <summary>
+                        <span>
+                            <strong>Study details</strong>
+                            <small>Samples, assay, platform, and submission</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body">
+                        <section class="field-group sample-group">
+                            <h3>Sample characteristics</h3>
 
-                    <div class="field-group">
-                        <h3>Assay and platform</h3>
-                        <dl class="field-list">
-                            <div><dt>Extracted molecule</dt><dd>total RNA, genomic DNA</dd></div>
-                            <div><dt>Library source</dt><dd>transcriptomic, genomic</dd></div>
-                            <div><dt>Library selection</dt><dd>cDNA, ChIP</dd></div>
-                            <div><dt>Instrument model</dt><dd>Illumina HiSeq 2500, Illumina NovaSeq 6000</dd></div>
-                            <div><dt>Platform ID</dt><dd>GPL17021, GPL24247</dd></div>
-                            <div><dt>SRA Study ID</dt><dd>Not reported</dd></div>
-                            <div><dt>BioProject ID</dt><dd>PRJNA818025</dd></div>
-                            <div><dt>File types</dt><dd>gz</dd></div>
-                        </dl>
-                    </div>
+                            <ul class="characteristic-list">
 
-                    <div class="field-group">
-                        <h3>Submission information</h3>
-                        <dl class="field-list">
-                            <div><dt>Organization</dt><dd>Medical University of Vienna</dd></div>
-                            <div><dt>Contact</dt><dd>Andreas Lackner</dd></div>
-                            <div><dt>Email</dt><dd>Not reported</dd></div>
-                            <div><dt>Submitter country</dt><dd>Austria</dd></div>
-                            <div><dt>Hospital / center</dt><dd>Medical University of Vienna</dd></div>
-                            <div><dt>Submitted</dt><dd>03/20/2022</dd></div>
-                            <div><dt>Last updated</dt><dd>07/28/2023</dd></div>
-                            <div><dt>Supervisor / PI</dt><dd>Latos Paulina A.</dd></div>
-                            <div><dt>Supervisor email</dt><dd>paulina.latos@meduniwien.ac.at</dd></div>
-                        </dl>
-                    </div>
+                                <li>cell type: mouse trophoblast stem cells (mTSCs)</li>
 
-                    
-                    <div class="field-group methods-group">
-                        <h3>Methods text</h3>
-                        
-                        <h4>Assay description</h4>
-                        <p class="long-text">3&#39;RNAseq of Erf and Tbl1x depleted (shRNA, CRISPR/Cas9 KO) and respective rescue TSCs in self-renewal conditions and differentiated for 24h by MEKi treatment (PD) or for 6 days by Fgf withdrawal (WD). ChIPseq of histone modifications and Erf/Ncor1/2 subunits in WT and KO cell lines including rescues in self-renewal conditions and differentiated for 24h by MEKi treatment (PD).</p>
-                        
-                        
-                        <h4>Extraction protocol</h4>
-                        <p class="long-text">Quantseq libraries were prepared with 250 ng RNA using QuantSEQ 3’ mRNA-Seq Library Prep Kit FWD for Illumina (015.96, Lexogen) according to manufacturer’s recommendations. The libraries were pooled and sequenced with a 50-base-pair single-end protocol on an Illumina HiSeq 2500 sequencer. RNAseq. RNA was extracted using RNeasy mini kit (Qiagen) and treated with DNaseI (Qiagen). RNA-seq (Quantseq)
+                                <li>differentiation state: 24h differentiation with PD (PD)</li>
+
+                                <li>modification: Tbl1xKO-empty_vector</li>
+
+                                <li>parental cell line: TSGFP</li>
+
+                                <li>differentiation state: self-renewal (SR)</li>
+
+                                <li>modification: ErfKO</li>
+
+                                <li>parental cell line: TSGFP-ErfV5</li>
+
+                                <li>modification: Tbl1xKO-Tbl1x_rescue</li>
+
+                                <li>modification: ErfKO-Erf_rescue</li>
+
+                                <li>modification: Tbl1xKO</li>
+
+                                <li>modification: WT</li>
+
+                                <li>modification: shControl</li>
+
+                                <li>modification: shErf</li>
+
+                                <li>modification: shTbl1x</li>
+
+                                <li>differentiation state: 25h differentiation with PD (PD)</li>
+
+                                <li>chip antibody: none</li>
+
+                                <li>chip antibody: anti-H3K4me3 (Diagenode/C15410003)</li>
+
+                                <li>chip antibody: Anti-H3K27ac (Diagenode/C15410196)</li>
+
+                                <li>chip antibody: anti-Ncor2 (Abcam/ ab5802)</li>
+
+                                <li>chip antibody: anti-Ncor1 (Abcam/ab3482)</li>
+
+                                <li>chip antibody: anti-Tbl1x (Proteintech/13540-1-AP)</li>
+
+                                <li>chip antibody: anti-V5 Agarose Affinity Gel (Sigma-Aldrich/ A7345)</li>
+
+                                <li>cell type: trophoblast stem cells (mTSCs)</li>
+
+                                <li>differentiation state: day0</li>
+
+                                <li>differentiation state: day2</li>
+
+                                <li>differentiation state: day4</li>
+
+                                <li>differentiation state: day6</li>
+
+                                <li>differentiation state: 3h differentiation with PD (PD3)</li>
+
+                            </ul>
+
+                        </section>
+
+                        <div class="panel-grid">
+                            <section class="field-group">
+                                <h3>Assay and platform</h3>
+                                <dl class="field-list">
+                                    <div><dt>Extracted molecule</dt><dd>total RNA, genomic DNA</dd></div>
+                                    <div><dt>Library source</dt><dd>transcriptomic, genomic</dd></div>
+                                    <div><dt>Library selection</dt><dd>cDNA, ChIP</dd></div>
+                                    <div><dt>Instrument model</dt><dd>Illumina HiSeq 2500, Illumina NovaSeq 6000</dd></div>
+                                    <div><dt>Platform ID</dt><dd>GPL17021, GPL24247</dd></div>
+                                    <div><dt>SRA Study ID</dt><dd>Not reported</dd></div>
+                                    <div><dt>BioProject ID</dt><dd>PRJNA818025</dd></div>
+                                    <div><dt>File types</dt><dd>gz</dd></div>
+                                </dl>
+                            </section>
+
+                            <section class="field-group">
+                                <h3>Submission</h3>
+                                <dl class="field-list">
+                                    <div><dt>Organization</dt><dd>Medical University of Vienna</dd></div>
+                                    <div><dt>Contact</dt><dd>Andreas Lackner</dd></div>
+                                    <div><dt>Email</dt><dd>Not reported</dd></div>
+                                    <div><dt>Submitter country</dt><dd>Austria</dd></div>
+                                    <div><dt>Hospital / center</dt><dd>Medical University of Vienna</dd></div>
+                                    <div><dt>Submitted</dt><dd>03/20/2022</dd></div>
+                                    <div><dt>Last updated</dt><dd>07/28/2023</dd></div>
+                                    <div><dt>Supervisor / PI</dt><dd>Latos Paulina A.</dd></div>
+                                    <div><dt>Supervisor email</dt><dd>paulina.latos@meduniwien.ac.at</dd></div>
+                                </dl>
+                            </section>
+                        </div>
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="methods">
+                    <summary>
+                        <span>
+                            <strong>Methods</strong>
+                            <small>Assay, extraction, and data processing text</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body method-stack">
+
+                        <section class="method-block">
+                            <h3>Assay description</h3>
+                            <p class="long-text">3&#39;RNAseq of Erf and Tbl1x depleted (shRNA, CRISPR/Cas9 KO) and respective rescue TSCs in self-renewal conditions and differentiated for 24h by MEKi treatment (PD) or for 6 days by Fgf withdrawal (WD). ChIPseq of histone modifications and Erf/Ncor1/2 subunits in WT and KO cell lines including rescues in self-renewal conditions and differentiated for 24h by MEKi treatment (PD).</p>
+                        </section>
+
+
+                        <section class="method-block">
+                            <h3>Extraction protocol</h3>
+                            <p class="long-text">Quantseq libraries were prepared with 250 ng RNA using QuantSEQ 3’ mRNA-Seq Library Prep Kit FWD for Illumina (015.96, Lexogen) according to manufacturer’s recommendations. The libraries were pooled and sequenced with a 50-base-pair single-end protocol on an Illumina HiSeq 2500 sequencer. RNAseq. RNA was extracted using RNeasy mini kit (Qiagen) and treated with DNaseI (Qiagen). RNA-seq (Quantseq)
 
 ChIPseq libraries were generated with 5-10ng DNA using the NEBNext Ultra II DNA library preparation master mix (New England Biolabs, E7645) according to the manufacturer’s instructions. RNAseq. RNA was extracted using RNeasy mini kit (Qiagen) and treated with DNaseI (Qiagen). RNA-seq (Quantseq)
 
 RNAseq. RNA was extracted using RNeasy mini kit (Qiagen) and treated with DNaseI (Qiagen). Quantseq libraries were prepared with 250 ng RNA using QuantSEQ 3’ mRNA-Seq Library Prep Kit FWD for Illumina (015.96, Lexogen) according to manufacturer’s recommendations. The libraries were pooled and sequenced with a 50-base-pair single-end protocol on an Illumina HiSeq 2500 sequencer. ChIPseq libraries were generated with 5-10ng DNA using the NEBNext Ultra II DNA library preparation master mix (New England Biolabs, E7645) according to the manufacturer’s instructions.
 
 ChIPseq: cells were fixed in 1% FA for 10min and fixation was quenched by 0.125 M glycine at RT. Cells were scraped in PBS, centrifuged at 500g for 5min and pellet was resuspended in an ice-cold IP-buffer, a 2:1 mixture of SDS-buffer (100mM NaCl, 50mM Tris-Cl pH 8.0, 5mM EDTA pH 8.0, 0.5% SDS) and Triton-X-buffer (100mM NaCl, 100mM Tris-Cl pH 8.6, 5mM EDTA pH 8.0, 5% Triton X), containing complete Protease inhibitor tabs (11873580001, Sigma). After 30min incubation on ice chromatin was sonicated 15s on (pulsed, with 90% actual sonication time) /30s off for 20 cycles using the UW2070 sonicator (Bandelin) at ~40% power. 30µg and 10µg chromatin (DNA equivalent) were precipitated using the listed antibodies.</p>
-                        
-                        
-                    </div>
-                    
-                </div>
-            </section>
+                        </section>
 
-            <aside class="record-aside" aria-label="Study source notes">
+
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="pregnancy-context">
+                    <summary>
+                        <span>
+                            <strong>Pregnancy and phenotype</strong>
+                            <small>Timing, participant metadata, and complications</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body panel-grid">
+                        <section class="field-group">
+                            <h3>Timing and participants</h3>
+                            <dl class="field-list">
+                                <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at collection provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at collection weeks</dt><dd>Not reported</dd></div>
+                                <div><dt>Offspring sex provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Parity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Genetic ancestry provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
+                            </dl>
+                        </section>
+
+                        <section class="field-group">
+                            <h3>Phenotypes and complications</h3>
+                            <dl class="field-list">
+                                <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
+                                <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
+                                <div><dt>Main topic</dt><dd>This paper demonstrates that upon inhibition of the Fgf/Erk pathway in mouse trophoblast stem cells (TSCs), the Ets2 repressor factor (Erf) interacts with the Nuclear Receptor Co-Repressor Complex 1 and 2 (NCoR1/2) and recruits it to key trophoblast genes, controlling trophoblast differentiation by linking signaling with transcriptional repression.</dd></div>
+                            </dl>
+                        </section>
+                    </div>
+                </details>
+
+
+                <details class="record-panel evidence-panel" id="evidence">
+                    <summary>
+                        <span>
+                            <strong>Source evidence</strong>
+                            <small>30 evidence notes, 0 supplement findings</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body evidence-body">
+
+                        <div class="evidence-list">
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Main topic of the publication</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>The paper investigates the molecular mechanisms of how Fgf/Erk signaling regulates mouse trophoblast stem cell (TSC) self-renewal and exit from multipotency via the Erf-NCoR1/2 repressor complex.</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>Here, we use the TSC model to dissect the molecular events accompanying the exit from multipotency and discover the Fgf/Erf/NCoR1/2 axis bridging signalling and transcription in early trophoblast cell fate decisions.</blockquote>
+                                    <footer>
+                                    <span>Main paper text (Introduction)</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC10193302</span>
+                                    <span>10.1038/s41467-023-38101-8</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Sampling timing during pregnancy</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not Applicable</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>Mouse TS cells (TS EGFP line, a kind gift of Prof. Janet Rossant, University of Toronto, Canada) were cultured as described previously</blockquote>
+                                    <footer>
+                                    <span>Main paper text (Methods)</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC10193302</span>
+                                    <span>10.1038/s41467-023-38101-8</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Samples collected at single pregnancy time point (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC10193302</span>
+                                    <span>10.1038/s41467-023-38101-8</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Gestational Age at delivery provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC10193302</span>
+                                    <span>10.1038/s41467-023-38101-8</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Gestational Age at sample collection provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC10193302</span>
+                                    <span>10.1038/s41467-023-38101-8</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Birthweight of offspring provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC10193302</span>
+                                    <span>10.1038/s41467-023-38101-8</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Samples from pregnancy complications collected</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC10193302</span>
+                                    <span>10.1038/s41467-023-38101-8</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Pregnancy complications in data set (list)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC10193302</span>
+                                    <span>10.1038/s41467-023-38101-8</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Fetal complications listed (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC10193302</span>
+                                    <span>10.1038/s41467-023-38101-8</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Fetal complications in data set (list)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC10193302</span>
+                                    <span>10.1038/s41467-023-38101-8</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                        </div>
+
+
+
+                    </div>
+                </details>
+
+            </div>
+
+            <aside class="record-aside" aria-label="Record sources">
                 <section class="source-note">
-                    <p class="eyebrow">Source notes</p>
-                    <div class="provenance-list">
+                    <h2>Record sources</h2>
+                    <dl class="source-status-list">
+                        <div><dt>Metadata</dt><dd>GEO</dd></div>
                         <div>
-                            <strong>GEO metadata</strong>
-                            <p>Core study, assay, platform, contact, and submission fields come from GEO metadata.</p>
+                            <dt>Publication</dt>
+                            <dd>Linked</dd>
                         </div>
                         <div>
-                            <strong>Publication links</strong>
-                            <p>
-                                
-                                PMID, PMC, or DOI identifiers are available for source inspection.
-                                
-                            </p>
+                            <dt>Review evidence</dt>
+                            <dd>30 notes</dd>
                         </div>
-                        <div>
-                            <strong>Workbook notes</strong>
-                            <p>
-                                
-                                30 evidence notes are linked to this GEO study.
-                                
-                            </p>
-                        </div>
-                        
-                    </div>
-                </section>
 
-                <section class="source-links-block">
-                    <p class="eyebrow">Identifiers</p>
-                    <div class="external-grid">
-                        
+                    </dl>
+
+                    <div class="external-grid" aria-label="Record identifiers">
+
                         <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE199024" target="_blank"
                             rel="noopener">GEO: GSE199024</a>
-                        
-                        
+
+
                         <a href="https://pubmed.ncbi.nlm.nih.gov/37137875/" target="_blank"
                             rel="noopener">PMID: 37137875</a>
-                        
-                        
+
+
                         <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10193302/" target="_blank"
                             rel="noopener">PMC: PMC10193302</a>
-                        
-                        
+
+
                         <a href="https://doi.org/10.1038/s41467-023-38101-8" target="_blank" rel="noopener">DOI: 10.1038/s41467-023-38101-8</a>
-                        
+
                     </div>
                 </section>
             </aside>
         </section>
 
-        <section class="record-section curation-section">
-            <div class="section-heading">
-                <p class="eyebrow">Workbook-reviewed fields</p>
-                <h2>Pregnancy, phenotype, and sample context</h2>
-            </div>
-            <div class="technical-grid">
-                <div class="field-group">
-                    <h3>Pregnancy timing and participants</h3>
-                    <dl class="field-list">
-                        <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at collection provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at collection weeks</dt><dd>Not reported</dd></div>
-                        <div><dt>Offspring sex provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Parity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Genetic ancestry provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
-                    </dl>
-                </div>
-
-                <div class="field-group">
-                    <h3>Phenotypes and complications</h3>
-                    <dl class="field-list">
-                        <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
-                        <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
-                        <div><dt>Main topic</dt><dd>This paper demonstrates that upon inhibition of the Fgf/Erk pathway in mouse trophoblast stem cells (TSCs), the Ets2 repressor factor (Erf) interacts with the Nuclear Receptor Co-Repressor Complex 1 and 2 (NCoR1/2) and recruits it to key trophoblast genes, controlling trophoblast differentiation by linking signaling with transcriptional repression.</dd></div>
-                    </dl>
-                </div>
-            </div>
-        </section>
-
-        <details class="evidence-ledger" id="evidence">
-            <summary>
-                <span>
-                    <span class="eyebrow">Workbook excerpt</span>
-                    <strong>Source evidence</strong>
-                </span>
-                <span class="evidence-counts">
-                    <span>30 evidence notes linked</span>
-                    <span>0 supplement repair findings</span>
-                </span>
-            </summary>
-
-            <div class="evidence-body">
-                
-                <div class="evidence-list">
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Main topic of the publication</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>The paper investigates the molecular mechanisms of how Fgf/Erk signaling regulates mouse trophoblast stem cell (TSC) self-renewal and exit from multipotency via the Erf-NCoR1/2 repressor complex.</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>Here, we use the TSC model to dissect the molecular events accompanying the exit from multipotency and discover the Fgf/Erf/NCoR1/2 axis bridging signalling and transcription in early trophoblast cell fate decisions.</blockquote>
-                            <footer>
-                            <span>Main paper text (Introduction)</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC10193302</span>
-                            <span>10.1038/s41467-023-38101-8</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Sampling timing during pregnancy</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not Applicable</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>Mouse TS cells (TS EGFP line, a kind gift of Prof. Janet Rossant, University of Toronto, Canada) were cultured as described previously</blockquote>
-                            <footer>
-                            <span>Main paper text (Methods)</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC10193302</span>
-                            <span>10.1038/s41467-023-38101-8</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Samples collected at single pregnancy time point (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC10193302</span>
-                            <span>10.1038/s41467-023-38101-8</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Gestational Age at delivery provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC10193302</span>
-                            <span>10.1038/s41467-023-38101-8</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Gestational Age at sample collection provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC10193302</span>
-                            <span>10.1038/s41467-023-38101-8</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Birthweight of offspring provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC10193302</span>
-                            <span>10.1038/s41467-023-38101-8</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Samples from pregnancy complications collected</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC10193302</span>
-                            <span>10.1038/s41467-023-38101-8</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Pregnancy complications in data set (list)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC10193302</span>
-                            <span>10.1038/s41467-023-38101-8</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Fetal complications listed (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC10193302</span>
-                            <span>10.1038/s41467-023-38101-8</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Fetal complications in data set (list)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC10193302</span>
-                            <span>10.1038/s41467-023-38101-8</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                </div>
-                
-
-                
-            </div>
-        </details>
-
         <nav class="entry-navigation">
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/383.html">Previous study</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/repository.html">Studies</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/385.html">Next study</a>
-            
+
         </nav>
     </main>
 

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GSE252114 - Placenta Study Atlas</title>
     <meta name="description" content="Self-renewing human naïve pluripotent stem cells dedifferentiate in 3D culture and form blastoids spontaneously">
-    <link rel="stylesheet" href="/placenta-research-database/static/style.css">
+    <link rel="stylesheet" href="/placenta-research-database/static/style.css?v=20260813-4">
 </head>
 
 <body>
@@ -27,18 +27,10 @@
                 <h1>Self-renewing human naïve pluripotent stem cells dedifferentiate in 3D culture and form blastoids spontaneously</h1>
             </div>
             <div class="source-actions" aria-label="Source links">
-                <a href="#evidence">Evidence notes</a>
-                
+
                 <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE252114"
                     target="_blank" rel="noopener">Open GEO</a>
-                
-                
-                <a href="https://pubmed.ncbi.nlm.nih.gov/38253551/" target="_blank"
-                    rel="noopener">PubMed</a>
-                
-                
-                <a href="https://doi.org/10.1038/s41467-024-44969-x" target="_blank" rel="noopener">DOI</a>
-                
+
             </div>
         </article>
 
@@ -70,180 +62,182 @@
         </section>
 
         <section class="record-layout">
-            <section class="record-section geo-section">
-                <div class="section-heading">
-                    <p class="eyebrow">GEO record</p>
-                    <h2>Sample, assay, and methods</h2>
-                </div>
-                <div class="technical-grid">
-                    <div class="field-group sample-group wide-group">
-                        <h3>Sample characteristics</h3>
-                        <p class="long-text">cell type: pluripotent stem cell | cell line: TJ 1# C-hnESC | treatment: cultured with Chir99021 | cell line: TJ 1# CI-hnESC | treatment: cultured with IM-12 | tissue: blastoids</p>
-                    </div>
+            <div class="record-content">
+                <details class="record-panel" id="study-details">
+                    <summary>
+                        <span>
+                            <strong>Study details</strong>
+                            <small>Samples, assay, platform, and submission</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body">
+                        <section class="field-group sample-group">
+                            <h3>Sample characteristics</h3>
 
-                    <div class="field-group">
-                        <h3>Assay and platform</h3>
-                        <dl class="field-list">
-                            <div><dt>Extracted molecule</dt><dd>polyA RNA</dd></div>
-                            <div><dt>Library source</dt><dd>transcriptomic, transcriptomic single cell</dd></div>
-                            <div><dt>Library selection</dt><dd>cDNA</dd></div>
-                            <div><dt>Instrument model</dt><dd>Illumina NovaSeq 6000, MGISEQ-2000RS</dd></div>
-                            <div><dt>Platform ID</dt><dd>GPL24676, GPL30209</dd></div>
-                            <div><dt>SRA Study ID</dt><dd>Not reported</dd></div>
-                            <div><dt>BioProject ID</dt><dd>PRJNA1061131</dd></div>
-                            <div><dt>File types</dt><dd>tar, gz</dd></div>
-                        </dl>
-                    </div>
+                            <ul class="characteristic-list">
 
-                    <div class="field-group">
-                        <h3>Submission information</h3>
-                        <dl class="field-list">
-                            <div><dt>Organization</dt><dd>Guangzhou Laboratory</dd></div>
-                            <div><dt>Contact</dt><dd>Jinyi Wu</dd></div>
-                            <div><dt>Email</dt><dd>Not reported</dd></div>
-                            <div><dt>Submitter country</dt><dd>China</dd></div>
-                            <div><dt>Hospital / center</dt><dd>Bioland Laboratory</dd></div>
-                            <div><dt>Submitted</dt><dd>12/27/2023</dd></div>
-                            <div><dt>Last updated</dt><dd>02/09/2024</dd></div>
-                            <div><dt>Supervisor / PI</dt><dd>José C. R. Silva</dd></div>
-                            <div><dt>Supervisor email</dt><dd>jose_silva@gzlab.ac.cn</dd></div>
-                        </dl>
-                    </div>
+                                <li>cell type: pluripotent stem cell</li>
 
-                    
-                    <div class="field-group methods-group">
-                        <h3>Methods text</h3>
-                        
-                        <h4>Assay description</h4>
-                        <p class="long-text">We convert human primed pluripotent stem cells to a naïve state by GSK3 inhibitor CHIR99021 to IM-12 switch (CI-hnPSCs). We find that CI-hnPSCs spontaneously and efficiently generate blastocyst-like structures (blastoids) in the 5iLAF self-renewing medium. Removing BRAF and MEK inhibitors from 5iLAF, using 3iLAF from day 3 of blastoid formation results in hypoblast specification.</p>
-                        
-                        
-                        <h4>Extraction protocol</h4>
-                        <p class="long-text">For bulk RNA-seq, total RNAs were collected and isolated from cells using RNAiso Plus (Takara). mRNA was purified from total RNA using poly-T oligo-attached magnetic beads. Sequencing libraries were generated using NEBNextUltra RNA Library Prep Kit for Illumina following manufacturer’s recommendations. For scRNA-seq, CI-hnESCs and day 2 aggregates were dissociated and sorted by flow cytometer for Smart-seq2 library construction and the libraries were sequenced on MGISEQ2000 (MGI Tech) platform to generate 100-bp paired-end reads. Day 3, day6 blastoids and the blastoids upon removing MEK/BRAF inhibition from Aggrewell were manually picked and polled with a mouth pipette, washed once with DPBS and then dissociated with 0.25% trypsin-EDTA (Gibco) at 37 °C in 20%O2 and 5% CO2 incubator for 30 min. Attached cultured bE14 blastoids were first rinsed once with DPBS and then treated with cold DPBS and incubated in 4°C for 10-20min to allow breaking of the matrix. When the samples became mobile under a microscope upon gentle shaking, the bE14 blastoids were transferred to a clean tube using a cut-tip and dissociated with 0.25% trypsin-EDTA at 37 °C in 20%O2 and 5% CO2 incubator for 30 min. Library was performed according to the manufacter’s instructions (single cell 3’ v3 protocol, 10x Genomics). RNA libraries were prepared for sequencing using standard Illumina protocols</p>
-                        
-                        
-                    </div>
-                    
-                </div>
-            </section>
+                                <li>cell line: TJ 1# C-hnESC</li>
 
-            <aside class="record-aside" aria-label="Study source notes">
+                                <li>treatment: cultured with Chir99021</li>
+
+                                <li>cell line: TJ 1# CI-hnESC</li>
+
+                                <li>treatment: cultured with IM-12</li>
+
+                                <li>tissue: blastoids</li>
+
+                            </ul>
+
+                        </section>
+
+                        <div class="panel-grid">
+                            <section class="field-group">
+                                <h3>Assay and platform</h3>
+                                <dl class="field-list">
+                                    <div><dt>Extracted molecule</dt><dd>polyA RNA</dd></div>
+                                    <div><dt>Library source</dt><dd>transcriptomic, transcriptomic single cell</dd></div>
+                                    <div><dt>Library selection</dt><dd>cDNA</dd></div>
+                                    <div><dt>Instrument model</dt><dd>Illumina NovaSeq 6000, MGISEQ-2000RS</dd></div>
+                                    <div><dt>Platform ID</dt><dd>GPL24676, GPL30209</dd></div>
+                                    <div><dt>SRA Study ID</dt><dd>Not reported</dd></div>
+                                    <div><dt>BioProject ID</dt><dd>PRJNA1061131</dd></div>
+                                    <div><dt>File types</dt><dd>tar, gz</dd></div>
+                                </dl>
+                            </section>
+
+                            <section class="field-group">
+                                <h3>Submission</h3>
+                                <dl class="field-list">
+                                    <div><dt>Organization</dt><dd>Guangzhou Laboratory</dd></div>
+                                    <div><dt>Contact</dt><dd>Jinyi Wu</dd></div>
+                                    <div><dt>Email</dt><dd>Not reported</dd></div>
+                                    <div><dt>Submitter country</dt><dd>China</dd></div>
+                                    <div><dt>Hospital / center</dt><dd>Bioland Laboratory</dd></div>
+                                    <div><dt>Submitted</dt><dd>12/27/2023</dd></div>
+                                    <div><dt>Last updated</dt><dd>02/09/2024</dd></div>
+                                    <div><dt>Supervisor / PI</dt><dd>José C. R. Silva</dd></div>
+                                    <div><dt>Supervisor email</dt><dd>jose_silva@gzlab.ac.cn</dd></div>
+                                </dl>
+                            </section>
+                        </div>
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="methods">
+                    <summary>
+                        <span>
+                            <strong>Methods</strong>
+                            <small>Assay, extraction, and data processing text</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body method-stack">
+
+                        <section class="method-block">
+                            <h3>Assay description</h3>
+                            <p class="long-text">We convert human primed pluripotent stem cells to a naïve state by GSK3 inhibitor CHIR99021 to IM-12 switch (CI-hnPSCs). We find that CI-hnPSCs spontaneously and efficiently generate blastocyst-like structures (blastoids) in the 5iLAF self-renewing medium. Removing BRAF and MEK inhibitors from 5iLAF, using 3iLAF from day 3 of blastoid formation results in hypoblast specification.</p>
+                        </section>
+
+
+                        <section class="method-block">
+                            <h3>Extraction protocol</h3>
+                            <p class="long-text">For bulk RNA-seq, total RNAs were collected and isolated from cells using RNAiso Plus (Takara). mRNA was purified from total RNA using poly-T oligo-attached magnetic beads. Sequencing libraries were generated using NEBNextUltra RNA Library Prep Kit for Illumina following manufacturer’s recommendations. For scRNA-seq, CI-hnESCs and day 2 aggregates were dissociated and sorted by flow cytometer for Smart-seq2 library construction and the libraries were sequenced on MGISEQ2000 (MGI Tech) platform to generate 100-bp paired-end reads. Day 3, day6 blastoids and the blastoids upon removing MEK/BRAF inhibition from Aggrewell were manually picked and polled with a mouth pipette, washed once with DPBS and then dissociated with 0.25% trypsin-EDTA (Gibco) at 37 °C in 20%O2 and 5% CO2 incubator for 30 min. Attached cultured bE14 blastoids were first rinsed once with DPBS and then treated with cold DPBS and incubated in 4°C for 10-20min to allow breaking of the matrix. When the samples became mobile under a microscope upon gentle shaking, the bE14 blastoids were transferred to a clean tube using a cut-tip and dissociated with 0.25% trypsin-EDTA at 37 °C in 20%O2 and 5% CO2 incubator for 30 min. Library was performed according to the manufacter’s instructions (single cell 3’ v3 protocol, 10x Genomics). RNA libraries were prepared for sequencing using standard Illumina protocols</p>
+                        </section>
+
+
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="pregnancy-context">
+                    <summary>
+                        <span>
+                            <strong>Pregnancy and phenotype</strong>
+                            <small>Timing, participant metadata, and complications</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body panel-grid">
+                        <section class="field-group">
+                            <h3>Timing and participants</h3>
+                            <dl class="field-list">
+                                <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at collection provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at collection weeks</dt><dd>Not reported</dd></div>
+                                <div><dt>Offspring sex provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Parity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Genetic ancestry provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
+                            </dl>
+                        </section>
+
+                        <section class="field-group">
+                            <h3>Phenotypes and complications</h3>
+                            <dl class="field-list">
+                                <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
+                                <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
+                                <div><dt>Main topic</dt><dd>The paper reports that self-renewing human naïve pluripotent stem cells (hnPSCs) spontaneously and efficiently give rise to blastoids upon three-dimensional (3D) suspension culture, mimicking early stage human blastocysts and capable of progressing to post-implantation stages.</dd></div>
+                            </dl>
+                        </section>
+                    </div>
+                </details>
+
+
+            </div>
+
+            <aside class="record-aside" aria-label="Record sources">
                 <section class="source-note">
-                    <p class="eyebrow">Source notes</p>
-                    <div class="provenance-list">
+                    <h2>Record sources</h2>
+                    <dl class="source-status-list">
+                        <div><dt>Metadata</dt><dd>GEO</dd></div>
                         <div>
-                            <strong>GEO metadata</strong>
-                            <p>Core study, assay, platform, contact, and submission fields come from GEO metadata.</p>
+                            <dt>Publication</dt>
+                            <dd>Linked</dd>
                         </div>
                         <div>
-                            <strong>Publication links</strong>
-                            <p>
-                                
-                                PMID, PMC, or DOI identifiers are available for source inspection.
-                                
-                            </p>
+                            <dt>Review evidence</dt>
+                            <dd>Not linked</dd>
                         </div>
-                        <div>
-                            <strong>Workbook notes</strong>
-                            <p>
-                                
-                                Pregnancy-specific values should be reviewed against the source paper when precision matters.
-                                
-                            </p>
-                        </div>
-                        
-                    </div>
-                </section>
 
-                <section class="source-links-block">
-                    <p class="eyebrow">Identifiers</p>
-                    <div class="external-grid">
-                        
+                    </dl>
+
+                    <div class="external-grid" aria-label="Record identifiers">
+
                         <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE252114" target="_blank"
                             rel="noopener">GEO: GSE252114</a>
-                        
-                        
+
+
                         <a href="https://pubmed.ncbi.nlm.nih.gov/38253551/" target="_blank"
                             rel="noopener">PMID: 38253551</a>
-                        
-                        
+
+
                         <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10803796/" target="_blank"
                             rel="noopener">PMC: PMC10803796</a>
-                        
-                        
+
+
                         <a href="https://doi.org/10.1038/s41467-024-44969-x" target="_blank" rel="noopener">DOI: 10.1038/s41467-024-44969-x</a>
-                        
+
                     </div>
                 </section>
             </aside>
         </section>
 
-        <section class="record-section curation-section">
-            <div class="section-heading">
-                <p class="eyebrow">Workbook-reviewed fields</p>
-                <h2>Pregnancy, phenotype, and sample context</h2>
-            </div>
-            <div class="technical-grid">
-                <div class="field-group">
-                    <h3>Pregnancy timing and participants</h3>
-                    <dl class="field-list">
-                        <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at collection provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at collection weeks</dt><dd>Not reported</dd></div>
-                        <div><dt>Offspring sex provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Parity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Genetic ancestry provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
-                    </dl>
-                </div>
-
-                <div class="field-group">
-                    <h3>Phenotypes and complications</h3>
-                    <dl class="field-list">
-                        <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
-                        <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
-                        <div><dt>Main topic</dt><dd>The paper reports that self-renewing human naïve pluripotent stem cells (hnPSCs) spontaneously and efficiently give rise to blastoids upon three-dimensional (3D) suspension culture, mimicking early stage human blastocysts and capable of progressing to post-implantation stages.</dd></div>
-                    </dl>
-                </div>
-            </div>
-        </section>
-
-        <details class="evidence-ledger" id="evidence">
-            <summary>
-                <span>
-                    <span class="eyebrow">Workbook excerpt</span>
-                    <strong>Source evidence</strong>
-                </span>
-                <span class="evidence-counts">
-                    <span>0 evidence notes linked</span>
-                    <span>0 supplement repair findings</span>
-                </span>
-            </summary>
-
-            <div class="evidence-body">
-                
-                <p class="empty-evidence">No workbook evidence notes are linked to this GEO study yet.</p>
-                
-
-                
-            </div>
-        </details>
-
         <nav class="entry-navigation">
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/532.html">Previous study</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/repository.html">Studies</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/534.html">Next study</a>
-            
+
         </nav>
     </main>
 

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GSE163380 - Placenta Study Atlas</title>
     <meta name="description" content="DNA methylation abnormal accumulation during cloned TSCs maintaining [RRBS]">
-    <link rel="stylesheet" href="/placenta-research-database/static/style.css">
+    <link rel="stylesheet" href="/placenta-research-database/static/style.css?v=20260813-4">
 </head>
 
 <body>
@@ -27,18 +27,10 @@
                 <h1>DNA methylation abnormal accumulation during cloned TSCs maintaining [RRBS]</h1>
             </div>
             <div class="source-actions" aria-label="Source links">
-                <a href="#evidence">Evidence notes</a>
-                
+
                 <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE163380"
                     target="_blank" rel="noopener">Open GEO</a>
-                
-                
-                <a href="https://pubmed.ncbi.nlm.nih.gov/33869230/" target="_blank"
-                    rel="noopener">PubMed</a>
-                
-                
-                <a href="https://doi.org/10.3389/fcell.2021.664178" target="_blank" rel="noopener">DOI</a>
-                
+
             </div>
         </article>
 
@@ -70,180 +62,196 @@
         </section>
 
         <section class="record-layout">
-            <section class="record-section geo-section">
-                <div class="section-heading">
-                    <p class="eyebrow">GEO record</p>
-                    <h2>Sample, assay, and methods</h2>
-                </div>
-                <div class="technical-grid">
-                    <div class="field-group sample-group wide-group">
-                        <h3>Sample characteristics</h3>
-                        <p class="long-text">strain: B6D2F1 (C57BL/6 x DBA/2) | embryo source: natural fertilization | cell type: donor (cumulus cells) | cell type: E3.5 blastocysts trophoectoderm | cell type: E4.5 blastocysts trophoectoderm | cell type: outgrowths derived in vitro at day 5-7 | cell type: TSC likely colony at day 12-15 | cell type: TSC passage 3-4 | cell type: E6.5 epiblast | cell type: E6.5 extraembryonic ectoderm | cell type: E3.5 blastocysts inner cell mass | embryo source: nuclear transfer | embryo source: nuclear transfer with HDACi</p>
-                    </div>
+            <div class="record-content">
+                <details class="record-panel" id="study-details">
+                    <summary>
+                        <span>
+                            <strong>Study details</strong>
+                            <small>Samples, assay, platform, and submission</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body">
+                        <section class="field-group sample-group">
+                            <h3>Sample characteristics</h3>
 
-                    <div class="field-group">
-                        <h3>Assay and platform</h3>
-                        <dl class="field-list">
-                            <div><dt>Extracted molecule</dt><dd>genomic DNA</dd></div>
-                            <div><dt>Library source</dt><dd>genomic</dd></div>
-                            <div><dt>Library selection</dt><dd>Reduced Representation</dd></div>
-                            <div><dt>Instrument model</dt><dd>Illumina HiSeq 2500</dd></div>
-                            <div><dt>Platform ID</dt><dd>GPL17021</dd></div>
-                            <div><dt>SRA Study ID</dt><dd>SRP298270</dd></div>
-                            <div><dt>BioProject ID</dt><dd>PRJNA685862</dd></div>
-                            <div><dt>File types</dt><dd>tar</dd></div>
-                        </dl>
-                    </div>
+                            <ul class="characteristic-list">
 
-                    <div class="field-group">
-                        <h3>Submission information</h3>
-                        <dl class="field-list">
-                            <div><dt>Organization</dt><dd>Tongji University</dd></div>
-                            <div><dt>Contact</dt><dd>Jin Sun</dd></div>
-                            <div><dt>Email</dt><dd>sunjin@tongji.edu.cn</dd></div>
-                            <div><dt>Submitter country</dt><dd>China</dd></div>
-                            <div><dt>Hospital / center</dt><dd>Clinical and Translation Research Center of Shanghai First Maternity and Infant Hospital, Tongji University</dd></div>
-                            <div><dt>Submitted</dt><dd>12/16/2020</dd></div>
-                            <div><dt>Last updated</dt><dd>05/18/2021</dd></div>
-                            <div><dt>Supervisor / PI</dt><dd>Cizhong Jiang, Rui Gao, Shaorong Gao</dd></div>
-                            <div><dt>Supervisor email</dt><dd>czjiang@tongji.edu.cn, gaorui@tongji.edu.cn, gaoshaorong@tongji.edu.cn</dd></div>
-                        </dl>
-                    </div>
+                                <li>strain: B6D2F1 (C57BL/6 x DBA/2)</li>
 
-                    
-                    <div class="field-group methods-group">
-                        <h3>Methods text</h3>
-                        
-                        <h4>Assay description</h4>
-                        <p class="long-text">We generated embryos from 3 different sources natural fertilization (NF), somatic nuclear transfer (NT), and somatic nuclear transfer with HDACi Scriptaid treatment (SNT) and chosed 5-time points during the TSC maintaining, E3.5 blastocyst trophectoderm (TE3.5), E4.5 blastocyst trophectoderm (TE4.5), outgrowths at half-time progression (outgrowth), passage 1 TSCs (TS_P1), and passage 3-4 TSCs (TS_Pn) to perform RNA-seq and RRBS. For each sample, we performed several independent replicates.</p>
-                        
-                        
-                        <h4>Extraction protocol</h4>
-                        <p class="long-text">For the RRBS library, we digested nuclear proteins and extracted the DNA from the nuclei of samples. Then, we add unmethylated lambda DNA (Fermentas) and took a one-tube reaction, treating the DNA with MspI digestion (Fermentas, USA), end repair, dA tailing, adaptor ligation, and bisulfite conversion using MethylCode Bisulfite Conversion Kit (Invitrogen, USA, MECOV-50). We purified the converted libraries by Agencourt AMPure XP beads (Beckman A63881, USA) and amplified using two-round PCR enrichment. Only 200–500 bp DNA fragments were reserved for sequencing.</p>
-                        
-                        
-                    </div>
-                    
-                </div>
-            </section>
+                                <li>embryo source: natural fertilization</li>
 
-            <aside class="record-aside" aria-label="Study source notes">
+                                <li>cell type: donor (cumulus cells)</li>
+
+                                <li>cell type: E3.5 blastocysts trophoectoderm</li>
+
+                                <li>cell type: E4.5 blastocysts trophoectoderm</li>
+
+                                <li>cell type: outgrowths derived in vitro at day 5-7</li>
+
+                                <li>cell type: TSC likely colony at day 12-15</li>
+
+                                <li>cell type: TSC passage 3-4</li>
+
+                                <li>cell type: E6.5 epiblast</li>
+
+                                <li>cell type: E6.5 extraembryonic ectoderm</li>
+
+                                <li>cell type: E3.5 blastocysts inner cell mass</li>
+
+                                <li>embryo source: nuclear transfer</li>
+
+                                <li>embryo source: nuclear transfer with HDACi</li>
+
+                            </ul>
+
+                        </section>
+
+                        <div class="panel-grid">
+                            <section class="field-group">
+                                <h3>Assay and platform</h3>
+                                <dl class="field-list">
+                                    <div><dt>Extracted molecule</dt><dd>genomic DNA</dd></div>
+                                    <div><dt>Library source</dt><dd>genomic</dd></div>
+                                    <div><dt>Library selection</dt><dd>Reduced Representation</dd></div>
+                                    <div><dt>Instrument model</dt><dd>Illumina HiSeq 2500</dd></div>
+                                    <div><dt>Platform ID</dt><dd>GPL17021</dd></div>
+                                    <div><dt>SRA Study ID</dt><dd>SRP298270</dd></div>
+                                    <div><dt>BioProject ID</dt><dd>PRJNA685862</dd></div>
+                                    <div><dt>File types</dt><dd>tar</dd></div>
+                                </dl>
+                            </section>
+
+                            <section class="field-group">
+                                <h3>Submission</h3>
+                                <dl class="field-list">
+                                    <div><dt>Organization</dt><dd>Tongji University</dd></div>
+                                    <div><dt>Contact</dt><dd>Jin Sun</dd></div>
+                                    <div><dt>Email</dt><dd>sunjin@tongji.edu.cn</dd></div>
+                                    <div><dt>Submitter country</dt><dd>China</dd></div>
+                                    <div><dt>Hospital / center</dt><dd>Clinical and Translation Research Center of Shanghai First Maternity and Infant Hospital, Tongji University</dd></div>
+                                    <div><dt>Submitted</dt><dd>12/16/2020</dd></div>
+                                    <div><dt>Last updated</dt><dd>05/18/2021</dd></div>
+                                    <div><dt>Supervisor / PI</dt><dd>Cizhong Jiang, Rui Gao, Shaorong Gao</dd></div>
+                                    <div><dt>Supervisor email</dt><dd>czjiang@tongji.edu.cn, gaorui@tongji.edu.cn, gaoshaorong@tongji.edu.cn</dd></div>
+                                </dl>
+                            </section>
+                        </div>
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="methods">
+                    <summary>
+                        <span>
+                            <strong>Methods</strong>
+                            <small>Assay, extraction, and data processing text</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body method-stack">
+
+                        <section class="method-block">
+                            <h3>Assay description</h3>
+                            <p class="long-text">We generated embryos from 3 different sources natural fertilization (NF), somatic nuclear transfer (NT), and somatic nuclear transfer with HDACi Scriptaid treatment (SNT) and chosed 5-time points during the TSC maintaining, E3.5 blastocyst trophectoderm (TE3.5), E4.5 blastocyst trophectoderm (TE4.5), outgrowths at half-time progression (outgrowth), passage 1 TSCs (TS_P1), and passage 3-4 TSCs (TS_Pn) to perform RNA-seq and RRBS. For each sample, we performed several independent replicates.</p>
+                        </section>
+
+
+                        <section class="method-block">
+                            <h3>Extraction protocol</h3>
+                            <p class="long-text">For the RRBS library, we digested nuclear proteins and extracted the DNA from the nuclei of samples. Then, we add unmethylated lambda DNA (Fermentas) and took a one-tube reaction, treating the DNA with MspI digestion (Fermentas, USA), end repair, dA tailing, adaptor ligation, and bisulfite conversion using MethylCode Bisulfite Conversion Kit (Invitrogen, USA, MECOV-50). We purified the converted libraries by Agencourt AMPure XP beads (Beckman A63881, USA) and amplified using two-round PCR enrichment. Only 200–500 bp DNA fragments were reserved for sequencing.</p>
+                        </section>
+
+
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="pregnancy-context">
+                    <summary>
+                        <span>
+                            <strong>Pregnancy and phenotype</strong>
+                            <small>Timing, participant metadata, and complications</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body panel-grid">
+                        <section class="field-group">
+                            <h3>Timing and participants</h3>
+                            <dl class="field-list">
+                                <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at collection provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at collection weeks</dt><dd>Not reported</dd></div>
+                                <div><dt>Offspring sex provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Parity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Genetic ancestry provided</dt><dd>Yes</dd></div>
+                                <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
+                            </dl>
+                        </section>
+
+                        <section class="field-group">
+                            <h3>Phenotypes and complications</h3>
+                            <dl class="field-list">
+                                <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
+                                <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
+                                <div><dt>Main topic</dt><dd>This study investigates the transcriptomes and methylomes of trophoblast stem cells (TSCs) derived from naturally fertilized (NF) embryos, somatic cell nuclear transfer (NT) embryos, and Scriptaid-treated NT (SNT) embryos to understand the regulatory mechanisms underlying TSC derivation.</dd></div>
+                            </dl>
+                        </section>
+                    </div>
+                </details>
+
+
+            </div>
+
+            <aside class="record-aside" aria-label="Record sources">
                 <section class="source-note">
-                    <p class="eyebrow">Source notes</p>
-                    <div class="provenance-list">
+                    <h2>Record sources</h2>
+                    <dl class="source-status-list">
+                        <div><dt>Metadata</dt><dd>GEO</dd></div>
                         <div>
-                            <strong>GEO metadata</strong>
-                            <p>Core study, assay, platform, contact, and submission fields come from GEO metadata.</p>
+                            <dt>Publication</dt>
+                            <dd>Linked</dd>
                         </div>
                         <div>
-                            <strong>Publication links</strong>
-                            <p>
-                                
-                                PMID, PMC, or DOI identifiers are available for source inspection.
-                                
-                            </p>
+                            <dt>Review evidence</dt>
+                            <dd>Not linked</dd>
                         </div>
-                        <div>
-                            <strong>Workbook notes</strong>
-                            <p>
-                                
-                                Pregnancy-specific values should be reviewed against the source paper when precision matters.
-                                
-                            </p>
-                        </div>
-                        
-                    </div>
-                </section>
 
-                <section class="source-links-block">
-                    <p class="eyebrow">Identifiers</p>
-                    <div class="external-grid">
-                        
+                    </dl>
+
+                    <div class="external-grid" aria-label="Record identifiers">
+
                         <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE163380" target="_blank"
                             rel="noopener">GEO: GSE163380</a>
-                        
-                        
+
+
                         <a href="https://pubmed.ncbi.nlm.nih.gov/33869230/" target="_blank"
                             rel="noopener">PMID: 33869230</a>
-                        
-                        
+
+
                         <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8047118/" target="_blank"
                             rel="noopener">PMC: PMC8047118</a>
-                        
-                        
+
+
                         <a href="https://doi.org/10.3389/fcell.2021.664178" target="_blank" rel="noopener">DOI: 10.3389/fcell.2021.664178</a>
-                        
+
                     </div>
                 </section>
             </aside>
         </section>
 
-        <section class="record-section curation-section">
-            <div class="section-heading">
-                <p class="eyebrow">Workbook-reviewed fields</p>
-                <h2>Pregnancy, phenotype, and sample context</h2>
-            </div>
-            <div class="technical-grid">
-                <div class="field-group">
-                    <h3>Pregnancy timing and participants</h3>
-                    <dl class="field-list">
-                        <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at collection provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at collection weeks</dt><dd>Not reported</dd></div>
-                        <div><dt>Offspring sex provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Parity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Genetic ancestry provided</dt><dd>Yes</dd></div>
-                        <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
-                    </dl>
-                </div>
-
-                <div class="field-group">
-                    <h3>Phenotypes and complications</h3>
-                    <dl class="field-list">
-                        <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
-                        <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
-                        <div><dt>Main topic</dt><dd>This study investigates the transcriptomes and methylomes of trophoblast stem cells (TSCs) derived from naturally fertilized (NF) embryos, somatic cell nuclear transfer (NT) embryos, and Scriptaid-treated NT (SNT) embryos to understand the regulatory mechanisms underlying TSC derivation.</dd></div>
-                    </dl>
-                </div>
-            </div>
-        </section>
-
-        <details class="evidence-ledger" id="evidence">
-            <summary>
-                <span>
-                    <span class="eyebrow">Workbook excerpt</span>
-                    <strong>Source evidence</strong>
-                </span>
-                <span class="evidence-counts">
-                    <span>0 evidence notes linked</span>
-                    <span>0 supplement repair findings</span>
-                </span>
-            </summary>
-
-            <div class="evidence-body">
-                
-                <p class="empty-evidence">No workbook evidence notes are linked to this GEO study yet.</p>
-                
-
-                
-            </div>
-        </details>
-
         <nav class="entry-navigation">
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/876.html">Previous study</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/repository.html">Studies</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/878.html">Next study</a>
-            
+
         </nav>
     </main>
 

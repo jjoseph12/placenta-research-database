@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GSE124215 - Placenta Study Atlas</title>
     <meta name="description" content="Endogenous retroviral insertions drive non-canonical imprinting in extra-embryonic tissues [RNA-Seq]">
-    <link rel="stylesheet" href="/placenta-research-database/static/style.css">
+    <link rel="stylesheet" href="/placenta-research-database/static/style.css?v=20260813-4">
 </head>
 
 <body>
@@ -27,18 +27,10 @@
                 <h1>Endogenous retroviral insertions drive non-canonical imprinting in extra-embryonic tissues [RNA-Seq]</h1>
             </div>
             <div class="source-actions" aria-label="Source links">
-                <a href="#evidence">Evidence notes</a>
-                
+
                 <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE124215"
                     target="_blank" rel="noopener">Open GEO</a>
-                
-                
-                <a href="https://pubmed.ncbi.nlm.nih.gov/31665063/" target="_blank"
-                    rel="noopener">PubMed</a>
-                
-                
-                <a href="https://doi.org/10.1186/s13059-019-1833-x" target="_blank" rel="noopener">DOI</a>
-                
+
             </div>
         </article>
 
@@ -70,404 +62,438 @@
         </section>
 
         <section class="record-layout">
-            <section class="record-section geo-section">
-                <div class="section-heading">
-                    <p class="eyebrow">GEO record</p>
-                    <h2>Sample, assay, and methods</h2>
-                </div>
-                <div class="technical-grid">
-                    <div class="field-group sample-group wide-group">
-                        <h3>Sample characteristics</h3>
-                        <p class="long-text">tissue: Epiblast | age: E7.5 | genotype: Wildtype | hybrid strain: C57BL6/Babr x CAST/Ei | tissue: Extra-embryonic ectoderm | hybrid strain: CAST/Ei x C57BL6/Babr | genotype: Dnmt3a -/+, Dnmt3b -/+ (maternal inheritance) | hybrid strain: C57BL6/Babr/129 x CAST/Ei | tissue: Yolk sac | age: E12.5 | hybrid strain: C57BL6 x CAST/Ei | tissue: Placenta (mat contamination) | tissue: Whole embryo | genotype: Mosaic Gab1 ERVK RLTR15 +/- (paternal allele deletion)</p>
-                    </div>
+            <div class="record-content">
+                <details class="record-panel" id="study-details">
+                    <summary>
+                        <span>
+                            <strong>Study details</strong>
+                            <small>Samples, assay, platform, and submission</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body">
+                        <section class="field-group sample-group">
+                            <h3>Sample characteristics</h3>
 
-                    <div class="field-group">
-                        <h3>Assay and platform</h3>
-                        <dl class="field-list">
-                            <div><dt>Extracted molecule</dt><dd>total RNA</dd></div>
-                            <div><dt>Library source</dt><dd>transcriptomic</dd></div>
-                            <div><dt>Library selection</dt><dd>cDNA</dd></div>
-                            <div><dt>Instrument model</dt><dd>Illumina HiSeq 2500</dd></div>
-                            <div><dt>Platform ID</dt><dd>GPL17021</dd></div>
-                            <div><dt>SRA Study ID</dt><dd>SRP174099</dd></div>
-                            <div><dt>BioProject ID</dt><dd>PRJNA510999</dd></div>
-                            <div><dt>File types</dt><dd>gz</dd></div>
-                        </dl>
-                    </div>
+                            <ul class="characteristic-list">
 
-                    <div class="field-group">
-                        <h3>Submission information</h3>
-                        <dl class="field-list">
-                            <div><dt>Organization</dt><dd>Altos Labs</dd></div>
-                            <div><dt>Contact</dt><dd>Felix Krueger</dd></div>
-                            <div><dt>Email</dt><dd>fkrueger@altoslabs.com</dd></div>
-                            <div><dt>Submitter country</dt><dd>United Kingdom</dd></div>
-                            <div><dt>Hospital / center</dt><dd>Babraham Institute</dd></div>
-                            <div><dt>Submitted</dt><dd>12/20/2018</dd></div>
-                            <div><dt>Last updated</dt><dd>02/07/2023</dd></div>
-                            <div><dt>Supervisor / PI</dt><dd>Kelsey Gavin</dd></div>
-                            <div><dt>Supervisor email</dt><dd>courtney.hanna@babraham.ac.uk</dd></div>
-                        </dl>
-                    </div>
+                                <li>tissue: Epiblast</li>
 
-                    
-                    <div class="field-group methods-group">
-                        <h3>Methods text</h3>
-                        
-                        <h4>Assay description</h4>
-                        <p class="long-text">To evaluate the allelic regulation of histone modifications in the embryo, we assayed H3K4me3, H3K36me3 and H3K27me3 using ultra low-input ChIP-seq (Hanna et al. 2018) and post-bisulfite adaptor tagging (PBAT) in reciprocal hybrid (C57BL6/Babr x CAST/Ei) embryonic day (E) 6.5 epiblast and extra-embryonic ectoderm (ExE).  We additionally profiled these epigenetic marks in E6.5 embryos derived from females with a double conditional knockout for Dnmt3a and Dnmt3b in oocytes (matDKO), driven by Zp3-cre.  Consequently, these matDKO embryos will inherit no maternal DNA methylation, but are able to sufficiently establish DNA methylation post-fertilisation.  Allelic gene expression was evaluated in E7.5 epiblast and ExE of all hybrid crosses.</p>
-                        
-                        
-                        <h4>Extraction protocol</h4>
-                        <p class="long-text">Reciprocal natural timed matings were set up between C57BL6/Babr and CAST animals (denoted as B6/CAST and CAST/B6), and embryos were collected on embryonic day 7.5 (E7.5). Natural timed matings were set up between Dnmt3a floxed/floxed, Dnmt3b floxed/floxed, Zp3 +ve B6/129 females (resulting in ablation of DNA methylation in the oocyte) and CAST males (denoted as DKO.CAST). The epiblast (Epi) and extra-embryonic ectoderm (ExE) for each embryo were manually separated. Single E7.5 epiblast and ExE samples were individually frozen in 10µL of buffer RLT Plus (Qiagen). Total RNA was extracted using a trizol extraction method, as previously described (Veselovska et al. 2015). In brief, samples were homogenized in 400µL of TRIzol (Invitrogen) and phase separated by adding 80µL of chloroform:isoamyl alcohol (Sigma), mix and centrifuge at 4°C for 15 minutes. The aqueous phase was transferred to a new tube, 1uL GlycoBlue and 300µL of ice cold isopropanol was added and mixed. Samples were incubated for 10 minutes and then centrifuged for 10 minutes at 4°C. The pellet was washed once with 75% ethanol, air dried and then resuspended in 5µL of RNase-free water. 20µL of lysis/binding buffer was immediately added to each RNA sample and oligo(dT)25 capture of mRNA was done using Dynabeads mRNA DIRECT kit (Life Techologies). The protocol was implemented as per manufacturers’ instructions including the additional steps for elimination of rRNA contamination. Maxymum Recovery tubes (Axygen) were used and volumes were adapted for the low amount of starting material: 5µL of Dynabeads Oligo(dT)25 were used for each sample, mRNA capture was done in a total volume of 50µL of lysis/binding buffer, washes were done using 100µL Washing Buffer A or 50µL of Washing Buffer B, and a final elution volume of 5µL 10mM Tris-HCl. The total volume of mRNA was then immediately advanced into the library preparation protocol, using the SMARTer Stranded RNA-seq kit (Clontech), which is optimised for as little as 100pg of RNA. The protocol was completed as per the manufacturers’ instructions and 14 amplification cycles were used for all samples. The quantification of all libraries was done using the High DNA Sensitivity Bioanalyzer 2500 (Agilent) and Illumina library quantification kit (KAPA). Libraries were sequenced using 50bp single-end on the Illumina HiSeq 2500 RapidRun, multiplexing 12 samples per lane.
+                                <li>age: E7.5</li>
+
+                                <li>genotype: Wildtype</li>
+
+                                <li>hybrid strain: C57BL6/Babr x CAST/Ei</li>
+
+                                <li>tissue: Extra-embryonic ectoderm</li>
+
+                                <li>hybrid strain: CAST/Ei x C57BL6/Babr</li>
+
+                                <li>genotype: Dnmt3a -/+, Dnmt3b -/+ (maternal inheritance)</li>
+
+                                <li>hybrid strain: C57BL6/Babr/129 x CAST/Ei</li>
+
+                                <li>tissue: Yolk sac</li>
+
+                                <li>age: E12.5</li>
+
+                                <li>hybrid strain: C57BL6 x CAST/Ei</li>
+
+                                <li>tissue: Placenta (mat contamination)</li>
+
+                                <li>tissue: Whole embryo</li>
+
+                                <li>genotype: Mosaic Gab1 ERVK RLTR15 +/- (paternal allele deletion)</li>
+
+                            </ul>
+
+                        </section>
+
+                        <div class="panel-grid">
+                            <section class="field-group">
+                                <h3>Assay and platform</h3>
+                                <dl class="field-list">
+                                    <div><dt>Extracted molecule</dt><dd>total RNA</dd></div>
+                                    <div><dt>Library source</dt><dd>transcriptomic</dd></div>
+                                    <div><dt>Library selection</dt><dd>cDNA</dd></div>
+                                    <div><dt>Instrument model</dt><dd>Illumina HiSeq 2500</dd></div>
+                                    <div><dt>Platform ID</dt><dd>GPL17021</dd></div>
+                                    <div><dt>SRA Study ID</dt><dd>SRP174099</dd></div>
+                                    <div><dt>BioProject ID</dt><dd>PRJNA510999</dd></div>
+                                    <div><dt>File types</dt><dd>gz</dd></div>
+                                </dl>
+                            </section>
+
+                            <section class="field-group">
+                                <h3>Submission</h3>
+                                <dl class="field-list">
+                                    <div><dt>Organization</dt><dd>Altos Labs</dd></div>
+                                    <div><dt>Contact</dt><dd>Felix Krueger</dd></div>
+                                    <div><dt>Email</dt><dd>fkrueger@altoslabs.com</dd></div>
+                                    <div><dt>Submitter country</dt><dd>United Kingdom</dd></div>
+                                    <div><dt>Hospital / center</dt><dd>Babraham Institute</dd></div>
+                                    <div><dt>Submitted</dt><dd>12/20/2018</dd></div>
+                                    <div><dt>Last updated</dt><dd>02/07/2023</dd></div>
+                                    <div><dt>Supervisor / PI</dt><dd>Kelsey Gavin</dd></div>
+                                    <div><dt>Supervisor email</dt><dd>courtney.hanna@babraham.ac.uk</dd></div>
+                                </dl>
+                            </section>
+                        </div>
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="methods">
+                    <summary>
+                        <span>
+                            <strong>Methods</strong>
+                            <small>Assay, extraction, and data processing text</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body method-stack">
+
+                        <section class="method-block">
+                            <h3>Assay description</h3>
+                            <p class="long-text">To evaluate the allelic regulation of histone modifications in the embryo, we assayed H3K4me3, H3K36me3 and H3K27me3 using ultra low-input ChIP-seq (Hanna et al. 2018) and post-bisulfite adaptor tagging (PBAT) in reciprocal hybrid (C57BL6/Babr x CAST/Ei) embryonic day (E) 6.5 epiblast and extra-embryonic ectoderm (ExE).  We additionally profiled these epigenetic marks in E6.5 embryos derived from females with a double conditional knockout for Dnmt3a and Dnmt3b in oocytes (matDKO), driven by Zp3-cre.  Consequently, these matDKO embryos will inherit no maternal DNA methylation, but are able to sufficiently establish DNA methylation post-fertilisation.  Allelic gene expression was evaluated in E7.5 epiblast and ExE of all hybrid crosses.</p>
+                        </section>
+
+
+                        <section class="method-block">
+                            <h3>Extraction protocol</h3>
+                            <p class="long-text">Reciprocal natural timed matings were set up between C57BL6/Babr and CAST animals (denoted as B6/CAST and CAST/B6), and embryos were collected on embryonic day 7.5 (E7.5). Natural timed matings were set up between Dnmt3a floxed/floxed, Dnmt3b floxed/floxed, Zp3 +ve B6/129 females (resulting in ablation of DNA methylation in the oocyte) and CAST males (denoted as DKO.CAST). The epiblast (Epi) and extra-embryonic ectoderm (ExE) for each embryo were manually separated. Single E7.5 epiblast and ExE samples were individually frozen in 10µL of buffer RLT Plus (Qiagen). Total RNA was extracted using a trizol extraction method, as previously described (Veselovska et al. 2015). In brief, samples were homogenized in 400µL of TRIzol (Invitrogen) and phase separated by adding 80µL of chloroform:isoamyl alcohol (Sigma), mix and centrifuge at 4°C for 15 minutes. The aqueous phase was transferred to a new tube, 1uL GlycoBlue and 300µL of ice cold isopropanol was added and mixed. Samples were incubated for 10 minutes and then centrifuged for 10 minutes at 4°C. The pellet was washed once with 75% ethanol, air dried and then resuspended in 5µL of RNase-free water. 20µL of lysis/binding buffer was immediately added to each RNA sample and oligo(dT)25 capture of mRNA was done using Dynabeads mRNA DIRECT kit (Life Techologies). The protocol was implemented as per manufacturers’ instructions including the additional steps for elimination of rRNA contamination. Maxymum Recovery tubes (Axygen) were used and volumes were adapted for the low amount of starting material: 5µL of Dynabeads Oligo(dT)25 were used for each sample, mRNA capture was done in a total volume of 50µL of lysis/binding buffer, washes were done using 100µL Washing Buffer A or 50µL of Washing Buffer B, and a final elution volume of 5µL 10mM Tris-HCl. The total volume of mRNA was then immediately advanced into the library preparation protocol, using the SMARTer Stranded RNA-seq kit (Clontech), which is optimised for as little as 100pg of RNA. The protocol was completed as per the manufacturers’ instructions and 14 amplification cycles were used for all samples. The quantification of all libraries was done using the High DNA Sensitivity Bioanalyzer 2500 (Agilent) and Illumina library quantification kit (KAPA). Libraries were sequenced using 50bp single-end on the Illumina HiSeq 2500 RapidRun, multiplexing 12 samples per lane.
 
 C57BL6/J females were superovulated and crossed with CAST/EiJ males. Zygotes were recovered the next day and electroporated with two sgRNAs for the Gab1 RLTR15 ERVK element (200ng/μl each) (Fig S7) and CAS9 protein (500ng/μl). Embryos were then implanted into NMRI pseudo-pregnant females. Embryos were dissected on E12.5 and the following tissues were collected: 1) visceral yolk sac/amnion, 2) placental disc with as much decidua removed as possible, 3) embryo, and 4) tail clip for genotyping. Tissue samples were washed in cold PBS and flash frozen in 50μL of RLT+ buffer (Qiagen). RNA was extracted from E12.5 yolk sac, placenta and whole embryo using RNeasy Mini Kit (Qiagen) as per the manufacturers’ instructions. RNA was treated TURBO DNase (Thermo Fisher Scientific) and quality was assessed with RNA Pico Kit (Agilent) on the Agilent 2100 Bioanalyzer (RIN&gt;8.7 for all samples). mRNA sequencing libraries were generated using SmartSeq v4 cDNA generation and Nextera XT library preparation, as per manufacturers’ instructions. The quantification of all libraries was done using the High DNA Sensitivity Bioanalyzer 2500 (Agilent) and Illumina library quantification kit (KAPA). Libraries were sequenced using 125bp paired-end on the Illumina HiSeq 2500 RapidRun, multiplexing 12 samples over two lanes.</p>
-                        
-                        
-                    </div>
-                    
-                </div>
-            </section>
+                        </section>
 
-            <aside class="record-aside" aria-label="Study source notes">
+
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="pregnancy-context">
+                    <summary>
+                        <span>
+                            <strong>Pregnancy and phenotype</strong>
+                            <small>Timing, participant metadata, and complications</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body panel-grid">
+                        <section class="field-group">
+                            <h3>Timing and participants</h3>
+                            <dl class="field-list">
+                                <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at collection provided</dt><dd>Yes</dd></div>
+                                <div><dt>GA at collection weeks</dt><dd>6.5</dd></div>
+                                <div><dt>Offspring sex provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Parity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Genetic ancestry provided</dt><dd>Yes</dd></div>
+                                <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
+                            </dl>
+                        </section>
+
+                        <section class="field-group">
+                            <h3>Phenotypes and complications</h3>
+                            <dl class="field-list">
+                                <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
+                                <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
+                                <div><dt>Main topic</dt><dd>This paper investigates the epigenetic regulation of imprinted genes in post-implantation embryonic and extra-embryonic lineages, revealing that non-canonical imprints are localized to ERVK LTR repeats and transition from maternal H3K27me3 to secondary imprinted DMRs in extra-embryonic tissues.</dd></div>
+                            </dl>
+                        </section>
+                    </div>
+                </details>
+
+
+                <details class="record-panel evidence-panel" id="evidence">
+                    <summary>
+                        <span>
+                            <strong>Source evidence</strong>
+                            <small>63 evidence notes, 0 supplement findings</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body evidence-body">
+
+                        <div class="evidence-list">
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Main topic of the publication</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Epigenetic mechanisms regulating DNA-methylation-independent (non-canonical) imprinting in post-implantation mouse embryonic and extra-embryonic lineages, and the role of endogenous retrovirus-K (ERVK) long terminal repeats (LTRs).</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>This study reveals distinct epigenetic mechanisms regulating non-canonical imprinted gene expression between embryonic and extra-embryonic development and identifies an integral role for ERVK LTR repetitive elements.</blockquote>
+                                    <footer>
+                                    <span>Main paper text (Abstract)</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC6819472; PMC9870994</span>
+                                    <span>10.1038/s41467-023-36019-9; 10.1186/s13059-019-1833-x</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Main topic of the publication</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Characterization of the roles of de novo DNA methyltransferases DNMT3A, DNMT3B, and DNMT3L in gene regulation and the development of the mouse placenta.</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>Here we characterise the role for DNMT3A, 3B and 3L in gene regulation and development of the mouse placenta.</blockquote>
+                                    <footer>
+                                    <span>Abstract</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC6819472; PMC9870994</span>
+                                    <span>10.1038/s41467-023-36019-9; 10.1186/s13059-019-1833-x</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Sampling timing during pregnancy</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Late 2-cell stage, embryonic day 3.5 (E3.5) inner cell mass (ICM), and embryonic days 6.5 (E6.5), 7.5 (E7.5), and 12.5 (E12.5) of mouse pregnancy.</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>embryos were collected on embryonic days 6.5 (E6.5) and 7.5 (E7.5).</blockquote>
+                                    <footer>
+                                    <span>Methods (Sample collection)</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC6819472; PMC9870994</span>
+                                    <span>10.1038/s41467-023-36019-9; 10.1186/s13059-019-1833-x</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Sampling timing during pregnancy</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Late 2-cell stage, embryonic day 3.5 (E3.5) inner cell mass (ICM), and embryonic days 6.5 (E6.5), 7.5 (E7.5), and 12.5 (E12.5) of mouse pregnancy.</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>across pre- and post-implantation development (late 2-cell embryos, E3.5 inner cell mass (ICM), and E6.5 epiblast and ExE).</blockquote>
+                                    <footer>
+                                    <span>Supplementary Figure S11 legend</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC6819472; PMC9870994</span>
+                                    <span>10.1038/s41467-023-36019-9; 10.1186/s13059-019-1833-x</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Sampling timing during pregnancy</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Embryonic days E6.5, E7.5, E12.5, and E18.5</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>Natural timed matings were used to collect embryos on embryonic days 6.5 (E6.5), E7.5, E12.5, and E18.5.</blockquote>
+                                    <footer>
+                                    <span>Methods, Sample collections section</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC6819472; PMC9870994</span>
+                                    <span>10.1038/s41467-023-36019-9; 10.1186/s13059-019-1833-x</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Samples collected at single pregnancy time point (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>embryos were collected on embryonic days 6.5 (E6.5) and 7.5 (E7.5).</blockquote>
+                                    <footer>
+                                    <span>Methods (Sample collection)</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC6819472; PMC9870994</span>
+                                    <span>10.1038/s41467-023-36019-9; 10.1186/s13059-019-1833-x</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Samples collected at single pregnancy time point (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>RNA was extracted from E12.5 yolk sac, placenta, and whole embryo</blockquote>
+                                    <footer>
+                                    <span>Methods (mRNA sequencing library preparation)</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC6819472; PMC9870994</span>
+                                    <span>10.1038/s41467-023-36019-9; 10.1186/s13059-019-1833-x</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Samples collected at single pregnancy time point (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>Natural timed matings were used to collect embryos on embryonic days 6.5 (E6.5), E7.5, E12.5, and E18.5.</blockquote>
+                                    <footer>
+                                    <span>Methods, Sample collections section</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC6819472; PMC9870994</span>
+                                    <span>10.1038/s41467-023-36019-9; 10.1186/s13059-019-1833-x</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Gestational Age at delivery provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC6819472; PMC9870994</span>
+                                    <span>10.1038/s41467-023-36019-9; 10.1186/s13059-019-1833-x</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Gestational Age at sample collection provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Yes</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>embryos were collected on embryonic days 6.5 (E6.5) and 7.5 (E7.5).</blockquote>
+                                    <footer>
+                                    <span>Methods (Sample collection)</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC6819472; PMC9870994</span>
+                                    <span>10.1038/s41467-023-36019-9; 10.1186/s13059-019-1833-x</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                        </div>
+
+
+
+                    </div>
+                </details>
+
+            </div>
+
+            <aside class="record-aside" aria-label="Record sources">
                 <section class="source-note">
-                    <p class="eyebrow">Source notes</p>
-                    <div class="provenance-list">
+                    <h2>Record sources</h2>
+                    <dl class="source-status-list">
+                        <div><dt>Metadata</dt><dd>GEO</dd></div>
                         <div>
-                            <strong>GEO metadata</strong>
-                            <p>Core study, assay, platform, contact, and submission fields come from GEO metadata.</p>
+                            <dt>Publication</dt>
+                            <dd>Linked</dd>
                         </div>
                         <div>
-                            <strong>Publication links</strong>
-                            <p>
-                                
-                                PMID, PMC, or DOI identifiers are available for source inspection.
-                                
-                            </p>
+                            <dt>Review evidence</dt>
+                            <dd>63 notes</dd>
                         </div>
-                        <div>
-                            <strong>Workbook notes</strong>
-                            <p>
-                                
-                                63 evidence notes are linked to this GEO study.
-                                
-                            </p>
-                        </div>
-                        
-                    </div>
-                </section>
 
-                <section class="source-links-block">
-                    <p class="eyebrow">Identifiers</p>
-                    <div class="external-grid">
-                        
+                    </dl>
+
+                    <div class="external-grid" aria-label="Record identifiers">
+
                         <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE124215" target="_blank"
                             rel="noopener">GEO: GSE124215</a>
-                        
-                        
+
+
                         <a href="https://pubmed.ncbi.nlm.nih.gov/31665063/" target="_blank"
                             rel="noopener">PMID: 31665063</a>
-                        
-                        
+
+
                         <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6819472/" target="_blank"
                             rel="noopener">PMC: PMC6819472</a>
-                        
-                        
+
+
                         <a href="https://doi.org/10.1186/s13059-019-1833-x" target="_blank" rel="noopener">DOI: 10.1186/s13059-019-1833-x</a>
-                        
+
                     </div>
                 </section>
             </aside>
         </section>
 
-        <section class="record-section curation-section">
-            <div class="section-heading">
-                <p class="eyebrow">Workbook-reviewed fields</p>
-                <h2>Pregnancy, phenotype, and sample context</h2>
-            </div>
-            <div class="technical-grid">
-                <div class="field-group">
-                    <h3>Pregnancy timing and participants</h3>
-                    <dl class="field-list">
-                        <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at collection provided</dt><dd>Yes</dd></div>
-                        <div><dt>GA at collection weeks</dt><dd>6.5</dd></div>
-                        <div><dt>Offspring sex provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Parity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Genetic ancestry provided</dt><dd>Yes</dd></div>
-                        <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
-                    </dl>
-                </div>
-
-                <div class="field-group">
-                    <h3>Phenotypes and complications</h3>
-                    <dl class="field-list">
-                        <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
-                        <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
-                        <div><dt>Main topic</dt><dd>This paper investigates the epigenetic regulation of imprinted genes in post-implantation embryonic and extra-embryonic lineages, revealing that non-canonical imprints are localized to ERVK LTR repeats and transition from maternal H3K27me3 to secondary imprinted DMRs in extra-embryonic tissues.</dd></div>
-                    </dl>
-                </div>
-            </div>
-        </section>
-
-        <details class="evidence-ledger" id="evidence">
-            <summary>
-                <span>
-                    <span class="eyebrow">Workbook excerpt</span>
-                    <strong>Source evidence</strong>
-                </span>
-                <span class="evidence-counts">
-                    <span>63 evidence notes linked</span>
-                    <span>0 supplement repair findings</span>
-                </span>
-            </summary>
-
-            <div class="evidence-body">
-                
-                <div class="evidence-list">
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Main topic of the publication</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Epigenetic mechanisms regulating DNA-methylation-independent (non-canonical) imprinting in post-implantation mouse embryonic and extra-embryonic lineages, and the role of endogenous retrovirus-K (ERVK) long terminal repeats (LTRs).</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>This study reveals distinct epigenetic mechanisms regulating non-canonical imprinted gene expression between embryonic and extra-embryonic development and identifies an integral role for ERVK LTR repetitive elements.</blockquote>
-                            <footer>
-                            <span>Main paper text (Abstract)</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC6819472; PMC9870994</span>
-                            <span>10.1038/s41467-023-36019-9; 10.1186/s13059-019-1833-x</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Main topic of the publication</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Characterization of the roles of de novo DNA methyltransferases DNMT3A, DNMT3B, and DNMT3L in gene regulation and the development of the mouse placenta.</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>Here we characterise the role for DNMT3A, 3B and 3L in gene regulation and development of the mouse placenta.</blockquote>
-                            <footer>
-                            <span>Abstract</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC6819472; PMC9870994</span>
-                            <span>10.1038/s41467-023-36019-9; 10.1186/s13059-019-1833-x</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Sampling timing during pregnancy</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Late 2-cell stage, embryonic day 3.5 (E3.5) inner cell mass (ICM), and embryonic days 6.5 (E6.5), 7.5 (E7.5), and 12.5 (E12.5) of mouse pregnancy.</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>embryos were collected on embryonic days 6.5 (E6.5) and 7.5 (E7.5).</blockquote>
-                            <footer>
-                            <span>Methods (Sample collection)</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC6819472; PMC9870994</span>
-                            <span>10.1038/s41467-023-36019-9; 10.1186/s13059-019-1833-x</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Sampling timing during pregnancy</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Late 2-cell stage, embryonic day 3.5 (E3.5) inner cell mass (ICM), and embryonic days 6.5 (E6.5), 7.5 (E7.5), and 12.5 (E12.5) of mouse pregnancy.</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>across pre- and post-implantation development (late 2-cell embryos, E3.5 inner cell mass (ICM), and E6.5 epiblast and ExE).</blockquote>
-                            <footer>
-                            <span>Supplementary Figure S11 legend</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC6819472; PMC9870994</span>
-                            <span>10.1038/s41467-023-36019-9; 10.1186/s13059-019-1833-x</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Sampling timing during pregnancy</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Embryonic days E6.5, E7.5, E12.5, and E18.5</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>Natural timed matings were used to collect embryos on embryonic days 6.5 (E6.5), E7.5, E12.5, and E18.5.</blockquote>
-                            <footer>
-                            <span>Methods, Sample collections section</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC6819472; PMC9870994</span>
-                            <span>10.1038/s41467-023-36019-9; 10.1186/s13059-019-1833-x</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Samples collected at single pregnancy time point (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>embryos were collected on embryonic days 6.5 (E6.5) and 7.5 (E7.5).</blockquote>
-                            <footer>
-                            <span>Methods (Sample collection)</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC6819472; PMC9870994</span>
-                            <span>10.1038/s41467-023-36019-9; 10.1186/s13059-019-1833-x</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Samples collected at single pregnancy time point (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>RNA was extracted from E12.5 yolk sac, placenta, and whole embryo</blockquote>
-                            <footer>
-                            <span>Methods (mRNA sequencing library preparation)</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC6819472; PMC9870994</span>
-                            <span>10.1038/s41467-023-36019-9; 10.1186/s13059-019-1833-x</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Samples collected at single pregnancy time point (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>Natural timed matings were used to collect embryos on embryonic days 6.5 (E6.5), E7.5, E12.5, and E18.5.</blockquote>
-                            <footer>
-                            <span>Methods, Sample collections section</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC6819472; PMC9870994</span>
-                            <span>10.1038/s41467-023-36019-9; 10.1186/s13059-019-1833-x</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Gestational Age at delivery provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC6819472; PMC9870994</span>
-                            <span>10.1038/s41467-023-36019-9; 10.1186/s13059-019-1833-x</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Gestational Age at sample collection provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Yes</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>embryos were collected on embryonic days 6.5 (E6.5) and 7.5 (E7.5).</blockquote>
-                            <footer>
-                            <span>Methods (Sample collection)</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC6819472; PMC9870994</span>
-                            <span>10.1038/s41467-023-36019-9; 10.1186/s13059-019-1833-x</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                </div>
-                
-
-                
-            </div>
-        </details>
-
         <nav class="entry-navigation">
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/103.html">Previous study</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/repository.html">Studies</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/105.html">Next study</a>
-            
+
         </nav>
     </main>
 

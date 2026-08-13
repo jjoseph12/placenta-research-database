@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GSE43520 - Placenta Study Atlas</title>
     <meta name="description" content="The evolution of lncRNA repertoires and expression patterns in tetrapods">
-    <link rel="stylesheet" href="/placenta-research-database/static/style.css">
+    <link rel="stylesheet" href="/placenta-research-database/static/style.css?v=20260813-4">
 </head>
 
 <body>
@@ -27,18 +27,10 @@
                 <h1>The evolution of lncRNA repertoires and expression patterns in tetrapods</h1>
             </div>
             <div class="source-actions" aria-label="Source links">
-                <a href="#evidence">Evidence notes</a>
-                
+
                 <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE43520"
                     target="_blank" rel="noopener">Open GEO</a>
-                
-                
-                <a href="https://pubmed.ncbi.nlm.nih.gov/24463510/" target="_blank"
-                    rel="noopener">PubMed</a>
-                
-                
-                <a href="https://doi.org/10.1038/nature12943" target="_blank" rel="noopener">DOI</a>
-                
+
             </div>
         </article>
 
@@ -70,401 +62,479 @@
         </section>
 
         <section class="record-layout">
-            <section class="record-section geo-section">
-                <div class="section-heading">
-                    <p class="eyebrow">GEO record</p>
-                    <h2>Sample, assay, and methods</h2>
-                </div>
-                <div class="technical-grid">
-                    <div class="field-group sample-group wide-group">
-                        <h3>Sample characteristics</h3>
-                        <p class="long-text">Sex: male | strain: NA | age: adult, 48 years | extract_protocol: Illumina GAIIx, strand-specific | library-type (for tophat and cufflinks): fr-secondstrand | age: adult | age: adult, 51 years | age: embryo, 13 weeks post-conception | Sex: female | age: adult, 47 years | extract_protocol: Illumina GAIIx, non-strand-specific | library-type (for tophat or cufflinks): fr-unstranded | age: adult, 8 years | strain: C57BL/6 | age: embryo, 16.5 days post-conception | age: embryo, 10.5 days post-conception | age: adult, 13 months | age: adult, 20 months | Sex: unknown | age: embryo, 13 days post-conception | age: adult (4-6 months) | extract_protocol: Illumina GAII, non strand-specific | library-type (for tophat and cufflinks): fr-unstranded | age: 42 weeks post-conception | extract_protocol: Illumina HiSeq 2000, strand-specific | library-type (for tophat and cufflinks): fr-firststrand | age: NA (pool of individuals) | age: adult (16 weeks) | Sex: pooled male and female | strain: CD-1 | age: E 10.5 post-conception | age: E 16.5 post-conception | Sex: NA | age: 14 days post-conception | age: 12 days post-conception | age: 13 weeks post-conception</p>
-                    </div>
+            <div class="record-content">
+                <details class="record-panel" id="study-details">
+                    <summary>
+                        <span>
+                            <strong>Study details</strong>
+                            <small>Samples, assay, platform, and submission</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body">
+                        <section class="field-group sample-group">
+                            <h3>Sample characteristics</h3>
 
-                    <div class="field-group">
-                        <h3>Assay and platform</h3>
-                        <dl class="field-list">
-                            <div><dt>Extracted molecule</dt><dd>polyA RNA, total RNA</dd></div>
-                            <div><dt>Library source</dt><dd>transcriptomic</dd></div>
-                            <div><dt>Library selection</dt><dd>cDNA, size fractionation</dd></div>
-                            <div><dt>Instrument model</dt><dd>Illumina Genome Analyzer IIx, Illumina Genome Analyzer II, Illumina HiSeq 2000</dd></div>
-                            <div><dt>Platform ID</dt><dd>GPL9115, GPL10999, GPL11002, GPL11154, GPL13112, GPL13741, GPL13766, GPL13797, GPL13798, GPL13799, GPL13801, GPL15381, GPL15472, GPL16133, GPL17497</dd></div>
-                            <div><dt>SRA Study ID</dt><dd>SRP017959</dd></div>
-                            <div><dt>BioProject ID</dt><dd>PRJNA186646</dd></div>
-                            <div><dt>File types</dt><dd>tar</dd></div>
-                        </dl>
-                    </div>
+                            <ul class="characteristic-list">
 
-                    <div class="field-group">
-                        <h3>Submission information</h3>
-                        <dl class="field-list">
-                            <div><dt>Organization</dt><dd>CNRS, Université Claude Bernard Lyon 1</dd></div>
-                            <div><dt>Contact</dt><dd>Anamaria Necsulea</dd></div>
-                            <div><dt>Email</dt><dd>anamaria.necsulea@univ-lyon1.fr</dd></div>
-                            <div><dt>Submitter country</dt><dd>France</dd></div>
-                            <div><dt>Hospital / center</dt><dd>Not reported</dd></div>
-                            <div><dt>Submitted</dt><dd>01/15/2013</dd></div>
-                            <div><dt>Last updated</dt><dd>05/15/2019</dd></div>
-                            <div><dt>Supervisor / PI</dt><dd>Not reported</dd></div>
-                            <div><dt>Supervisor email</dt><dd>Not reported</dd></div>
-                        </dl>
-                    </div>
+                                <li>Sex: male</li>
 
-                    
-                    <div class="field-group methods-group">
-                        <h3>Methods text</h3>
-                        
-                        <h4>Assay description</h4>
-                        <p class="long-text">[Batch 1 and 2] To broaden our understanding of lncRNA evolution, we used an extensive RNA-seq dataset to establish lncRNA repertoires and homologous gene families in 11 tetrapod species. We analyzed the poly- adenylated transcriptomes of 8 organs (cortex/whole brain without cerebellum, cerebellum, heart, kidney, liver, placenta, ovary and testis) and 11 species (human, chimpanzee, bonobo, gorilla, orangutan, macaque, mouse, opossum, platypus, chicken and the frog Xenopus tropicalis), which shared a common ancestor ~370 millions of years (MY) ago. Our dataset included 47 strand-specific samples, which allowed us to confirm the orientation of gene predictions and to address the evolution of sense-antisense transcripts. See also GSE43721 (Soumillon et al, Cell Reports, 2013) for three strand-specific samples for mouse brain, liver and testis.</p>
-                        
-                        
-                        <h4>Extraction protocol</h4>
-                        <p class="long-text">Total RNA was extracted using the Trizol (Invitrogen) procedure or RNAeasy/RNAeasy Lipid/miRNeasy (Qiagen) column purification kits. RNA quality was assessed using an Agilent 2100 Bioanalyzer. Non-strand-specific sequencing libraries were prepared using the mRNA-Seq Sample Prep Kit (Illumina) according to the manufacturer&#39;s instructions. Briefly, polyadenylated RNA was isolated using a poly-dT bead procedure and then chemically fragmented and randomly primed for reverse transcription. After second-strand synthesis, the ends of the double-stranded cDNA were repaired. After 3&#39;-end adenylation of these products, Illumina Paired-End Sequencing adapters were ligated to the blunt ends of the cDNA fragments. Ligated products were run on gels; 250-300 bp fragments were excised and then PCR-amplified (15 cycles). After column-purification, qualities of the resulting libraries were assessed using Agilent 2100 Bioanalyzers. Strand-specific libraries were prepared using an optimized version of the original Directional mRNA-seq Library Prep Pre-Release Protocol from Illumina. We used reagents from various companies instead of Illumina’s to decrease significantly the library cost and as a consequence adapted the reaction parameters for each step. In addition, we integrated a size selection step, right after fragmentation to optimize the insert size distribution and decrease the adapter contamination. This optimized protocol is available upon request.
+                                <li>strain: NA</li>
+
+                                <li>age: adult, 48 years</li>
+
+                                <li>extract_protocol: Illumina GAIIx, strand-specific</li>
+
+                                <li>library-type (for tophat and cufflinks): fr-secondstrand</li>
+
+                                <li>age: adult</li>
+
+                                <li>age: adult, 51 years</li>
+
+                                <li>age: embryo, 13 weeks post-conception</li>
+
+                                <li>Sex: female</li>
+
+                                <li>age: adult, 47 years</li>
+
+                                <li>extract_protocol: Illumina GAIIx, non-strand-specific</li>
+
+                                <li>library-type (for tophat or cufflinks): fr-unstranded</li>
+
+                                <li>age: adult, 8 years</li>
+
+                                <li>strain: C57BL/6</li>
+
+                                <li>age: embryo, 16.5 days post-conception</li>
+
+                                <li>age: embryo, 10.5 days post-conception</li>
+
+                                <li>age: adult, 13 months</li>
+
+                                <li>age: adult, 20 months</li>
+
+                                <li>Sex: unknown</li>
+
+                                <li>age: embryo, 13 days post-conception</li>
+
+                                <li>age: adult (4-6 months)</li>
+
+                                <li>extract_protocol: Illumina GAII, non strand-specific</li>
+
+                                <li>library-type (for tophat and cufflinks): fr-unstranded</li>
+
+                                <li>age: 42 weeks post-conception</li>
+
+                                <li>extract_protocol: Illumina HiSeq 2000, strand-specific</li>
+
+                                <li>library-type (for tophat and cufflinks): fr-firststrand</li>
+
+                                <li>age: NA (pool of individuals)</li>
+
+                                <li>age: adult (16 weeks)</li>
+
+                                <li>Sex: pooled male and female</li>
+
+                                <li>strain: CD-1</li>
+
+                                <li>age: E 10.5 post-conception</li>
+
+                                <li>age: E 16.5 post-conception</li>
+
+                                <li>Sex: NA</li>
+
+                                <li>age: 14 days post-conception</li>
+
+                                <li>age: 12 days post-conception</li>
+
+                                <li>age: 13 weeks post-conception</li>
+
+                            </ul>
+
+                        </section>
+
+                        <div class="panel-grid">
+                            <section class="field-group">
+                                <h3>Assay and platform</h3>
+                                <dl class="field-list">
+                                    <div><dt>Extracted molecule</dt><dd>polyA RNA, total RNA</dd></div>
+                                    <div><dt>Library source</dt><dd>transcriptomic</dd></div>
+                                    <div><dt>Library selection</dt><dd>cDNA, size fractionation</dd></div>
+                                    <div><dt>Instrument model</dt><dd>Illumina Genome Analyzer IIx, Illumina Genome Analyzer II, Illumina HiSeq 2000</dd></div>
+                                    <div><dt>Platform ID</dt><dd>GPL9115, GPL10999, GPL11002, GPL11154, GPL13112, GPL13741, GPL13766, GPL13797, GPL13798, GPL13799, GPL13801, GPL15381, GPL15472, GPL16133, GPL17497</dd></div>
+                                    <div><dt>SRA Study ID</dt><dd>SRP017959</dd></div>
+                                    <div><dt>BioProject ID</dt><dd>PRJNA186646</dd></div>
+                                    <div><dt>File types</dt><dd>tar</dd></div>
+                                </dl>
+                            </section>
+
+                            <section class="field-group">
+                                <h3>Submission</h3>
+                                <dl class="field-list">
+                                    <div><dt>Organization</dt><dd>CNRS, Université Claude Bernard Lyon 1</dd></div>
+                                    <div><dt>Contact</dt><dd>Anamaria Necsulea</dd></div>
+                                    <div><dt>Email</dt><dd>anamaria.necsulea@univ-lyon1.fr</dd></div>
+                                    <div><dt>Submitter country</dt><dd>France</dd></div>
+                                    <div><dt>Hospital / center</dt><dd>Not reported</dd></div>
+                                    <div><dt>Submitted</dt><dd>01/15/2013</dd></div>
+                                    <div><dt>Last updated</dt><dd>05/15/2019</dd></div>
+                                    <div><dt>Supervisor / PI</dt><dd>Not reported</dd></div>
+                                    <div><dt>Supervisor email</dt><dd>Not reported</dd></div>
+                                </dl>
+                            </section>
+                        </div>
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="methods">
+                    <summary>
+                        <span>
+                            <strong>Methods</strong>
+                            <small>Assay, extraction, and data processing text</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body method-stack">
+
+                        <section class="method-block">
+                            <h3>Assay description</h3>
+                            <p class="long-text">[Batch 1 and 2] To broaden our understanding of lncRNA evolution, we used an extensive RNA-seq dataset to establish lncRNA repertoires and homologous gene families in 11 tetrapod species. We analyzed the poly- adenylated transcriptomes of 8 organs (cortex/whole brain without cerebellum, cerebellum, heart, kidney, liver, placenta, ovary and testis) and 11 species (human, chimpanzee, bonobo, gorilla, orangutan, macaque, mouse, opossum, platypus, chicken and the frog Xenopus tropicalis), which shared a common ancestor ~370 millions of years (MY) ago. Our dataset included 47 strand-specific samples, which allowed us to confirm the orientation of gene predictions and to address the evolution of sense-antisense transcripts. See also GSE43721 (Soumillon et al, Cell Reports, 2013) for three strand-specific samples for mouse brain, liver and testis.</p>
+                        </section>
+
+
+                        <section class="method-block">
+                            <h3>Extraction protocol</h3>
+                            <p class="long-text">Total RNA was extracted using the Trizol (Invitrogen) procedure or RNAeasy/RNAeasy Lipid/miRNeasy (Qiagen) column purification kits. RNA quality was assessed using an Agilent 2100 Bioanalyzer. Non-strand-specific sequencing libraries were prepared using the mRNA-Seq Sample Prep Kit (Illumina) according to the manufacturer&#39;s instructions. Briefly, polyadenylated RNA was isolated using a poly-dT bead procedure and then chemically fragmented and randomly primed for reverse transcription. After second-strand synthesis, the ends of the double-stranded cDNA were repaired. After 3&#39;-end adenylation of these products, Illumina Paired-End Sequencing adapters were ligated to the blunt ends of the cDNA fragments. Ligated products were run on gels; 250-300 bp fragments were excised and then PCR-amplified (15 cycles). After column-purification, qualities of the resulting libraries were assessed using Agilent 2100 Bioanalyzers. Strand-specific libraries were prepared using an optimized version of the original Directional mRNA-seq Library Prep Pre-Release Protocol from Illumina. We used reagents from various companies instead of Illumina’s to decrease significantly the library cost and as a consequence adapted the reaction parameters for each step. In addition, we integrated a size selection step, right after fragmentation to optimize the insert size distribution and decrease the adapter contamination. This optimized protocol is available upon request.
 
 Total RNA was extracted using the Trizol (Invitrogen) procedure or RNAeasy/RNAeasy Lipid/miRNeasy (Qiagen) column purification kits. RNA quality was assessed using an Agilent 2100 Bioanalyzer. Non-strand-specific sequencing libraries were prepared using the mRNA-Seq Sample Prep Kit (Illumina) according to the manufacturer&#39;s instructions. Briefly, polyadenylated RNA was isolated using a poly-dT bead procedure and then chemically fragmented and randomly primed for reverse transcription. After second-strand synthesis, the ends of the double-stranded cDNA were repaired. After 3&#39;-end adenylation of these products, Illumina Paired-End Sequencing adapters were ligated to the blunt ends of the cDNA fragments. Ligated products were run on gels; 250-300 bp fragments were excised and then PCR-amplified (15 cycles). After column-purification, qualities of the resulting libraries were assessed using Agilent 2100 Bioanalyzers. Strand-specific libraries were prepared using an optimized version of the original Directional mRNA-seq Library Prep Pre-Release Protocol from Illumina. We used reagents from various companies instead of Illumina’s to decrease significantly the library cost and as a consequence adapted the reaction parameters for each step. In addition, we integrated a size selection step, right after fragmentation to optimize the insert size distribution and decrease the adapter contamination. This optimized protocol is available upon request. Please note that this sample is identical to GSM881436 (however, different processed data is provided here).</p>
-                        
-                        
-                    </div>
-                    
-                </div>
-            </section>
+                        </section>
 
-            <aside class="record-aside" aria-label="Study source notes">
+
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="pregnancy-context">
+                    <summary>
+                        <span>
+                            <strong>Pregnancy and phenotype</strong>
+                            <small>Timing, participant metadata, and complications</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body panel-grid">
+                        <section class="field-group">
+                            <h3>Timing and participants</h3>
+                            <dl class="field-list">
+                                <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at collection provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at collection weeks</dt><dd>Not reported</dd></div>
+                                <div><dt>Offspring sex provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Parity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Genetic ancestry provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
+                            </dl>
+                        </section>
+
+                        <section class="field-group">
+                            <h3>Phenotypes and complications</h3>
+                            <dl class="field-list">
+                                <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
+                                <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
+                                <div><dt>Main topic</dt><dd>Not reported</dd></div>
+                            </dl>
+                        </section>
+                    </div>
+                </details>
+
+
+                <details class="record-panel evidence-panel" id="evidence">
+                    <summary>
+                        <span>
+                            <strong>Source evidence</strong>
+                            <small>31 evidence notes, 0 supplement findings</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body evidence-body">
+
+                        <div class="evidence-list">
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Main topic of the publication</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>The paper focuses on constructing and analyzing the lncRNA-miRNA-mRNA ceRNA network in aortic dissection using bioinformatics methods.</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>The purpose of this study was to construct and analyse the lncRNA-miRNA-mRNA ceRNA network in AD.</blockquote>
+                                    <footer>
+                                    <span>Introduction</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC13154793</span>
+
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Sampling timing during pregnancy</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not Provided</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC13154793</span>
+
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Samples collected at single pregnancy time point (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC13154793</span>
+
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Gestational Age at delivery provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC13154793</span>
+
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Gestational Age at sample collection provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC13154793</span>
+
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Birthweight of offspring provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC13154793</span>
+
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Samples from pregnancy complications collected</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC13154793</span>
+
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Pregnancy complications in data set (list)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC13154793</span>
+
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Fetal complications listed (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC13154793</span>
+
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Fetal complications in data set (list)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC13154793</span>
+
+                                    </footer>
+                                </div>
+                            </article>
+
+                        </div>
+
+
+
+                    </div>
+                </details>
+
+            </div>
+
+            <aside class="record-aside" aria-label="Record sources">
                 <section class="source-note">
-                    <p class="eyebrow">Source notes</p>
-                    <div class="provenance-list">
+                    <h2>Record sources</h2>
+                    <dl class="source-status-list">
+                        <div><dt>Metadata</dt><dd>GEO</dd></div>
                         <div>
-                            <strong>GEO metadata</strong>
-                            <p>Core study, assay, platform, contact, and submission fields come from GEO metadata.</p>
+                            <dt>Publication</dt>
+                            <dd>Linked</dd>
                         </div>
                         <div>
-                            <strong>Publication links</strong>
-                            <p>
-                                
-                                PMID, PMC, or DOI identifiers are available for source inspection.
-                                
-                            </p>
+                            <dt>Review evidence</dt>
+                            <dd>31 notes</dd>
                         </div>
-                        <div>
-                            <strong>Workbook notes</strong>
-                            <p>
-                                
-                                31 evidence notes are linked to this GEO study.
-                                
-                            </p>
-                        </div>
-                        
-                    </div>
-                </section>
 
-                <section class="source-links-block">
-                    <p class="eyebrow">Identifiers</p>
-                    <div class="external-grid">
-                        
+                    </dl>
+
+                    <div class="external-grid" aria-label="Record identifiers">
+
                         <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE43520" target="_blank"
                             rel="noopener">GEO: GSE43520</a>
-                        
-                        
+
+
                         <a href="https://pubmed.ncbi.nlm.nih.gov/24463510/" target="_blank"
                             rel="noopener">PMID: 24463510</a>
-                        
-                        
-                        
+
+
+
                         <a href="https://doi.org/10.1038/nature12943" target="_blank" rel="noopener">DOI: 10.1038/nature12943</a>
-                        
+
                     </div>
                 </section>
             </aside>
         </section>
 
-        <section class="record-section curation-section">
-            <div class="section-heading">
-                <p class="eyebrow">Workbook-reviewed fields</p>
-                <h2>Pregnancy, phenotype, and sample context</h2>
-            </div>
-            <div class="technical-grid">
-                <div class="field-group">
-                    <h3>Pregnancy timing and participants</h3>
-                    <dl class="field-list">
-                        <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at collection provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at collection weeks</dt><dd>Not reported</dd></div>
-                        <div><dt>Offspring sex provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Parity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Genetic ancestry provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
-                    </dl>
-                </div>
-
-                <div class="field-group">
-                    <h3>Phenotypes and complications</h3>
-                    <dl class="field-list">
-                        <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
-                        <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
-                        <div><dt>Main topic</dt><dd>Not reported</dd></div>
-                    </dl>
-                </div>
-            </div>
-        </section>
-
-        <details class="evidence-ledger" id="evidence">
-            <summary>
-                <span>
-                    <span class="eyebrow">Workbook excerpt</span>
-                    <strong>Source evidence</strong>
-                </span>
-                <span class="evidence-counts">
-                    <span>31 evidence notes linked</span>
-                    <span>0 supplement repair findings</span>
-                </span>
-            </summary>
-
-            <div class="evidence-body">
-                
-                <div class="evidence-list">
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Main topic of the publication</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>The paper focuses on constructing and analyzing the lncRNA-miRNA-mRNA ceRNA network in aortic dissection using bioinformatics methods.</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>The purpose of this study was to construct and analyse the lncRNA-miRNA-mRNA ceRNA network in AD.</blockquote>
-                            <footer>
-                            <span>Introduction</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC13154793</span>
-                            
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Sampling timing during pregnancy</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not Provided</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC13154793</span>
-                            
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Samples collected at single pregnancy time point (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC13154793</span>
-                            
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Gestational Age at delivery provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC13154793</span>
-                            
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Gestational Age at sample collection provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC13154793</span>
-                            
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Birthweight of offspring provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC13154793</span>
-                            
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Samples from pregnancy complications collected</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC13154793</span>
-                            
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Pregnancy complications in data set (list)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC13154793</span>
-                            
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Fetal complications listed (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC13154793</span>
-                            
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Fetal complications in data set (list)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC13154793</span>
-                            
-                            </footer>
-                        </div>
-                    </article>
-                    
-                </div>
-                
-
-                
-            </div>
-        </details>
-
         <nav class="entry-navigation">
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/1306.html">Previous study</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/repository.html">Studies</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/1308.html">Next study</a>
-            
+
         </nav>
     </main>
 

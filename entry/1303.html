@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GSE48889 - Placenta Study Atlas</title>
     <meta name="description" content="SnapShot-Seq: a method for extracting genome-wide, in vivo mRNA dynamics from a single total RNA sample">
-    <link rel="stylesheet" href="/placenta-research-database/static/style.css">
+    <link rel="stylesheet" href="/placenta-research-database/static/style.css?v=20260813-4">
 </head>
 
 <body>
@@ -27,18 +27,10 @@
                 <h1>SnapShot-Seq: a method for extracting genome-wide, in vivo mRNA dynamics from a single total RNA sample</h1>
             </div>
             <div class="source-actions" aria-label="Source links">
-                <a href="#evidence">Evidence notes</a>
-                
+
                 <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE48889"
                     target="_blank" rel="noopener">Open GEO</a>
-                
-                
-                <a href="https://pubmed.ncbi.nlm.nih.gov/24586954/" target="_blank"
-                    rel="noopener">PubMed</a>
-                
-                
-                <a href="https://doi.org/10.1371/journal.pone.0089673" target="_blank" rel="noopener">DOI</a>
-                
+
             </div>
         </article>
 
@@ -70,180 +62,206 @@
         </section>
 
         <section class="record-layout">
-            <section class="record-section geo-section">
-                <div class="section-heading">
-                    <p class="eyebrow">GEO record</p>
-                    <h2>Sample, assay, and methods</h2>
-                </div>
-                <div class="technical-grid">
-                    <div class="field-group sample-group wide-group">
-                        <h3>Sample characteristics</h3>
-                        <p class="long-text">cell type: HeLa cells | treatment: vehicle | treatment: camptothecin | treatment: Isoginkgetin | cell type: Lymphocyte cell lines | treatment: control | treatment: 4-thiouridine 5&#39; lableing | cell type: Ambion | tissue: human brain | tissue: human heart | tissue: human kidney | tissue: human liver | tissue: human lung | tissue: human ovary | tissue: human placenta | tissue: human spleen | tissue: human testis | tissue: human thymus</p>
-                    </div>
+            <div class="record-content">
+                <details class="record-panel" id="study-details">
+                    <summary>
+                        <span>
+                            <strong>Study details</strong>
+                            <small>Samples, assay, platform, and submission</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body">
+                        <section class="field-group sample-group">
+                            <h3>Sample characteristics</h3>
 
-                    <div class="field-group">
-                        <h3>Assay and platform</h3>
-                        <dl class="field-list">
-                            <div><dt>Extracted molecule</dt><dd>total RNA</dd></div>
-                            <div><dt>Library source</dt><dd>transcriptomic</dd></div>
-                            <div><dt>Library selection</dt><dd>cDNA</dd></div>
-                            <div><dt>Instrument model</dt><dd>Illumina HiSeq 2000, AB SOLiD System 3.0</dd></div>
-                            <div><dt>Platform ID</dt><dd>GPL9442, GPL11154</dd></div>
-                            <div><dt>SRA Study ID</dt><dd>SRP028912</dd></div>
-                            <div><dt>BioProject ID</dt><dd>PRJNA215795</dd></div>
-                            <div><dt>File types</dt><dd>gz, tar</dd></div>
-                        </dl>
-                    </div>
+                            <ul class="characteristic-list">
 
-                    <div class="field-group">
-                        <h3>Submission information</h3>
-                        <dl class="field-list">
-                            <div><dt>Organization</dt><dd>Harvard Medical School</dd></div>
-                            <div><dt>Contact</dt><dd>David A Harmin</dd></div>
-                            <div><dt>Email</dt><dd>David_Harmin@hms.harvard.edu</dd></div>
-                            <div><dt>Submitter country</dt><dd>USA</dd></div>
-                            <div><dt>Hospital / center</dt><dd>QIMR Berghofer Medical Research Institute; Lurie Children&#39;s Hospital of Chicago Research Center</dd></div>
-                            <div><dt>Submitted</dt><dd>07/15/2013</dd></div>
-                            <div><dt>Last updated</dt><dd>05/15/2019</dd></div>
-                            <div><dt>Supervisor / PI</dt><dd>Michael Springer</dd></div>
-                            <div><dt>Supervisor email</dt><dd>Michael_Springer@hms.harvard.edu</dd></div>
-                        </dl>
-                    </div>
+                                <li>cell type: HeLa cells</li>
 
-                    
-                    <div class="field-group methods-group">
-                        <h3>Methods text</h3>
-                        
-                        <h4>Assay description</h4>
-                        <p class="long-text">These data are total RNA-Seq data, from RNA sequencing of rRNA-depleted total cellular RNA -- except the LCL 4SU data, which derive from 4SU-labeled RNA.  Please see the associated paper for more details.</p>
-                        
-                        
-                        <h4>Extraction protocol</h4>
-                        <p class="long-text">Illumina library construction and sequencing. RNA-seq libraries were constructed using the strand-specific dUTP method, with minor modifications. Briefly, 3ug of DNAse treated RNA was depleted of rRNA using Ribozero (Epicentre). Two batches of rRNA-depleted samples were combined, cleaned by RiboMinus concentration module (Invitrogen) and fragmented at 90°C for 3 min (NEB fragmentation buffer). First strand synthesis was followed by cleanup with RNAClean XP SPRI beads (Agencourt). Second strand synthesis incorporated dUTP, followed by sample clean up with MinElute PCR purification Kit (Qiagen). Fragment ends were repaired, adenylated, then ligated to True-Seq barcoded adaptors and cleaned up with AMPure XP SPRI beads (Agencourt). The libraries were then amplified by PCR for 12 cycles and cleaned up with AMPure XP SPRI beads. Illumina sequencing (1 x 50-bp read length) was performed on a HiSeq 2000. 4SU libraries were prepared non-strand-specifically using standard Illumina RNA-Seq. SOLiD RNA-Seq library construction and sequencing. Total RNA was depleted of ribosomal RNA by hybridization using RiboMinus (Invitrogen) and was heat-fragmented. rRNA-depleted, fragmented RNA was processed into SOLiD sequencing libraries using the Small RNA Expression Kit. Sequencing was performed on SOLiD with 35-bp read lengths (human tissues, mouse neurons).</p>
-                        
-                        
-                    </div>
-                    
-                </div>
-            </section>
+                                <li>treatment: vehicle</li>
 
-            <aside class="record-aside" aria-label="Study source notes">
+                                <li>treatment: camptothecin</li>
+
+                                <li>treatment: Isoginkgetin</li>
+
+                                <li>cell type: Lymphocyte cell lines</li>
+
+                                <li>treatment: control</li>
+
+                                <li>treatment: 4-thiouridine 5&#39; lableing</li>
+
+                                <li>cell type: Ambion</li>
+
+                                <li>tissue: human brain</li>
+
+                                <li>tissue: human heart</li>
+
+                                <li>tissue: human kidney</li>
+
+                                <li>tissue: human liver</li>
+
+                                <li>tissue: human lung</li>
+
+                                <li>tissue: human ovary</li>
+
+                                <li>tissue: human placenta</li>
+
+                                <li>tissue: human spleen</li>
+
+                                <li>tissue: human testis</li>
+
+                                <li>tissue: human thymus</li>
+
+                            </ul>
+
+                        </section>
+
+                        <div class="panel-grid">
+                            <section class="field-group">
+                                <h3>Assay and platform</h3>
+                                <dl class="field-list">
+                                    <div><dt>Extracted molecule</dt><dd>total RNA</dd></div>
+                                    <div><dt>Library source</dt><dd>transcriptomic</dd></div>
+                                    <div><dt>Library selection</dt><dd>cDNA</dd></div>
+                                    <div><dt>Instrument model</dt><dd>Illumina HiSeq 2000, AB SOLiD System 3.0</dd></div>
+                                    <div><dt>Platform ID</dt><dd>GPL9442, GPL11154</dd></div>
+                                    <div><dt>SRA Study ID</dt><dd>SRP028912</dd></div>
+                                    <div><dt>BioProject ID</dt><dd>PRJNA215795</dd></div>
+                                    <div><dt>File types</dt><dd>gz, tar</dd></div>
+                                </dl>
+                            </section>
+
+                            <section class="field-group">
+                                <h3>Submission</h3>
+                                <dl class="field-list">
+                                    <div><dt>Organization</dt><dd>Harvard Medical School</dd></div>
+                                    <div><dt>Contact</dt><dd>David A Harmin</dd></div>
+                                    <div><dt>Email</dt><dd>David_Harmin@hms.harvard.edu</dd></div>
+                                    <div><dt>Submitter country</dt><dd>USA</dd></div>
+                                    <div><dt>Hospital / center</dt><dd>QIMR Berghofer Medical Research Institute; Lurie Children&#39;s Hospital of Chicago Research Center</dd></div>
+                                    <div><dt>Submitted</dt><dd>07/15/2013</dd></div>
+                                    <div><dt>Last updated</dt><dd>05/15/2019</dd></div>
+                                    <div><dt>Supervisor / PI</dt><dd>Michael Springer</dd></div>
+                                    <div><dt>Supervisor email</dt><dd>Michael_Springer@hms.harvard.edu</dd></div>
+                                </dl>
+                            </section>
+                        </div>
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="methods">
+                    <summary>
+                        <span>
+                            <strong>Methods</strong>
+                            <small>Assay, extraction, and data processing text</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body method-stack">
+
+                        <section class="method-block">
+                            <h3>Assay description</h3>
+                            <p class="long-text">These data are total RNA-Seq data, from RNA sequencing of rRNA-depleted total cellular RNA -- except the LCL 4SU data, which derive from 4SU-labeled RNA.  Please see the associated paper for more details.</p>
+                        </section>
+
+
+                        <section class="method-block">
+                            <h3>Extraction protocol</h3>
+                            <p class="long-text">Illumina library construction and sequencing. RNA-seq libraries were constructed using the strand-specific dUTP method, with minor modifications. Briefly, 3ug of DNAse treated RNA was depleted of rRNA using Ribozero (Epicentre). Two batches of rRNA-depleted samples were combined, cleaned by RiboMinus concentration module (Invitrogen) and fragmented at 90°C for 3 min (NEB fragmentation buffer). First strand synthesis was followed by cleanup with RNAClean XP SPRI beads (Agencourt). Second strand synthesis incorporated dUTP, followed by sample clean up with MinElute PCR purification Kit (Qiagen). Fragment ends were repaired, adenylated, then ligated to True-Seq barcoded adaptors and cleaned up with AMPure XP SPRI beads (Agencourt). The libraries were then amplified by PCR for 12 cycles and cleaned up with AMPure XP SPRI beads. Illumina sequencing (1 x 50-bp read length) was performed on a HiSeq 2000. 4SU libraries were prepared non-strand-specifically using standard Illumina RNA-Seq. SOLiD RNA-Seq library construction and sequencing. Total RNA was depleted of ribosomal RNA by hybridization using RiboMinus (Invitrogen) and was heat-fragmented. rRNA-depleted, fragmented RNA was processed into SOLiD sequencing libraries using the Small RNA Expression Kit. Sequencing was performed on SOLiD with 35-bp read lengths (human tissues, mouse neurons).</p>
+                        </section>
+
+
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="pregnancy-context">
+                    <summary>
+                        <span>
+                            <strong>Pregnancy and phenotype</strong>
+                            <small>Timing, participant metadata, and complications</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body panel-grid">
+                        <section class="field-group">
+                            <h3>Timing and participants</h3>
+                            <dl class="field-list">
+                                <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at collection provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at collection weeks</dt><dd>Not reported</dd></div>
+                                <div><dt>Offspring sex provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Parity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Genetic ancestry provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
+                            </dl>
+                        </section>
+
+                        <section class="field-group">
+                            <h3>Phenotypes and complications</h3>
+                            <dl class="field-list">
+                                <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
+                                <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
+                                <div><dt>Main topic</dt><dd>The paper introduces SnapShot-Seq, a computational method that determines in vivo mRNA dynamics using standard RNA-Seq data. The method quantifies mRNA processing times and synthesis rates by analyzing RNA-Seq read densities across exons, introns, and splice junctions.</dd></div>
+                            </dl>
+                        </section>
+                    </div>
+                </details>
+
+
+            </div>
+
+            <aside class="record-aside" aria-label="Record sources">
                 <section class="source-note">
-                    <p class="eyebrow">Source notes</p>
-                    <div class="provenance-list">
+                    <h2>Record sources</h2>
+                    <dl class="source-status-list">
+                        <div><dt>Metadata</dt><dd>GEO</dd></div>
                         <div>
-                            <strong>GEO metadata</strong>
-                            <p>Core study, assay, platform, contact, and submission fields come from GEO metadata.</p>
+                            <dt>Publication</dt>
+                            <dd>Linked</dd>
                         </div>
                         <div>
-                            <strong>Publication links</strong>
-                            <p>
-                                
-                                PMID, PMC, or DOI identifiers are available for source inspection.
-                                
-                            </p>
+                            <dt>Review evidence</dt>
+                            <dd>Not linked</dd>
                         </div>
-                        <div>
-                            <strong>Workbook notes</strong>
-                            <p>
-                                
-                                Pregnancy-specific values should be reviewed against the source paper when precision matters.
-                                
-                            </p>
-                        </div>
-                        
-                    </div>
-                </section>
 
-                <section class="source-links-block">
-                    <p class="eyebrow">Identifiers</p>
-                    <div class="external-grid">
-                        
+                    </dl>
+
+                    <div class="external-grid" aria-label="Record identifiers">
+
                         <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE48889" target="_blank"
                             rel="noopener">GEO: GSE48889</a>
-                        
-                        
+
+
                         <a href="https://pubmed.ncbi.nlm.nih.gov/24586954/" target="_blank"
                             rel="noopener">PMID: 24586954</a>
-                        
-                        
+
+
                         <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3935918/" target="_blank"
                             rel="noopener">PMC: PMC3935918</a>
-                        
-                        
+
+
                         <a href="https://doi.org/10.1371/journal.pone.0089673" target="_blank" rel="noopener">DOI: 10.1371/journal.pone.0089673</a>
-                        
+
                     </div>
                 </section>
             </aside>
         </section>
 
-        <section class="record-section curation-section">
-            <div class="section-heading">
-                <p class="eyebrow">Workbook-reviewed fields</p>
-                <h2>Pregnancy, phenotype, and sample context</h2>
-            </div>
-            <div class="technical-grid">
-                <div class="field-group">
-                    <h3>Pregnancy timing and participants</h3>
-                    <dl class="field-list">
-                        <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at collection provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at collection weeks</dt><dd>Not reported</dd></div>
-                        <div><dt>Offspring sex provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Parity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Genetic ancestry provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
-                    </dl>
-                </div>
-
-                <div class="field-group">
-                    <h3>Phenotypes and complications</h3>
-                    <dl class="field-list">
-                        <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
-                        <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
-                        <div><dt>Main topic</dt><dd>The paper introduces SnapShot-Seq, a computational method that determines in vivo mRNA dynamics using standard RNA-Seq data. The method quantifies mRNA processing times and synthesis rates by analyzing RNA-Seq read densities across exons, introns, and splice junctions.</dd></div>
-                    </dl>
-                </div>
-            </div>
-        </section>
-
-        <details class="evidence-ledger" id="evidence">
-            <summary>
-                <span>
-                    <span class="eyebrow">Workbook excerpt</span>
-                    <strong>Source evidence</strong>
-                </span>
-                <span class="evidence-counts">
-                    <span>0 evidence notes linked</span>
-                    <span>0 supplement repair findings</span>
-                </span>
-            </summary>
-
-            <div class="evidence-body">
-                
-                <p class="empty-evidence">No workbook evidence notes are linked to this GEO study yet.</p>
-                
-
-                
-            </div>
-        </details>
-
         <nav class="entry-navigation">
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/1302.html">Previous study</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/repository.html">Studies</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/1304.html">Next study</a>
-            
+
         </nav>
     </main>
 

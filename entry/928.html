@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GSE134240 - Placenta Study Atlas</title>
     <meta name="description" content="Single Cell RNA-seq analysis of gene expression patterns of cells from stem-cell-derived-synthetic-blastocysts, called as &#39;ES-&#39; or &#39;EPS-blastoids&#39;.">
-    <link rel="stylesheet" href="/placenta-research-database/static/style.css">
+    <link rel="stylesheet" href="/placenta-research-database/static/style.css?v=20260813-4">
 </head>
 
 <body>
@@ -27,18 +27,10 @@
                 <h1>Single Cell RNA-seq analysis of gene expression patterns of cells from stem-cell-derived-synthetic-blastocysts, called as &#39;ES-&#39; or &#39;EPS-blastoids&#39;.</h1>
             </div>
             <div class="source-actions" aria-label="Source links">
-                <a href="#evidence">Evidence notes</a>
-                
+
                 <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE134240"
                     target="_blank" rel="noopener">Open GEO</a>
-                
-                
-                <a href="https://pubmed.ncbi.nlm.nih.gov/33378662/" target="_blank"
-                    rel="noopener">PubMed</a>
-                
-                
-                <a href="https://doi.org/10.1016/j.devcel.2020.12.004" target="_blank" rel="noopener">DOI</a>
-                
+
             </div>
         </article>
 
@@ -70,402 +62,410 @@
         </section>
 
         <section class="record-layout">
-            <section class="record-section geo-section">
-                <div class="section-heading">
-                    <p class="eyebrow">GEO record</p>
-                    <h2>Sample, assay, and methods</h2>
-                </div>
-                <div class="technical-grid">
-                    <div class="field-group sample-group wide-group">
-                        <h3>Sample characteristics</h3>
-                        <p class="long-text">cell type: mixed sample (non-demultiplexed) representing SB-EP, SB-2iLif and NatE45 cells</p>
-                    </div>
+            <div class="record-content">
+                <details class="record-panel" id="study-details">
+                    <summary>
+                        <span>
+                            <strong>Study details</strong>
+                            <small>Samples, assay, platform, and submission</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body">
+                        <section class="field-group sample-group">
+                            <h3>Sample characteristics</h3>
 
-                    <div class="field-group">
-                        <h3>Assay and platform</h3>
-                        <dl class="field-list">
-                            <div><dt>Extracted molecule</dt><dd>total RNA</dd></div>
-                            <div><dt>Library source</dt><dd>transcriptomic</dd></div>
-                            <div><dt>Library selection</dt><dd>cDNA</dd></div>
-                            <div><dt>Instrument model</dt><dd>Illumina NextSeq 500</dd></div>
-                            <div><dt>Platform ID</dt><dd>GPL19057</dd></div>
-                            <div><dt>SRA Study ID</dt><dd>SRP214529</dd></div>
-                            <div><dt>BioProject ID</dt><dd>PRJNA554449</dd></div>
-                            <div><dt>File types</dt><dd>tar, txt</dd></div>
-                        </dl>
-                    </div>
+                            <ul class="characteristic-list">
 
-                    <div class="field-group">
-                        <h3>Submission information</h3>
-                        <dl class="field-list">
-                            <div><dt>Organization</dt><dd>University of Cambridge</dd></div>
-                            <div><dt>Contact</dt><dd>Florian Hollfelder</dd></div>
-                            <div><dt>Email</dt><dd>fh111@cam.ac.uk</dd></div>
-                            <div><dt>Submitter country</dt><dd>United Kingdom</dd></div>
-                            <div><dt>Hospital / center</dt><dd>Cambridge Stem Cell Institute</dd></div>
-                            <div><dt>Submitted</dt><dd>07/13/2019</dd></div>
-                            <div><dt>Last updated</dt><dd>02/22/2021</dd></div>
-                            <div><dt>Supervisor / PI</dt><dd>Magdalena Zernicka-Goetz</dd></div>
-                            <div><dt>Supervisor email</dt><dd>mz205@cam.ac.uk</dd></div>
-                        </dl>
-                    </div>
+                                <li>cell type: mixed sample (non-demultiplexed) representing SB-EP, SB-2iLif and NatE45 cells</li>
 
-                    
-                    <div class="field-group methods-group">
-                        <h3>Methods text</h3>
-                        
-                        <h4>Assay description</h4>
-                        <p class="long-text">Examination of gene expression patterns of cells was performed with the single-cell transcriptome analysis following 96h of culture. Single-cell transcriptome analysis was performed using an inDrops v3 barcoding scheme, and the data preprocessing was performed according to the Github inDrops analysis pipeline in order to generate count matrices (https://github.com/indrops/indrops). The transcriptomic analysis comprises three replicates of SB-EP, two replicates of SB-2iLif and one replicate of natural mouse embryo cells at E4.5.</p>
-                        
-                        
-                        <h4>Extraction protocol</h4>
-                        <p class="long-text">Blastoids (n=100 per group) were exposed to Tryple Express Select X10 (Thermofisher A1217701) for 15 mins in 37°C, and subsequently dissected with glass capillaries of different diameters. For ESC-derived blastoid group; total of 1,154 cells including 752 ESCs, 350 TSCs 52 PE-like cells extracted. For EPSCderived blastoid group; total of 2,350 cells including 1,087 EPSC, 1,140 TSCs 123 PE-like cells extracted. Indrop v3</p>
-                        
-                        
-                    </div>
-                    
-                </div>
-            </section>
+                            </ul>
 
-            <aside class="record-aside" aria-label="Study source notes">
+                        </section>
+
+                        <div class="panel-grid">
+                            <section class="field-group">
+                                <h3>Assay and platform</h3>
+                                <dl class="field-list">
+                                    <div><dt>Extracted molecule</dt><dd>total RNA</dd></div>
+                                    <div><dt>Library source</dt><dd>transcriptomic</dd></div>
+                                    <div><dt>Library selection</dt><dd>cDNA</dd></div>
+                                    <div><dt>Instrument model</dt><dd>Illumina NextSeq 500</dd></div>
+                                    <div><dt>Platform ID</dt><dd>GPL19057</dd></div>
+                                    <div><dt>SRA Study ID</dt><dd>SRP214529</dd></div>
+                                    <div><dt>BioProject ID</dt><dd>PRJNA554449</dd></div>
+                                    <div><dt>File types</dt><dd>tar, txt</dd></div>
+                                </dl>
+                            </section>
+
+                            <section class="field-group">
+                                <h3>Submission</h3>
+                                <dl class="field-list">
+                                    <div><dt>Organization</dt><dd>University of Cambridge</dd></div>
+                                    <div><dt>Contact</dt><dd>Florian Hollfelder</dd></div>
+                                    <div><dt>Email</dt><dd>fh111@cam.ac.uk</dd></div>
+                                    <div><dt>Submitter country</dt><dd>United Kingdom</dd></div>
+                                    <div><dt>Hospital / center</dt><dd>Cambridge Stem Cell Institute</dd></div>
+                                    <div><dt>Submitted</dt><dd>07/13/2019</dd></div>
+                                    <div><dt>Last updated</dt><dd>02/22/2021</dd></div>
+                                    <div><dt>Supervisor / PI</dt><dd>Magdalena Zernicka-Goetz</dd></div>
+                                    <div><dt>Supervisor email</dt><dd>mz205@cam.ac.uk</dd></div>
+                                </dl>
+                            </section>
+                        </div>
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="methods">
+                    <summary>
+                        <span>
+                            <strong>Methods</strong>
+                            <small>Assay, extraction, and data processing text</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body method-stack">
+
+                        <section class="method-block">
+                            <h3>Assay description</h3>
+                            <p class="long-text">Examination of gene expression patterns of cells was performed with the single-cell transcriptome analysis following 96h of culture. Single-cell transcriptome analysis was performed using an inDrops v3 barcoding scheme, and the data preprocessing was performed according to the Github inDrops analysis pipeline in order to generate count matrices (https://github.com/indrops/indrops). The transcriptomic analysis comprises three replicates of SB-EP, two replicates of SB-2iLif and one replicate of natural mouse embryo cells at E4.5.</p>
+                        </section>
+
+
+                        <section class="method-block">
+                            <h3>Extraction protocol</h3>
+                            <p class="long-text">Blastoids (n=100 per group) were exposed to Tryple Express Select X10 (Thermofisher A1217701) for 15 mins in 37°C, and subsequently dissected with glass capillaries of different diameters. For ESC-derived blastoid group; total of 1,154 cells including 752 ESCs, 350 TSCs 52 PE-like cells extracted. For EPSCderived blastoid group; total of 2,350 cells including 1,087 EPSC, 1,140 TSCs 123 PE-like cells extracted. Indrop v3</p>
+                        </section>
+
+
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="pregnancy-context">
+                    <summary>
+                        <span>
+                            <strong>Pregnancy and phenotype</strong>
+                            <small>Timing, participant metadata, and complications</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body panel-grid">
+                        <section class="field-group">
+                            <h3>Timing and participants</h3>
+                            <dl class="field-list">
+                                <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at collection provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at collection weeks</dt><dd>Not reported</dd></div>
+                                <div><dt>Offspring sex provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Parity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Genetic ancestry provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
+                            </dl>
+                        </section>
+
+                        <section class="field-group">
+                            <h3>Phenotypes and complications</h3>
+                            <dl class="field-list">
+                                <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
+                                <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
+                                <div><dt>Main topic</dt><dd>The paper describes the generation of induced ETX embryos (iETX embryos) by replacing XEN cells with ESCs transiently expressing transcription factor Gata4, and combining them with ESCs and TS cells. iETX embryos establish a robust anterior signaling center that migrates unilaterally to break embryo symmetry, and gastrulate generating embryonic and extra-embryonic mesoderm and definitive endoderm.</dd></div>
+                            </dl>
+                        </section>
+                    </div>
+                </details>
+
+
+                <details class="record-panel evidence-panel" id="evidence">
+                    <summary>
+                        <span>
+                            <strong>Source evidence</strong>
+                            <small>33 evidence notes, 0 supplement findings</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body evidence-body">
+
+                        <div class="evidence-list">
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Main topic of the publication</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>The study demonstrates that mouse embryonic stem cells cultured under extended pluripotent conditions (EPSCs) can self-organize with trophoblast stem cells (TSCs) into blastocyst-like structures (blastoids) with all three early embryonic lineages.</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>Here, we show that mouse embryonic stem cells cultured under extended pluripotent conditions (EPSCs) can be partnered with trophoblast stem cells to self-organize into blastocyst-like structures with all three embryonic and extra-embryonic lineages.</blockquote>
+                                    <footer>
+                                    <span>SUMMARY</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC10291877; PMC7883308</span>
+                                    <span>10.1016/j.devcel.2019.11.014; 10.1016/j.devcel.2020.12.004</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Sampling timing during pregnancy</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Embryonic days E3.5, E4.5, E4.75, 5.5 d.p.c., and 7.5 d.p.c.</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>Blastoids (n=100 per group) and E4.5 natural blastocysts (n=20) were exposed to Tryple Express Select...</blockquote>
+                                    <footer>
+                                    <span>STAR Methods (Sample Collection for Single Cell RNA Sequencing)</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC10291877; PMC7883308</span>
+                                    <span>10.1016/j.devcel.2019.11.014; 10.1016/j.devcel.2020.12.004</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Sampling timing during pregnancy</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Embryonic days E3.5, E4.5, E4.75, 5.5 d.p.c., and 7.5 d.p.c.</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>Immunohistochemical staining of the decidua at 5.5 d.p.c.</blockquote>
+                                    <footer>
+                                    <span>Figure 6 Legend</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC10291877; PMC7883308</span>
+                                    <span>10.1016/j.devcel.2019.11.014; 10.1016/j.devcel.2020.12.004</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Sampling timing during pregnancy</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Embryonic days E3.5, E4.5, E4.75, 5.5 d.p.c., and 7.5 d.p.c.</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>Immunohistochemical staining of decidua at 7.5 d.p.c</blockquote>
+                                    <footer>
+                                    <span>Supplementary Material, Figure S6 Legend</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC10291877; PMC7883308</span>
+                                    <span>10.1016/j.devcel.2019.11.014; 10.1016/j.devcel.2020.12.004</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Samples collected at single pregnancy time point (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>Natural blastocysts at E3.5 with uniform Cdx2 expression and at E4.5–4.75 displaying a reverse gradient...</blockquote>
+                                    <footer>
+                                    <span>Figure 4 Legend</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC10291877; PMC7883308</span>
+                                    <span>10.1016/j.devcel.2019.11.014; 10.1016/j.devcel.2020.12.004</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Gestational Age at delivery provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC10291877; PMC7883308</span>
+                                    <span>10.1016/j.devcel.2019.11.014; 10.1016/j.devcel.2020.12.004</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Gestational Age at sample collection provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Yes</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>Blastoids (n=100 per group) and E4.5 natural blastocysts (n=20) were exposed to Tryple Express...</blockquote>
+                                    <footer>
+                                    <span>STAR Methods (Sample Collection for Single Cell RNA Sequencing)</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC10291877; PMC7883308</span>
+                                    <span>10.1016/j.devcel.2019.11.014; 10.1016/j.devcel.2020.12.004</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Birthweight of offspring provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC10291877; PMC7883308</span>
+                                    <span>10.1016/j.devcel.2019.11.014; 10.1016/j.devcel.2020.12.004</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Samples from pregnancy complications collected</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC10291877; PMC7883308</span>
+                                    <span>10.1016/j.devcel.2019.11.014; 10.1016/j.devcel.2020.12.004</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Pregnancy complications in data set (list)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC10291877; PMC7883308</span>
+                                    <span>10.1016/j.devcel.2019.11.014; 10.1016/j.devcel.2020.12.004</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                        </div>
+
+
+
+                    </div>
+                </details>
+
+            </div>
+
+            <aside class="record-aside" aria-label="Record sources">
                 <section class="source-note">
-                    <p class="eyebrow">Source notes</p>
-                    <div class="provenance-list">
+                    <h2>Record sources</h2>
+                    <dl class="source-status-list">
+                        <div><dt>Metadata</dt><dd>GEO</dd></div>
                         <div>
-                            <strong>GEO metadata</strong>
-                            <p>Core study, assay, platform, contact, and submission fields come from GEO metadata.</p>
+                            <dt>Publication</dt>
+                            <dd>Linked</dd>
                         </div>
                         <div>
-                            <strong>Publication links</strong>
-                            <p>
-                                
-                                PMID, PMC, or DOI identifiers are available for source inspection.
-                                
-                            </p>
+                            <dt>Review evidence</dt>
+                            <dd>33 notes</dd>
                         </div>
-                        <div>
-                            <strong>Workbook notes</strong>
-                            <p>
-                                
-                                33 evidence notes are linked to this GEO study.
-                                
-                            </p>
-                        </div>
-                        
-                    </div>
-                </section>
 
-                <section class="source-links-block">
-                    <p class="eyebrow">Identifiers</p>
-                    <div class="external-grid">
-                        
+                    </dl>
+
+                    <div class="external-grid" aria-label="Record identifiers">
+
                         <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE134240" target="_blank"
                             rel="noopener">GEO: GSE134240</a>
-                        
-                        
+
+
                         <a href="https://pubmed.ncbi.nlm.nih.gov/33378662/" target="_blank"
                             rel="noopener">PMID: 33378662</a>
-                        
-                        
+
+
                         <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7883308/" target="_blank"
                             rel="noopener">PMC: PMC7883308</a>
-                        
-                        
+
+
                         <a href="https://doi.org/10.1016/j.devcel.2020.12.004" target="_blank" rel="noopener">DOI: 10.1016/j.devcel.2020.12.004</a>
-                        
+
                     </div>
                 </section>
             </aside>
         </section>
 
-        <section class="record-section curation-section">
-            <div class="section-heading">
-                <p class="eyebrow">Workbook-reviewed fields</p>
-                <h2>Pregnancy, phenotype, and sample context</h2>
-            </div>
-            <div class="technical-grid">
-                <div class="field-group">
-                    <h3>Pregnancy timing and participants</h3>
-                    <dl class="field-list">
-                        <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at collection provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at collection weeks</dt><dd>Not reported</dd></div>
-                        <div><dt>Offspring sex provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Parity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Genetic ancestry provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
-                    </dl>
-                </div>
-
-                <div class="field-group">
-                    <h3>Phenotypes and complications</h3>
-                    <dl class="field-list">
-                        <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
-                        <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
-                        <div><dt>Main topic</dt><dd>The paper describes the generation of induced ETX embryos (iETX embryos) by replacing XEN cells with ESCs transiently expressing transcription factor Gata4, and combining them with ESCs and TS cells. iETX embryos establish a robust anterior signaling center that migrates unilaterally to break embryo symmetry, and gastrulate generating embryonic and extra-embryonic mesoderm and definitive endoderm.</dd></div>
-                    </dl>
-                </div>
-            </div>
-        </section>
-
-        <details class="evidence-ledger" id="evidence">
-            <summary>
-                <span>
-                    <span class="eyebrow">Workbook excerpt</span>
-                    <strong>Source evidence</strong>
-                </span>
-                <span class="evidence-counts">
-                    <span>33 evidence notes linked</span>
-                    <span>0 supplement repair findings</span>
-                </span>
-            </summary>
-
-            <div class="evidence-body">
-                
-                <div class="evidence-list">
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Main topic of the publication</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>The study demonstrates that mouse embryonic stem cells cultured under extended pluripotent conditions (EPSCs) can self-organize with trophoblast stem cells (TSCs) into blastocyst-like structures (blastoids) with all three early embryonic lineages.</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>Here, we show that mouse embryonic stem cells cultured under extended pluripotent conditions (EPSCs) can be partnered with trophoblast stem cells to self-organize into blastocyst-like structures with all three embryonic and extra-embryonic lineages.</blockquote>
-                            <footer>
-                            <span>SUMMARY</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC10291877; PMC7883308</span>
-                            <span>10.1016/j.devcel.2019.11.014; 10.1016/j.devcel.2020.12.004</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Sampling timing during pregnancy</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Embryonic days E3.5, E4.5, E4.75, 5.5 d.p.c., and 7.5 d.p.c.</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>Blastoids (n=100 per group) and E4.5 natural blastocysts (n=20) were exposed to Tryple Express Select...</blockquote>
-                            <footer>
-                            <span>STAR Methods (Sample Collection for Single Cell RNA Sequencing)</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC10291877; PMC7883308</span>
-                            <span>10.1016/j.devcel.2019.11.014; 10.1016/j.devcel.2020.12.004</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Sampling timing during pregnancy</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Embryonic days E3.5, E4.5, E4.75, 5.5 d.p.c., and 7.5 d.p.c.</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>Immunohistochemical staining of the decidua at 5.5 d.p.c.</blockquote>
-                            <footer>
-                            <span>Figure 6 Legend</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC10291877; PMC7883308</span>
-                            <span>10.1016/j.devcel.2019.11.014; 10.1016/j.devcel.2020.12.004</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Sampling timing during pregnancy</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Embryonic days E3.5, E4.5, E4.75, 5.5 d.p.c., and 7.5 d.p.c.</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>Immunohistochemical staining of decidua at 7.5 d.p.c</blockquote>
-                            <footer>
-                            <span>Supplementary Material, Figure S6 Legend</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC10291877; PMC7883308</span>
-                            <span>10.1016/j.devcel.2019.11.014; 10.1016/j.devcel.2020.12.004</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Samples collected at single pregnancy time point (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>Natural blastocysts at E3.5 with uniform Cdx2 expression and at E4.5–4.75 displaying a reverse gradient...</blockquote>
-                            <footer>
-                            <span>Figure 4 Legend</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC10291877; PMC7883308</span>
-                            <span>10.1016/j.devcel.2019.11.014; 10.1016/j.devcel.2020.12.004</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Gestational Age at delivery provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC10291877; PMC7883308</span>
-                            <span>10.1016/j.devcel.2019.11.014; 10.1016/j.devcel.2020.12.004</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Gestational Age at sample collection provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Yes</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>Blastoids (n=100 per group) and E4.5 natural blastocysts (n=20) were exposed to Tryple Express...</blockquote>
-                            <footer>
-                            <span>STAR Methods (Sample Collection for Single Cell RNA Sequencing)</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC10291877; PMC7883308</span>
-                            <span>10.1016/j.devcel.2019.11.014; 10.1016/j.devcel.2020.12.004</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Birthweight of offspring provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC10291877; PMC7883308</span>
-                            <span>10.1016/j.devcel.2019.11.014; 10.1016/j.devcel.2020.12.004</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Samples from pregnancy complications collected</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC10291877; PMC7883308</span>
-                            <span>10.1016/j.devcel.2019.11.014; 10.1016/j.devcel.2020.12.004</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Pregnancy complications in data set (list)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC10291877; PMC7883308</span>
-                            <span>10.1016/j.devcel.2019.11.014; 10.1016/j.devcel.2020.12.004</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                </div>
-                
-
-                
-            </div>
-        </details>
-
         <nav class="entry-navigation">
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/927.html">Previous study</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/repository.html">Studies</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/929.html">Next study</a>
-            
+
         </nav>
     </main>
 

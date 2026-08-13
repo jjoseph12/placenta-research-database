@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GSE217210 - Placenta Study Atlas</title>
     <meta name="description" content="Mono(2-ethylhexyl) phthalate induces transcriptomic changes in placental cells based on concentration, fetal sex, and trophoblast cell type">
-    <link rel="stylesheet" href="/placenta-research-database/static/style.css">
+    <link rel="stylesheet" href="/placenta-research-database/static/style.css?v=20260813-4">
 </head>
 
 <body>
@@ -27,18 +27,10 @@
                 <h1>Mono(2-ethylhexyl) phthalate induces transcriptomic changes in placental cells based on concentration, fetal sex, and trophoblast cell type</h1>
             </div>
             <div class="source-actions" aria-label="Source links">
-                <a href="#evidence">Evidence notes</a>
-                
+
                 <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE217210"
                     target="_blank" rel="noopener">Open GEO</a>
-                
-                
-                <a href="https://pubmed.ncbi.nlm.nih.gov/36695872/" target="_blank"
-                    rel="noopener">PubMed</a>
-                
-                
-                <a href="https://doi.org/10.1007/s00204-023-03444-0" target="_blank" rel="noopener">DOI</a>
-                
+
             </div>
         </article>
 
@@ -70,402 +62,432 @@
         </section>
 
         <section class="record-layout">
-            <section class="record-section geo-section">
-                <div class="section-heading">
-                    <p class="eyebrow">GEO record</p>
-                    <h2>Sample, assay, and methods</h2>
-                </div>
-                <div class="technical-grid">
-                    <div class="field-group sample-group wide-group">
-                        <h3>Sample characteristics</h3>
-                        <p class="long-text">tissue: placenta | cell line: N/A | cell type: Primary Syncytiotrophoblasts | genotype: Female | treatment: DMSO | genotype: Male | treatment: 90uM MEHP | treatment: 1uM MEHP | treatment: 180uM MEHP | cell line: HTR-8/SVneo | cell type: trophoblast | genotype: N/A</p>
-                    </div>
+            <div class="record-content">
+                <details class="record-panel" id="study-details">
+                    <summary>
+                        <span>
+                            <strong>Study details</strong>
+                            <small>Samples, assay, platform, and submission</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body">
+                        <section class="field-group sample-group">
+                            <h3>Sample characteristics</h3>
 
-                    <div class="field-group">
-                        <h3>Assay and platform</h3>
-                        <dl class="field-list">
-                            <div><dt>Extracted molecule</dt><dd>total RNA</dd></div>
-                            <div><dt>Library source</dt><dd>transcriptomic</dd></div>
-                            <div><dt>Library selection</dt><dd>cDNA</dd></div>
-                            <div><dt>Instrument model</dt><dd>Illumina HiSeq 2000</dd></div>
-                            <div><dt>Platform ID</dt><dd>GPL11154</dd></div>
-                            <div><dt>SRA Study ID</dt><dd>Not reported</dd></div>
-                            <div><dt>BioProject ID</dt><dd>PRJNA897910</dd></div>
-                            <div><dt>File types</dt><dd>tar</dd></div>
-                        </dl>
-                    </div>
+                            <ul class="characteristic-list">
 
-                    <div class="field-group">
-                        <h3>Submission information</h3>
-                        <dl class="field-list">
-                            <div><dt>Organization</dt><dd>Seattle Childrens</dd></div>
-                            <div><dt>Contact</dt><dd>Alison Paquette</dd></div>
-                            <div><dt>Email</dt><dd>alison.paquette@seattlechildrens.org</dd></div>
-                            <div><dt>Submitter country</dt><dd>USA</dd></div>
-                            <div><dt>Hospital / center</dt><dd>Oregon Health &amp; Sciences University</dd></div>
-                            <div><dt>Submitted</dt><dd>11/03/2022</dd></div>
-                            <div><dt>Last updated</dt><dd>03/13/2025</dd></div>
-                            <div><dt>Supervisor / PI</dt><dd>Alison G. Paquette</dd></div>
-                            <div><dt>Supervisor email</dt><dd>alison.paquette@seattlechildrens.org</dd></div>
-                        </dl>
-                    </div>
+                                <li>tissue: placenta</li>
 
-                    
-                    <div class="field-group methods-group">
-                        <h3>Methods text</h3>
-                        
-                        <h4>Assay description</h4>
-                        <p class="long-text">HTR-8/SVneo Cells: 3-DMSO (0.1%) Biological Replicates for Batch 1, 3- DMSO (0.1%) Biological Replicates for Batch 2, 3- 1uM MEHP Biological Replicates from Batch 2, 3- 90uM MEHP Biological Replicates from Batch 1, 3-180uM MEHP Biological Replicates from Batch 2. For Primary Syncytiotrophoblast Cells: 6-DMSO (0.1%) Biological Replicates (3M, 3F), 5- 1uM MEHP Biological Replicates (3M, 2F), 6- 90uM MEHP Biological Replicates (3M, 3F), 6- 180uM MEHP Biological Replicates (3M, 3F)</p>
-                        
-                        
-                        <h4>Extraction protocol</h4>
-                        <p class="long-text">RNA from HTR-8/SVneo cells was isolated by a phenol:chloroform extraction using TRIzol. Primary Trophoblast RNA isolation was performed with the Zymo Direct-zol RNA Miniprep kit (Zymo Research, Irvine, CA) following manufacturer’s instructions after lysing cells in 350µL TRIzol. Novogene prepared libraries with high quality RNA after measuring the RNA Integrity Number (RIN)&gt;7 with the Agilent High Sensitivity RNA Screentape Assay (Agilent Technologies; Santa Clara, CA). Sample library preparation was performed using the SMARTer Stranded Total RNA-Seq Kit v2 (Takara Bio Inc.; Kusatsu, Japan) for primary syncytiotrophoblast cells followed by paired end sequencing (150BP) using an Illumina HiSeq with a read depth of 30 million read pairs/sample. Library preparation for HTR-8/SVneo cells was performed using an optimized NEBNext Ultra II kit followed by paired end sequencing (150BP) with a NovaSeq 6000 and a read depth of 30 million read pairs/sample.</p>
-                        
-                        
-                    </div>
-                    
-                </div>
-            </section>
+                                <li>cell line: N/A</li>
 
-            <aside class="record-aside" aria-label="Study source notes">
+                                <li>cell type: Primary Syncytiotrophoblasts</li>
+
+                                <li>genotype: Female</li>
+
+                                <li>treatment: DMSO</li>
+
+                                <li>genotype: Male</li>
+
+                                <li>treatment: 90uM MEHP</li>
+
+                                <li>treatment: 1uM MEHP</li>
+
+                                <li>treatment: 180uM MEHP</li>
+
+                                <li>cell line: HTR-8/SVneo</li>
+
+                                <li>cell type: trophoblast</li>
+
+                                <li>genotype: N/A</li>
+
+                            </ul>
+
+                        </section>
+
+                        <div class="panel-grid">
+                            <section class="field-group">
+                                <h3>Assay and platform</h3>
+                                <dl class="field-list">
+                                    <div><dt>Extracted molecule</dt><dd>total RNA</dd></div>
+                                    <div><dt>Library source</dt><dd>transcriptomic</dd></div>
+                                    <div><dt>Library selection</dt><dd>cDNA</dd></div>
+                                    <div><dt>Instrument model</dt><dd>Illumina HiSeq 2000</dd></div>
+                                    <div><dt>Platform ID</dt><dd>GPL11154</dd></div>
+                                    <div><dt>SRA Study ID</dt><dd>Not reported</dd></div>
+                                    <div><dt>BioProject ID</dt><dd>PRJNA897910</dd></div>
+                                    <div><dt>File types</dt><dd>tar</dd></div>
+                                </dl>
+                            </section>
+
+                            <section class="field-group">
+                                <h3>Submission</h3>
+                                <dl class="field-list">
+                                    <div><dt>Organization</dt><dd>Seattle Childrens</dd></div>
+                                    <div><dt>Contact</dt><dd>Alison Paquette</dd></div>
+                                    <div><dt>Email</dt><dd>alison.paquette@seattlechildrens.org</dd></div>
+                                    <div><dt>Submitter country</dt><dd>USA</dd></div>
+                                    <div><dt>Hospital / center</dt><dd>Oregon Health &amp; Sciences University</dd></div>
+                                    <div><dt>Submitted</dt><dd>11/03/2022</dd></div>
+                                    <div><dt>Last updated</dt><dd>03/13/2025</dd></div>
+                                    <div><dt>Supervisor / PI</dt><dd>Alison G. Paquette</dd></div>
+                                    <div><dt>Supervisor email</dt><dd>alison.paquette@seattlechildrens.org</dd></div>
+                                </dl>
+                            </section>
+                        </div>
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="methods">
+                    <summary>
+                        <span>
+                            <strong>Methods</strong>
+                            <small>Assay, extraction, and data processing text</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body method-stack">
+
+                        <section class="method-block">
+                            <h3>Assay description</h3>
+                            <p class="long-text">HTR-8/SVneo Cells: 3-DMSO (0.1%) Biological Replicates for Batch 1, 3- DMSO (0.1%) Biological Replicates for Batch 2, 3- 1uM MEHP Biological Replicates from Batch 2, 3- 90uM MEHP Biological Replicates from Batch 1, 3-180uM MEHP Biological Replicates from Batch 2. For Primary Syncytiotrophoblast Cells: 6-DMSO (0.1%) Biological Replicates (3M, 3F), 5- 1uM MEHP Biological Replicates (3M, 2F), 6- 90uM MEHP Biological Replicates (3M, 3F), 6- 180uM MEHP Biological Replicates (3M, 3F)</p>
+                        </section>
+
+
+                        <section class="method-block">
+                            <h3>Extraction protocol</h3>
+                            <p class="long-text">RNA from HTR-8/SVneo cells was isolated by a phenol:chloroform extraction using TRIzol. Primary Trophoblast RNA isolation was performed with the Zymo Direct-zol RNA Miniprep kit (Zymo Research, Irvine, CA) following manufacturer’s instructions after lysing cells in 350µL TRIzol. Novogene prepared libraries with high quality RNA after measuring the RNA Integrity Number (RIN)&gt;7 with the Agilent High Sensitivity RNA Screentape Assay (Agilent Technologies; Santa Clara, CA). Sample library preparation was performed using the SMARTer Stranded Total RNA-Seq Kit v2 (Takara Bio Inc.; Kusatsu, Japan) for primary syncytiotrophoblast cells followed by paired end sequencing (150BP) using an Illumina HiSeq with a read depth of 30 million read pairs/sample. Library preparation for HTR-8/SVneo cells was performed using an optimized NEBNext Ultra II kit followed by paired end sequencing (150BP) with a NovaSeq 6000 and a read depth of 30 million read pairs/sample.</p>
+                        </section>
+
+
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="pregnancy-context">
+                    <summary>
+                        <span>
+                            <strong>Pregnancy and phenotype</strong>
+                            <small>Timing, participant metadata, and complications</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body panel-grid">
+                        <section class="field-group">
+                            <h3>Timing and participants</h3>
+                            <dl class="field-list">
+                                <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery provided</dt><dd>Yes</dd></div>
+                                <div><dt>GA at delivery weeks</dt><dd>37.9</dd></div>
+                                <div><dt>GA at collection provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at collection weeks</dt><dd>Not reported</dd></div>
+                                <div><dt>Offspring sex provided</dt><dd>Yes</dd></div>
+                                <div><dt>Parity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Genetic ancestry provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Mode of delivery provided</dt><dd>Yes</dd></div>
+                            </dl>
+                        </section>
+
+                        <section class="field-group">
+                            <h3>Phenotypes and complications</h3>
+                            <dl class="field-list">
+                                <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
+                                <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
+                                <div><dt>Main topic</dt><dd>This research evaluates global changes in placental gene expression via RNA sequencing in two placental cell models following exposure to the phthalate metabolite mono(2-ethylhexyl) phthalate (MEHP). The study identifies differentially expressed genes (DEGs), significant KEGG pathways, and enriched transcription factors (TFs) to understand the effects of MEHP on placental cells.</dd></div>
+                            </dl>
+                        </section>
+                    </div>
+                </details>
+
+
+                <details class="record-panel evidence-panel" id="evidence">
+                    <summary>
+                        <span>
+                            <strong>Source evidence</strong>
+                            <small>61 evidence notes, 0 supplement findings</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body evidence-body">
+
+                        <div class="evidence-list">
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Main topic of the publication</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>The publication provides a comparative transcriptomic analysis of seven common in vitro human placental models against bulk human placental tissue and sorted trophoblast cell types.</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>The aim of this research was to compare the transcriptomes of common in vitro models of the human placenta compared to bulk human placental tissue.</blockquote>
+                                    <footer>
+                                    <span>Introduction</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC11195179; PMC11212735; PMC11857522; PMC9968694</span>
+                                    <span>10.1007/s00204-023-03444-0; 10.1016/j.placenta.2024.11.007; 10.1101/2024.06.14.598695; 10.1126/sciadv.adf3411</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Main topic of the publication</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>The study evaluates global changes in placental gene expression via RNA sequencing in HTR-8/SVneo and primary syncytiotrophoblast cells following exposure to the phthalate metabolite mono(2-ethylhexyl) phthalate (MEHP).</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>The objective of this research was to evaluate global changes in placental gene expression via RNA sequencing in two placental cell models following exposure to the phthalate metabolite mono(2-ethylhexyl) phthalate (MEHP).</blockquote>
+                                    <footer>
+                                    <span>Abstract</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC11195179; PMC11857522; PMC9968694</span>
+                                    <span>10.1007/s00204-023-03444-0; 10.1016/j.placenta.2024.11.007; 10.1101/2024.06.14.598695</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Sampling timing during pregnancy</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>First trimester and term</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>HTR-8/SVneo is an immortalized cell line of EVTs from first trimester placentas</blockquote>
+                                    <footer>
+                                    <span>Introduction</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC11195179; PMC11212735; PMC11857522; PMC9968694</span>
+                                    <span>10.1007/s00204-023-03444-0; 10.1016/j.placenta.2024.11.007; 10.1101/2024.06.14.598695; 10.1126/sciadv.adf3411</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Sampling timing during pregnancy</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>First trimester and term</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>the TSC were the least similar placental model which might be attributable to their derivation from first trimester placental tissue, whereas the trophoblast cell types were derived from term tissue.</blockquote>
+                                    <footer>
+                                    <span>Discussion</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC11195179; PMC11212735; PMC11857522; PMC9968694</span>
+                                    <span>10.1007/s00204-023-03444-0; 10.1016/j.placenta.2024.11.007; 10.1101/2024.06.14.598695; 10.1126/sciadv.adf3411</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Sampling timing during pregnancy</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Term (&gt; 37 weeks gestation)</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>Placental villous tissue samples were derived from non-pathological term pregnancies (&gt; 37 weeks gestation) from women who delivered via elective cesarean section in the absence of labor</blockquote>
+                                    <footer>
+                                    <span>Methods, Cell culture</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC11195179; PMC11857522; PMC9968694</span>
+                                    <span>10.1007/s00204-023-03444-0; 10.1016/j.placenta.2024.11.007; 10.1101/2024.06.14.598695</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Samples collected at single pregnancy time point (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>the TSC were the least similar placental model which might be attributable to their derivation from first trimester placental tissue, whereas the trophoblast cell types were derived from term tissue.</blockquote>
+                                    <footer>
+                                    <span>Discussion</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC11195179; PMC11212735; PMC11857522; PMC9968694</span>
+                                    <span>10.1007/s00204-023-03444-0; 10.1016/j.placenta.2024.11.007; 10.1101/2024.06.14.598695; 10.1126/sciadv.adf3411</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Samples collected at single pregnancy time point (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Yes</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>Placental villous tissue samples were derived from non-pathological term pregnancies (&gt; 37 weeks gestation)</blockquote>
+                                    <footer>
+                                    <span>Methods, Cell culture</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC11195179; PMC11857522; PMC9968694</span>
+                                    <span>10.1007/s00204-023-03444-0; 10.1016/j.placenta.2024.11.007; 10.1101/2024.06.14.598695</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Gestational Age at delivery provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC11195179; PMC11212735; PMC11857522; PMC9968694</span>
+                                    <span>10.1007/s00204-023-03444-0; 10.1016/j.placenta.2024.11.007; 10.1101/2024.06.14.598695; 10.1126/sciadv.adf3411</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Gestational Age at sample collection provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC11195179; PMC11212735; PMC11857522; PMC9968694</span>
+                                    <span>10.1007/s00204-023-03444-0; 10.1016/j.placenta.2024.11.007; 10.1101/2024.06.14.598695; 10.1126/sciadv.adf3411</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Gestational Age at delivery provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Yes</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>Gestational length (weeks) 37.9, 38.1, 39.1 39.0, 39.0, 39.0</blockquote>
+                                    <footer>
+                                    <span>Table 1</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC11195179; PMC11857522; PMC9968694</span>
+                                    <span>10.1007/s00204-023-03444-0; 10.1016/j.placenta.2024.11.007; 10.1101/2024.06.14.598695</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                        </div>
+
+
+
+                    </div>
+                </details>
+
+            </div>
+
+            <aside class="record-aside" aria-label="Record sources">
                 <section class="source-note">
-                    <p class="eyebrow">Source notes</p>
-                    <div class="provenance-list">
+                    <h2>Record sources</h2>
+                    <dl class="source-status-list">
+                        <div><dt>Metadata</dt><dd>GEO</dd></div>
                         <div>
-                            <strong>GEO metadata</strong>
-                            <p>Core study, assay, platform, contact, and submission fields come from GEO metadata.</p>
+                            <dt>Publication</dt>
+                            <dd>Linked</dd>
                         </div>
                         <div>
-                            <strong>Publication links</strong>
-                            <p>
-                                
-                                PMID, PMC, or DOI identifiers are available for source inspection.
-                                
-                            </p>
+                            <dt>Review evidence</dt>
+                            <dd>61 notes</dd>
                         </div>
-                        <div>
-                            <strong>Workbook notes</strong>
-                            <p>
-                                
-                                61 evidence notes are linked to this GEO study.
-                                
-                            </p>
-                        </div>
-                        
-                    </div>
-                </section>
 
-                <section class="source-links-block">
-                    <p class="eyebrow">Identifiers</p>
-                    <div class="external-grid">
-                        
+                    </dl>
+
+                    <div class="external-grid" aria-label="Record identifiers">
+
                         <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE217210" target="_blank"
                             rel="noopener">GEO: GSE217210</a>
-                        
-                        
+
+
                         <a href="https://pubmed.ncbi.nlm.nih.gov/36695872/" target="_blank"
                             rel="noopener">PMID: 36695872</a>
-                        
-                        
+
+
                         <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9968694/" target="_blank"
                             rel="noopener">PMC: PMC9968694</a>
-                        
-                        
+
+
                         <a href="https://doi.org/10.1007/s00204-023-03444-0" target="_blank" rel="noopener">DOI: 10.1007/s00204-023-03444-0</a>
-                        
+
                     </div>
                 </section>
             </aside>
         </section>
 
-        <section class="record-section curation-section">
-            <div class="section-heading">
-                <p class="eyebrow">Workbook-reviewed fields</p>
-                <h2>Pregnancy, phenotype, and sample context</h2>
-            </div>
-            <div class="technical-grid">
-                <div class="field-group">
-                    <h3>Pregnancy timing and participants</h3>
-                    <dl class="field-list">
-                        <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery provided</dt><dd>Yes</dd></div>
-                        <div><dt>GA at delivery weeks</dt><dd>37.9</dd></div>
-                        <div><dt>GA at collection provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at collection weeks</dt><dd>Not reported</dd></div>
-                        <div><dt>Offspring sex provided</dt><dd>Yes</dd></div>
-                        <div><dt>Parity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Genetic ancestry provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Mode of delivery provided</dt><dd>Yes</dd></div>
-                    </dl>
-                </div>
-
-                <div class="field-group">
-                    <h3>Phenotypes and complications</h3>
-                    <dl class="field-list">
-                        <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
-                        <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
-                        <div><dt>Main topic</dt><dd>This research evaluates global changes in placental gene expression via RNA sequencing in two placental cell models following exposure to the phthalate metabolite mono(2-ethylhexyl) phthalate (MEHP). The study identifies differentially expressed genes (DEGs), significant KEGG pathways, and enriched transcription factors (TFs) to understand the effects of MEHP on placental cells.</dd></div>
-                    </dl>
-                </div>
-            </div>
-        </section>
-
-        <details class="evidence-ledger" id="evidence">
-            <summary>
-                <span>
-                    <span class="eyebrow">Workbook excerpt</span>
-                    <strong>Source evidence</strong>
-                </span>
-                <span class="evidence-counts">
-                    <span>61 evidence notes linked</span>
-                    <span>0 supplement repair findings</span>
-                </span>
-            </summary>
-
-            <div class="evidence-body">
-                
-                <div class="evidence-list">
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Main topic of the publication</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>The publication provides a comparative transcriptomic analysis of seven common in vitro human placental models against bulk human placental tissue and sorted trophoblast cell types.</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>The aim of this research was to compare the transcriptomes of common in vitro models of the human placenta compared to bulk human placental tissue.</blockquote>
-                            <footer>
-                            <span>Introduction</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC11195179; PMC11212735; PMC11857522; PMC9968694</span>
-                            <span>10.1007/s00204-023-03444-0; 10.1016/j.placenta.2024.11.007; 10.1101/2024.06.14.598695; 10.1126/sciadv.adf3411</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Main topic of the publication</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>The study evaluates global changes in placental gene expression via RNA sequencing in HTR-8/SVneo and primary syncytiotrophoblast cells following exposure to the phthalate metabolite mono(2-ethylhexyl) phthalate (MEHP).</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>The objective of this research was to evaluate global changes in placental gene expression via RNA sequencing in two placental cell models following exposure to the phthalate metabolite mono(2-ethylhexyl) phthalate (MEHP).</blockquote>
-                            <footer>
-                            <span>Abstract</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC11195179; PMC11857522; PMC9968694</span>
-                            <span>10.1007/s00204-023-03444-0; 10.1016/j.placenta.2024.11.007; 10.1101/2024.06.14.598695</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Sampling timing during pregnancy</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>First trimester and term</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>HTR-8/SVneo is an immortalized cell line of EVTs from first trimester placentas</blockquote>
-                            <footer>
-                            <span>Introduction</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC11195179; PMC11212735; PMC11857522; PMC9968694</span>
-                            <span>10.1007/s00204-023-03444-0; 10.1016/j.placenta.2024.11.007; 10.1101/2024.06.14.598695; 10.1126/sciadv.adf3411</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Sampling timing during pregnancy</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>First trimester and term</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>the TSC were the least similar placental model which might be attributable to their derivation from first trimester placental tissue, whereas the trophoblast cell types were derived from term tissue.</blockquote>
-                            <footer>
-                            <span>Discussion</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC11195179; PMC11212735; PMC11857522; PMC9968694</span>
-                            <span>10.1007/s00204-023-03444-0; 10.1016/j.placenta.2024.11.007; 10.1101/2024.06.14.598695; 10.1126/sciadv.adf3411</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Sampling timing during pregnancy</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Term (&gt; 37 weeks gestation)</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>Placental villous tissue samples were derived from non-pathological term pregnancies (&gt; 37 weeks gestation) from women who delivered via elective cesarean section in the absence of labor</blockquote>
-                            <footer>
-                            <span>Methods, Cell culture</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC11195179; PMC11857522; PMC9968694</span>
-                            <span>10.1007/s00204-023-03444-0; 10.1016/j.placenta.2024.11.007; 10.1101/2024.06.14.598695</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Samples collected at single pregnancy time point (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>the TSC were the least similar placental model which might be attributable to their derivation from first trimester placental tissue, whereas the trophoblast cell types were derived from term tissue.</blockquote>
-                            <footer>
-                            <span>Discussion</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC11195179; PMC11212735; PMC11857522; PMC9968694</span>
-                            <span>10.1007/s00204-023-03444-0; 10.1016/j.placenta.2024.11.007; 10.1101/2024.06.14.598695; 10.1126/sciadv.adf3411</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Samples collected at single pregnancy time point (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Yes</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>Placental villous tissue samples were derived from non-pathological term pregnancies (&gt; 37 weeks gestation)</blockquote>
-                            <footer>
-                            <span>Methods, Cell culture</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC11195179; PMC11857522; PMC9968694</span>
-                            <span>10.1007/s00204-023-03444-0; 10.1016/j.placenta.2024.11.007; 10.1101/2024.06.14.598695</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Gestational Age at delivery provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC11195179; PMC11212735; PMC11857522; PMC9968694</span>
-                            <span>10.1007/s00204-023-03444-0; 10.1016/j.placenta.2024.11.007; 10.1101/2024.06.14.598695; 10.1126/sciadv.adf3411</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Gestational Age at sample collection provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC11195179; PMC11212735; PMC11857522; PMC9968694</span>
-                            <span>10.1007/s00204-023-03444-0; 10.1016/j.placenta.2024.11.007; 10.1101/2024.06.14.598695; 10.1126/sciadv.adf3411</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Gestational Age at delivery provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Yes</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>Gestational length (weeks) 37.9, 38.1, 39.1 39.0, 39.0, 39.0</blockquote>
-                            <footer>
-                            <span>Table 1</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC11195179; PMC11857522; PMC9968694</span>
-                            <span>10.1007/s00204-023-03444-0; 10.1016/j.placenta.2024.11.007; 10.1101/2024.06.14.598695</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                </div>
-                
-
-                
-            </div>
-        </details>
-
         <nav class="entry-navigation">
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/665.html">Previous study</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/repository.html">Studies</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/667.html">Next study</a>
-            
+
         </nav>
     </main>
 

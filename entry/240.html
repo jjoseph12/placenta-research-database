@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GSE212568 - Placenta Study Atlas</title>
     <meta name="description" content="Landscape of TFs binding in mouse early embryos">
-    <link rel="stylesheet" href="/placenta-research-database/static/style.css">
+    <link rel="stylesheet" href="/placenta-research-database/static/style.css?v=20260813-4">
 </head>
 
 <body>
@@ -27,13 +27,10 @@
                 <h1>Landscape of TFs binding in mouse early embryos</h1>
             </div>
             <div class="source-actions" aria-label="Source links">
-                <a href="#evidence">Evidence notes</a>
-                
+
                 <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE212568"
                     target="_blank" rel="noopener">Open GEO</a>
-                
-                
-                
+
             </div>
         </article>
 
@@ -65,56 +62,130 @@
         </section>
 
         <section class="record-layout">
-            <section class="record-section geo-section">
-                <div class="section-heading">
-                    <p class="eyebrow">GEO record</p>
-                    <h2>Sample, assay, and methods</h2>
-                </div>
-                <div class="technical-grid">
-                    <div class="field-group sample-group wide-group">
-                        <h3>Sample characteristics</h3>
-                        <p class="long-text">tissue: embryo | Stage: 8-cell | cell type: embryo | genotype: BDF1 | treatment: Control | treatment: Tfap2c KD | genotype: C57xPWK | Stage: ExE | Stage: Morula | Stage: TE | tissue: cell line | Stage: RO-7 | cell type: TSC | genotype: unknown | treatment: Tfap2c motif KO | treatment: Klf5 KD | tissue: whole placenta | time: E9.5 | chip antibody: H3K27ac | genotype: c57 x pwk | treatment: WT | tissue: Mouse embryo | treatment: LY2955303 &amp; Tfap2c OE | Stage: early 2Cell | cell type: early 2Cell | treatment: Wild type | treatment: LY2955303</p>
-                    </div>
+            <div class="record-content">
+                <details class="record-panel" id="study-details">
+                    <summary>
+                        <span>
+                            <strong>Study details</strong>
+                            <small>Samples, assay, platform, and submission</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body">
+                        <section class="field-group sample-group">
+                            <h3>Sample characteristics</h3>
 
-                    <div class="field-group">
-                        <h3>Assay and platform</h3>
-                        <dl class="field-list">
-                            <div><dt>Extracted molecule</dt><dd>genomic DNA, total RNA</dd></div>
-                            <div><dt>Library source</dt><dd>genomic, transcriptomic</dd></div>
-                            <div><dt>Library selection</dt><dd>ChIP, other, cDNA, RANDOM</dd></div>
-                            <div><dt>Instrument model</dt><dd>Illumina NovaSeq 6000</dd></div>
-                            <div><dt>Platform ID</dt><dd>GPL24247</dd></div>
-                            <div><dt>SRA Study ID</dt><dd>Not reported</dd></div>
-                            <div><dt>BioProject ID</dt><dd>PRJNA875959</dd></div>
-                            <div><dt>File types</dt><dd>tar</dd></div>
-                        </dl>
-                    </div>
+                            <ul class="characteristic-list">
 
-                    <div class="field-group">
-                        <h3>Submission information</h3>
-                        <dl class="field-list">
-                            <div><dt>Organization</dt><dd>Tongji University</dd></div>
-                            <div><dt>Contact</dt><dd>Gran Young</dd></div>
-                            <div><dt>Email</dt><dd>Not reported</dd></div>
-                            <div><dt>Submitter country</dt><dd>China</dd></div>
-                            <div><dt>Hospital / center</dt><dd>Not reported</dd></div>
-                            <div><dt>Submitted</dt><dd>09/01/2022</dd></div>
-                            <div><dt>Last updated</dt><dd>03/04/2024</dd></div>
-                            <div><dt>Supervisor / PI</dt><dd>Not reported</dd></div>
-                            <div><dt>Supervisor email</dt><dd>Not reported</dd></div>
-                        </dl>
-                    </div>
+                                <li>tissue: embryo</li>
 
-                    
-                    <div class="field-group methods-group">
-                        <h3>Methods text</h3>
-                        
-                        <h4>Assay description</h4>
-                        <p class="long-text">Refer to individual Series</p>
-                        
-                        
-                        <h4>Extraction protocol</h4>
-                        <p class="long-text">The zona pellucidae of the cleavage-stage embryos were removed with 0.5% pronase E and the embryos were then incubated in Ca2+-free Chatot-Ziomek-Bavister (CZB) medium for 10-20 minutes. Polar bodies were removed by gentle pipetting using a fire-polished glass needle. Single blastomeres were separated and manually picked before subjected to uliCUT&amp;RUN, uliNChIP and total RNA library preparation and sequencing. For ICM and TE isolation (Liu et al., 2016), the zona pellucidae of blastocysts were punched, followed by removal with 0.5% pronase E. The embryos were then incubated in Ca2+-free CZB for 20-30 minutes to disrupt the cell-cell junctions. ICM cells and TE cells were then distinguished and collected according to their sizes and shapes with the aid of a piezo-driven micromanipulator. For epiblast and extraembryonic ectoderm isolation (Wang et al., 2018), embryos were cut at the embryonic/extraembryonic boundary using properly sharpened forceps. A fire-polished glass needle with an inner diameter that is slightly smaller than the width of the embryonic/extraembryonic fragment was used for separating epiblast or extraembryonic ectoderm from the visceral endoderm, and the separated epiblast or extraembryonic ectoderm fragment was then incubated in Ca2+-free CZB medium for 10 minutes. uliNChIP-seq was performed as previously described (Brind&#39;Amour et al., 2015) to capture the H3K4me3 and H3K27ac status in embryos. Briefly, the harvested blastomeres or cells were subjected to nuclei extraction buffer. The MNase Master mix was then added and the mixture was incubated at 25°C for 10 minutes to allow MNase digestion. The reaction was stopped by 10 mM EDTA, and 0.1% Triton X-100 together with 0.1% DOC was added to lyse the nuclear membrane. The released chromatin was then diluted with ChIP buffer. After 1/20 volume of the reaction was saved as the input, the rest was incubated with H3K4me3 or H3K27ac antibody-coated Dynabeads Protein A/G for overnight at 4°C. The ChIP samples were washed twice with low-salt wash buffer and twice with high-salt wash buffer. The washed beads were then incubated in hot elution buffer for 2 hours at 65°C with shaking. The eluted DNAs were further purified and subjected to sequencing library generation as described above. Paired-end 150-bp sequencing was also performed on ChIP libraries.
+                                <li>Stage: 8-cell</li>
+
+                                <li>cell type: embryo</li>
+
+                                <li>genotype: BDF1</li>
+
+                                <li>treatment: Control</li>
+
+                                <li>treatment: Tfap2c KD</li>
+
+                                <li>genotype: C57xPWK</li>
+
+                                <li>Stage: ExE</li>
+
+                                <li>Stage: Morula</li>
+
+                                <li>Stage: TE</li>
+
+                                <li>tissue: cell line</li>
+
+                                <li>Stage: RO-7</li>
+
+                                <li>cell type: TSC</li>
+
+                                <li>genotype: unknown</li>
+
+                                <li>treatment: Tfap2c motif KO</li>
+
+                                <li>treatment: Klf5 KD</li>
+
+                                <li>tissue: whole placenta</li>
+
+                                <li>time: E9.5</li>
+
+                                <li>chip antibody: H3K27ac</li>
+
+                                <li>genotype: c57 x pwk</li>
+
+                                <li>treatment: WT</li>
+
+                                <li>tissue: Mouse embryo</li>
+
+                                <li>treatment: LY2955303 &amp; Tfap2c OE</li>
+
+                                <li>Stage: early 2Cell</li>
+
+                                <li>cell type: early 2Cell</li>
+
+                                <li>treatment: Wild type</li>
+
+                                <li>treatment: LY2955303</li>
+
+                            </ul>
+
+                        </section>
+
+                        <div class="panel-grid">
+                            <section class="field-group">
+                                <h3>Assay and platform</h3>
+                                <dl class="field-list">
+                                    <div><dt>Extracted molecule</dt><dd>genomic DNA, total RNA</dd></div>
+                                    <div><dt>Library source</dt><dd>genomic, transcriptomic</dd></div>
+                                    <div><dt>Library selection</dt><dd>ChIP, other, cDNA, RANDOM</dd></div>
+                                    <div><dt>Instrument model</dt><dd>Illumina NovaSeq 6000</dd></div>
+                                    <div><dt>Platform ID</dt><dd>GPL24247</dd></div>
+                                    <div><dt>SRA Study ID</dt><dd>Not reported</dd></div>
+                                    <div><dt>BioProject ID</dt><dd>PRJNA875959</dd></div>
+                                    <div><dt>File types</dt><dd>tar</dd></div>
+                                </dl>
+                            </section>
+
+                            <section class="field-group">
+                                <h3>Submission</h3>
+                                <dl class="field-list">
+                                    <div><dt>Organization</dt><dd>Tongji University</dd></div>
+                                    <div><dt>Contact</dt><dd>Gran Young</dd></div>
+                                    <div><dt>Email</dt><dd>Not reported</dd></div>
+                                    <div><dt>Submitter country</dt><dd>China</dd></div>
+                                    <div><dt>Hospital / center</dt><dd>Not reported</dd></div>
+                                    <div><dt>Submitted</dt><dd>09/01/2022</dd></div>
+                                    <div><dt>Last updated</dt><dd>03/04/2024</dd></div>
+                                    <div><dt>Supervisor / PI</dt><dd>Not reported</dd></div>
+                                    <div><dt>Supervisor email</dt><dd>Not reported</dd></div>
+                                </dl>
+                            </section>
+                        </div>
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="methods">
+                    <summary>
+                        <span>
+                            <strong>Methods</strong>
+                            <small>Assay, extraction, and data processing text</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body method-stack">
+
+                        <section class="method-block">
+                            <h3>Assay description</h3>
+                            <p class="long-text">Refer to individual Series</p>
+                        </section>
+
+
+                        <section class="method-block">
+                            <h3>Extraction protocol</h3>
+                            <p class="long-text">The zona pellucidae of the cleavage-stage embryos were removed with 0.5% pronase E and the embryos were then incubated in Ca2+-free Chatot-Ziomek-Bavister (CZB) medium for 10-20 minutes. Polar bodies were removed by gentle pipetting using a fire-polished glass needle. Single blastomeres were separated and manually picked before subjected to uliCUT&amp;RUN, uliNChIP and total RNA library preparation and sequencing. For ICM and TE isolation (Liu et al., 2016), the zona pellucidae of blastocysts were punched, followed by removal with 0.5% pronase E. The embryos were then incubated in Ca2+-free CZB for 20-30 minutes to disrupt the cell-cell junctions. ICM cells and TE cells were then distinguished and collected according to their sizes and shapes with the aid of a piezo-driven micromanipulator. For epiblast and extraembryonic ectoderm isolation (Wang et al., 2018), embryos were cut at the embryonic/extraembryonic boundary using properly sharpened forceps. A fire-polished glass needle with an inner diameter that is slightly smaller than the width of the embryonic/extraembryonic fragment was used for separating epiblast or extraembryonic ectoderm from the visceral endoderm, and the separated epiblast or extraembryonic ectoderm fragment was then incubated in Ca2+-free CZB medium for 10 minutes. uliNChIP-seq was performed as previously described (Brind&#39;Amour et al., 2015) to capture the H3K4me3 and H3K27ac status in embryos. Briefly, the harvested blastomeres or cells were subjected to nuclei extraction buffer. The MNase Master mix was then added and the mixture was incubated at 25°C for 10 minutes to allow MNase digestion. The reaction was stopped by 10 mM EDTA, and 0.1% Triton X-100 together with 0.1% DOC was added to lyse the nuclear membrane. The released chromatin was then diluted with ChIP buffer. After 1/20 volume of the reaction was saved as the input, the rest was incubated with H3K4me3 or H3K27ac antibody-coated Dynabeads Protein A/G for overnight at 4°C. The ChIP samples were washed twice with low-salt wash buffer and twice with high-salt wash buffer. The washed beads were then incubated in hot elution buffer for 2 hours at 65°C with shaking. The eluted DNAs were further purified and subjected to sequencing library generation as described above. Paired-end 150-bp sequencing was also performed on ChIP libraries.
 
 The zona pellucidae of the cleavage-stage embryos were removed with 0.5% pronase E and the embryos were then incubated in Ca2+-free Chatot-Ziomek-Bavister (CZB) medium for 10-20 minutes. Polar bodies were removed by gentle pipetting using a fire-polished glass needle. Single blastomeres were separated and manually picked before subjected to uliCUT&amp;RUN, uliNChIP and total RNA library preparation and sequencing. For ICM and TE isolation (Liu et al., 2016), the zona pellucidae of blastocysts were punched, followed by removal with 0.5% pronase E. The embryos were then incubated in Ca2+-free CZB for 20-30 minutes to disrupt the cell-cell junctions. ICM cells and TE cells were then distinguished and collected according to their sizes and shapes with the aid of a piezo-driven micromanipulator. For epiblast and extraembryonic ectoderm isolation (Wang et al., 2018), embryos were cut at the embryonic/extraembryonic boundary using properly sharpened forceps. A fire-polished glass needle with an inner diameter that is slightly smaller than the width of the embryonic/extraembryonic fragment was used for separating epiblast or extraembryonic ectoderm from the visceral endoderm, and the separated epiblast or extraembryonic ectoderm fragment was then incubated in Ca2+-free CZB medium for 10 minutes. uliCUT&amp;RUN was conducted following the published protocols (Patty and Hainer, 2021; Skene et al., 2018) with a few modifications. Briefly, all isolated fresh blastomeres or cells were washed three times with CUT&amp;RUN wash buffer to avoid possible contamination and then transferred into a 1.5 mL low-binding PCR tube (Eppendorf) containing 600 µL of the wash buffer. The samples were then bound to Concanavalin A-coated magnetic beads, which had been activated and resuspended in CUT&amp;RUN binding buffer. After cell immobilization, bead-bound samples were successively incubated with appropriate amount of primary antibodies against protein-of-interest in 250 µL of CUT&amp;RUN antibody buffer and a secondary antibody if necessary in 250 µL of CUT&amp;RUN digitonin buffer for overnight at 4°C. Cell membranes were permeabilized with 0.01% digitonin to allow the specific antibody to find its target. After unbound antibodies were washed away, 700 ng/mL protein A-MNase (pA-MN; a gift from Steven Henikoff lab or purchased from Vazyme Biotech) was added and incubated for 1 hour at 4°C. After washing, CaCl2 was added to a final concentration of 2 mM to activate pA-MN, and the digestion reaction was carried out for 30 min at 0°C and then stopped by adding 150 μL 2× CUT&amp;RUN stop buffer. The protein–DNA complex fragments were then released by 20 min incubation at 37°C. After transferring the supernatant to a new tube, 3 µL of 10% SDS and 2.5 µL of Proteinase K (Thermo) were added and incubated for 30 min at 55°C. DNA was then precipitated by phenol/chloroform/isoamylalcohol followed by ethanol precipitation with glycogen and then dissolved in nuclease-free water. Sequencing libraries were prepared using KAPA Hyper Prep Kit following the manufacturer’s instructions with slight modifications. Briefly, end repair was conducted for 30 min at 20°C followed by end-repair/A-tailing for 30 min at 50°C. After adaptor ligation for 30 min at 20°C, the DNA fragments were purified by 1.4× volume of AMPure beads followed by 18 cycles of PCR amplification with 2× KAPA HiFi HotStart Ready Mix. The final libraries were cleaned up with 1.2× volume of AMPure beads, and all CUT&amp;RUN libraries were sequenced on a NovaSeq6000 (Illumina) platform at Novogene Co., Ltd. with paired-ended 150-bp reads.
 
@@ -125,122 +196,92 @@ The HiCuT experiments were performed by Wuhan Frasergen Bioinformatics Co., Ltd.
 After cell immobilization, bead-bound samples were successively incubated with appropriate amount of primary antibodies against protein-of-interest (TFAP2C antibody: Santa Cruz, sc-12762; TEAD4 antibody: Santa Cruz, sc-101184; KLF5 antibody: Proteintech, 21017-1-AP) in 250µL of CUT&amp;RUN antibody buffer and a secondary antibody if necessary (rabbit anti-mouse IgG: Abcam, ab46540) in 250µL of CUT&amp;RUN digitonin buffer for overnight at 4°C. Cell membranes were permeabilized with 0.01% digitonin to allow the specific antibody to find its target. After unbound antibodies were washed away, 700 ng/mL protein A-MNase (pA-MN; a gift from Steven Henikoff lab or purchased from Vazyme Biotech) was added and incubated for 1 hour at 4°C. After washing, CaCl2 was added to a final concentration of 2 mM to activate pA-MN, and the digestion reaction was carried out for 30 min at 0°C and then stopped by adding 150μL 2× CUT&amp;RUN stop buffer. The protein–DNA complex fragments were then released by 20-min incubation at 37°C. After transferring the supernatant to a new tube, 3µL of 10% SDS and 2.5µL of Proteinase K (Thermo) were added and incubated for 30 min at 55°C. DNA was then precipitated by phenol/chloroform/isoamylalcohol followed by ethanol precipitation with glycogen and then dissolved in nuclease-free water. Sequencing libraries were prepared using KAPA Hyper Prep Kit (KAPA biosystems) following the manufacturer’s instructions with slight modifications. Briefly, end repair was conducted for 30 min at 20°C followed by end-repair/A-tailing for 30 min at 50°C. After adaptor ligation for 30 min at 20°C, the DNA fragments were purified by 1.4× volume of AMPure beads (Beckman Coulter) followed by 18 cycles of PCR amplification with 2× KAPA HiFi HotStart Ready Mix. The final libraries were cleaned up with 1.2× volume of AMPure beads, and all CUT&amp;RUN libraries were sequenced on a NovaSeq6000 (Illumina) platform at Novogene Co., Ltd. with paired-ended 150-bp reads.
 
 The released genomic DNA, together with 1% unmethylated lambda DNA (Thermo Scientific), were sheared into 150 bp to 350 bp by Covaris S2 before subjecting to bisulfite conversion using a MethylCode Bisulfite Conversion Kit (Invitrogen) according to the manufacturer’s instructions. The bisulfite-converted templates were then used to prepare the sequencing library through EpiArt DNA Methylation Library Kit following the manufacturer’s instructions. The PBAT libraries were also sequenced on Illumina NovaSeq with paired ends and 150-bp read lengths at Nanjing Jiangbei New Area Biophamaceutical Public Service Platform Co., Ltd.</p>
-                        
-                        
-                    </div>
-                    
-                </div>
-            </section>
+                        </section>
 
-            <aside class="record-aside" aria-label="Study source notes">
+
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="pregnancy-context">
+                    <summary>
+                        <span>
+                            <strong>Pregnancy and phenotype</strong>
+                            <small>Timing, participant metadata, and complications</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body panel-grid">
+                        <section class="field-group">
+                            <h3>Timing and participants</h3>
+                            <dl class="field-list">
+                                <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at collection provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at collection weeks</dt><dd>Not reported</dd></div>
+                                <div><dt>Offspring sex provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Parity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Genetic ancestry provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
+                            </dl>
+                        </section>
+
+                        <section class="field-group">
+                            <h3>Phenotypes and complications</h3>
+                            <dl class="field-list">
+                                <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
+                                <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
+                                <div><dt>Main topic</dt><dd>Not reported</dd></div>
+                            </dl>
+                        </section>
+                    </div>
+                </details>
+
+
+            </div>
+
+            <aside class="record-aside" aria-label="Record sources">
                 <section class="source-note">
-                    <p class="eyebrow">Source notes</p>
-                    <div class="provenance-list">
+                    <h2>Record sources</h2>
+                    <dl class="source-status-list">
+                        <div><dt>Metadata</dt><dd>GEO</dd></div>
                         <div>
-                            <strong>GEO metadata</strong>
-                            <p>Core study, assay, platform, contact, and submission fields come from GEO metadata.</p>
+                            <dt>Publication</dt>
+                            <dd>Not linked</dd>
                         </div>
                         <div>
-                            <strong>Publication links</strong>
-                            <p>
-                                
-                                No PMID, PMC, or DOI identifier is currently recorded.
-                                
-                            </p>
+                            <dt>Review evidence</dt>
+                            <dd>Not linked</dd>
                         </div>
-                        <div>
-                            <strong>Workbook notes</strong>
-                            <p>
-                                
-                                Pregnancy-specific values should be reviewed against the source paper when precision matters.
-                                
-                            </p>
-                        </div>
-                        
-                    </div>
-                </section>
 
-                <section class="source-links-block">
-                    <p class="eyebrow">Identifiers</p>
-                    <div class="external-grid">
-                        
+                    </dl>
+
+                    <div class="external-grid" aria-label="Record identifiers">
+
                         <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE212568" target="_blank"
                             rel="noopener">GEO: GSE212568</a>
-                        
-                        
-                        
-                        
+
+
+
+
                     </div>
                 </section>
             </aside>
         </section>
 
-        <section class="record-section curation-section">
-            <div class="section-heading">
-                <p class="eyebrow">Workbook-reviewed fields</p>
-                <h2>Pregnancy, phenotype, and sample context</h2>
-            </div>
-            <div class="technical-grid">
-                <div class="field-group">
-                    <h3>Pregnancy timing and participants</h3>
-                    <dl class="field-list">
-                        <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at collection provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at collection weeks</dt><dd>Not reported</dd></div>
-                        <div><dt>Offspring sex provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Parity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Genetic ancestry provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
-                    </dl>
-                </div>
-
-                <div class="field-group">
-                    <h3>Phenotypes and complications</h3>
-                    <dl class="field-list">
-                        <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
-                        <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
-                        <div><dt>Main topic</dt><dd>Not reported</dd></div>
-                    </dl>
-                </div>
-            </div>
-        </section>
-
-        <details class="evidence-ledger" id="evidence">
-            <summary>
-                <span>
-                    <span class="eyebrow">Workbook excerpt</span>
-                    <strong>Source evidence</strong>
-                </span>
-                <span class="evidence-counts">
-                    <span>0 evidence notes linked</span>
-                    <span>0 supplement repair findings</span>
-                </span>
-            </summary>
-
-            <div class="evidence-body">
-                
-                <p class="empty-evidence">No workbook evidence notes are linked to this GEO study yet.</p>
-                
-
-                
-            </div>
-        </details>
-
         <nav class="entry-navigation">
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/239.html">Previous study</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/repository.html">Studies</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/241.html">Next study</a>
-            
+
         </nav>
     </main>
 

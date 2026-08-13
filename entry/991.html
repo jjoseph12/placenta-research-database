@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GSE75957 - Placenta Study Atlas</title>
     <meta name="description" content="Mapping the mouse Allelome reveals tissue-specific regulation of allelic expression">
-    <link rel="stylesheet" href="/placenta-research-database/static/style.css">
+    <link rel="stylesheet" href="/placenta-research-database/static/style.css?v=20260813-4">
 </head>
 
 <body>
@@ -27,18 +27,10 @@
                 <h1>Mapping the mouse Allelome reveals tissue-specific regulation of allelic expression</h1>
             </div>
             <div class="source-actions" aria-label="Source links">
-                <a href="#evidence">Evidence notes</a>
-                
+
                 <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE75957"
                     target="_blank" rel="noopener">Open GEO</a>
-                
-                
-                <a href="https://pubmed.ncbi.nlm.nih.gov/28806168/" target="_blank"
-                    rel="noopener">PubMed</a>
-                
-                
-                <a href="https://doi.org/10.7554/eLife.25125" target="_blank" rel="noopener">DOI</a>
-                
+
             </div>
         </article>
 
@@ -70,402 +62,480 @@
         </section>
 
         <section class="record-layout">
-            <section class="record-section geo-section">
-                <div class="section-heading">
-                    <p class="eyebrow">GEO record</p>
-                    <h2>Sample, assay, and methods</h2>
-                </div>
-                <div class="technical-grid">
-                    <div class="field-group sample-group wide-group">
-                        <h3>Sample characteristics</h3>
-                        <p class="long-text">cell type: embronic stem cells | passages: 15 | strain: CAST/EiJxFVB/NJ | age: E3.5 | strain: FVB/NJxCAST/EiJ | tissue: embronic Liver | age: E12.5 | age: E16.5 | tissue: embronic Brain | tissue: embronic Heart | tissue: Visceral yolk sac endoderm | age: E9.5 | tissue: Placenta | tissue: Tongue | age: 3days post natal | tissue: Brain | age: adult (8 weeks) | tissue: Liver | tissue: Heart | tissue: Lung | tissue: Spleen | tissue: Thymus | tissue: Leg Muscle | tissue: Mammary gland (virgin) | tissue: Mammary gland (during lactation) | age: adult (12 weeks) - 3 days post natal | tissue: Brain (during lactation) | tissue: Decidua | strain: CAST/EiJ | strain: CASTxR2&lt;delta&gt; (R2&lt;delta&gt;=Airn promoter deletion, FVB background) | chip antibody: H3K4me3 (Millipore, 07-473, lot 2019729) | chip antibody: H3K4me3 (Millipore, 07-473, lot 2384705) | chip antibody: H3K27ac (Abcam,ab4729, lot GA104852-2) | strain: CAST/EiJxFVB/NJ &gt; embryo transfer to FVB/NJ | strain: BALBcxCAST/EiJ | strain: CAST/EiJxBALBc</p>
-                    </div>
+            <div class="record-content">
+                <details class="record-panel" id="study-details">
+                    <summary>
+                        <span>
+                            <strong>Study details</strong>
+                            <small>Samples, assay, platform, and submission</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body">
+                        <section class="field-group sample-group">
+                            <h3>Sample characteristics</h3>
 
-                    <div class="field-group">
-                        <h3>Assay and platform</h3>
-                        <dl class="field-list">
-                            <div><dt>Extracted molecule</dt><dd>total RNA, polyA RNA, genomic DNA</dd></div>
-                            <div><dt>Library source</dt><dd>transcriptomic, genomic</dd></div>
-                            <div><dt>Library selection</dt><dd>cDNA, ChIP</dd></div>
-                            <div><dt>Instrument model</dt><dd>Illumina HiSeq 2000, Illumina HiSeq 2500</dd></div>
-                            <div><dt>Platform ID</dt><dd>GPL13112, GPL17021</dd></div>
-                            <div><dt>SRA Study ID</dt><dd>SRP067322</dd></div>
-                            <div><dt>BioProject ID</dt><dd>PRJNA305855</dd></div>
-                            <div><dt>File types</dt><dd>gz, txt</dd></div>
-                        </dl>
-                    </div>
+                            <ul class="characteristic-list">
 
-                    <div class="field-group">
-                        <h3>Submission information</h3>
-                        <dl class="field-list">
-                            <div><dt>Organization</dt><dd>CeMM Research Center for  Molecular Medicine of the  Austrian Academy of Sciences</dd></div>
-                            <div><dt>Contact</dt><dd>Daniel Andergassen</dd></div>
-                            <div><dt>Email</dt><dd>Not reported</dd></div>
-                            <div><dt>Submitter country</dt><dd>Austria</dd></div>
-                            <div><dt>Hospital / center</dt><dd>CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences</dd></div>
-                            <div><dt>Submitted</dt><dd>12/14/2015</dd></div>
-                            <div><dt>Last updated</dt><dd>03/14/2020</dd></div>
-                            <div><dt>Supervisor / PI</dt><dd>Quanah J Hudson</dd></div>
-                            <div><dt>Supervisor email</dt><dd>quanah.hudson@imba.oeaw.ac.at</dd></div>
-                        </dl>
-                    </div>
+                                <li>cell type: embronic stem cells</li>
 
-                    
-                    <div class="field-group methods-group">
-                        <h3>Methods text</h3>
-                        
-                        <h4>Assay description</h4>
-                        <p class="long-text">Defining allele-specific genome features from the mouse in 23 tissues and developmental stages</p>
-                        
-                        
-                        <h4>Extraction protocol</h4>
-                        <p class="long-text">Total RNA and DNA were extracted using TRI-reagent (Sigma-Aldrich T9424) according to the manufacturers protocol. Total RNA was DNaseI treated using the DNA-FreeTM kit (Ambion). RNA-seq: DNaseI treated (DNA-FreeTM Ambion) total RNA (1-3 µg) was depleted for Ribosomal RNA using the RiboZero rRNA removal kit (Human/Mouse/Rat) (Epicentre) or enriched for polyA containing mRNA (Illumina). Strand-specific RNA-seq libraries were prepared employing the TruSeq RNA Sample Prep Kit v2 (Illumina) modified as described in Sultan et al. 2012 for strand-specific sequencing. ChIP-seq: Native ChIP was conducted as described in Regha et al. 2007. ChIP-seq libraries were prepared using the TruSeq ChIP Sample Prep Kit (Illumina).</p>
-                        
-                        
-                    </div>
-                    
-                </div>
-            </section>
+                                <li>passages: 15</li>
 
-            <aside class="record-aside" aria-label="Study source notes">
+                                <li>strain: CAST/EiJxFVB/NJ</li>
+
+                                <li>age: E3.5</li>
+
+                                <li>strain: FVB/NJxCAST/EiJ</li>
+
+                                <li>tissue: embronic Liver</li>
+
+                                <li>age: E12.5</li>
+
+                                <li>age: E16.5</li>
+
+                                <li>tissue: embronic Brain</li>
+
+                                <li>tissue: embronic Heart</li>
+
+                                <li>tissue: Visceral yolk sac endoderm</li>
+
+                                <li>age: E9.5</li>
+
+                                <li>tissue: Placenta</li>
+
+                                <li>tissue: Tongue</li>
+
+                                <li>age: 3days post natal</li>
+
+                                <li>tissue: Brain</li>
+
+                                <li>age: adult (8 weeks)</li>
+
+                                <li>tissue: Liver</li>
+
+                                <li>tissue: Heart</li>
+
+                                <li>tissue: Lung</li>
+
+                                <li>tissue: Spleen</li>
+
+                                <li>tissue: Thymus</li>
+
+                                <li>tissue: Leg Muscle</li>
+
+                                <li>tissue: Mammary gland (virgin)</li>
+
+                                <li>tissue: Mammary gland (during lactation)</li>
+
+                                <li>age: adult (12 weeks) - 3 days post natal</li>
+
+                                <li>tissue: Brain (during lactation)</li>
+
+                                <li>tissue: Decidua</li>
+
+                                <li>strain: CAST/EiJ</li>
+
+                                <li>strain: CASTxR2&lt;delta&gt; (R2&lt;delta&gt;=Airn promoter deletion, FVB background)</li>
+
+                                <li>chip antibody: H3K4me3 (Millipore, 07-473, lot 2019729)</li>
+
+                                <li>chip antibody: H3K4me3 (Millipore, 07-473, lot 2384705)</li>
+
+                                <li>chip antibody: H3K27ac (Abcam,ab4729, lot GA104852-2)</li>
+
+                                <li>strain: CAST/EiJxFVB/NJ &gt; embryo transfer to FVB/NJ</li>
+
+                                <li>strain: BALBcxCAST/EiJ</li>
+
+                                <li>strain: CAST/EiJxBALBc</li>
+
+                            </ul>
+
+                        </section>
+
+                        <div class="panel-grid">
+                            <section class="field-group">
+                                <h3>Assay and platform</h3>
+                                <dl class="field-list">
+                                    <div><dt>Extracted molecule</dt><dd>total RNA, polyA RNA, genomic DNA</dd></div>
+                                    <div><dt>Library source</dt><dd>transcriptomic, genomic</dd></div>
+                                    <div><dt>Library selection</dt><dd>cDNA, ChIP</dd></div>
+                                    <div><dt>Instrument model</dt><dd>Illumina HiSeq 2000, Illumina HiSeq 2500</dd></div>
+                                    <div><dt>Platform ID</dt><dd>GPL13112, GPL17021</dd></div>
+                                    <div><dt>SRA Study ID</dt><dd>SRP067322</dd></div>
+                                    <div><dt>BioProject ID</dt><dd>PRJNA305855</dd></div>
+                                    <div><dt>File types</dt><dd>gz, txt</dd></div>
+                                </dl>
+                            </section>
+
+                            <section class="field-group">
+                                <h3>Submission</h3>
+                                <dl class="field-list">
+                                    <div><dt>Organization</dt><dd>CeMM Research Center for  Molecular Medicine of the  Austrian Academy of Sciences</dd></div>
+                                    <div><dt>Contact</dt><dd>Daniel Andergassen</dd></div>
+                                    <div><dt>Email</dt><dd>Not reported</dd></div>
+                                    <div><dt>Submitter country</dt><dd>Austria</dd></div>
+                                    <div><dt>Hospital / center</dt><dd>CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences</dd></div>
+                                    <div><dt>Submitted</dt><dd>12/14/2015</dd></div>
+                                    <div><dt>Last updated</dt><dd>03/14/2020</dd></div>
+                                    <div><dt>Supervisor / PI</dt><dd>Quanah J Hudson</dd></div>
+                                    <div><dt>Supervisor email</dt><dd>quanah.hudson@imba.oeaw.ac.at</dd></div>
+                                </dl>
+                            </section>
+                        </div>
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="methods">
+                    <summary>
+                        <span>
+                            <strong>Methods</strong>
+                            <small>Assay, extraction, and data processing text</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body method-stack">
+
+                        <section class="method-block">
+                            <h3>Assay description</h3>
+                            <p class="long-text">Defining allele-specific genome features from the mouse in 23 tissues and developmental stages</p>
+                        </section>
+
+
+                        <section class="method-block">
+                            <h3>Extraction protocol</h3>
+                            <p class="long-text">Total RNA and DNA were extracted using TRI-reagent (Sigma-Aldrich T9424) according to the manufacturers protocol. Total RNA was DNaseI treated using the DNA-FreeTM kit (Ambion). RNA-seq: DNaseI treated (DNA-FreeTM Ambion) total RNA (1-3 µg) was depleted for Ribosomal RNA using the RiboZero rRNA removal kit (Human/Mouse/Rat) (Epicentre) or enriched for polyA containing mRNA (Illumina). Strand-specific RNA-seq libraries were prepared employing the TruSeq RNA Sample Prep Kit v2 (Illumina) modified as described in Sultan et al. 2012 for strand-specific sequencing. ChIP-seq: Native ChIP was conducted as described in Regha et al. 2007. ChIP-seq libraries were prepared using the TruSeq ChIP Sample Prep Kit (Illumina).</p>
+                        </section>
+
+
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="pregnancy-context">
+                    <summary>
+                        <span>
+                            <strong>Pregnancy and phenotype</strong>
+                            <small>Timing, participant metadata, and complications</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body panel-grid">
+                        <section class="field-group">
+                            <h3>Timing and participants</h3>
+                            <dl class="field-list">
+                                <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at collection provided</dt><dd>Yes</dd></div>
+                                <div><dt>GA at collection weeks</dt><dd>12.5</dd></div>
+                                <div><dt>Offspring sex provided</dt><dd>Yes</dd></div>
+                                <div><dt>Parity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Genetic ancestry provided</dt><dd>Yes</dd></div>
+                                <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
+                            </dl>
+                        </section>
+
+                        <section class="field-group">
+                            <h3>Phenotypes and complications</h3>
+                            <dl class="field-list">
+                                <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
+                                <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
+                                <div><dt>Main topic</dt><dd>This paper analyzes RNA-seq data from 23 F1 mouse tissues from different developmental stages to determine the dynamics of allelic-specific expression, revealing that allelic expression arising from genetic or epigenetic differences is highly tissue-specific and regulated by tissue-specific enhancers.</dd></div>
+                            </dl>
+                        </section>
+                    </div>
+                </details>
+
+
+                <details class="record-panel evidence-panel" id="evidence">
+                    <summary>
+                        <span>
+                            <strong>Source evidence</strong>
+                            <small>31 evidence notes, 0 supplement findings</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body evidence-body">
+
+                        <div class="evidence-list">
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Main topic of the publication</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Mapping allele-specific expression (including strain-biased expression, X-chromosome inactivation, and genomic imprinting) across 23 mouse tissues during different developmental stages.</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>To determine the dynamics of allelic-specific expression during mouse development, we analyzed RNA-seq data from 23 F1 tissues from different developmental stages, including 19 female tissues allowing X chromosome inactivation (XCI) escapers to also be detected.</blockquote>
+                                    <footer>
+                                    <span>Abstract</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC5555720</span>
+                                    <span>10.7554/eLife.25125</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Sampling timing during pregnancy</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Embryonic days E3.5, E9.5, E12.5, and E16.5.</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>We chose a range of 23 pluripotent, embryonic, extra-embryonic, neonatal and adult tissues, including a developmental series for selected tissues</blockquote>
+                                    <footer>
+                                    <span>Results - The mouse gene expression Allelome shows tissue-specific variation</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC5555720</span>
+                                    <span>10.7554/eLife.25125</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Sampling timing during pregnancy</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Embryonic days E3.5, E9.5, E12.5, and E16.5.</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>E3.5 ... E9.5 ... E12.5 ... E16.5</blockquote>
+                                    <footer>
+                                    <span>Supplementary file 1 - Sheet A</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC5555720</span>
+                                    <span>10.7554/eLife.25125</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Samples collected at single pregnancy time point (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>We chose a range of 23 pluripotent, embryonic, extra-embryonic, neonatal and adult tissues, including a developmental series for selected tissues</blockquote>
+                                    <footer>
+                                    <span>Results - The mouse gene expression Allelome shows tissue-specific variation</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC5555720</span>
+                                    <span>10.7554/eLife.25125</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Gestational Age at delivery provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC5555720</span>
+                                    <span>10.7554/eLife.25125</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Gestational Age at sample collection provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Yes</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>E3.5 ... E9.5 ... E12.5 ... E16.5</blockquote>
+                                    <footer>
+                                    <span>Supplementary file 1 - Sheet A</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC5555720</span>
+                                    <span>10.7554/eLife.25125</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Birthweight of offspring provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC5555720</span>
+                                    <span>10.7554/eLife.25125</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Samples from pregnancy complications collected</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC5555720</span>
+                                    <span>10.7554/eLife.25125</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Pregnancy complications in data set (list)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC5555720</span>
+                                    <span>10.7554/eLife.25125</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Fetal complications listed (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC5555720</span>
+                                    <span>10.7554/eLife.25125</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                        </div>
+
+
+
+                    </div>
+                </details>
+
+            </div>
+
+            <aside class="record-aside" aria-label="Record sources">
                 <section class="source-note">
-                    <p class="eyebrow">Source notes</p>
-                    <div class="provenance-list">
+                    <h2>Record sources</h2>
+                    <dl class="source-status-list">
+                        <div><dt>Metadata</dt><dd>GEO</dd></div>
                         <div>
-                            <strong>GEO metadata</strong>
-                            <p>Core study, assay, platform, contact, and submission fields come from GEO metadata.</p>
+                            <dt>Publication</dt>
+                            <dd>Linked</dd>
                         </div>
                         <div>
-                            <strong>Publication links</strong>
-                            <p>
-                                
-                                PMID, PMC, or DOI identifiers are available for source inspection.
-                                
-                            </p>
+                            <dt>Review evidence</dt>
+                            <dd>31 notes</dd>
                         </div>
-                        <div>
-                            <strong>Workbook notes</strong>
-                            <p>
-                                
-                                31 evidence notes are linked to this GEO study.
-                                
-                            </p>
-                        </div>
-                        
-                    </div>
-                </section>
 
-                <section class="source-links-block">
-                    <p class="eyebrow">Identifiers</p>
-                    <div class="external-grid">
-                        
+                    </dl>
+
+                    <div class="external-grid" aria-label="Record identifiers">
+
                         <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE75957" target="_blank"
                             rel="noopener">GEO: GSE75957</a>
-                        
-                        
+
+
                         <a href="https://pubmed.ncbi.nlm.nih.gov/28806168/" target="_blank"
                             rel="noopener">PMID: 28806168</a>
-                        
-                        
+
+
                         <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5555720/" target="_blank"
                             rel="noopener">PMC: PMC5555720</a>
-                        
-                        
+
+
                         <a href="https://doi.org/10.7554/eLife.25125" target="_blank" rel="noopener">DOI: 10.7554/eLife.25125</a>
-                        
+
                     </div>
                 </section>
             </aside>
         </section>
 
-        <section class="record-section curation-section">
-            <div class="section-heading">
-                <p class="eyebrow">Workbook-reviewed fields</p>
-                <h2>Pregnancy, phenotype, and sample context</h2>
-            </div>
-            <div class="technical-grid">
-                <div class="field-group">
-                    <h3>Pregnancy timing and participants</h3>
-                    <dl class="field-list">
-                        <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at collection provided</dt><dd>Yes</dd></div>
-                        <div><dt>GA at collection weeks</dt><dd>12.5</dd></div>
-                        <div><dt>Offspring sex provided</dt><dd>Yes</dd></div>
-                        <div><dt>Parity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Genetic ancestry provided</dt><dd>Yes</dd></div>
-                        <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
-                    </dl>
-                </div>
-
-                <div class="field-group">
-                    <h3>Phenotypes and complications</h3>
-                    <dl class="field-list">
-                        <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
-                        <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
-                        <div><dt>Main topic</dt><dd>This paper analyzes RNA-seq data from 23 F1 mouse tissues from different developmental stages to determine the dynamics of allelic-specific expression, revealing that allelic expression arising from genetic or epigenetic differences is highly tissue-specific and regulated by tissue-specific enhancers.</dd></div>
-                    </dl>
-                </div>
-            </div>
-        </section>
-
-        <details class="evidence-ledger" id="evidence">
-            <summary>
-                <span>
-                    <span class="eyebrow">Workbook excerpt</span>
-                    <strong>Source evidence</strong>
-                </span>
-                <span class="evidence-counts">
-                    <span>31 evidence notes linked</span>
-                    <span>0 supplement repair findings</span>
-                </span>
-            </summary>
-
-            <div class="evidence-body">
-                
-                <div class="evidence-list">
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Main topic of the publication</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Mapping allele-specific expression (including strain-biased expression, X-chromosome inactivation, and genomic imprinting) across 23 mouse tissues during different developmental stages.</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>To determine the dynamics of allelic-specific expression during mouse development, we analyzed RNA-seq data from 23 F1 tissues from different developmental stages, including 19 female tissues allowing X chromosome inactivation (XCI) escapers to also be detected.</blockquote>
-                            <footer>
-                            <span>Abstract</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC5555720</span>
-                            <span>10.7554/eLife.25125</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Sampling timing during pregnancy</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Embryonic days E3.5, E9.5, E12.5, and E16.5.</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>We chose a range of 23 pluripotent, embryonic, extra-embryonic, neonatal and adult tissues, including a developmental series for selected tissues</blockquote>
-                            <footer>
-                            <span>Results - The mouse gene expression Allelome shows tissue-specific variation</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC5555720</span>
-                            <span>10.7554/eLife.25125</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Sampling timing during pregnancy</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Embryonic days E3.5, E9.5, E12.5, and E16.5.</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>E3.5 ... E9.5 ... E12.5 ... E16.5</blockquote>
-                            <footer>
-                            <span>Supplementary file 1 - Sheet A</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC5555720</span>
-                            <span>10.7554/eLife.25125</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Samples collected at single pregnancy time point (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>We chose a range of 23 pluripotent, embryonic, extra-embryonic, neonatal and adult tissues, including a developmental series for selected tissues</blockquote>
-                            <footer>
-                            <span>Results - The mouse gene expression Allelome shows tissue-specific variation</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC5555720</span>
-                            <span>10.7554/eLife.25125</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Gestational Age at delivery provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC5555720</span>
-                            <span>10.7554/eLife.25125</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Gestational Age at sample collection provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Yes</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>E3.5 ... E9.5 ... E12.5 ... E16.5</blockquote>
-                            <footer>
-                            <span>Supplementary file 1 - Sheet A</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC5555720</span>
-                            <span>10.7554/eLife.25125</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Birthweight of offspring provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC5555720</span>
-                            <span>10.7554/eLife.25125</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Samples from pregnancy complications collected</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC5555720</span>
-                            <span>10.7554/eLife.25125</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Pregnancy complications in data set (list)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC5555720</span>
-                            <span>10.7554/eLife.25125</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Fetal complications listed (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC5555720</span>
-                            <span>10.7554/eLife.25125</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                </div>
-                
-
-                
-            </div>
-        </details>
-
         <nav class="entry-navigation">
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/990.html">Previous study</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/repository.html">Studies</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/992.html">Next study</a>
-            
+
         </nav>
     </main>
 

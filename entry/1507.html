@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GSE23862 - Placenta Study Atlas</title>
     <meta name="description" content="Comparison of steady state mRNA levels between equine articular cartilage and ten other equine tissues">
-    <link rel="stylesheet" href="/placenta-research-database/static/style.css">
+    <link rel="stylesheet" href="/placenta-research-database/static/style.css?v=20260813-4">
 </head>
 
 <body>
@@ -27,18 +27,10 @@
                 <h1>Comparison of steady state mRNA levels between equine articular cartilage and ten other equine tissues</h1>
             </div>
             <div class="source-actions" aria-label="Source links">
-                <a href="#evidence">Evidence notes</a>
-                
+
                 <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE23862"
                     target="_blank" rel="noopener">Open GEO</a>
-                
-                
-                <a href="https://pubmed.ncbi.nlm.nih.gov/18597687/" target="_blank"
-                    rel="noopener">PubMed</a>
-                
-                
-                <a href="https://doi.org/10.1186/1471-2105-9-300" target="_blank" rel="noopener">DOI</a>
-                
+
             </div>
         </article>
 
@@ -70,56 +62,82 @@
         </section>
 
         <section class="record-layout">
-            <section class="record-section geo-section">
-                <div class="section-heading">
-                    <p class="eyebrow">GEO record</p>
-                    <h2>Sample, assay, and methods</h2>
-                </div>
-                <div class="technical-grid">
-                    <div class="field-group sample-group wide-group">
-                        <h3>Sample characteristics</h3>
-                        <p class="long-text">breed: Thoroughbred | tissue: articular cartilage | developmental stage: adult</p>
-                    </div>
+            <div class="record-content">
+                <details class="record-panel" id="study-details">
+                    <summary>
+                        <span>
+                            <strong>Study details</strong>
+                            <small>Samples, assay, platform, and submission</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body">
+                        <section class="field-group sample-group">
+                            <h3>Sample characteristics</h3>
 
-                    <div class="field-group">
-                        <h3>Assay and platform</h3>
-                        <dl class="field-list">
-                            <div><dt>Extracted molecule</dt><dd>total RNA</dd></div>
-                            <div><dt>Library source</dt><dd>Not reported</dd></div>
-                            <div><dt>Library selection</dt><dd>Not reported</dd></div>
-                            <div><dt>Instrument model</dt><dd>Not reported</dd></div>
-                            <div><dt>Platform ID</dt><dd>GPL6423</dd></div>
-                            <div><dt>SRA Study ID</dt><dd>Not reported</dd></div>
-                            <div><dt>BioProject ID</dt><dd>PRJNA130503</dd></div>
-                            <div><dt>File types</dt><dd>tar</dd></div>
-                        </dl>
-                    </div>
+                            <ul class="characteristic-list">
 
-                    <div class="field-group">
-                        <h3>Submission information</h3>
-                        <dl class="field-list">
-                            <div><dt>Organization</dt><dd>University of Kentucky</dd></div>
-                            <div><dt>Contact</dt><dd>Michael J. Mienaltowski</dd></div>
-                            <div><dt>Email</dt><dd>M.Mski@uky.edu, mmienalt@health.usf.edu</dd></div>
-                            <div><dt>Submitter country</dt><dd>USA</dd></div>
-                            <div><dt>Hospital / center</dt><dd>Gluck Equine Research Foundation</dd></div>
-                            <div><dt>Submitted</dt><dd>08/29/2010</dd></div>
-                            <div><dt>Last updated</dt><dd>03/22/2012</dd></div>
-                            <div><dt>Supervisor / PI</dt><dd>Arne C Bathke</dd></div>
-                            <div><dt>Supervisor email</dt><dd>arne@ms.uky.edu</dd></div>
-                        </dl>
-                    </div>
+                                <li>breed: Thoroughbred</li>
 
-                    
-                    <div class="field-group methods-group">
-                        <h3>Methods text</h3>
-                        
-                        <h4>Assay description</h4>
-                        <p class="long-text">Messenger RNA transcriptome comparisons were conducted between equine articular cartilage and ten other body tissues using a 9413 element equine-specific cDNA microarray and a two-color dye-swap experimental design.  After scanning, the median intensities adjusted for background were entire chip Lowess-normalized for each individual slide.  Quantile regression was used to estimate the conditional quantile of the M and A log ratios given the observed average log intensity.  Briefly, a nonparametric approach was used to reveal the relationship between percentiles of M and A, where M is log2 (R/G) and A is 0.5 log2 (RG) with R representing expression in articular cartilage and G representing expression in the comparative tissue.  The quantile regression was fit using a B-spline with 5 fixed nodes.  The 1st, 5th, 10th, 20th, 50th, 80th, 90th, 95th, and 99th conditional quantiles were estimated.  For each observed gene intensity in a given tissue comparison, the normal quantile was used as the cartilage-specificity in place of the corresponding estimated regression quantile.</p>
-                        
-                        
-                        <h4>Extraction protocol</h4>
-                        <p class="long-text">Total RNA was isolated using variations of acid guanidinium thiocyanate/phenol/chloroform extraction with alcohol and salt precipitations.[(1) Chomczynski P, Sacchi N. Single-step method of RNA isolation by acid guanidinium thiocyanate-phenol-chloroform extraction. Anal Biochem 1987; 162: 156-159. (2) MacLeod JN, Burton-Wurster N, Gu DN, Lust G. Fibronectin mRNA splice variant in articular cartilage lacks bases encoding the V, III-15, and I-10 protein segments. J Biol Chem 1996; 271: 18954-18960]. The RNA was further cleaned up through a final RNeasy silica gel column (Qiagen Inc., Valencia, CA, #74104) purification and ethanol precipitation, and solubilized in nuclease-free water (Ambion, Applied Biosystems, Foster City, CA, #AM9937). Total RNA (2 micrograms) from each tissue sample received one round of linear amplification primed with oligo-dT (Invitrogen - SuperScript RNA Amplification System). Label Alexa Fluor 647, Alexa Fluor 555 Label protocol Samples were labeled with Invitrogen Indirect PLUS Labeling using amino-allyl dUTP. Channel 2 Source name Adult Tongue Muscle Organism Equus caballus Characteristics breed: Thoroughbred tissue: tongue muscle developmental stage: adult Biomaterial provider Gluck Equine Research Center
+                                <li>tissue: articular cartilage</li>
+
+                                <li>developmental stage: adult</li>
+
+                            </ul>
+
+                        </section>
+
+                        <div class="panel-grid">
+                            <section class="field-group">
+                                <h3>Assay and platform</h3>
+                                <dl class="field-list">
+                                    <div><dt>Extracted molecule</dt><dd>total RNA</dd></div>
+                                    <div><dt>Library source</dt><dd>Not reported</dd></div>
+                                    <div><dt>Library selection</dt><dd>Not reported</dd></div>
+                                    <div><dt>Instrument model</dt><dd>Not reported</dd></div>
+                                    <div><dt>Platform ID</dt><dd>GPL6423</dd></div>
+                                    <div><dt>SRA Study ID</dt><dd>Not reported</dd></div>
+                                    <div><dt>BioProject ID</dt><dd>PRJNA130503</dd></div>
+                                    <div><dt>File types</dt><dd>tar</dd></div>
+                                </dl>
+                            </section>
+
+                            <section class="field-group">
+                                <h3>Submission</h3>
+                                <dl class="field-list">
+                                    <div><dt>Organization</dt><dd>University of Kentucky</dd></div>
+                                    <div><dt>Contact</dt><dd>Michael J. Mienaltowski</dd></div>
+                                    <div><dt>Email</dt><dd>M.Mski@uky.edu, mmienalt@health.usf.edu</dd></div>
+                                    <div><dt>Submitter country</dt><dd>USA</dd></div>
+                                    <div><dt>Hospital / center</dt><dd>Gluck Equine Research Foundation</dd></div>
+                                    <div><dt>Submitted</dt><dd>08/29/2010</dd></div>
+                                    <div><dt>Last updated</dt><dd>03/22/2012</dd></div>
+                                    <div><dt>Supervisor / PI</dt><dd>Arne C Bathke</dd></div>
+                                    <div><dt>Supervisor email</dt><dd>arne@ms.uky.edu</dd></div>
+                                </dl>
+                            </section>
+                        </div>
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="methods">
+                    <summary>
+                        <span>
+                            <strong>Methods</strong>
+                            <small>Assay, extraction, and data processing text</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body method-stack">
+
+                        <section class="method-block">
+                            <h3>Assay description</h3>
+                            <p class="long-text">Messenger RNA transcriptome comparisons were conducted between equine articular cartilage and ten other body tissues using a 9413 element equine-specific cDNA microarray and a two-color dye-swap experimental design.  After scanning, the median intensities adjusted for background were entire chip Lowess-normalized for each individual slide.  Quantile regression was used to estimate the conditional quantile of the M and A log ratios given the observed average log intensity.  Briefly, a nonparametric approach was used to reveal the relationship between percentiles of M and A, where M is log2 (R/G) and A is 0.5 log2 (RG) with R representing expression in articular cartilage and G representing expression in the comparative tissue.  The quantile regression was fit using a B-spline with 5 fixed nodes.  The 1st, 5th, 10th, 20th, 50th, 80th, 90th, 95th, and 99th conditional quantiles were estimated.  For each observed gene intensity in a given tissue comparison, the normal quantile was used as the cartilage-specificity in place of the corresponding estimated regression quantile.</p>
+                        </section>
+
+
+                        <section class="method-block">
+                            <h3>Extraction protocol</h3>
+                            <p class="long-text">Total RNA was isolated using variations of acid guanidinium thiocyanate/phenol/chloroform extraction with alcohol and salt precipitations.[(1) Chomczynski P, Sacchi N. Single-step method of RNA isolation by acid guanidinium thiocyanate-phenol-chloroform extraction. Anal Biochem 1987; 162: 156-159. (2) MacLeod JN, Burton-Wurster N, Gu DN, Lust G. Fibronectin mRNA splice variant in articular cartilage lacks bases encoding the V, III-15, and I-10 protein segments. J Biol Chem 1996; 271: 18954-18960]. The RNA was further cleaned up through a final RNeasy silica gel column (Qiagen Inc., Valencia, CA, #74104) purification and ethanol precipitation, and solubilized in nuclease-free water (Ambion, Applied Biosystems, Foster City, CA, #AM9937). Total RNA (2 micrograms) from each tissue sample received one round of linear amplification primed with oligo-dT (Invitrogen - SuperScript RNA Amplification System). Label Alexa Fluor 647, Alexa Fluor 555 Label protocol Samples were labeled with Invitrogen Indirect PLUS Labeling using amino-allyl dUTP. Channel 2 Source name Adult Tongue Muscle Organism Equus caballus Characteristics breed: Thoroughbred tissue: tongue muscle developmental stage: adult Biomaterial provider Gluck Equine Research Center
 
 Total RNA was isolated using variations of acid guanidinium thiocyanate/phenol/chloroform extraction with alcohol and salt precipitations.[(1) Chomczynski P, Sacchi N. Single-step method of RNA isolation by acid guanidinium thiocyanate-phenol-chloroform extraction. Anal Biochem 1987; 162: 156-159. (2) MacLeod JN, Burton-Wurster N, Gu DN, Lust G. Fibronectin mRNA splice variant in articular cartilage lacks bases encoding the V, III-15, and I-10 protein segments. J Biol Chem 1996; 271: 18954-18960]. The RNA was further cleaned up through a final RNeasy silica gel column (Qiagen Inc., Valencia, CA, #74104) purification and ethanol precipitation, and solubilized in nuclease-free water (Ambion, Applied Biosystems, Foster City, CA, #AM9937). Total RNA (2 micrograms) from each tissue sample received one round of linear amplification primed with oligo-dT (Invitrogen - SuperScript RNA Amplification System). Label Alexa Fluor 647, Alexa Fluor 555 Label protocol Samples were labeled with Invitrogen Indirect PLUS Labeling using amino-allyl dUTP. Channel 2 Source name Adult Bladder Organism Equus caballus Characteristics breed: Thoroughbred tissue: bladder developmental stage: adult Biomaterial provider Gluck Equine Research Center
 
@@ -138,352 +156,338 @@ Total RNA was isolated using variations of acid guanidinium thiocyanate/phenol/c
 Total RNA was isolated using variations of acid guanidinium thiocyanate/phenol/chloroform extraction with alcohol and salt precipitations.[(1) Chomczynski P, Sacchi N. Single-step method of RNA isolation by acid guanidinium thiocyanate-phenol-chloroform extraction. Anal Biochem 1987; 162: 156-159. (2) MacLeod JN, Burton-Wurster N, Gu DN, Lust G. Fibronectin mRNA splice variant in articular cartilage lacks bases encoding the V, III-15, and I-10 protein segments. J Biol Chem 1996; 271: 18954-18960]. The RNA was further cleaned up through a final RNeasy silica gel column (Qiagen Inc., Valencia, CA, #74104) purification and ethanol precipitation, and solubilized in nuclease-free water (Ambion, Applied Biosystems, Foster City, CA, #AM9937). Total RNA (2 micrograms) from each tissue sample received one round of linear amplification primed with oligo-dT (Invitrogen - SuperScript RNA Amplification System). Label Alexa Fluor 647, Alexa Fluor 555 Label protocol Samples were labeled with Invitrogen Indirect PLUS Labeling using amino-allyl dUTP. Channel 2 Source name Adult Spleen Organism Equus caballus Characteristics breed: Thoroughbred tissue: spleen developmental stage: adult Biomaterial provider Gluck Equine Research Center
 
 Total RNA was isolated using variations of acid guanidinium thiocyanate/phenol/chloroform extraction with alcohol and salt precipitations.[(1) Chomczynski P, Sacchi N. Single-step method of RNA isolation by acid guanidinium thiocyanate-phenol-chloroform extraction. Anal Biochem 1987; 162: 156-159. (2) MacLeod JN, Burton-Wurster N, Gu DN, Lust G. Fibronectin mRNA splice variant in articular cartilage lacks bases encoding the V, III-15, and I-10 protein segments. J Biol Chem 1996; 271: 18954-18960]. The RNA was further cleaned up through a final RNeasy silica gel column (Qiagen Inc., Valencia, CA, #74104) purification and ethanol precipitation, and solubilized in nuclease-free water (Ambion, Applied Biosystems, Foster City, CA, #AM9937). Total RNA (2 micrograms) from each tissue sample received one round of linear amplification primed with oligo-dT (Invitrogen - SuperScript RNA Amplification System). Label Alexa Fluor 647, Alexa Fluor 555 Label protocol Samples were labeled with Invitrogen Indirect PLUS Labeling using amino-allyl dUTP. Channel 2 Source name Adult Testis Organism Equus caballus Characteristics breed: Thoroughbred tissue: testis developmental stage: adult Biomaterial provider Gluck Equine Research Center</p>
-                        
-                        
-                    </div>
-                    
-                </div>
-            </section>
+                        </section>
 
-            <aside class="record-aside" aria-label="Study source notes">
+
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="pregnancy-context">
+                    <summary>
+                        <span>
+                            <strong>Pregnancy and phenotype</strong>
+                            <small>Timing, participant metadata, and complications</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body panel-grid">
+                        <section class="field-group">
+                            <h3>Timing and participants</h3>
+                            <dl class="field-list">
+                                <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at collection provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at collection weeks</dt><dd>Not reported</dd></div>
+                                <div><dt>Offspring sex provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Parity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Genetic ancestry provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
+                            </dl>
+                        </section>
+
+                        <section class="field-group">
+                            <h3>Phenotypes and complications</h3>
+                            <dl class="field-list">
+                                <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
+                                <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
+                                <div><dt>Main topic</dt><dd>The paper proposes and demonstrates an intensity-dependent linear quantile regression method for identifying tissue-restricted patterns of gene expression, exemplified by comparing articular cartilage with other body tissues to discover novel cartilage biomarkers using cDNA microarray data.</dd></div>
+                            </dl>
+                        </section>
+                    </div>
+                </details>
+
+
+                <details class="record-panel evidence-panel" id="evidence">
+                    <summary>
+                        <span>
+                            <strong>Source evidence</strong>
+                            <small>30 evidence notes, 0 supplement findings</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body evidence-body">
+
+                        <div class="evidence-list">
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Main topic of the publication</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>The application of intensity-dependent linear quantile regression to identify tissue-restricted biomarkers from cDNA microarray data, demonstrated by comparing equine articular cartilage with ten other tissues.</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>In this study, we propose an intensity-dependent linear quantile regression, using statistical and biological information to identify tissue-restricted patterns of gene expression.</blockquote>
+                                    <footer>
+                                    <span>Background</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC2474617</span>
+                                    <span>10.1186/1471-2105-9-300</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Sampling timing during pregnancy</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not Provided</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC2474617</span>
+                                    <span>10.1186/1471-2105-9-300</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Samples collected at single pregnancy time point (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>medium confidence</span>
+                                    <span>PMC2474617</span>
+                                    <span>10.1186/1471-2105-9-300</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Gestational Age at delivery provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC2474617</span>
+                                    <span>10.1186/1471-2105-9-300</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Gestational Age at sample collection provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC2474617</span>
+                                    <span>10.1186/1471-2105-9-300</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Birthweight of offspring provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC2474617</span>
+                                    <span>10.1186/1471-2105-9-300</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Samples from pregnancy complications collected</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>Placental villous and testis samples were obtained independently from other donor horses.</blockquote>
+                                    <footer>
+                                    <span>Methods</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC2474617</span>
+                                    <span>10.1186/1471-2105-9-300</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Pregnancy complications in data set (list)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC2474617</span>
+                                    <span>10.1186/1471-2105-9-300</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Fetal complications listed (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC2474617</span>
+                                    <span>10.1186/1471-2105-9-300</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Fetal complications in data set (list)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC2474617</span>
+                                    <span>10.1186/1471-2105-9-300</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                        </div>
+
+
+
+                    </div>
+                </details>
+
+            </div>
+
+            <aside class="record-aside" aria-label="Record sources">
                 <section class="source-note">
-                    <p class="eyebrow">Source notes</p>
-                    <div class="provenance-list">
+                    <h2>Record sources</h2>
+                    <dl class="source-status-list">
+                        <div><dt>Metadata</dt><dd>GEO</dd></div>
                         <div>
-                            <strong>GEO metadata</strong>
-                            <p>Core study, assay, platform, contact, and submission fields come from GEO metadata.</p>
+                            <dt>Publication</dt>
+                            <dd>Linked</dd>
                         </div>
                         <div>
-                            <strong>Publication links</strong>
-                            <p>
-                                
-                                PMID, PMC, or DOI identifiers are available for source inspection.
-                                
-                            </p>
+                            <dt>Review evidence</dt>
+                            <dd>30 notes</dd>
                         </div>
-                        <div>
-                            <strong>Workbook notes</strong>
-                            <p>
-                                
-                                30 evidence notes are linked to this GEO study.
-                                
-                            </p>
-                        </div>
-                        
-                    </div>
-                </section>
 
-                <section class="source-links-block">
-                    <p class="eyebrow">Identifiers</p>
-                    <div class="external-grid">
-                        
+                    </dl>
+
+                    <div class="external-grid" aria-label="Record identifiers">
+
                         <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE23862" target="_blank"
                             rel="noopener">GEO: GSE23862</a>
-                        
-                        
+
+
                         <a href="https://pubmed.ncbi.nlm.nih.gov/18597687/" target="_blank"
                             rel="noopener">PMID: 18597687</a>
-                        
-                        
+
+
                         <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2474617/" target="_blank"
                             rel="noopener">PMC: PMC2474617</a>
-                        
-                        
+
+
                         <a href="https://doi.org/10.1186/1471-2105-9-300" target="_blank" rel="noopener">DOI: 10.1186/1471-2105-9-300</a>
-                        
+
                     </div>
                 </section>
             </aside>
         </section>
 
-        <section class="record-section curation-section">
-            <div class="section-heading">
-                <p class="eyebrow">Workbook-reviewed fields</p>
-                <h2>Pregnancy, phenotype, and sample context</h2>
-            </div>
-            <div class="technical-grid">
-                <div class="field-group">
-                    <h3>Pregnancy timing and participants</h3>
-                    <dl class="field-list">
-                        <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at collection provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at collection weeks</dt><dd>Not reported</dd></div>
-                        <div><dt>Offspring sex provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Parity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Genetic ancestry provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
-                    </dl>
-                </div>
-
-                <div class="field-group">
-                    <h3>Phenotypes and complications</h3>
-                    <dl class="field-list">
-                        <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
-                        <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
-                        <div><dt>Main topic</dt><dd>The paper proposes and demonstrates an intensity-dependent linear quantile regression method for identifying tissue-restricted patterns of gene expression, exemplified by comparing articular cartilage with other body tissues to discover novel cartilage biomarkers using cDNA microarray data.</dd></div>
-                    </dl>
-                </div>
-            </div>
-        </section>
-
-        <details class="evidence-ledger" id="evidence">
-            <summary>
-                <span>
-                    <span class="eyebrow">Workbook excerpt</span>
-                    <strong>Source evidence</strong>
-                </span>
-                <span class="evidence-counts">
-                    <span>30 evidence notes linked</span>
-                    <span>0 supplement repair findings</span>
-                </span>
-            </summary>
-
-            <div class="evidence-body">
-                
-                <div class="evidence-list">
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Main topic of the publication</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>The application of intensity-dependent linear quantile regression to identify tissue-restricted biomarkers from cDNA microarray data, demonstrated by comparing equine articular cartilage with ten other tissues.</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>In this study, we propose an intensity-dependent linear quantile regression, using statistical and biological information to identify tissue-restricted patterns of gene expression.</blockquote>
-                            <footer>
-                            <span>Background</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC2474617</span>
-                            <span>10.1186/1471-2105-9-300</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Sampling timing during pregnancy</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not Provided</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC2474617</span>
-                            <span>10.1186/1471-2105-9-300</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Samples collected at single pregnancy time point (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>medium confidence</span>
-                            <span>PMC2474617</span>
-                            <span>10.1186/1471-2105-9-300</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Gestational Age at delivery provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC2474617</span>
-                            <span>10.1186/1471-2105-9-300</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Gestational Age at sample collection provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC2474617</span>
-                            <span>10.1186/1471-2105-9-300</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Birthweight of offspring provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC2474617</span>
-                            <span>10.1186/1471-2105-9-300</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Samples from pregnancy complications collected</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>Placental villous and testis samples were obtained independently from other donor horses.</blockquote>
-                            <footer>
-                            <span>Methods</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC2474617</span>
-                            <span>10.1186/1471-2105-9-300</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Pregnancy complications in data set (list)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC2474617</span>
-                            <span>10.1186/1471-2105-9-300</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Fetal complications listed (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC2474617</span>
-                            <span>10.1186/1471-2105-9-300</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Fetal complications in data set (list)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC2474617</span>
-                            <span>10.1186/1471-2105-9-300</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                </div>
-                
-
-                
-            </div>
-        </details>
-
         <nav class="entry-navigation">
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/1506.html">Previous study</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/repository.html">Studies</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/1508.html">Next study</a>
-            
+
         </nav>
     </main>
 

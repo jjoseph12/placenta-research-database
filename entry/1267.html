@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GSE63852 - Placenta Study Atlas</title>
     <meta name="description" content="Toxicogenomics analysis of placenta samples from mice exposed to different doses of BPA">
-    <link rel="stylesheet" href="/placenta-research-database/static/style.css">
+    <link rel="stylesheet" href="/placenta-research-database/static/style.css?v=20260813-4">
 </head>
 
 <body>
@@ -27,16 +27,10 @@
                 <h1>Toxicogenomics analysis of placenta samples from mice exposed to different doses of BPA</h1>
             </div>
             <div class="source-actions" aria-label="Source links">
-                <a href="#evidence">Evidence notes</a>
-                
+
                 <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE63852"
                     target="_blank" rel="noopener">Open GEO</a>
-                
-                
-                <a href="https://pubmed.ncbi.nlm.nih.gov/26063408/" target="_blank"
-                    rel="noopener">PubMed</a>
-                
-                
+
             </div>
         </article>
 
@@ -68,56 +62,84 @@
         </section>
 
         <section class="record-layout">
-            <section class="record-section geo-section">
-                <div class="section-heading">
-                    <p class="eyebrow">GEO record</p>
-                    <h2>Sample, assay, and methods</h2>
-                </div>
-                <div class="technical-grid">
-                    <div class="field-group sample-group wide-group">
-                        <h3>Sample characteristics</h3>
-                        <p class="long-text">strain: CD1 | gender: female | tissue: placenta | gestation day: GD12</p>
-                    </div>
+            <div class="record-content">
+                <details class="record-panel" id="study-details">
+                    <summary>
+                        <span>
+                            <strong>Study details</strong>
+                            <small>Samples, assay, platform, and submission</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body">
+                        <section class="field-group sample-group">
+                            <h3>Sample characteristics</h3>
 
-                    <div class="field-group">
-                        <h3>Assay and platform</h3>
-                        <dl class="field-list">
-                            <div><dt>Extracted molecule</dt><dd>total RNA</dd></div>
-                            <div><dt>Library source</dt><dd>Not reported</dd></div>
-                            <div><dt>Library selection</dt><dd>Not reported</dd></div>
-                            <div><dt>Instrument model</dt><dd>Not reported</dd></div>
-                            <div><dt>Platform ID</dt><dd>GPL4134</dd></div>
-                            <div><dt>SRA Study ID</dt><dd>Not reported</dd></div>
-                            <div><dt>BioProject ID</dt><dd>PRJNA269258</dd></div>
-                            <div><dt>File types</dt><dd>tar</dd></div>
-                        </dl>
-                    </div>
+                            <ul class="characteristic-list">
 
-                    <div class="field-group">
-                        <h3>Submission information</h3>
-                        <dl class="field-list">
-                            <div><dt>Organization</dt><dd>Istituto Superiore di Sanità</dd></div>
-                            <div><dt>Contact</dt><dd>Sabrina Tait</dd></div>
-                            <div><dt>Email</dt><dd>sabrina.tait@iss.it</dd></div>
-                            <div><dt>Submitter country</dt><dd>Italy</dd></div>
-                            <div><dt>Hospital / center</dt><dd>Not reported</dd></div>
-                            <div><dt>Submitted</dt><dd>12/04/2014</dd></div>
-                            <div><dt>Last updated</dt><dd>05/10/2018</dd></div>
-                            <div><dt>Supervisor / PI</dt><dd>Not reported</dd></div>
-                            <div><dt>Supervisor email</dt><dd>Not reported</dd></div>
-                        </dl>
-                    </div>
+                                <li>strain: CD1</li>
 
-                    
-                    <div class="field-group methods-group">
-                        <h3>Methods text</h3>
-                        
-                        <h4>Assay description</h4>
-                        <p class="long-text">Three conidtions experiment: Control, BPA 0.5 mg/kg bw die; BPA 50 mg/kg bw die. Biological replicates: three control replicates; four replicates per treatment. Technical replicates: 2 (dye swap) per biological replica</p>
-                        
-                        
-                        <h4>Extraction protocol</h4>
-                        <p class="long-text">Placenta samples were mechanically disrupted with an homogenizer in Lysis Buffer from RNAeasy Mini Kit (QIAGEN) then total RNA was extracted according to manufacturer&#39;s protocol Label Cy3 Label protocol cDNA and cRNA synthesis, amplification and labelling was performed using the Quick Amp Labelling Kit, Two Colors (Agilent), with spike-in internal controls (Agilent) following manufacturer’s instructions, with 1 µg of total RNA as input Channel 2 Source name Placenta, BPA 0.5 mg/kg treat, biolrepl1 Organism Mus musculus Characteristics strain: CD1 gender: female Treatment protocol Pregnant mice were treated daily p.o. by gavage with 0 (vehicle only = olive oil), 0.5 or 50 mg/kg bw pro die of BPA dissolved in olive oil, from GD1 to GD11 Growth protocol CD1 female mice were kept under standard laboratory conditions (22 ± 0.5 °C, 50–60% relative humidity, 12 h dark–light alternation with 12–14 air changes/h) with water and food available ad libitum. After 1 week of acclimatization, females were bred with CD sires of proven fertility. A sperm-positive vaginal smear served to define the Gestational day (GD) 0.
+                                <li>gender: female</li>
+
+                                <li>tissue: placenta</li>
+
+                                <li>gestation day: GD12</li>
+
+                            </ul>
+
+                        </section>
+
+                        <div class="panel-grid">
+                            <section class="field-group">
+                                <h3>Assay and platform</h3>
+                                <dl class="field-list">
+                                    <div><dt>Extracted molecule</dt><dd>total RNA</dd></div>
+                                    <div><dt>Library source</dt><dd>Not reported</dd></div>
+                                    <div><dt>Library selection</dt><dd>Not reported</dd></div>
+                                    <div><dt>Instrument model</dt><dd>Not reported</dd></div>
+                                    <div><dt>Platform ID</dt><dd>GPL4134</dd></div>
+                                    <div><dt>SRA Study ID</dt><dd>Not reported</dd></div>
+                                    <div><dt>BioProject ID</dt><dd>PRJNA269258</dd></div>
+                                    <div><dt>File types</dt><dd>tar</dd></div>
+                                </dl>
+                            </section>
+
+                            <section class="field-group">
+                                <h3>Submission</h3>
+                                <dl class="field-list">
+                                    <div><dt>Organization</dt><dd>Istituto Superiore di Sanità</dd></div>
+                                    <div><dt>Contact</dt><dd>Sabrina Tait</dd></div>
+                                    <div><dt>Email</dt><dd>sabrina.tait@iss.it</dd></div>
+                                    <div><dt>Submitter country</dt><dd>Italy</dd></div>
+                                    <div><dt>Hospital / center</dt><dd>Not reported</dd></div>
+                                    <div><dt>Submitted</dt><dd>12/04/2014</dd></div>
+                                    <div><dt>Last updated</dt><dd>05/10/2018</dd></div>
+                                    <div><dt>Supervisor / PI</dt><dd>Not reported</dd></div>
+                                    <div><dt>Supervisor email</dt><dd>Not reported</dd></div>
+                                </dl>
+                            </section>
+                        </div>
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="methods">
+                    <summary>
+                        <span>
+                            <strong>Methods</strong>
+                            <small>Assay, extraction, and data processing text</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body method-stack">
+
+                        <section class="method-block">
+                            <h3>Assay description</h3>
+                            <p class="long-text">Three conidtions experiment: Control, BPA 0.5 mg/kg bw die; BPA 50 mg/kg bw die. Biological replicates: three control replicates; four replicates per treatment. Technical replicates: 2 (dye swap) per biological replica</p>
+                        </section>
+
+
+                        <section class="method-block">
+                            <h3>Extraction protocol</h3>
+                            <p class="long-text">Placenta samples were mechanically disrupted with an homogenizer in Lysis Buffer from RNAeasy Mini Kit (QIAGEN) then total RNA was extracted according to manufacturer&#39;s protocol Label Cy3 Label protocol cDNA and cRNA synthesis, amplification and labelling was performed using the Quick Amp Labelling Kit, Two Colors (Agilent), with spike-in internal controls (Agilent) following manufacturer’s instructions, with 1 µg of total RNA as input Channel 2 Source name Placenta, BPA 0.5 mg/kg treat, biolrepl1 Organism Mus musculus Characteristics strain: CD1 gender: female Treatment protocol Pregnant mice were treated daily p.o. by gavage with 0 (vehicle only = olive oil), 0.5 or 50 mg/kg bw pro die of BPA dissolved in olive oil, from GD1 to GD11 Growth protocol CD1 female mice were kept under standard laboratory conditions (22 ± 0.5 °C, 50–60% relative humidity, 12 h dark–light alternation with 12–14 air changes/h) with water and food available ad libitum. After 1 week of acclimatization, females were bred with CD sires of proven fertility. A sperm-positive vaginal smear served to define the Gestational day (GD) 0.
 
 Placenta samples were mechanically disrupted with an homogenizer in Lysis Buffer from RNAeasy Mini Kit (QIAGEN) then total RNA was extracted according to manufacturer&#39;s protocol Label Cy3 Label protocol cDNA and cRNA synthesis, amplification and labelling was performed using the Quick Amp Labelling Kit, Two Colors (Agilent), with spike-in internal controls (Agilent) following manufacturer’s instructions, with 1 µg of total RNA as input Channel 2 Source name Placenta, vehicle treatment, biolrepl1 Organism Mus musculus Characteristics strain: CD1 gender: female Treatment protocol Pregnant mice were treated daily p.o. by gavage with 0 (vehicle only = olive oil), 0.5 or 50 mg/kg bw pro die of BPA dissolved in olive oil, from GD1 to GD11 Growth protocol CD1 female mice were kept under standard laboratory conditions (22 ± 0.5 °C, 50–60% relative humidity, 12 h dark–light alternation with 12–14 air changes/h) with water and food available ad libitum. After 1 week of acclimatization, females were bred with CD sires of proven fertility. A sperm-positive vaginal smear served to define the Gestational day (GD) 0.
 
@@ -138,347 +160,333 @@ Placenta samples were mechanically disrupted with an homogenizer in Lysis Buffer
 Placenta samples were mechanically disrupted with an homogenizer in Lysis Buffer from RNAeasy Mini Kit (QIAGEN) then total RNA was extracted according to manufacturer&#39;s protocol Label Cy3 Label protocol cDNA and cRNA synthesis, amplification and labelling was performed using the Quick Amp Labelling Kit, Two Colors (Agilent), with spike-in internal controls (Agilent) following manufacturer’s instructions, with 1 µg of total RNA as input Channel 2 Source name Placenta, BPA 50 mg/kg treat, biolrepl4 Organism Mus musculus Characteristics strain: CD1 gender: female Treatment protocol Pregnant mice were treated daily p.o. by gavage with 0 (vehicle only = olive oil), 0.5 or 50 mg/kg bw pro die of BPA dissolved in olive oil, from GD1 to GD11 Growth protocol CD1 female mice were kept under standard laboratory conditions (22 ± 0.5 °C, 50–60% relative humidity, 12 h dark–light alternation with 12–14 air changes/h) with water and food available ad libitum. After 1 week of acclimatization, females were bred with CD sires of proven fertility. A sperm-positive vaginal smear served to define the Gestational day (GD) 0.
 
 Placenta samples were mechanically disrupted with an homogenizer in Lysis Buffer from RNAeasy Mini Kit (QIAGEN) then total RNA was extracted according to manufacturer&#39;s protocol Label Cy3 Label protocol cDNA and cRNA synthesis, amplification and labelling was performed using the Quick Amp Labelling Kit, Two Colors (Agilent), with spike-in internal controls (Agilent) following manufacturer’s instructions, with 1 µg of total RNA as input Channel 2 Source name Placenta, vehicle treatment, biolrepl3 Organism Mus musculus Characteristics strain: CD1 gender: female Treatment protocol Pregnant mice were treated daily p.o. by gavage with 0 (vehicle only = olive oil), 0.5 or 50 mg/kg bw pro die of BPA dissolved in olive oil, from GD1 to GD11 Growth protocol CD1 female mice were kept under standard laboratory conditions (22 ± 0.5 °C, 50–60% relative humidity, 12 h dark–light alternation with 12–14 air changes/h) with water and food available ad libitum. After 1 week of acclimatization, females were bred with CD sires of proven fertility. A sperm-positive vaginal smear served to define the Gestational day (GD) 0.</p>
-                        
-                        
-                    </div>
-                    
-                </div>
-            </section>
+                        </section>
 
-            <aside class="record-aside" aria-label="Study source notes">
+
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="pregnancy-context">
+                    <summary>
+                        <span>
+                            <strong>Pregnancy and phenotype</strong>
+                            <small>Timing, participant metadata, and complications</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body panel-grid">
+                        <section class="field-group">
+                            <h3>Timing and participants</h3>
+                            <dl class="field-list">
+                                <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at collection provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at collection weeks</dt><dd>Not reported</dd></div>
+                                <div><dt>Offspring sex provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Parity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Genetic ancestry provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
+                            </dl>
+                        </section>
+
+                        <section class="field-group">
+                            <h3>Phenotypes and complications</h3>
+                            <dl class="field-list">
+                                <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
+                                <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
+                                <div><dt>Main topic</dt><dd>Not reported</dd></div>
+                            </dl>
+                        </section>
+                    </div>
+                </details>
+
+
+                <details class="record-panel evidence-panel" id="evidence">
+                    <summary>
+                        <span>
+                            <strong>Source evidence</strong>
+                            <small>30 evidence notes, 0 supplement findings</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body evidence-body">
+
+                        <div class="evidence-list">
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Main topic of the publication</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>The development, refinement, and validation of human-relevant new approach methodologies (NAMs) to identify endocrine-disrupting chemicals that lead to developmental and reproductive toxicity (DART).</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>This project specifically contributes by developing and validating human-relevant NAMs to identify key aspects of endocrine disruption relevant to developmental and reproductive toxicity (DART).</blockquote>
+                                    <footer>
+                                    <span>Main paper text, Abstract</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC12910832; PMC4536010</span>
+                                    <span>10.1016/j.gdata.2015.04.004</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Sampling timing during pregnancy</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not Provided</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC12910832; PMC4536010</span>
+                                    <span>10.1016/j.gdata.2015.04.004</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Samples collected at single pregnancy time point (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC12910832; PMC4536010</span>
+                                    <span>10.1016/j.gdata.2015.04.004</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Gestational Age at delivery provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC12910832; PMC4536010</span>
+                                    <span>10.1016/j.gdata.2015.04.004</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Gestational Age at sample collection provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC12910832; PMC4536010</span>
+                                    <span>10.1016/j.gdata.2015.04.004</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Birthweight of offspring provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC12910832; PMC4536010</span>
+                                    <span>10.1016/j.gdata.2015.04.004</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Samples from pregnancy complications collected</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC12910832; PMC4536010</span>
+                                    <span>10.1016/j.gdata.2015.04.004</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Pregnancy complications in data set (list)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC12910832; PMC4536010</span>
+                                    <span>10.1016/j.gdata.2015.04.004</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Fetal complications listed (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC12910832; PMC4536010</span>
+                                    <span>10.1016/j.gdata.2015.04.004</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Fetal complications in data set (list)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC12910832; PMC4536010</span>
+                                    <span>10.1016/j.gdata.2015.04.004</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                        </div>
+
+
+
+                    </div>
+                </details>
+
+            </div>
+
+            <aside class="record-aside" aria-label="Record sources">
                 <section class="source-note">
-                    <p class="eyebrow">Source notes</p>
-                    <div class="provenance-list">
+                    <h2>Record sources</h2>
+                    <dl class="source-status-list">
+                        <div><dt>Metadata</dt><dd>GEO</dd></div>
                         <div>
-                            <strong>GEO metadata</strong>
-                            <p>Core study, assay, platform, contact, and submission fields come from GEO metadata.</p>
+                            <dt>Publication</dt>
+                            <dd>Linked</dd>
                         </div>
                         <div>
-                            <strong>Publication links</strong>
-                            <p>
-                                
-                                PMID, PMC, or DOI identifiers are available for source inspection.
-                                
-                            </p>
+                            <dt>Review evidence</dt>
+                            <dd>30 notes</dd>
                         </div>
-                        <div>
-                            <strong>Workbook notes</strong>
-                            <p>
-                                
-                                30 evidence notes are linked to this GEO study.
-                                
-                            </p>
-                        </div>
-                        
-                    </div>
-                </section>
 
-                <section class="source-links-block">
-                    <p class="eyebrow">Identifiers</p>
-                    <div class="external-grid">
-                        
+                    </dl>
+
+                    <div class="external-grid" aria-label="Record identifiers">
+
                         <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE63852" target="_blank"
                             rel="noopener">GEO: GSE63852</a>
-                        
-                        
+
+
                         <a href="https://pubmed.ncbi.nlm.nih.gov/26063408/" target="_blank"
                             rel="noopener">PMID: 26063408</a>
-                        
-                        
-                        
+
+
+
                     </div>
                 </section>
             </aside>
         </section>
 
-        <section class="record-section curation-section">
-            <div class="section-heading">
-                <p class="eyebrow">Workbook-reviewed fields</p>
-                <h2>Pregnancy, phenotype, and sample context</h2>
-            </div>
-            <div class="technical-grid">
-                <div class="field-group">
-                    <h3>Pregnancy timing and participants</h3>
-                    <dl class="field-list">
-                        <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at collection provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at collection weeks</dt><dd>Not reported</dd></div>
-                        <div><dt>Offspring sex provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Parity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Genetic ancestry provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
-                    </dl>
-                </div>
-
-                <div class="field-group">
-                    <h3>Phenotypes and complications</h3>
-                    <dl class="field-list">
-                        <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
-                        <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
-                        <div><dt>Main topic</dt><dd>Not reported</dd></div>
-                    </dl>
-                </div>
-            </div>
-        </section>
-
-        <details class="evidence-ledger" id="evidence">
-            <summary>
-                <span>
-                    <span class="eyebrow">Workbook excerpt</span>
-                    <strong>Source evidence</strong>
-                </span>
-                <span class="evidence-counts">
-                    <span>30 evidence notes linked</span>
-                    <span>0 supplement repair findings</span>
-                </span>
-            </summary>
-
-            <div class="evidence-body">
-                
-                <div class="evidence-list">
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Main topic of the publication</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>The development, refinement, and validation of human-relevant new approach methodologies (NAMs) to identify endocrine-disrupting chemicals that lead to developmental and reproductive toxicity (DART).</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>This project specifically contributes by developing and validating human-relevant NAMs to identify key aspects of endocrine disruption relevant to developmental and reproductive toxicity (DART).</blockquote>
-                            <footer>
-                            <span>Main paper text, Abstract</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC12910832; PMC4536010</span>
-                            <span>10.1016/j.gdata.2015.04.004</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Sampling timing during pregnancy</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not Provided</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC12910832; PMC4536010</span>
-                            <span>10.1016/j.gdata.2015.04.004</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Samples collected at single pregnancy time point (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC12910832; PMC4536010</span>
-                            <span>10.1016/j.gdata.2015.04.004</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Gestational Age at delivery provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC12910832; PMC4536010</span>
-                            <span>10.1016/j.gdata.2015.04.004</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Gestational Age at sample collection provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC12910832; PMC4536010</span>
-                            <span>10.1016/j.gdata.2015.04.004</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Birthweight of offspring provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC12910832; PMC4536010</span>
-                            <span>10.1016/j.gdata.2015.04.004</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Samples from pregnancy complications collected</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC12910832; PMC4536010</span>
-                            <span>10.1016/j.gdata.2015.04.004</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Pregnancy complications in data set (list)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC12910832; PMC4536010</span>
-                            <span>10.1016/j.gdata.2015.04.004</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Fetal complications listed (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC12910832; PMC4536010</span>
-                            <span>10.1016/j.gdata.2015.04.004</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Fetal complications in data set (list)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC12910832; PMC4536010</span>
-                            <span>10.1016/j.gdata.2015.04.004</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                </div>
-                
-
-                
-            </div>
-        </details>
-
         <nav class="entry-navigation">
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/1266.html">Previous study</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/repository.html">Studies</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/1268.html">Next study</a>
-            
+
         </nav>
     </main>
 

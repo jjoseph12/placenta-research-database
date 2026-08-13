@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GSE36025 - Placenta Study Atlas</title>
     <meta name="description" content="Long RNA-seq from ENCODE/Cold Spring Harbor Lab">
-    <link rel="stylesheet" href="/placenta-research-database/static/style.css">
+    <link rel="stylesheet" href="/placenta-research-database/static/style.css?v=20260813-4">
 </head>
 
 <body>
@@ -27,18 +27,10 @@
                 <h1>Long RNA-seq from ENCODE/Cold Spring Harbor Lab</h1>
             </div>
             <div class="source-actions" aria-label="Source links">
-                <a href="#evidence">Evidence notes</a>
-                
+
                 <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE36025"
                     target="_blank" rel="noopener">Open GEO</a>
-                
-                
-                <a href="https://pubmed.ncbi.nlm.nih.gov/25413365/" target="_blank"
-                    rel="noopener">PubMed</a>
-                
-                
-                <a href="https://doi.org/10.1073/pnas.1413624111" target="_blank" rel="noopener">DOI</a>
-                
+
             </div>
         </article>
 
@@ -70,408 +62,686 @@
         </section>
 
         <section class="record-layout">
-            <section class="record-section geo-section">
-                <div class="section-heading">
-                    <p class="eyebrow">GEO record</p>
-                    <h2>Sample, assay, and methods</h2>
-                </div>
-                <div class="technical-grid">
-                    <div class="field-group sample-group wide-group">
-                        <h3>Sample characteristics</h3>
-                        <p class="long-text">lab: CSHL-m | lab description: Gingeras - Cold Spring Harbor Laboratory | datatype: RnaSeq | datatype description: Sequencing analysis of RNA expression | cell: Ovary | cell organism: mouse | cell description: Ovary | cell sex: U | age: adult-8wks | age description: Adult 8 weeks | biorep: 11AWC | labexpid: LID20821 | readtype: 2x76D | readtype description: Paired 76 nt directed reads | replicate: 1 | spikeinpool: Nist14 | strain: C57BL/6J | strain description: C57 black 6, the most common inbred strain of laboratory mouse | cell: MammaryGland | cell description: Mammary Gland | biorep: 22AWC | labexpid: LID20924 | cell: Stomach | cell description: Stomach | biorep: 3AWC | labexpid: LID20732 | cell: SmIntestine | cell description: Small Intestine | biorep: 9AWC | labexpid: LID20819 | cell: Duodenum | cell description: Duodenum | biorep: 2AWC | labexpid: LID20730 | cell: Adrenal | cell description: Adrenal gland | biorep: 1AWC | labexpid: LID20728 | cell: LgIntestine | cell description: Large Intestine | biorep: 8AWC | labexpid: LID21183 | cell: GenitalFatPad | cell description: Genital Adipose tissue | biorep: 4AWC | labexpid: LID21179 | cell: SubcFatPad | cell description: Subcutaneous Adipose tissue | biorep: 5AWC | labexpid: LID21181 | cell: Thymus | cell description: Thymus | biorep: 19AWC | labexpid: LID20922 | cell: Testis | cell description: Testis | cell sex: M | biorep: 12AWC | labexpid: LID20868 | cell: Kidney | cell description: Kidney | biorep: 17AWC | labexpid: LID20872 | cell: Liver | cell description: Liver | biorep: 18AWC | labexpid: LID21042 | cell: Lung | cell description: Lung | biorep: 15AWC | labexpid: LID20920 | cell: Spleen | cell description: Spleen | biorep: 13AWC | labexpid: LID21038 | cell: Colon | cell description: Colon | biorep: 14AWC | labexpid: LID21040 | cell: Heart | cell description: Heart | biorep: 16AWC | labexpid: LID20870 | cell: FrontalLobe | cell description: Frontal Lobe | biorep: 7AWC,7BWC | labexpid: LID47081,LID47082 | readtype: 2x101D | readtype description: Paired 101 nt directed reads | strain description: A substrain of C57BL/6 | cell: Cortex | cell description: Cortex | biorep: 6AWC,6BWC | labexpid: LID47032,LID47033 | cell: Bladder | cell description: Urinary Bladder | biorep: 30AWC,30BWC | labexpid: LID47030,LID47031 | cell: Placenta | cell description: Placenta | biorep: 10AWC,10BWC | labexpid: LID46983,LID46984 | age: E18 | age description: Embryonic day 18 | biorep: 27AWC,27BWC | labexpid: LID47148,LID47149 | cell: Cerebellum | cell description: Cerebellum | biorep: 20AWC,20BWC | labexpid: LID47036,LID47037 | cell: Limb | cell description: Limb | age: E14.5 | age description: Embryonic day 14.5 | biorep: 29AWC,29BWC | labexpid: LID46985,LID46986 | cell: CNS | cell description: Central Nervous System | age: E14 | age description: Embryonic day 14 | biorep: 23AWC,23BWC | labexpid: LID46948,LID46949 | biorep: 24AWC,24BWC | labexpid: LID46950,LID46951 | biorep: 28AWC,28BWC | labexpid: LID47146,LID47147 | cell: WholeBrain | cell description: Whole Brain | biorep: 25AWC,25BWC | labexpid: LID46987,LID46988 | age: E11.5 | age description: Embryonic day 11.5 | biorep: 21AWC,21BWC | labexpid: LID46946,LID46947 | biorep: 26AWC,26BWC | labexpid: LID47144,LID47145</p>
-                    </div>
+            <div class="record-content">
+                <details class="record-panel" id="study-details">
+                    <summary>
+                        <span>
+                            <strong>Study details</strong>
+                            <small>Samples, assay, platform, and submission</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body">
+                        <section class="field-group sample-group">
+                            <h3>Sample characteristics</h3>
 
-                    <div class="field-group">
-                        <h3>Assay and platform</h3>
-                        <dl class="field-list">
-                            <div><dt>Extracted molecule</dt><dd>polyA RNA</dd></div>
-                            <div><dt>Library source</dt><dd>transcriptomic</dd></div>
-                            <div><dt>Library selection</dt><dd>cDNA</dd></div>
-                            <div><dt>Instrument model</dt><dd>Illumina Genome Analyzer II, Illumina HiSeq 2000</dd></div>
-                            <div><dt>Platform ID</dt><dd>GPL9250, GPL13112</dd></div>
-                            <div><dt>SRA Study ID</dt><dd>SRP012040</dd></div>
-                            <div><dt>BioProject ID</dt><dd>Not reported</dd></div>
-                            <div><dt>File types</dt><dd>tar, gz</dd></div>
-                        </dl>
-                    </div>
+                            <ul class="characteristic-list">
 
-                    <div class="field-group">
-                        <h3>Submission information</h3>
-                        <dl class="field-list">
-                            <div><dt>Organization</dt><dd>ENCODE DCC</dd></div>
-                            <div><dt>Contact</dt><dd>ENCODE DCC</dd></div>
-                            <div><dt>Email</dt><dd>encode-help@lists.stanford.edu</dd></div>
-                            <div><dt>Submitter country</dt><dd>USA</dd></div>
-                            <div><dt>Hospital / center</dt><dd>Stanford University</dd></div>
-                            <div><dt>Submitted</dt><dd>02/23/2012</dd></div>
-                            <div><dt>Last updated</dt><dd>02/26/2020</dd></div>
-                            <div><dt>Supervisor / PI</dt><dd>Michael P. Snyder</dd></div>
-                            <div><dt>Supervisor email</dt><dd>mpsnyder@stanford.edu</dd></div>
-                        </dl>
-                    </div>
+                                <li>lab: CSHL-m</li>
 
-                    
-                    <div class="field-group methods-group">
-                        <h3>Methods text</h3>
-                        
-                        <h4>Assay description</h4>
-                        <p class="long-text">Tissue Samples: Individual tissues were harvested from mouse strain C57BL/6NJ at different timepoints according to ENCODE cell culture protocols. Whenever possible biological replicates from litermates.
+                                <li>lab description: Gingeras - Cold Spring Harbor Laboratory</li>
+
+                                <li>datatype: RnaSeq</li>
+
+                                <li>datatype description: Sequencing analysis of RNA expression</li>
+
+                                <li>cell: Ovary</li>
+
+                                <li>cell organism: mouse</li>
+
+                                <li>cell description: Ovary</li>
+
+                                <li>cell sex: U</li>
+
+                                <li>age: adult-8wks</li>
+
+                                <li>age description: Adult 8 weeks</li>
+
+                                <li>biorep: 11AWC</li>
+
+                                <li>labexpid: LID20821</li>
+
+                                <li>readtype: 2x76D</li>
+
+                                <li>readtype description: Paired 76 nt directed reads</li>
+
+                                <li>replicate: 1</li>
+
+                                <li>spikeinpool: Nist14</li>
+
+                                <li>strain: C57BL/6J</li>
+
+                                <li>strain description: C57 black 6, the most common inbred strain of laboratory mouse</li>
+
+                                <li>cell: MammaryGland</li>
+
+                                <li>cell description: Mammary Gland</li>
+
+                                <li>biorep: 22AWC</li>
+
+                                <li>labexpid: LID20924</li>
+
+                                <li>cell: Stomach</li>
+
+                                <li>cell description: Stomach</li>
+
+                                <li>biorep: 3AWC</li>
+
+                                <li>labexpid: LID20732</li>
+
+                                <li>cell: SmIntestine</li>
+
+                                <li>cell description: Small Intestine</li>
+
+                                <li>biorep: 9AWC</li>
+
+                                <li>labexpid: LID20819</li>
+
+                                <li>cell: Duodenum</li>
+
+                                <li>cell description: Duodenum</li>
+
+                                <li>biorep: 2AWC</li>
+
+                                <li>labexpid: LID20730</li>
+
+                                <li>cell: Adrenal</li>
+
+                                <li>cell description: Adrenal gland</li>
+
+                                <li>biorep: 1AWC</li>
+
+                                <li>labexpid: LID20728</li>
+
+                                <li>cell: LgIntestine</li>
+
+                                <li>cell description: Large Intestine</li>
+
+                                <li>biorep: 8AWC</li>
+
+                                <li>labexpid: LID21183</li>
+
+                                <li>cell: GenitalFatPad</li>
+
+                                <li>cell description: Genital Adipose tissue</li>
+
+                                <li>biorep: 4AWC</li>
+
+                                <li>labexpid: LID21179</li>
+
+                                <li>cell: SubcFatPad</li>
+
+                                <li>cell description: Subcutaneous Adipose tissue</li>
+
+                                <li>biorep: 5AWC</li>
+
+                                <li>labexpid: LID21181</li>
+
+                                <li>cell: Thymus</li>
+
+                                <li>cell description: Thymus</li>
+
+                                <li>biorep: 19AWC</li>
+
+                                <li>labexpid: LID20922</li>
+
+                                <li>cell: Testis</li>
+
+                                <li>cell description: Testis</li>
+
+                                <li>cell sex: M</li>
+
+                                <li>biorep: 12AWC</li>
+
+                                <li>labexpid: LID20868</li>
+
+                                <li>cell: Kidney</li>
+
+                                <li>cell description: Kidney</li>
+
+                                <li>biorep: 17AWC</li>
+
+                                <li>labexpid: LID20872</li>
+
+                                <li>cell: Liver</li>
+
+                                <li>cell description: Liver</li>
+
+                                <li>biorep: 18AWC</li>
+
+                                <li>labexpid: LID21042</li>
+
+                                <li>cell: Lung</li>
+
+                                <li>cell description: Lung</li>
+
+                                <li>biorep: 15AWC</li>
+
+                                <li>labexpid: LID20920</li>
+
+                                <li>cell: Spleen</li>
+
+                                <li>cell description: Spleen</li>
+
+                                <li>biorep: 13AWC</li>
+
+                                <li>labexpid: LID21038</li>
+
+                                <li>cell: Colon</li>
+
+                                <li>cell description: Colon</li>
+
+                                <li>biorep: 14AWC</li>
+
+                                <li>labexpid: LID21040</li>
+
+                                <li>cell: Heart</li>
+
+                                <li>cell description: Heart</li>
+
+                                <li>biorep: 16AWC</li>
+
+                                <li>labexpid: LID20870</li>
+
+                                <li>cell: FrontalLobe</li>
+
+                                <li>cell description: Frontal Lobe</li>
+
+                                <li>biorep: 7AWC,7BWC</li>
+
+                                <li>labexpid: LID47081,LID47082</li>
+
+                                <li>readtype: 2x101D</li>
+
+                                <li>readtype description: Paired 101 nt directed reads</li>
+
+                                <li>strain description: A substrain of C57BL/6</li>
+
+                                <li>cell: Cortex</li>
+
+                                <li>cell description: Cortex</li>
+
+                                <li>biorep: 6AWC,6BWC</li>
+
+                                <li>labexpid: LID47032,LID47033</li>
+
+                                <li>cell: Bladder</li>
+
+                                <li>cell description: Urinary Bladder</li>
+
+                                <li>biorep: 30AWC,30BWC</li>
+
+                                <li>labexpid: LID47030,LID47031</li>
+
+                                <li>cell: Placenta</li>
+
+                                <li>cell description: Placenta</li>
+
+                                <li>biorep: 10AWC,10BWC</li>
+
+                                <li>labexpid: LID46983,LID46984</li>
+
+                                <li>age: E18</li>
+
+                                <li>age description: Embryonic day 18</li>
+
+                                <li>biorep: 27AWC,27BWC</li>
+
+                                <li>labexpid: LID47148,LID47149</li>
+
+                                <li>cell: Cerebellum</li>
+
+                                <li>cell description: Cerebellum</li>
+
+                                <li>biorep: 20AWC,20BWC</li>
+
+                                <li>labexpid: LID47036,LID47037</li>
+
+                                <li>cell: Limb</li>
+
+                                <li>cell description: Limb</li>
+
+                                <li>age: E14.5</li>
+
+                                <li>age description: Embryonic day 14.5</li>
+
+                                <li>biorep: 29AWC,29BWC</li>
+
+                                <li>labexpid: LID46985,LID46986</li>
+
+                                <li>cell: CNS</li>
+
+                                <li>cell description: Central Nervous System</li>
+
+                                <li>age: E14</li>
+
+                                <li>age description: Embryonic day 14</li>
+
+                                <li>biorep: 23AWC,23BWC</li>
+
+                                <li>labexpid: LID46948,LID46949</li>
+
+                                <li>biorep: 24AWC,24BWC</li>
+
+                                <li>labexpid: LID46950,LID46951</li>
+
+                                <li>biorep: 28AWC,28BWC</li>
+
+                                <li>labexpid: LID47146,LID47147</li>
+
+                                <li>cell: WholeBrain</li>
+
+                                <li>cell description: Whole Brain</li>
+
+                                <li>biorep: 25AWC,25BWC</li>
+
+                                <li>labexpid: LID46987,LID46988</li>
+
+                                <li>age: E11.5</li>
+
+                                <li>age description: Embryonic day 11.5</li>
+
+                                <li>biorep: 21AWC,21BWC</li>
+
+                                <li>labexpid: LID46946,LID46947</li>
+
+                                <li>biorep: 26AWC,26BWC</li>
+
+                                <li>labexpid: LID47144,LID47145</li>
+
+                            </ul>
+
+                        </section>
+
+                        <div class="panel-grid">
+                            <section class="field-group">
+                                <h3>Assay and platform</h3>
+                                <dl class="field-list">
+                                    <div><dt>Extracted molecule</dt><dd>polyA RNA</dd></div>
+                                    <div><dt>Library source</dt><dd>transcriptomic</dd></div>
+                                    <div><dt>Library selection</dt><dd>cDNA</dd></div>
+                                    <div><dt>Instrument model</dt><dd>Illumina Genome Analyzer II, Illumina HiSeq 2000</dd></div>
+                                    <div><dt>Platform ID</dt><dd>GPL9250, GPL13112</dd></div>
+                                    <div><dt>SRA Study ID</dt><dd>SRP012040</dd></div>
+                                    <div><dt>BioProject ID</dt><dd>Not reported</dd></div>
+                                    <div><dt>File types</dt><dd>tar, gz</dd></div>
+                                </dl>
+                            </section>
+
+                            <section class="field-group">
+                                <h3>Submission</h3>
+                                <dl class="field-list">
+                                    <div><dt>Organization</dt><dd>ENCODE DCC</dd></div>
+                                    <div><dt>Contact</dt><dd>ENCODE DCC</dd></div>
+                                    <div><dt>Email</dt><dd>encode-help@lists.stanford.edu</dd></div>
+                                    <div><dt>Submitter country</dt><dd>USA</dd></div>
+                                    <div><dt>Hospital / center</dt><dd>Stanford University</dd></div>
+                                    <div><dt>Submitted</dt><dd>02/23/2012</dd></div>
+                                    <div><dt>Last updated</dt><dd>02/26/2020</dd></div>
+                                    <div><dt>Supervisor / PI</dt><dd>Michael P. Snyder</dd></div>
+                                    <div><dt>Supervisor email</dt><dd>mpsnyder@stanford.edu</dd></div>
+                                </dl>
+                            </section>
+                        </div>
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="methods">
+                    <summary>
+                        <span>
+                            <strong>Methods</strong>
+                            <small>Assay, extraction, and data processing text</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body method-stack">
+
+                        <section class="method-block">
+                            <h3>Assay description</h3>
+                            <p class="long-text">Tissue Samples: Individual tissues were harvested from mouse strain C57BL/6NJ at different timepoints according to ENCODE cell culture protocols. Whenever possible biological replicates from litermates.
 
 Library Preparation: The published cDNA sequencing protocol was used. This protocol generates directional libraries and reports the transcripts&#39; strand of origin. Exogenous RNA spike-ins were added to each endogenous RNA isolate and carried through library construction and sequencing. The spike-in sequence and the concentrations are available for download in the supplemental directory.
 
 Sequencing and Mapping: The libraries were sequenced on the Illumina platform (either GAIIx or Hi-Seq) in mate-pair fashion (either pair-end 76 or pair-end 101) to an average depth of 100 million mate-pairs. The data were mapped against hg19 using Spliced Transcript Alignment and Reconstruction (STAR) written by Alex Dobin (CSHL). More information about STAR, including the parameters used for these data, is available from the Gingeras lab.
 
 Verification: FPKM (fragments per kilobase of exon per million fragments mapped) values were calculated for annotated exons and Spearman correlation coefficients were computed. In general, Rho values are &gt; .90 between biological replicates.</p>
-                        
-                        
-                        <h4>Extraction protocol</h4>
-                        <p class="long-text">http://genome.ucsc.edu/cgi-bin/hgTrackUi?db=mm9&amp;g=wgEncodeCshlLongRnaSeq</p>
-                        
-                        
-                    </div>
-                    
-                </div>
-            </section>
+                        </section>
 
-            <aside class="record-aside" aria-label="Study source notes">
+
+                        <section class="method-block">
+                            <h3>Extraction protocol</h3>
+                            <p class="long-text">http://genome.ucsc.edu/cgi-bin/hgTrackUi?db=mm9&amp;g=wgEncodeCshlLongRnaSeq</p>
+                        </section>
+
+
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="pregnancy-context">
+                    <summary>
+                        <span>
+                            <strong>Pregnancy and phenotype</strong>
+                            <small>Timing, participant metadata, and complications</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body panel-grid">
+                        <section class="field-group">
+                            <h3>Timing and participants</h3>
+                            <dl class="field-list">
+                                <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at collection provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at collection weeks</dt><dd>Not reported</dd></div>
+                                <div><dt>Offspring sex provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Parity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Genetic ancestry provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
+                            </dl>
+                        </section>
+
+                        <section class="field-group">
+                            <h3>Phenotypes and complications</h3>
+                            <dl class="field-list">
+                                <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
+                                <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
+                                <div><dt>Main topic</dt><dd>This study compares the transcriptome and epigenome of various tissues in humans and mice to understand the molecular similarities and differences between the two species, revealing that differences generally outweigh similarities.</dd></div>
+                            </dl>
+                        </section>
+                    </div>
+                </details>
+
+
+                <details class="record-panel evidence-panel" id="evidence">
+                    <summary>
+                        <span>
+                            <strong>Source evidence</strong>
+                            <small>31 evidence notes, 0 supplement findings</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body evidence-body">
+
+                        <div class="evidence-list">
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Main topic of the publication</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>A comparison of the transcriptional landscapes (protein-coding and noncoding RNAs) and histone modifications across a wide range of tissues in humans and mice, demonstrating that gene expression differences between the species generally predominate over tissue similarities.</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>In this study of a broad number of tissues between humans and mice, high-throughput sequencing assays on the transcriptome and epigenome reveal that, in general, differences dominate similarities between the two species.</blockquote>
+                                    <footer>
+                                    <span>Significance</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC4260565</span>
+                                    <span>10.1073/pnas.1413624111</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Sampling timing during pregnancy</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not Provided</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC4260565</span>
+                                    <span>10.1073/pnas.1413624111</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Samples collected at single pregnancy time point (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC4260565</span>
+                                    <span>10.1073/pnas.1413624111</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Gestational Age at delivery provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC4260565</span>
+                                    <span>10.1073/pnas.1413624111</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Gestational Age at sample collection provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC4260565</span>
+                                    <span>10.1073/pnas.1413624111</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Birthweight of offspring provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC4260565</span>
+                                    <span>10.1073/pnas.1413624111</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Samples from pregnancy complications collected</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC4260565</span>
+                                    <span>10.1073/pnas.1413624111</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Pregnancy complications in data set (list)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC4260565</span>
+                                    <span>10.1073/pnas.1413624111</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Fetal complications listed (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC4260565</span>
+                                    <span>10.1073/pnas.1413624111</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Fetal complications in data set (list)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC4260565</span>
+                                    <span>10.1073/pnas.1413624111</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                        </div>
+
+
+
+                    </div>
+                </details>
+
+            </div>
+
+            <aside class="record-aside" aria-label="Record sources">
                 <section class="source-note">
-                    <p class="eyebrow">Source notes</p>
-                    <div class="provenance-list">
+                    <h2>Record sources</h2>
+                    <dl class="source-status-list">
+                        <div><dt>Metadata</dt><dd>GEO</dd></div>
                         <div>
-                            <strong>GEO metadata</strong>
-                            <p>Core study, assay, platform, contact, and submission fields come from GEO metadata.</p>
+                            <dt>Publication</dt>
+                            <dd>Linked</dd>
                         </div>
                         <div>
-                            <strong>Publication links</strong>
-                            <p>
-                                
-                                PMID, PMC, or DOI identifiers are available for source inspection.
-                                
-                            </p>
+                            <dt>Review evidence</dt>
+                            <dd>31 notes</dd>
                         </div>
-                        <div>
-                            <strong>Workbook notes</strong>
-                            <p>
-                                
-                                31 evidence notes are linked to this GEO study.
-                                
-                            </p>
-                        </div>
-                        
-                    </div>
-                </section>
 
-                <section class="source-links-block">
-                    <p class="eyebrow">Identifiers</p>
-                    <div class="external-grid">
-                        
+                    </dl>
+
+                    <div class="external-grid" aria-label="Record identifiers">
+
                         <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE36025" target="_blank"
                             rel="noopener">GEO: GSE36025</a>
-                        
-                        
+
+
                         <a href="https://pubmed.ncbi.nlm.nih.gov/25413365/" target="_blank"
                             rel="noopener">PMID: 25413365</a>
-                        
-                        
+
+
                         <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4260565/" target="_blank"
                             rel="noopener">PMC: PMC4260565</a>
-                        
-                        
+
+
                         <a href="https://doi.org/10.1073/pnas.1413624111" target="_blank" rel="noopener">DOI: 10.1073/pnas.1413624111</a>
-                        
+
                     </div>
                 </section>
             </aside>
         </section>
 
-        <section class="record-section curation-section">
-            <div class="section-heading">
-                <p class="eyebrow">Workbook-reviewed fields</p>
-                <h2>Pregnancy, phenotype, and sample context</h2>
-            </div>
-            <div class="technical-grid">
-                <div class="field-group">
-                    <h3>Pregnancy timing and participants</h3>
-                    <dl class="field-list">
-                        <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at collection provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at collection weeks</dt><dd>Not reported</dd></div>
-                        <div><dt>Offspring sex provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Parity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Genetic ancestry provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
-                    </dl>
-                </div>
-
-                <div class="field-group">
-                    <h3>Phenotypes and complications</h3>
-                    <dl class="field-list">
-                        <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
-                        <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
-                        <div><dt>Main topic</dt><dd>This study compares the transcriptome and epigenome of various tissues in humans and mice to understand the molecular similarities and differences between the two species, revealing that differences generally outweigh similarities.</dd></div>
-                    </dl>
-                </div>
-            </div>
-        </section>
-
-        <details class="evidence-ledger" id="evidence">
-            <summary>
-                <span>
-                    <span class="eyebrow">Workbook excerpt</span>
-                    <strong>Source evidence</strong>
-                </span>
-                <span class="evidence-counts">
-                    <span>31 evidence notes linked</span>
-                    <span>0 supplement repair findings</span>
-                </span>
-            </summary>
-
-            <div class="evidence-body">
-                
-                <div class="evidence-list">
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Main topic of the publication</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>A comparison of the transcriptional landscapes (protein-coding and noncoding RNAs) and histone modifications across a wide range of tissues in humans and mice, demonstrating that gene expression differences between the species generally predominate over tissue similarities.</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>In this study of a broad number of tissues between humans and mice, high-throughput sequencing assays on the transcriptome and epigenome reveal that, in general, differences dominate similarities between the two species.</blockquote>
-                            <footer>
-                            <span>Significance</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC4260565</span>
-                            <span>10.1073/pnas.1413624111</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Sampling timing during pregnancy</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not Provided</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC4260565</span>
-                            <span>10.1073/pnas.1413624111</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Samples collected at single pregnancy time point (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC4260565</span>
-                            <span>10.1073/pnas.1413624111</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Gestational Age at delivery provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC4260565</span>
-                            <span>10.1073/pnas.1413624111</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Gestational Age at sample collection provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC4260565</span>
-                            <span>10.1073/pnas.1413624111</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Birthweight of offspring provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC4260565</span>
-                            <span>10.1073/pnas.1413624111</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Samples from pregnancy complications collected</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC4260565</span>
-                            <span>10.1073/pnas.1413624111</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Pregnancy complications in data set (list)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC4260565</span>
-                            <span>10.1073/pnas.1413624111</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Fetal complications listed (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC4260565</span>
-                            <span>10.1073/pnas.1413624111</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Fetal complications in data set (list)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC4260565</span>
-                            <span>10.1073/pnas.1413624111</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                </div>
-                
-
-                
-            </div>
-        </details>
-
         <nav class="entry-navigation">
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/1427.html">Previous study</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/repository.html">Studies</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/1429.html">Next study</a>
-            
+
         </nav>
     </main>
 

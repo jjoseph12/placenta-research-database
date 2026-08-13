@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GSE228110 - Placenta Study Atlas</title>
     <meta name="description" content="Airway mouse epithelial cells (mTECs) cultured at air-liquid interface">
-    <link rel="stylesheet" href="/placenta-research-database/static/style.css">
+    <link rel="stylesheet" href="/placenta-research-database/static/style.css?v=20260813-4">
 </head>
 
 <body>
@@ -27,18 +27,10 @@
                 <h1>Airway mouse epithelial cells (mTECs) cultured at air-liquid interface</h1>
             </div>
             <div class="source-actions" aria-label="Source links">
-                <a href="#evidence">Evidence notes</a>
-                
+
                 <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE228110"
                     target="_blank" rel="noopener">Open GEO</a>
-                
-                
-                <a href="https://pubmed.ncbi.nlm.nih.gov/38811726/" target="_blank"
-                    rel="noopener">PubMed</a>
-                
-                
-                <a href="https://doi.org/10.1038/s41586-024-07476-z" target="_blank" rel="noopener">DOI</a>
-                
+
             </div>
         </article>
 
@@ -70,186 +62,206 @@
         </section>
 
         <section class="record-layout">
-            <section class="record-section geo-section">
-                <div class="section-heading">
-                    <p class="eyebrow">GEO record</p>
-                    <h2>Sample, assay, and methods</h2>
-                </div>
-                <div class="technical-grid">
-                    <div class="field-group sample-group wide-group">
-                        <h3>Sample characteristics</h3>
-                        <p class="long-text">cell line: mouse tracheal epithelial cells cultured at air-liquid interface | genotype: E2f7+/+ | genotype: E2f7-/- | time: 1 day | time: 3 days | time: 6 days | time: 9 days | cell type: mouse tracheal epithelial cells cultured at air-liquid interface | genotype: wild-type | treatment: DMSO | treatment: 10 uM Ribo | tissue: trachea | cut&amp;run antibody: GFP (Abcam, ab290) | treatment: E2F7-GFP lentivrial transduction | treatment: NLS-GFP lentivrial transduction</p>
-                    </div>
+            <div class="record-content">
+                <details class="record-panel" id="study-details">
+                    <summary>
+                        <span>
+                            <strong>Study details</strong>
+                            <small>Samples, assay, platform, and submission</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body">
+                        <section class="field-group sample-group">
+                            <h3>Sample characteristics</h3>
 
-                    <div class="field-group">
-                        <h3>Assay and platform</h3>
-                        <dl class="field-list">
-                            <div><dt>Extracted molecule</dt><dd>total RNA, genomic DNA</dd></div>
-                            <div><dt>Library source</dt><dd>transcriptomic single cell, genomic</dd></div>
-                            <div><dt>Library selection</dt><dd>cDNA, other</dd></div>
-                            <div><dt>Instrument model</dt><dd>Illumina NovaSeq 6000, NextSeq 2000, Illumina NextSeq 500</dd></div>
-                            <div><dt>Platform ID</dt><dd>GPL19057, GPL24247, GPL30172</dd></div>
-                            <div><dt>SRA Study ID</dt><dd>Not reported</dd></div>
-                            <div><dt>BioProject ID</dt><dd>PRJNA948051</dd></div>
-                            <div><dt>File types</dt><dd>tar</dd></div>
-                        </dl>
-                    </div>
+                            <ul class="characteristic-list">
 
-                    <div class="field-group">
-                        <h3>Submission information</h3>
-                        <dl class="field-list">
-                            <div><dt>Organization</dt><dd>UCSF</dd></div>
-                            <div><dt>Contact</dt><dd>Semil Choksi</dd></div>
-                            <div><dt>Email</dt><dd>semilc@gmail.com, semil.choksi@ucsf.edu</dd></div>
-                            <div><dt>Submitter country</dt><dd>USA</dd></div>
-                            <div><dt>Hospital / center</dt><dd>Not reported</dd></div>
-                            <div><dt>Submitted</dt><dd>03/23/2023</dd></div>
-                            <div><dt>Last updated</dt><dd>06/03/2024</dd></div>
-                            <div><dt>Supervisor / PI</dt><dd>Jeremy F. Reiter</dd></div>
-                            <div><dt>Supervisor email</dt><dd>jeremy.reiter@ucsf.edu</dd></div>
-                        </dl>
-                    </div>
+                                <li>cell line: mouse tracheal epithelial cells cultured at air-liquid interface</li>
 
-                    
-                    <div class="field-group methods-group">
-                        <h3>Methods text</h3>
-                        
-                        <h4>Assay description</h4>
-                        <p class="long-text">Refer to individual Series</p>
-                        
-                        
-                        <h4>Extraction protocol</h4>
-                        <p class="long-text">To generate single-cell suspensions for mTEC scRNA-seq, mTECs derived from E2f7-/- and littermate control wild-type mice were cultured and differentiated. E2f7+/+ and E2f7-/- mTECs were collected on day seven at air/liquid interface. Collection involved washing mTECs with PBS three times both apically and basally, incubating in 0.05% Trypsin-EDTA in Cell Dissociation Buffer (Gibco, Cat #13151014) added both apically and basally at 37°C for 15 min, gentle trituration, and inactivating trypsin in mTEC Basic with 2% Nu-Serum (Corning, Cat #355100). Additional 0.05% Trypsin-EDTA in Cell Dissociation Buffer was added to the apical surface and incubated at 37°C for 5 min. Cells were washed and resuspended in 0.04% BSA in PBS at 1000 cells/uL. Library was performed according to the manufacter’s instructions (single cell 3’ v3.1 protocol, 10x Genomics). Briefly, 16,000 mTECs were resuspended in the master mix and loaded together with partitioning oil and gel beads into the chip to generate the gel bead-in-emulsion (GEM). The poly-A RNA from the cell lysate contained in every single GEM was retrotranscripted to cDNA, which contains an Ilumina R1 primer sequence, Unique Molecular Identifier (UMI) and the 10x Barcode. The pooled barcoded cDNA was then cleaned up with Silane DynaBeads, amplified by PCR and the apropiated sized fragments were selected with SPRIselect reagent for subsequent library construction. During the library construction Ilumina R2 primer sequence, paired-end constructs with P5 and P7 sequences and a sample index were added.
+                                <li>genotype: E2f7+/+</li>
+
+                                <li>genotype: E2f7-/-</li>
+
+                                <li>time: 1 day</li>
+
+                                <li>time: 3 days</li>
+
+                                <li>time: 6 days</li>
+
+                                <li>time: 9 days</li>
+
+                                <li>cell type: mouse tracheal epithelial cells cultured at air-liquid interface</li>
+
+                                <li>genotype: wild-type</li>
+
+                                <li>treatment: DMSO</li>
+
+                                <li>treatment: 10 uM Ribo</li>
+
+                                <li>tissue: trachea</li>
+
+                                <li>cut&amp;run antibody: GFP (Abcam, ab290)</li>
+
+                                <li>treatment: E2F7-GFP lentivrial transduction</li>
+
+                                <li>treatment: NLS-GFP lentivrial transduction</li>
+
+                            </ul>
+
+                        </section>
+
+                        <div class="panel-grid">
+                            <section class="field-group">
+                                <h3>Assay and platform</h3>
+                                <dl class="field-list">
+                                    <div><dt>Extracted molecule</dt><dd>total RNA, genomic DNA</dd></div>
+                                    <div><dt>Library source</dt><dd>transcriptomic single cell, genomic</dd></div>
+                                    <div><dt>Library selection</dt><dd>cDNA, other</dd></div>
+                                    <div><dt>Instrument model</dt><dd>Illumina NovaSeq 6000, NextSeq 2000, Illumina NextSeq 500</dd></div>
+                                    <div><dt>Platform ID</dt><dd>GPL19057, GPL24247, GPL30172</dd></div>
+                                    <div><dt>SRA Study ID</dt><dd>Not reported</dd></div>
+                                    <div><dt>BioProject ID</dt><dd>PRJNA948051</dd></div>
+                                    <div><dt>File types</dt><dd>tar</dd></div>
+                                </dl>
+                            </section>
+
+                            <section class="field-group">
+                                <h3>Submission</h3>
+                                <dl class="field-list">
+                                    <div><dt>Organization</dt><dd>UCSF</dd></div>
+                                    <div><dt>Contact</dt><dd>Semil Choksi</dd></div>
+                                    <div><dt>Email</dt><dd>semilc@gmail.com, semil.choksi@ucsf.edu</dd></div>
+                                    <div><dt>Submitter country</dt><dd>USA</dd></div>
+                                    <div><dt>Hospital / center</dt><dd>Not reported</dd></div>
+                                    <div><dt>Submitted</dt><dd>03/23/2023</dd></div>
+                                    <div><dt>Last updated</dt><dd>06/03/2024</dd></div>
+                                    <div><dt>Supervisor / PI</dt><dd>Jeremy F. Reiter</dd></div>
+                                    <div><dt>Supervisor email</dt><dd>jeremy.reiter@ucsf.edu</dd></div>
+                                </dl>
+                            </section>
+                        </div>
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="methods">
+                    <summary>
+                        <span>
+                            <strong>Methods</strong>
+                            <small>Assay, extraction, and data processing text</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body method-stack">
+
+                        <section class="method-block">
+                            <h3>Assay description</h3>
+                            <p class="long-text">Refer to individual Series</p>
+                        </section>
+
+
+                        <section class="method-block">
+                            <h3>Extraction protocol</h3>
+                            <p class="long-text">To generate single-cell suspensions for mTEC scRNA-seq, mTECs derived from E2f7-/- and littermate control wild-type mice were cultured and differentiated. E2f7+/+ and E2f7-/- mTECs were collected on day seven at air/liquid interface. Collection involved washing mTECs with PBS three times both apically and basally, incubating in 0.05% Trypsin-EDTA in Cell Dissociation Buffer (Gibco, Cat #13151014) added both apically and basally at 37°C for 15 min, gentle trituration, and inactivating trypsin in mTEC Basic with 2% Nu-Serum (Corning, Cat #355100). Additional 0.05% Trypsin-EDTA in Cell Dissociation Buffer was added to the apical surface and incubated at 37°C for 5 min. Cells were washed and resuspended in 0.04% BSA in PBS at 1000 cells/uL. Library was performed according to the manufacter’s instructions (single cell 3’ v3.1 protocol, 10x Genomics). Briefly, 16,000 mTECs were resuspended in the master mix and loaded together with partitioning oil and gel beads into the chip to generate the gel bead-in-emulsion (GEM). The poly-A RNA from the cell lysate contained in every single GEM was retrotranscripted to cDNA, which contains an Ilumina R1 primer sequence, Unique Molecular Identifier (UMI) and the 10x Barcode. The pooled barcoded cDNA was then cleaned up with Silane DynaBeads, amplified by PCR and the apropiated sized fragments were selected with SPRIselect reagent for subsequent library construction. During the library construction Ilumina R2 primer sequence, paired-end constructs with P5 and P7 sequences and a sample index were added.
 
 For the transcriptional time course, cells were collected on day one, three, nine, and thirty-six at air/liquid interface. Collection involved washing mTECs with PBS three times both apically and basally, incubating in 0.05% Trypsin-EDTA in Cell Dissociation Buffer (Gibco, Cat #13151014) added both apically and basally at 37°C for 15 min, gentle trituration, and inactivating trypsin in mTEC Basic with 2% Nu-Serum (Corning, Cat #355100). Additional 0.05% Trypsin-EDTA in Cell Dissociation Buffer was added to the apical surface and incubated at 37°C for 5 min. Cells were washed and resuspended in 0.04% BSA in PBS at 1000 cells/L. Library was performed according to the manufacter’s instructions (single cell 3’ v3.1 protocol, 10x Genomics). Briefly, 10,000 (ALID01) or 25,000 (ALID03, ALID09, ALID36) mTECs were resuspended in the master mix and loaded together with partitioning oil and gel beads into the chip to generate the gel bead-in-emulsion (GEM). The poly-A RNA from the cell lysate contained in every single GEM was retrotranscripted to cDNA, which contains an Ilumina R1 primer sequence, Unique Molecular Identifier (UMI) and the 10x Barcode. The pooled barcoded cDNA was then cleaned up with Silane DynaBeads, amplified by PCR and the apropiated sized fragments were selected with SPRIselect reagent for subsequent library construction. During the library construction Ilumina R2 primer sequence, paired-end constructs with P5 and P7 sequences and a sample index were added.
 
 To generate single-cell suspensions for mTEC scRNA-seq, mTECs derived from wild-type Bl6 mice Cells were cultured for six days submerged before initiating air/liquid interface. Ribociclib, resuspended in DMSO, was added to a final concentration of 10 uM in mTEC NS media at 1 day post air/liquid interface. Cells were collected at 3 days post air/liquid interface for scRNA-seq analysis.. Collection involved washing mTECs with PBS three times both apically and basally, incubating in 0.05% Trypsin-EDTA in Cell Dissociation Buffer (Gibco, Cat #13151014) added both apically and basally at 37°C for 15 min, gentle trituration, and inactivating trypsin in mTEC Basic with 2% Nu-Serum (Corning, Cat #355100). Additional 0.05% Trypsin-EDTA in Cell Dissociation Buffer was added to the apical surface and incubated at 37°C for 5 min. Cells were washed and resuspended in 0.04% BSA in PBS at 1000 cells/uL. Library was performed according to the manufacter’s instructions (single cell 3’ v3.1 protocol, 10x Genomics). Briefly, 16,000 mTECs were resuspended in the master mix and loaded together with partitioning oil and gel beads into the chip to generate the gel bead-in-emulsion (GEM). The poly-A RNA from the cell lysate contained in every single GEM was retrotranscripted to cDNA, which contains an Ilumina R1 primer sequence, Unique Molecular Identifier (UMI) and the 10x Barcode. The pooled barcoded cDNA was then cleaned up with Silane DynaBeads, amplified by PCR and the apropiated sized fragments were selected with SPRIselect reagent for subsequent library construction. During the library construction Ilumina R2 primer sequence, paired-end constructs with P5 and P7 sequences and a sample index were added.
 
 CUT&amp;RUN was performed as described (Meers et al., 2019; Peter J. Skene and Henikoff, 2017), with protocol and buffers detailed in Protocol 2: High Ca2+/low salt (https://www.protocols.io/view/cut-amp-run-targeted-in-situ-genome-wide-profiling-14egnr4ql5dy/v3). Briefly, E2F7-GFP- or NLS-GFP-transduced mTECs were dissociated in 0.05% trypsin-EDTA in Cell Dissociation Buffer for 15 min at 37°C. Cells were collected in mTEC Basic medium with 2% Nu-Serum, washed twice in 5 mL of CUT&amp;RUN Wash Buffer, and resuspended in CUT&amp;RUN Wash Buffer. One million cells of each sample were aliquoted in 1.5 mL Eppendorf tubes and brought up to a volume of 1 mL with CUT&amp;RUN Wash Buffer. Cells were incubated with 10 L activated wheat germ agglutinin beads (Bangs Laboratories, Cat #BP530) at room temperature for 10 minutes with gentle rocking. Cells were combined and incubated overnight with anti-GFP (Abcam, Cat #ab290) diluted 1:100 in 0.05% digitonin in CUT&amp;RUN Wash Buffer. Following two washes in CUT&amp;RUN Wash Buffer, samples were incubated for 1 hour at room temperature in 1:100 rabbit anti-guinea pig IgG in 0.05% digitonin in CUT&amp;RUN Wash Buffer. Samples were incubated with Protein A/G-MNase fusion protein (Addgene, Cat #123461) at 700 ng/mL for 1 hour at 4°C. Following two washes in 0.05% digitonin in CUT&amp;RUN Wash Buffer and one wash in CUT&amp;RUN Low-Salt Rinse Buffer, samples were digested for 10 min at 0°C in cold CUT&amp;RUN Incubation Buffer. DNA fragments were released by incubation at 37°C for 30 min and then collected by phenol-chloroform extraction. Library preparation was performed with the Next Ultra II DNA Library Prep Kit for Illumina (NEB, Cat #E7645S) using 25 L of CUT&amp;RUN DNA as input, as detailed by N. Liu (https://www.protocols.io/view/library-prep-for-cut-amp-run-with-nebnext-ultra-ii-kxygxm7pkl8j/v2). Adaptors were diluted 1:15 in adaptor dilution buffer. High sensitivity D5000 ScreenTape reagents (Agilent, Cat #5067-5593) and the Tapestation 4200 (Agilent) were used to assess library quality and pool libraries for sequencing. Sequencing was done using the NextSeq 550 (Illumina). Library preparation was performed with the NEB Next Ultra II DNA Library Prep Kit for Illumina (NEB, Cat #E7645S) using 25 uL of CUT&amp;RUN DNA as input, as detailed by N. Liu (https://www.protocols.io/view/library-prep-for-cut-amp-run-with-nebnext-ultra-ii-kxygxm7pkl8j/v2)</p>
-                        
-                        
-                    </div>
-                    
-                </div>
-            </section>
+                        </section>
 
-            <aside class="record-aside" aria-label="Study source notes">
+
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="pregnancy-context">
+                    <summary>
+                        <span>
+                            <strong>Pregnancy and phenotype</strong>
+                            <small>Timing, participant metadata, and complications</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body panel-grid">
+                        <section class="field-group">
+                            <h3>Timing and participants</h3>
+                            <dl class="field-list">
+                                <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at collection provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at collection weeks</dt><dd>Not reported</dd></div>
+                                <div><dt>Offspring sex provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Parity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Genetic ancestry provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
+                            </dl>
+                        </section>
+
+                        <section class="field-group">
+                            <h3>Phenotypes and complications</h3>
+                            <dl class="field-list">
+                                <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
+                                <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
+                                <div><dt>Main topic</dt><dd>This paper discusses an alternative cell cycle that coordinates multiciliated cell differentiation, challenging the canonical view of mitotic cell cycle events.</dd></div>
+                            </dl>
+                        </section>
+                    </div>
+                </details>
+
+
+            </div>
+
+            <aside class="record-aside" aria-label="Record sources">
                 <section class="source-note">
-                    <p class="eyebrow">Source notes</p>
-                    <div class="provenance-list">
+                    <h2>Record sources</h2>
+                    <dl class="source-status-list">
+                        <div><dt>Metadata</dt><dd>GEO</dd></div>
                         <div>
-                            <strong>GEO metadata</strong>
-                            <p>Core study, assay, platform, contact, and submission fields come from GEO metadata.</p>
+                            <dt>Publication</dt>
+                            <dd>Linked</dd>
                         </div>
                         <div>
-                            <strong>Publication links</strong>
-                            <p>
-                                
-                                PMID, PMC, or DOI identifiers are available for source inspection.
-                                
-                            </p>
+                            <dt>Review evidence</dt>
+                            <dd>Not linked</dd>
                         </div>
-                        <div>
-                            <strong>Workbook notes</strong>
-                            <p>
-                                
-                                Pregnancy-specific values should be reviewed against the source paper when precision matters.
-                                
-                            </p>
-                        </div>
-                        
-                    </div>
-                </section>
 
-                <section class="source-links-block">
-                    <p class="eyebrow">Identifiers</p>
-                    <div class="external-grid">
-                        
+                    </dl>
+
+                    <div class="external-grid" aria-label="Record identifiers">
+
                         <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE228110" target="_blank"
                             rel="noopener">GEO: GSE228110</a>
-                        
-                        
+
+
                         <a href="https://pubmed.ncbi.nlm.nih.gov/38811726/" target="_blank"
                             rel="noopener">PMID: 38811726</a>
-                        
-                        
+
+
                         <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11996048/" target="_blank"
                             rel="noopener">PMC: PMC11996048</a>
-                        
-                        
+
+
                         <a href="https://doi.org/10.1038/s41586-024-07476-z" target="_blank" rel="noopener">DOI: 10.1038/s41586-024-07476-z</a>
-                        
+
                     </div>
                 </section>
             </aside>
         </section>
 
-        <section class="record-section curation-section">
-            <div class="section-heading">
-                <p class="eyebrow">Workbook-reviewed fields</p>
-                <h2>Pregnancy, phenotype, and sample context</h2>
-            </div>
-            <div class="technical-grid">
-                <div class="field-group">
-                    <h3>Pregnancy timing and participants</h3>
-                    <dl class="field-list">
-                        <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at collection provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at collection weeks</dt><dd>Not reported</dd></div>
-                        <div><dt>Offspring sex provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Parity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Genetic ancestry provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
-                    </dl>
-                </div>
-
-                <div class="field-group">
-                    <h3>Phenotypes and complications</h3>
-                    <dl class="field-list">
-                        <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
-                        <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
-                        <div><dt>Main topic</dt><dd>This paper discusses an alternative cell cycle that coordinates multiciliated cell differentiation, challenging the canonical view of mitotic cell cycle events.</dd></div>
-                    </dl>
-                </div>
-            </div>
-        </section>
-
-        <details class="evidence-ledger" id="evidence">
-            <summary>
-                <span>
-                    <span class="eyebrow">Workbook excerpt</span>
-                    <strong>Source evidence</strong>
-                </span>
-                <span class="evidence-counts">
-                    <span>0 evidence notes linked</span>
-                    <span>0 supplement repair findings</span>
-                </span>
-            </summary>
-
-            <div class="evidence-body">
-                
-                <p class="empty-evidence">No workbook evidence notes are linked to this GEO study yet.</p>
-                
-
-                
-            </div>
-        </details>
-
         <nav class="entry-navigation">
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/1118.html">Previous study</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/repository.html">Studies</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/1120.html">Next study</a>
-            
+
         </nav>
     </main>
 

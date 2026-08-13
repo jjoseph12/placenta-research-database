@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GSE186070 - Placenta Study Atlas</title>
     <meta name="description" content="Systematic reconstruction of the cellular trajectories of mammalian embryogenesis">
-    <link rel="stylesheet" href="/placenta-research-database/static/style.css">
+    <link rel="stylesheet" href="/placenta-research-database/static/style.css?v=20260813-4">
 </head>
 
 <body>
@@ -27,18 +27,10 @@
                 <h1>Systematic reconstruction of the cellular trajectories of mammalian embryogenesis</h1>
             </div>
             <div class="source-actions" aria-label="Source links">
-                <a href="#evidence">Evidence notes</a>
-                
+
                 <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE186070"
                     target="_blank" rel="noopener">Open GEO</a>
-                
-                
-                <a href="https://pubmed.ncbi.nlm.nih.gov/35288709/" target="_blank"
-                    rel="noopener">PubMed</a>
-                
-                
-                <a href="https://doi.org/10.1038/s41588-022-01018-x" target="_blank" rel="noopener">DOI</a>
-                
+
             </div>
         </article>
 
@@ -70,182 +62,178 @@
         </section>
 
         <section class="record-layout">
-            <section class="record-section geo-section">
-                <div class="section-heading">
-                    <p class="eyebrow">GEO record</p>
-                    <h2>Sample, assay, and methods</h2>
-                </div>
-                <div class="technical-grid">
-                    <div class="field-group sample-group wide-group">
-                        <h3>Sample characteristics</h3>
-                        <p class="long-text">developmental stage: mouse embryo (E9.5, E10.5, E11.5, E12.5, E13.5) | strain: C57BL/6 | developmental stage: mouse embryo (E8.5), early somitogenesis</p>
-                    </div>
+            <div class="record-content">
+                <details class="record-panel" id="study-details">
+                    <summary>
+                        <span>
+                            <strong>Study details</strong>
+                            <small>Samples, assay, platform, and submission</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body">
+                        <section class="field-group sample-group">
+                            <h3>Sample characteristics</h3>
 
-                    <div class="field-group">
-                        <h3>Assay and platform</h3>
-                        <dl class="field-list">
-                            <div><dt>Extracted molecule</dt><dd>polyA RNA</dd></div>
-                            <div><dt>Library source</dt><dd>transcriptomic</dd></div>
-                            <div><dt>Library selection</dt><dd>cDNA</dd></div>
-                            <div><dt>Instrument model</dt><dd>Illumina NovaSeq 6000</dd></div>
-                            <div><dt>Platform ID</dt><dd>GPL24247</dd></div>
-                            <div><dt>SRA Study ID</dt><dd>Not reported</dd></div>
-                            <div><dt>BioProject ID</dt><dd>PRJNA772273</dd></div>
-                            <div><dt>File types</dt><dd>Not reported</dd></div>
-                        </dl>
-                    </div>
+                            <ul class="characteristic-list">
 
-                    <div class="field-group">
-                        <h3>Submission information</h3>
-                        <dl class="field-list">
-                            <div><dt>Organization</dt><dd>University of Washington</dd></div>
-                            <div><dt>Contact</dt><dd>Chengxiang Qiu</dd></div>
-                            <div><dt>Email</dt><dd>cxqiu@uw.edu</dd></div>
-                            <div><dt>Submitter country</dt><dd>USA</dd></div>
-                            <div><dt>Hospital / center</dt><dd>The Jackson Laboratory</dd></div>
-                            <div><dt>Submitted</dt><dd>10/18/2021</dd></div>
-                            <div><dt>Last updated</dt><dd>03/06/2024</dd></div>
-                            <div><dt>Supervisor / PI</dt><dd>Jay Shendure</dd></div>
-                            <div><dt>Supervisor email</dt><dd>shendure@uw.edu</dd></div>
-                        </dl>
-                    </div>
+                                <li>developmental stage: mouse embryo (E9.5, E10.5, E11.5, E12.5, E13.5)</li>
 
-                    
-                    <div class="field-group methods-group">
-                        <h3>Methods text</h3>
-                        
-                        <h4>Assay description</h4>
-                        <p class="long-text">Refer to individual Series</p>
-                        
-                        
-                        <h4>Extraction protocol</h4>
-                        <p class="long-text">Mouse embryos from different development stages were processed together to reduce batch effect. Each mouse embryo was minced into small pieces by blade in 1 mL ice-cold cell lysis buffer (10 mM Tris-HCl, pH 7.4, 10 mM NaCl, 3 mM MgCl2 and 0.1% IGEPAL CA-630 from77, modified to also include 1% SUPERase In and 1% BSA) and transferred to the top of a 40um cell strainer (Falcon). Tissues were homogenized with the rubber tip of a syringe plunger (5ml, BD) in 4ml cell lysis buffer. The filtered nuclei were then transferred to a new 15ml tube (Falcon) and pelleted by centrifuge at 500xg for 5min and washed once with 1ml cell lysis buffer. The nuclei were fixed in 4ml ice cold 4% paraformaldehyde (EMS) for 15min on ice. After fixation, the nuclei were washed twice in 1ml nuclei wash buffer (cell lysis buffer without IGEPAL), and re-suspended in 500ul nuclei wash buffer. The samples were split to two tubes with 250ul in each tube and flash frozen in liquid nitrogen. We estimated the nuclei extraction efficiency based on extracted nuclei number vs. expected total nuclei number in each embryo and the nuclei extraction efficiency range from 60% to 85%. Thawed nuclei are permeabilized with 0.2% tritonX-100 (in nuclei wash buffer) for 3 minutes on ice, and briefly sonicated (Diagenode, 12s on low power mode) to reduce nuclei clumping. The nuclei were then washed once with nuclei wash buffer and filtered through 1ml Flowmi cell strainer (Flowmi). Filtered nuclei were spun down at 500xg for 5min and resuspended in nuclei wash buffer. Nuclei from each mouse embryo were then distributed into several individual wells in four 96-well plates. The links between well id and mouse embryo were recorded for downstream data processing. For each well, 80,000 nuclei (16 µL) were mixed with 8 µl of 25 µM anchored oligo-dT primer (5′- /5Phos/CAGAGCNNNNNNNN[10bp barcode]TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT-3′, where “N” is any base; IDT) and 2 µL 10 mM dNTP mix (Thermo), denatured at 55°C for 5 min and immediately placed on ice. 14 µL of first-strand reaction mix, containing 8 µL 5X Superscript IV First-Strand Buffer (Invitrogen), 2 µl 100 mM DTT (Invitrogen), 2 µl SuperScript IV reverse transcriptase (200 U/μl, Invitrogen), 2 μL RNaseOUT Recombinant Ribonuclease Inhibitor (Invitrogen), was then added to each well. Reverse transcription was carried out by incubating plates by gradient temperature (4°C 2 minutes, 10°C 2 minutes, 20°C 2 minutes, 30°C 2 minutes, 40°C 2 minutes, 50°C 2 minutes and 55°C 10 minutes). After ligation reaction, 60µL nuclei dilution buffer (10 mM Tris-HCl, pH 7.4, 10 mM NaCl, 3 mM MgCl2 and 1% BSA) was added into each well. Nuclei from all wells were pooled together and spun down at 500xg for 10min. Nuclei were then resuspended in nuclei wash buffer and redistributed into another four 96-well plates with each well including 4µL T4 ligation buffer (NEB), 2µL T4 DNA ligase (NEB), 4µL Betaine solution (5M, Sigma-Aldrich), 6µL nuclei in nuclei wash buffer, 8µL barcoded ligation adaptor (100uM, 5’- GCTCTG[9bp or 10bp barcode A]/ideoxyU/ACGACGCTCTTCCGATCT[reverse complement of barcode A]-3’) and 16µL 40% PEG 8000 (Sigma-Aldrich). The ligation reaction was done at 16°C for 3 hours. After RT reaction, 60µL nuclei dilution buffer (10 mM Tris-HCl, pH 7.4, 10 mM NaCl, 3 mM MgCl2 and 1% BSA) was added into each well. Nuclei from all wells were pooled together and spun down at 600xg for 10min. Nuclei were washed once with nuclei wash buffer and filtered with 1ml Flowmi cell strainer (Flowmi) twice, counted and redistributed into eight 96-well plates with each well including 2,500 nuclei in 5µL nuclei wash buffer and 5µL elution buffer (Qiagen). 1.33 μl mRNA Second Strand Synthesis buffer (NEB) and 0.66 μl mRNA Second Strand Synthesis enzyme (NEB) were then added to each well, and second strand synthesis was carried out at 16°C for 180 min. For tagmentation, each well was mixed with 11 μL Nextera TD buffer (Illumina) and 1 μL i7 only TDE1 enyzme (62.5nM, Illumina), and then incubated at 55°C for 5 min to carry out tagmentation. The reaction was then stopped by adding 24 μL DNA binding buffer (Zymo) per well and incubating at room temperature for 5 min. Each well was then purified using 1.5x AMPure XP beads (Beckman Coulter). In the elution step, each well was added with 8µL nuclease free water, 1µL 10X USER buffer (NEB), 1µL USER enzyme (NEB) and incubated at 37°C for 15 min. Another 6.5µL elution buffer was added into each well. The AMPure XP beads were removed by magnetic stand and the elution product was transferred into a new 96-well plate. For PCR amplification, each well (16µL product) was mixed with 2μL of 10 μM indexed P5 primer (5′-AATGATACGGCGACCACCGAGATCTACAC[i5]ACACTCTTTCCCTACACGACGCTCTTCCGATCT-3′; IDT), 2 μL of 10 μM P7 primer (5′-CAAGCAGAAGACGGCATACGAGAT[i7]GTCTCGTGGGCTCGG-3′, IDT), and 20 μL NEBNext High-Fidelity 2X PCR Master Mix (NEB). Amplification was carried out using the following program: 72°C for 5 min, 98°C for 30 sec, 12-14 cycles of (98°C for 10 sec, 66°C for 30 sec, 72°C for 1 min) and a final 72°C for 5 min.
+                                <li>strain: C57BL/6</li>
+
+                                <li>developmental stage: mouse embryo (E8.5), early somitogenesis</li>
+
+                            </ul>
+
+                        </section>
+
+                        <div class="panel-grid">
+                            <section class="field-group">
+                                <h3>Assay and platform</h3>
+                                <dl class="field-list">
+                                    <div><dt>Extracted molecule</dt><dd>polyA RNA</dd></div>
+                                    <div><dt>Library source</dt><dd>transcriptomic</dd></div>
+                                    <div><dt>Library selection</dt><dd>cDNA</dd></div>
+                                    <div><dt>Instrument model</dt><dd>Illumina NovaSeq 6000</dd></div>
+                                    <div><dt>Platform ID</dt><dd>GPL24247</dd></div>
+                                    <div><dt>SRA Study ID</dt><dd>Not reported</dd></div>
+                                    <div><dt>BioProject ID</dt><dd>PRJNA772273</dd></div>
+                                    <div><dt>File types</dt><dd>Not reported</dd></div>
+                                </dl>
+                            </section>
+
+                            <section class="field-group">
+                                <h3>Submission</h3>
+                                <dl class="field-list">
+                                    <div><dt>Organization</dt><dd>University of Washington</dd></div>
+                                    <div><dt>Contact</dt><dd>Chengxiang Qiu</dd></div>
+                                    <div><dt>Email</dt><dd>cxqiu@uw.edu</dd></div>
+                                    <div><dt>Submitter country</dt><dd>USA</dd></div>
+                                    <div><dt>Hospital / center</dt><dd>The Jackson Laboratory</dd></div>
+                                    <div><dt>Submitted</dt><dd>10/18/2021</dd></div>
+                                    <div><dt>Last updated</dt><dd>03/06/2024</dd></div>
+                                    <div><dt>Supervisor / PI</dt><dd>Jay Shendure</dd></div>
+                                    <div><dt>Supervisor email</dt><dd>shendure@uw.edu</dd></div>
+                                </dl>
+                            </section>
+                        </div>
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="methods">
+                    <summary>
+                        <span>
+                            <strong>Methods</strong>
+                            <small>Assay, extraction, and data processing text</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body method-stack">
+
+                        <section class="method-block">
+                            <h3>Assay description</h3>
+                            <p class="long-text">Refer to individual Series</p>
+                        </section>
+
+
+                        <section class="method-block">
+                            <h3>Extraction protocol</h3>
+                            <p class="long-text">Mouse embryos from different development stages were processed together to reduce batch effect. Each mouse embryo was minced into small pieces by blade in 1 mL ice-cold cell lysis buffer (10 mM Tris-HCl, pH 7.4, 10 mM NaCl, 3 mM MgCl2 and 0.1% IGEPAL CA-630 from77, modified to also include 1% SUPERase In and 1% BSA) and transferred to the top of a 40um cell strainer (Falcon). Tissues were homogenized with the rubber tip of a syringe plunger (5ml, BD) in 4ml cell lysis buffer. The filtered nuclei were then transferred to a new 15ml tube (Falcon) and pelleted by centrifuge at 500xg for 5min and washed once with 1ml cell lysis buffer. The nuclei were fixed in 4ml ice cold 4% paraformaldehyde (EMS) for 15min on ice. After fixation, the nuclei were washed twice in 1ml nuclei wash buffer (cell lysis buffer without IGEPAL), and re-suspended in 500ul nuclei wash buffer. The samples were split to two tubes with 250ul in each tube and flash frozen in liquid nitrogen. We estimated the nuclei extraction efficiency based on extracted nuclei number vs. expected total nuclei number in each embryo and the nuclei extraction efficiency range from 60% to 85%. Thawed nuclei are permeabilized with 0.2% tritonX-100 (in nuclei wash buffer) for 3 minutes on ice, and briefly sonicated (Diagenode, 12s on low power mode) to reduce nuclei clumping. The nuclei were then washed once with nuclei wash buffer and filtered through 1ml Flowmi cell strainer (Flowmi). Filtered nuclei were spun down at 500xg for 5min and resuspended in nuclei wash buffer. Nuclei from each mouse embryo were then distributed into several individual wells in four 96-well plates. The links between well id and mouse embryo were recorded for downstream data processing. For each well, 80,000 nuclei (16 µL) were mixed with 8 µl of 25 µM anchored oligo-dT primer (5′- /5Phos/CAGAGCNNNNNNNN[10bp barcode]TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT-3′, where “N” is any base; IDT) and 2 µL 10 mM dNTP mix (Thermo), denatured at 55°C for 5 min and immediately placed on ice. 14 µL of first-strand reaction mix, containing 8 µL 5X Superscript IV First-Strand Buffer (Invitrogen), 2 µl 100 mM DTT (Invitrogen), 2 µl SuperScript IV reverse transcriptase (200 U/μl, Invitrogen), 2 μL RNaseOUT Recombinant Ribonuclease Inhibitor (Invitrogen), was then added to each well. Reverse transcription was carried out by incubating plates by gradient temperature (4°C 2 minutes, 10°C 2 minutes, 20°C 2 minutes, 30°C 2 minutes, 40°C 2 minutes, 50°C 2 minutes and 55°C 10 minutes). After ligation reaction, 60µL nuclei dilution buffer (10 mM Tris-HCl, pH 7.4, 10 mM NaCl, 3 mM MgCl2 and 1% BSA) was added into each well. Nuclei from all wells were pooled together and spun down at 500xg for 10min. Nuclei were then resuspended in nuclei wash buffer and redistributed into another four 96-well plates with each well including 4µL T4 ligation buffer (NEB), 2µL T4 DNA ligase (NEB), 4µL Betaine solution (5M, Sigma-Aldrich), 6µL nuclei in nuclei wash buffer, 8µL barcoded ligation adaptor (100uM, 5’- GCTCTG[9bp or 10bp barcode A]/ideoxyU/ACGACGCTCTTCCGATCT[reverse complement of barcode A]-3’) and 16µL 40% PEG 8000 (Sigma-Aldrich). The ligation reaction was done at 16°C for 3 hours. After RT reaction, 60µL nuclei dilution buffer (10 mM Tris-HCl, pH 7.4, 10 mM NaCl, 3 mM MgCl2 and 1% BSA) was added into each well. Nuclei from all wells were pooled together and spun down at 600xg for 10min. Nuclei were washed once with nuclei wash buffer and filtered with 1ml Flowmi cell strainer (Flowmi) twice, counted and redistributed into eight 96-well plates with each well including 2,500 nuclei in 5µL nuclei wash buffer and 5µL elution buffer (Qiagen). 1.33 μl mRNA Second Strand Synthesis buffer (NEB) and 0.66 μl mRNA Second Strand Synthesis enzyme (NEB) were then added to each well, and second strand synthesis was carried out at 16°C for 180 min. For tagmentation, each well was mixed with 11 μL Nextera TD buffer (Illumina) and 1 μL i7 only TDE1 enyzme (62.5nM, Illumina), and then incubated at 55°C for 5 min to carry out tagmentation. The reaction was then stopped by adding 24 μL DNA binding buffer (Zymo) per well and incubating at room temperature for 5 min. Each well was then purified using 1.5x AMPure XP beads (Beckman Coulter). In the elution step, each well was added with 8µL nuclease free water, 1µL 10X USER buffer (NEB), 1µL USER enzyme (NEB) and incubated at 37°C for 15 min. Another 6.5µL elution buffer was added into each well. The AMPure XP beads were removed by magnetic stand and the elution product was transferred into a new 96-well plate. For PCR amplification, each well (16µL product) was mixed with 2μL of 10 μM indexed P5 primer (5′-AATGATACGGCGACCACCGAGATCTACAC[i5]ACACTCTTTCCCTACACGACGCTCTTCCGATCT-3′; IDT), 2 μL of 10 μM P7 primer (5′-CAAGCAGAAGACGGCATACGAGAT[i7]GTCTCGTGGGCTCGG-3′, IDT), and 20 μL NEBNext High-Fidelity 2X PCR Master Mix (NEB). Amplification was carried out using the following program: 72°C for 5 min, 98°C for 30 sec, 12-14 cycles of (98°C for 10 sec, 66°C for 30 sec, 72°C for 1 min) and a final 72°C for 5 min.
 
 We performed a simplified, optimized version of sci-RNA-seq3 (Cao et al. 2019). Briefly, to each tube, 100ul of a hypotonic, PBS-based lysis buffer was added with DEPC as an RNase inhibitor. The resulting nuclei were then fixed with 4 volumes of a mix of methanol and dithiobis (succinimidyl propionate) (DSP). After rehydrating and washing the nuclei carefully in a sucrose/PBS/triton buffer (SPBST), the nuclei were distributed to a 96-well plate for reverse transcription, allocating 8 wells per embryo. After reverse transcription, nuclei were pooled, washed in SPBST and redistributed to a fresh plate for ligation of the second index primer with T4 DNA ligase. Nuclei were then again pooled, washed, and redistributed to 5 final plates for second strand synthesis, extraction, tagmentation, and PCR to add the third index plus a plate index. Products were pooled by PCR plate, size-selected and sequenced on an Illumina NovaSeq.</p>
-                        
-                        
-                    </div>
-                    
-                </div>
-            </section>
+                        </section>
 
-            <aside class="record-aside" aria-label="Study source notes">
+
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="pregnancy-context">
+                    <summary>
+                        <span>
+                            <strong>Pregnancy and phenotype</strong>
+                            <small>Timing, participant metadata, and complications</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body panel-grid">
+                        <section class="field-group">
+                            <h3>Timing and participants</h3>
+                            <dl class="field-list">
+                                <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at collection provided</dt><dd>Yes</dd></div>
+                                <div><dt>GA at collection weeks</dt><dd>8.5</dd></div>
+                                <div><dt>Offspring sex provided</dt><dd>Yes</dd></div>
+                                <div><dt>Parity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Genetic ancestry provided</dt><dd>Yes</dd></div>
+                                <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
+                            </dl>
+                        </section>
+
+                        <section class="field-group">
+                            <h3>Phenotypes and complications</h3>
+                            <dl class="field-list">
+                                <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
+                                <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
+                                <div><dt>Main topic</dt><dd>The paper reconstructs cellular trajectories across mouse embryogenesis by integrating single-cell RNA-sequencing datasets spanning mouse gastrulation and organogenesis, identifying cell states and trajectories at successive developmental stages, and nominating transcription factors that could potentially mediate lineage choices.</dd></div>
+                            </dl>
+                        </section>
+                    </div>
+                </details>
+
+
+            </div>
+
+            <aside class="record-aside" aria-label="Record sources">
                 <section class="source-note">
-                    <p class="eyebrow">Source notes</p>
-                    <div class="provenance-list">
+                    <h2>Record sources</h2>
+                    <dl class="source-status-list">
+                        <div><dt>Metadata</dt><dd>GEO</dd></div>
                         <div>
-                            <strong>GEO metadata</strong>
-                            <p>Core study, assay, platform, contact, and submission fields come from GEO metadata.</p>
+                            <dt>Publication</dt>
+                            <dd>Linked</dd>
                         </div>
                         <div>
-                            <strong>Publication links</strong>
-                            <p>
-                                
-                                PMID, PMC, or DOI identifiers are available for source inspection.
-                                
-                            </p>
+                            <dt>Review evidence</dt>
+                            <dd>Not linked</dd>
                         </div>
-                        <div>
-                            <strong>Workbook notes</strong>
-                            <p>
-                                
-                                Pregnancy-specific values should be reviewed against the source paper when precision matters.
-                                
-                            </p>
-                        </div>
-                        
-                    </div>
-                </section>
 
-                <section class="source-links-block">
-                    <p class="eyebrow">Identifiers</p>
-                    <div class="external-grid">
-                        
+                    </dl>
+
+                    <div class="external-grid" aria-label="Record identifiers">
+
                         <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE186070" target="_blank"
                             rel="noopener">GEO: GSE186070</a>
-                        
-                        
+
+
                         <a href="https://pubmed.ncbi.nlm.nih.gov/35288709/" target="_blank"
                             rel="noopener">PMID: 35288709</a>
-                        
-                        
+
+
                         <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8920898/" target="_blank"
                             rel="noopener">PMC: PMC8920898</a>
-                        
-                        
+
+
                         <a href="https://doi.org/10.1038/s41588-022-01018-x" target="_blank" rel="noopener">DOI: 10.1038/s41588-022-01018-x</a>
-                        
+
                     </div>
                 </section>
             </aside>
         </section>
 
-        <section class="record-section curation-section">
-            <div class="section-heading">
-                <p class="eyebrow">Workbook-reviewed fields</p>
-                <h2>Pregnancy, phenotype, and sample context</h2>
-            </div>
-            <div class="technical-grid">
-                <div class="field-group">
-                    <h3>Pregnancy timing and participants</h3>
-                    <dl class="field-list">
-                        <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at collection provided</dt><dd>Yes</dd></div>
-                        <div><dt>GA at collection weeks</dt><dd>8.5</dd></div>
-                        <div><dt>Offspring sex provided</dt><dd>Yes</dd></div>
-                        <div><dt>Parity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Genetic ancestry provided</dt><dd>Yes</dd></div>
-                        <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
-                    </dl>
-                </div>
-
-                <div class="field-group">
-                    <h3>Phenotypes and complications</h3>
-                    <dl class="field-list">
-                        <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
-                        <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
-                        <div><dt>Main topic</dt><dd>The paper reconstructs cellular trajectories across mouse embryogenesis by integrating single-cell RNA-sequencing datasets spanning mouse gastrulation and organogenesis, identifying cell states and trajectories at successive developmental stages, and nominating transcription factors that could potentially mediate lineage choices.</dd></div>
-                    </dl>
-                </div>
-            </div>
-        </section>
-
-        <details class="evidence-ledger" id="evidence">
-            <summary>
-                <span>
-                    <span class="eyebrow">Workbook excerpt</span>
-                    <strong>Source evidence</strong>
-                </span>
-                <span class="evidence-counts">
-                    <span>0 evidence notes linked</span>
-                    <span>0 supplement repair findings</span>
-                </span>
-            </summary>
-
-            <div class="evidence-body">
-                
-                <p class="empty-evidence">No workbook evidence notes are linked to this GEO study yet.</p>
-                
-
-                
-            </div>
-        </details>
-
         <nav class="entry-navigation">
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/295.html">Previous study</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/repository.html">Studies</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/297.html">Next study</a>
-            
+
         </nav>
     </main>
 

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GSE79148 - Placenta Study Atlas</title>
     <meta name="description" content="Mechanisms and disease associations of haplotype-dependent allele specific DNA methylation: Methyl-seq data for the identification of hap-ASM">
-    <link rel="stylesheet" href="/placenta-research-database/static/style.css">
+    <link rel="stylesheet" href="/placenta-research-database/static/style.css?v=20260813-4">
 </head>
 
 <body>
@@ -27,18 +27,10 @@
                 <h1>Mechanisms and disease associations of haplotype-dependent allele specific DNA methylation: Methyl-seq data for the identification of hap-ASM</h1>
             </div>
             <div class="source-actions" aria-label="Source links">
-                <a href="#evidence">Evidence notes</a>
-                
+
                 <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE79148"
                     target="_blank" rel="noopener">Open GEO</a>
-                
-                
-                <a href="https://pubmed.ncbi.nlm.nih.gov/27153397/" target="_blank"
-                    rel="noopener">PubMed</a>
-                
-                
-                <a href="https://doi.org/10.1016/j.ajhg.2016.03.027" target="_blank" rel="noopener">DOI</a>
-                
+
             </div>
         </article>
 
@@ -70,402 +62,422 @@
         </section>
 
         <section class="record-layout">
-            <section class="record-section geo-section">
-                <div class="section-heading">
-                    <p class="eyebrow">GEO record</p>
-                    <h2>Sample, assay, and methods</h2>
-                </div>
-                <div class="technical-grid">
-                    <div class="field-group sample-group wide-group">
-                        <h3>Sample characteristics</h3>
-                        <p class="long-text">tissue: Lung | diagnosis: normal | tissue: Heart | tissue: Placenta | tissue: Brain | tissue: Liver | tissue: T cell</p>
-                    </div>
+            <div class="record-content">
+                <details class="record-panel" id="study-details">
+                    <summary>
+                        <span>
+                            <strong>Study details</strong>
+                            <small>Samples, assay, platform, and submission</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body">
+                        <section class="field-group sample-group">
+                            <h3>Sample characteristics</h3>
 
-                    <div class="field-group">
-                        <h3>Assay and platform</h3>
-                        <dl class="field-list">
-                            <div><dt>Extracted molecule</dt><dd>genomic DNA</dd></div>
-                            <div><dt>Library source</dt><dd>genomic</dd></div>
-                            <div><dt>Library selection</dt><dd>RANDOM</dd></div>
-                            <div><dt>Instrument model</dt><dd>Illumina HiSeq 2000</dd></div>
-                            <div><dt>Platform ID</dt><dd>GPL11154</dd></div>
-                            <div><dt>SRA Study ID</dt><dd>SRP071738</dd></div>
-                            <div><dt>BioProject ID</dt><dd>PRJNA315118</dd></div>
-                            <div><dt>File types</dt><dd>tar</dd></div>
-                        </dl>
-                    </div>
+                            <ul class="characteristic-list">
 
-                    <div class="field-group">
-                        <h3>Submission information</h3>
-                        <dl class="field-list">
-                            <div><dt>Organization</dt><dd>HUMC</dd></div>
-                            <div><dt>Contact</dt><dd>Benjamin Tycko</dd></div>
-                            <div><dt>Email</dt><dd>bejamintycko@hackensackmeridian.org</dd></div>
-                            <div><dt>Submitter country</dt><dd>USA</dd></div>
-                            <div><dt>Hospital / center</dt><dd>Not reported</dd></div>
-                            <div><dt>Submitted</dt><dd>03/11/2016</dd></div>
-                            <div><dt>Last updated</dt><dd>05/15/2019</dd></div>
-                            <div><dt>Supervisor / PI</dt><dd>Benjamin Tycko</dd></div>
-                            <div><dt>Supervisor email</dt><dd>bt12@columbia.edu</dd></div>
-                        </dl>
-                    </div>
+                                <li>tissue: Lung</li>
 
-                    
-                    <div class="field-group methods-group">
-                        <h3>Methods text</h3>
-                        
-                        <h4>Assay description</h4>
-                        <p class="long-text">We used the Agilent SureSelect Methyl-seq DNA hybrid capture kit, followed by deep Nextgen bis-seq. In this protocol, targeted regions (total of 3.7M CpGs) include RefGenes, promoter regions, CpG islands, CpG island shores, shelves, and DNAse I hypersensitive sites.  DNA was sheared to an average size of 250 bp and bisulfite converted with the EZ DNA methylation kit (Zymo). Paired-end reads (150 bp) were generated with an Illumina HiSeq2000 sequencer. One of the brain samples (5984) was relatively under-represented in the library, so additional sequences were generated on a MiSeq sequencer to improve the coverage for this sample. After trimming for low-quality bases (Phred score&lt;30) and reads with a length &lt;40 bp with TrimGalore, the reads were aligned to the human genome (GRCh37) using Bismark and duplicate reads were removed using Samtools. Methylation calling was performed using Bismark and and SNP calling was performed with BisSNP with  default settings and dbSNP137 as references. ASM calling was performed with Bismark, after separating the valid SNP-containing reads by allele.</p>
-                        
-                        
-                        <h4>Extraction protocol</h4>
-                        <p class="long-text">Genomic DNA (500 ng) was extracted using Phenol-chloroform extraction protocol and bisulfite-converted using EZ DNA methylation kit (Zymo) Target enrichment and libraries were prepared according to Agilent&#39;s instructions accompanying SureSelectXT Methyl-Seq Target Enrichment System for Illumina Multiplexed Sequencing kit. Targeted bisulfite converted libraries, covering 84Mb and 3.7 million CpGs, using SureSelectXT Methyl-Seq Target Enrichment System for Illumina Multiplexed Sequencing.</p>
-                        
-                        
-                    </div>
-                    
-                </div>
-            </section>
+                                <li>diagnosis: normal</li>
 
-            <aside class="record-aside" aria-label="Study source notes">
+                                <li>tissue: Heart</li>
+
+                                <li>tissue: Placenta</li>
+
+                                <li>tissue: Brain</li>
+
+                                <li>tissue: Liver</li>
+
+                                <li>tissue: T cell</li>
+
+                            </ul>
+
+                        </section>
+
+                        <div class="panel-grid">
+                            <section class="field-group">
+                                <h3>Assay and platform</h3>
+                                <dl class="field-list">
+                                    <div><dt>Extracted molecule</dt><dd>genomic DNA</dd></div>
+                                    <div><dt>Library source</dt><dd>genomic</dd></div>
+                                    <div><dt>Library selection</dt><dd>RANDOM</dd></div>
+                                    <div><dt>Instrument model</dt><dd>Illumina HiSeq 2000</dd></div>
+                                    <div><dt>Platform ID</dt><dd>GPL11154</dd></div>
+                                    <div><dt>SRA Study ID</dt><dd>SRP071738</dd></div>
+                                    <div><dt>BioProject ID</dt><dd>PRJNA315118</dd></div>
+                                    <div><dt>File types</dt><dd>tar</dd></div>
+                                </dl>
+                            </section>
+
+                            <section class="field-group">
+                                <h3>Submission</h3>
+                                <dl class="field-list">
+                                    <div><dt>Organization</dt><dd>HUMC</dd></div>
+                                    <div><dt>Contact</dt><dd>Benjamin Tycko</dd></div>
+                                    <div><dt>Email</dt><dd>bejamintycko@hackensackmeridian.org</dd></div>
+                                    <div><dt>Submitter country</dt><dd>USA</dd></div>
+                                    <div><dt>Hospital / center</dt><dd>Not reported</dd></div>
+                                    <div><dt>Submitted</dt><dd>03/11/2016</dd></div>
+                                    <div><dt>Last updated</dt><dd>05/15/2019</dd></div>
+                                    <div><dt>Supervisor / PI</dt><dd>Benjamin Tycko</dd></div>
+                                    <div><dt>Supervisor email</dt><dd>bt12@columbia.edu</dd></div>
+                                </dl>
+                            </section>
+                        </div>
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="methods">
+                    <summary>
+                        <span>
+                            <strong>Methods</strong>
+                            <small>Assay, extraction, and data processing text</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body method-stack">
+
+                        <section class="method-block">
+                            <h3>Assay description</h3>
+                            <p class="long-text">We used the Agilent SureSelect Methyl-seq DNA hybrid capture kit, followed by deep Nextgen bis-seq. In this protocol, targeted regions (total of 3.7M CpGs) include RefGenes, promoter regions, CpG islands, CpG island shores, shelves, and DNAse I hypersensitive sites.  DNA was sheared to an average size of 250 bp and bisulfite converted with the EZ DNA methylation kit (Zymo). Paired-end reads (150 bp) were generated with an Illumina HiSeq2000 sequencer. One of the brain samples (5984) was relatively under-represented in the library, so additional sequences were generated on a MiSeq sequencer to improve the coverage for this sample. After trimming for low-quality bases (Phred score&lt;30) and reads with a length &lt;40 bp with TrimGalore, the reads were aligned to the human genome (GRCh37) using Bismark and duplicate reads were removed using Samtools. Methylation calling was performed using Bismark and and SNP calling was performed with BisSNP with  default settings and dbSNP137 as references. ASM calling was performed with Bismark, after separating the valid SNP-containing reads by allele.</p>
+                        </section>
+
+
+                        <section class="method-block">
+                            <h3>Extraction protocol</h3>
+                            <p class="long-text">Genomic DNA (500 ng) was extracted using Phenol-chloroform extraction protocol and bisulfite-converted using EZ DNA methylation kit (Zymo) Target enrichment and libraries were prepared according to Agilent&#39;s instructions accompanying SureSelectXT Methyl-Seq Target Enrichment System for Illumina Multiplexed Sequencing kit. Targeted bisulfite converted libraries, covering 84Mb and 3.7 million CpGs, using SureSelectXT Methyl-Seq Target Enrichment System for Illumina Multiplexed Sequencing.</p>
+                        </section>
+
+
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="pregnancy-context">
+                    <summary>
+                        <span>
+                            <strong>Pregnancy and phenotype</strong>
+                            <small>Timing, participant metadata, and complications</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body panel-grid">
+                        <section class="field-group">
+                            <h3>Timing and participants</h3>
+                            <dl class="field-list">
+                                <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at collection provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at collection weeks</dt><dd>Not reported</dd></div>
+                                <div><dt>Offspring sex provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Parity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Genetic ancestry provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
+                            </dl>
+                        </section>
+
+                        <section class="field-group">
+                            <h3>Phenotypes and complications</h3>
+                            <dl class="field-list">
+                                <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
+                                <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
+                                <div><dt>Main topic</dt><dd>This paper identifies haplotype-dependent allele-specific methylation (hap-ASM) differentially methylated regions (DMRs) and methylation quantitative trait loci (mQTLs) in multiple human tissues and cell types, and investigates their potential impact on disease susceptibility.</dd></div>
+                            </dl>
+                        </section>
+                    </div>
+                </details>
+
+
+                <details class="record-panel evidence-panel" id="evidence">
+                    <summary>
+                        <span>
+                            <strong>Source evidence</strong>
+                            <small>32 evidence notes, 0 supplement findings</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body evidence-body">
+
+                        <div class="evidence-list">
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Main topic of the publication</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>The publication maps and investigates the mechanisms and disease associations of haplotype-dependent allele-specific DNA methylation (hap-ASM) and methylation quantitative trait loci (mQTLs) across multiple primary human tissues.</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>Here we apply array-based and Methyl-Seq approaches to multiple human tissues and cell types, including brain, purified neurons and glia, T lymphocytes, and placenta, and identify 795 hap-ASM differentially methylated regions (DMRs) and 3,082 strong methylation quantitative trait loci (mQTLs), most not previously reported.</blockquote>
+                                    <footer>
+                                    <span>Abstract</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC4863666</span>
+                                    <span>10.1016/j.ajhg.2016.03.027</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Sampling timing during pregnancy</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Term</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>focusing mainly on T lymphocytes and cerebral cortical brain tissue, including FANS-isolated neurons and glia, as well as a smaller set of term placentas.</blockquote>
+                                    <footer>
+                                    <span>Discussion</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC4863666</span>
+                                    <span>10.1016/j.ajhg.2016.03.027</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Samples collected at single pregnancy time point (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Yes</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>focusing mainly on T lymphocytes and cerebral cortical brain tissue, including FANS-isolated neurons and glia, as well as a smaller set of term placentas.</blockquote>
+                                    <footer>
+                                    <span>Discussion</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC4863666</span>
+                                    <span>10.1016/j.ajhg.2016.03.027</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Gestational Age at delivery provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC4863666</span>
+                                    <span>10.1016/j.ajhg.2016.03.027</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Gestational Age at sample collection provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC4863666</span>
+                                    <span>10.1016/j.ajhg.2016.03.027</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Birthweight of offspring provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC4863666</span>
+                                    <span>10.1016/j.ajhg.2016.03.027</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Samples from pregnancy complications collected</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC4863666</span>
+                                    <span>10.1016/j.ajhg.2016.03.027</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Pregnancy complications in data set (list)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC4863666</span>
+                                    <span>10.1016/j.ajhg.2016.03.027</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Fetal complications listed (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC4863666</span>
+                                    <span>10.1016/j.ajhg.2016.03.027</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Fetal complications in data set (list)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Not reported</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>No direct quote recorded for this answer.</blockquote>
+                                    <footer>
+
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC4863666</span>
+                                    <span>10.1016/j.ajhg.2016.03.027</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                        </div>
+
+
+
+                    </div>
+                </details>
+
+            </div>
+
+            <aside class="record-aside" aria-label="Record sources">
                 <section class="source-note">
-                    <p class="eyebrow">Source notes</p>
-                    <div class="provenance-list">
+                    <h2>Record sources</h2>
+                    <dl class="source-status-list">
+                        <div><dt>Metadata</dt><dd>GEO</dd></div>
                         <div>
-                            <strong>GEO metadata</strong>
-                            <p>Core study, assay, platform, contact, and submission fields come from GEO metadata.</p>
+                            <dt>Publication</dt>
+                            <dd>Linked</dd>
                         </div>
                         <div>
-                            <strong>Publication links</strong>
-                            <p>
-                                
-                                PMID, PMC, or DOI identifiers are available for source inspection.
-                                
-                            </p>
+                            <dt>Review evidence</dt>
+                            <dd>32 notes</dd>
                         </div>
-                        <div>
-                            <strong>Workbook notes</strong>
-                            <p>
-                                
-                                32 evidence notes are linked to this GEO study.
-                                
-                            </p>
-                        </div>
-                        
-                    </div>
-                </section>
 
-                <section class="source-links-block">
-                    <p class="eyebrow">Identifiers</p>
-                    <div class="external-grid">
-                        
+                    </dl>
+
+                    <div class="external-grid" aria-label="Record identifiers">
+
                         <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE79148" target="_blank"
                             rel="noopener">GEO: GSE79148</a>
-                        
-                        
+
+
                         <a href="https://pubmed.ncbi.nlm.nih.gov/27153397/" target="_blank"
                             rel="noopener">PMID: 27153397</a>
-                        
-                        
+
+
                         <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4863666/" target="_blank"
                             rel="noopener">PMC: PMC4863666</a>
-                        
-                        
+
+
                         <a href="https://doi.org/10.1016/j.ajhg.2016.03.027" target="_blank" rel="noopener">DOI: 10.1016/j.ajhg.2016.03.027</a>
-                        
+
                     </div>
                 </section>
             </aside>
         </section>
 
-        <section class="record-section curation-section">
-            <div class="section-heading">
-                <p class="eyebrow">Workbook-reviewed fields</p>
-                <h2>Pregnancy, phenotype, and sample context</h2>
-            </div>
-            <div class="technical-grid">
-                <div class="field-group">
-                    <h3>Pregnancy timing and participants</h3>
-                    <dl class="field-list">
-                        <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at collection provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at collection weeks</dt><dd>Not reported</dd></div>
-                        <div><dt>Offspring sex provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Parity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Genetic ancestry provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
-                    </dl>
-                </div>
-
-                <div class="field-group">
-                    <h3>Phenotypes and complications</h3>
-                    <dl class="field-list">
-                        <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
-                        <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Other phenotypes</dt><dd>Not reported</dd></div>
-                        <div><dt>Main topic</dt><dd>This paper identifies haplotype-dependent allele-specific methylation (hap-ASM) differentially methylated regions (DMRs) and methylation quantitative trait loci (mQTLs) in multiple human tissues and cell types, and investigates their potential impact on disease susceptibility.</dd></div>
-                    </dl>
-                </div>
-            </div>
-        </section>
-
-        <details class="evidence-ledger" id="evidence">
-            <summary>
-                <span>
-                    <span class="eyebrow">Workbook excerpt</span>
-                    <strong>Source evidence</strong>
-                </span>
-                <span class="evidence-counts">
-                    <span>32 evidence notes linked</span>
-                    <span>0 supplement repair findings</span>
-                </span>
-            </summary>
-
-            <div class="evidence-body">
-                
-                <div class="evidence-list">
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Main topic of the publication</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>The publication maps and investigates the mechanisms and disease associations of haplotype-dependent allele-specific DNA methylation (hap-ASM) and methylation quantitative trait loci (mQTLs) across multiple primary human tissues.</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>Here we apply array-based and Methyl-Seq approaches to multiple human tissues and cell types, including brain, purified neurons and glia, T lymphocytes, and placenta, and identify 795 hap-ASM differentially methylated regions (DMRs) and 3,082 strong methylation quantitative trait loci (mQTLs), most not previously reported.</blockquote>
-                            <footer>
-                            <span>Abstract</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC4863666</span>
-                            <span>10.1016/j.ajhg.2016.03.027</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Sampling timing during pregnancy</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Term</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>focusing mainly on T lymphocytes and cerebral cortical brain tissue, including FANS-isolated neurons and glia, as well as a smaller set of term placentas.</blockquote>
-                            <footer>
-                            <span>Discussion</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC4863666</span>
-                            <span>10.1016/j.ajhg.2016.03.027</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Samples collected at single pregnancy time point (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Yes</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>focusing mainly on T lymphocytes and cerebral cortical brain tissue, including FANS-isolated neurons and glia, as well as a smaller set of term placentas.</blockquote>
-                            <footer>
-                            <span>Discussion</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC4863666</span>
-                            <span>10.1016/j.ajhg.2016.03.027</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Gestational Age at delivery provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC4863666</span>
-                            <span>10.1016/j.ajhg.2016.03.027</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Gestational Age at sample collection provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC4863666</span>
-                            <span>10.1016/j.ajhg.2016.03.027</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Birthweight of offspring provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC4863666</span>
-                            <span>10.1016/j.ajhg.2016.03.027</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Samples from pregnancy complications collected</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC4863666</span>
-                            <span>10.1016/j.ajhg.2016.03.027</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Pregnancy complications in data set (list)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC4863666</span>
-                            <span>10.1016/j.ajhg.2016.03.027</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Fetal complications listed (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC4863666</span>
-                            <span>10.1016/j.ajhg.2016.03.027</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Fetal complications in data set (list)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Not reported</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>No direct quote recorded for this answer.</blockquote>
-                            <footer>
-                            
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC4863666</span>
-                            <span>10.1016/j.ajhg.2016.03.027</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                </div>
-                
-
-                
-            </div>
-        </details>
-
         <nav class="entry-navigation">
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/1106.html">Previous study</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/repository.html">Studies</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/1108.html">Next study</a>
-            
+
         </nav>
     </main>
 

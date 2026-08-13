@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GSE215421 - Placenta Study Atlas</title>
     <meta name="description" content="Differential gene expression during placentation in pregnancies conceived with different fertility treatments compared with spontaneous pregnancies">
-    <link rel="stylesheet" href="/placenta-research-database/static/style.css">
+    <link rel="stylesheet" href="/placenta-research-database/static/style.css?v=20260813-4">
 </head>
 
 <body>
@@ -27,18 +27,10 @@
                 <h1>Differential gene expression during placentation in pregnancies conceived with different fertility treatments compared with spontaneous pregnancies</h1>
             </div>
             <div class="source-actions" aria-label="Source links">
-                <a href="#evidence">Evidence notes</a>
-                
+
                 <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE215421"
                     target="_blank" rel="noopener">Open GEO</a>
-                
-                
-                <a href="https://pubmed.ncbi.nlm.nih.gov/30611556/" target="_blank"
-                    rel="noopener">PubMed</a>
-                
-                
-                <a href="https://doi.org/10.1016/j.fertnstert.2018.11.005" target="_blank" rel="noopener">DOI</a>
-                
+
             </div>
         </article>
 
@@ -70,402 +62,494 @@
         </section>
 
         <section class="record-layout">
-            <section class="record-section geo-section">
-                <div class="section-heading">
-                    <p class="eyebrow">GEO record</p>
-                    <h2>Sample, assay, and methods</h2>
-                </div>
-                <div class="technical-grid">
-                    <div class="field-group sample-group wide-group">
-                        <h3>Sample characteristics</h3>
-                        <p class="long-text">tissue: Placenta - chorionic villi | genotype: WT | treatment: NIFT | rnaseq dataset: ART Set2 | fetal sex: Female | fetal race: Caucasian | fetal ethnicity: NonHispanic | gestational age_at_cvs_(days): 74 | treatment: IVF | fetal sex: Male | fetal race: CaucasianAsianBiracial | gestational age_at_cvs_(days): 73 | gestational age_at_cvs_(days): 77 | treatment: Spontaneous | rnaseq dataset: Sex Diff Set1 | gestational age_at_cvs_(days): 91 | rnaseq dataset: Sex Diff Set2 | gestational age_at_cvs_(days): 75 | gestational age_at_cvs_(days): 76 | fetal ethnicity: Hispanic | gestational age_at_cvs_(days): 82 | gestational age_at_cvs_(days): 86 | gestational age_at_cvs_(days): 87 | gestational age_at_cvs_(days): 85 | gestational age_at_cvs_(days): 83 | gestational age_at_cvs_(days): 93 | rnaseq dataset: ART Set1 | gestational age_at_cvs_(days): 80 | gestational age_at_cvs_(days): 78 | gestational age_at_cvs_(days): 79 | gestational age_at_cvs_(days): 96 | gestational age_at_cvs_(days): 84 | gestational age_at_cvs_(days): 92 | rnaseq dataset: ART Supplemental | gestational age_at_cvs_(days): 71 | gestational age_at_cvs_(days): 89 | gestational age_at_cvs_(days): 81 | gestational age_at_cvs_(days): 90 | gestational age_at_cvs_(days): 88 | gestational age_at_cvs_(days): 72 | gestational age_at_cvs_(days): 95 | gestational age_at_cvs_(days): 68 | gestational age_at_cvs_(days): 99</p>
-                    </div>
+            <div class="record-content">
+                <details class="record-panel" id="study-details">
+                    <summary>
+                        <span>
+                            <strong>Study details</strong>
+                            <small>Samples, assay, platform, and submission</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body">
+                        <section class="field-group sample-group">
+                            <h3>Sample characteristics</h3>
 
-                    <div class="field-group">
-                        <h3>Assay and platform</h3>
-                        <dl class="field-list">
-                            <div><dt>Extracted molecule</dt><dd>total RNA</dd></div>
-                            <div><dt>Library source</dt><dd>transcriptomic</dd></div>
-                            <div><dt>Library selection</dt><dd>cDNA</dd></div>
-                            <div><dt>Instrument model</dt><dd>Illumina NextSeq 500</dd></div>
-                            <div><dt>Platform ID</dt><dd>GPL18573</dd></div>
-                            <div><dt>SRA Study ID</dt><dd>Not reported</dd></div>
-                            <div><dt>BioProject ID</dt><dd>PRJNA890249</dd></div>
-                            <div><dt>File types</dt><dd>gz</dd></div>
-                        </dl>
-                    </div>
+                            <ul class="characteristic-list">
 
-                    <div class="field-group">
-                        <h3>Submission information</h3>
-                        <dl class="field-list">
-                            <div><dt>Organization</dt><dd>Cedars-Sinai Medical Center</dd></div>
-                            <div><dt>Contact</dt><dd>Margareta D Pisarska</dd></div>
-                            <div><dt>Email</dt><dd>Not reported</dd></div>
-                            <div><dt>Submitter country</dt><dd>USA</dd></div>
-                            <div><dt>Hospital / center</dt><dd>Academic Medical Center</dd></div>
-                            <div><dt>Submitted</dt><dd>10/13/2022</dd></div>
-                            <div><dt>Last updated</dt><dd>09/11/2024</dd></div>
-                            <div><dt>Supervisor / PI</dt><dd>Margareta D. Pisarska</dd></div>
-                            <div><dt>Supervisor email</dt><dd>pisarskam@cshs.org</dd></div>
-                        </dl>
-                    </div>
+                                <li>tissue: Placenta - chorionic villi</li>
 
-                    
-                    <div class="field-group methods-group">
-                        <h3>Methods text</h3>
-                        
-                        <h4>Assay description</h4>
-                        <p class="long-text">Total RNA-seq differential gene expression analysis comparing different modes of conception: infertility treatments (IVF and NIFT together) vs spontaneous, NIFT vs spontaneous, IVF vs spontaneous, and IVF vs NIFT. Analysis was adjusted for fetal sex and RNA-seq dataset in the DESeq2 model.</p>
-                        
-                        
-                        <h4>Extraction protocol</h4>
-                        <p class="long-text">Chorionic villi tissue was homogenized in RLT Plus lysis buffer (QIAGEN) containing 1% beta-mercaptoethanol, physically dissociated with single use needles attached to a 1 mL syringe. Total RNA was isolated from the homogenate using the AllPrep DNA/RNA Mini Kit (QIAGEN) following the manufacturer protocol. RNA-seq libraries of &gt;200 nt RNA were constructed from 200 ng total RNA per sample using Illumina TruSeq Stranded Total RNA with Ribo-Zero Gold sample prep kits (Illumina). Libraries were depleted of cytoplasmic and mitochondrial ribosomal RNAs.</p>
-                        
-                        
-                    </div>
-                    
-                </div>
-            </section>
+                                <li>genotype: WT</li>
 
-            <aside class="record-aside" aria-label="Study source notes">
+                                <li>treatment: NIFT</li>
+
+                                <li>rnaseq dataset: ART Set2</li>
+
+                                <li>fetal sex: Female</li>
+
+                                <li>fetal race: Caucasian</li>
+
+                                <li>fetal ethnicity: NonHispanic</li>
+
+                                <li>gestational age_at_cvs_(days): 74</li>
+
+                                <li>treatment: IVF</li>
+
+                                <li>fetal sex: Male</li>
+
+                                <li>fetal race: CaucasianAsianBiracial</li>
+
+                                <li>gestational age_at_cvs_(days): 73</li>
+
+                                <li>gestational age_at_cvs_(days): 77</li>
+
+                                <li>treatment: Spontaneous</li>
+
+                                <li>rnaseq dataset: Sex Diff Set1</li>
+
+                                <li>gestational age_at_cvs_(days): 91</li>
+
+                                <li>rnaseq dataset: Sex Diff Set2</li>
+
+                                <li>gestational age_at_cvs_(days): 75</li>
+
+                                <li>gestational age_at_cvs_(days): 76</li>
+
+                                <li>fetal ethnicity: Hispanic</li>
+
+                                <li>gestational age_at_cvs_(days): 82</li>
+
+                                <li>gestational age_at_cvs_(days): 86</li>
+
+                                <li>gestational age_at_cvs_(days): 87</li>
+
+                                <li>gestational age_at_cvs_(days): 85</li>
+
+                                <li>gestational age_at_cvs_(days): 83</li>
+
+                                <li>gestational age_at_cvs_(days): 93</li>
+
+                                <li>rnaseq dataset: ART Set1</li>
+
+                                <li>gestational age_at_cvs_(days): 80</li>
+
+                                <li>gestational age_at_cvs_(days): 78</li>
+
+                                <li>gestational age_at_cvs_(days): 79</li>
+
+                                <li>gestational age_at_cvs_(days): 96</li>
+
+                                <li>gestational age_at_cvs_(days): 84</li>
+
+                                <li>gestational age_at_cvs_(days): 92</li>
+
+                                <li>rnaseq dataset: ART Supplemental</li>
+
+                                <li>gestational age_at_cvs_(days): 71</li>
+
+                                <li>gestational age_at_cvs_(days): 89</li>
+
+                                <li>gestational age_at_cvs_(days): 81</li>
+
+                                <li>gestational age_at_cvs_(days): 90</li>
+
+                                <li>gestational age_at_cvs_(days): 88</li>
+
+                                <li>gestational age_at_cvs_(days): 72</li>
+
+                                <li>gestational age_at_cvs_(days): 95</li>
+
+                                <li>gestational age_at_cvs_(days): 68</li>
+
+                                <li>gestational age_at_cvs_(days): 99</li>
+
+                            </ul>
+
+                        </section>
+
+                        <div class="panel-grid">
+                            <section class="field-group">
+                                <h3>Assay and platform</h3>
+                                <dl class="field-list">
+                                    <div><dt>Extracted molecule</dt><dd>total RNA</dd></div>
+                                    <div><dt>Library source</dt><dd>transcriptomic</dd></div>
+                                    <div><dt>Library selection</dt><dd>cDNA</dd></div>
+                                    <div><dt>Instrument model</dt><dd>Illumina NextSeq 500</dd></div>
+                                    <div><dt>Platform ID</dt><dd>GPL18573</dd></div>
+                                    <div><dt>SRA Study ID</dt><dd>Not reported</dd></div>
+                                    <div><dt>BioProject ID</dt><dd>PRJNA890249</dd></div>
+                                    <div><dt>File types</dt><dd>gz</dd></div>
+                                </dl>
+                            </section>
+
+                            <section class="field-group">
+                                <h3>Submission</h3>
+                                <dl class="field-list">
+                                    <div><dt>Organization</dt><dd>Cedars-Sinai Medical Center</dd></div>
+                                    <div><dt>Contact</dt><dd>Margareta D Pisarska</dd></div>
+                                    <div><dt>Email</dt><dd>Not reported</dd></div>
+                                    <div><dt>Submitter country</dt><dd>USA</dd></div>
+                                    <div><dt>Hospital / center</dt><dd>Academic Medical Center</dd></div>
+                                    <div><dt>Submitted</dt><dd>10/13/2022</dd></div>
+                                    <div><dt>Last updated</dt><dd>09/11/2024</dd></div>
+                                    <div><dt>Supervisor / PI</dt><dd>Margareta D. Pisarska</dd></div>
+                                    <div><dt>Supervisor email</dt><dd>pisarskam@cshs.org</dd></div>
+                                </dl>
+                            </section>
+                        </div>
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="methods">
+                    <summary>
+                        <span>
+                            <strong>Methods</strong>
+                            <small>Assay, extraction, and data processing text</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body method-stack">
+
+                        <section class="method-block">
+                            <h3>Assay description</h3>
+                            <p class="long-text">Total RNA-seq differential gene expression analysis comparing different modes of conception: infertility treatments (IVF and NIFT together) vs spontaneous, NIFT vs spontaneous, IVF vs spontaneous, and IVF vs NIFT. Analysis was adjusted for fetal sex and RNA-seq dataset in the DESeq2 model.</p>
+                        </section>
+
+
+                        <section class="method-block">
+                            <h3>Extraction protocol</h3>
+                            <p class="long-text">Chorionic villi tissue was homogenized in RLT Plus lysis buffer (QIAGEN) containing 1% beta-mercaptoethanol, physically dissociated with single use needles attached to a 1 mL syringe. Total RNA was isolated from the homogenate using the AllPrep DNA/RNA Mini Kit (QIAGEN) following the manufacturer protocol. RNA-seq libraries of &gt;200 nt RNA were constructed from 200 ng total RNA per sample using Illumina TruSeq Stranded Total RNA with Ribo-Zero Gold sample prep kits (Illumina). Libraries were depleted of cytoplasmic and mitochondrial ribosomal RNAs.</p>
+                        </section>
+
+
+                    </div>
+                </details>
+
+
+                <details class="record-panel" id="pregnancy-context">
+                    <summary>
+                        <span>
+                            <strong>Pregnancy and phenotype</strong>
+                            <small>Timing, participant metadata, and complications</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body panel-grid">
+                        <section class="field-group">
+                            <h3>Timing and participants</h3>
+                            <dl class="field-list">
+                                <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
+                                <div><dt>GA at collection provided</dt><dd>Yes</dd></div>
+                                <div><dt>GA at collection weeks</dt><dd>11</dd></div>
+                                <div><dt>Offspring sex provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Parity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Genetic ancestry provided</dt><dd>Not reported</dd></div>
+                                <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
+                            </dl>
+                        </section>
+
+                        <section class="field-group">
+                            <h3>Phenotypes and complications</h3>
+                            <dl class="field-list">
+                                <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
+                                <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
+                                <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
+                                <div><dt>Other phenotypes</dt><dd>Maternal medical conditions</dd></div>
+                                <div><dt>Main topic</dt><dd>This study aims to identify differences in the transcriptomic profiles during placentation from pregnancies conceived spontaneously to those with infertility, using non-in vitro fertilization (NIFT) or in vitro fertilization (IVF). It concludes that transcriptomic profiles are similar in pregnancies conceived using NIFT or IVF and spontaneous conceptions.</dd></div>
+                            </dl>
+                        </section>
+                    </div>
+                </details>
+
+
+                <details class="record-panel evidence-panel" id="evidence">
+                    <summary>
+                        <span>
+                            <strong>Source evidence</strong>
+                            <small>60 evidence notes, 0 supplement findings</small>
+                        </span>
+                    </summary>
+                    <div class="record-panel-body evidence-body">
+
+                        <div class="evidence-list">
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Main topic of the publication</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Investigating sexually dimorphic DNA methylation and gene expression patterns in human first trimester placenta.</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>Overall, sex dimorphic differential methylation with associated differential gene expression in the first trimester placenta is small, but there remain significant genes that may be regulated through methylation leading to differences in the first trimester placenta.</blockquote>
+                                    <footer>
+                                    <span>Abstract - Conclusions</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC11328442; PMC5769539; PMC7156023</span>
+                                    <span>10.1016/j.fertnstert.2018.11.005; 10.1186/s13293-018-0165-y; 10.1186/s13293-024-00629-9</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Main topic of the publication</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>To identify differences in the transcriptomic profiles of first-trimester placentas (chorionic villi) among pregnancies conceived spontaneously, with in vitro fertilization (IVF), and with non-IVF fertility treatments.</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>Objective: To identify differences in the transcriptomic profiles during placentation from pregnancies conceived spontaneously to those with infertility, using non-in vitro fertilization (NIFT) or in vitro fertilization (IVF).</blockquote>
+                                    <footer>
+                                    <span>Objective</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC11328442; PMC7156023</span>
+                                    <span>10.1016/j.fertnstert.2018.11.005; 10.1186/s13293-024-00629-9</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Sampling timing during pregnancy</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Late first trimester (weeks 10-14)</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>Pregnant subjects were recruited in late first trimester (weeks 10–14) at time of chorionic villus sampling, a prenatal diagnostic test.</blockquote>
+                                    <footer>
+                                    <span>Methods</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC11328442; PMC5769539; PMC7156023</span>
+                                    <span>10.1016/j.fertnstert.2018.11.005; 10.1186/s13293-018-0165-y; 10.1186/s13293-024-00629-9</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Sampling timing during pregnancy</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>11–13 weeks gestation</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>Chorionic villus samples were collected at 11–13 weeks gestation at the Cedars-Sinai Prenatal Diagnostic Center as previously described</blockquote>
+                                    <footer>
+                                    <span>Methods (CVS collection)</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC11328442; PMC7156023</span>
+                                    <span>10.1016/j.fertnstert.2018.11.005; 10.1186/s13293-024-00629-9</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Samples collected at single pregnancy time point (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Yes</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>All placenta samples in this study were normal karyotype, collected within a short window of gestational age (10–14 weeks) in the same hospital</blockquote>
+                                    <footer>
+                                    <span>Discussion</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC11328442; PMC5769539; PMC7156023</span>
+                                    <span>10.1016/j.fertnstert.2018.11.005; 10.1186/s13293-018-0165-y; 10.1186/s13293-024-00629-9</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Samples collected at single pregnancy time point (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Yes</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>Chorionic villus samples were collected at 11–13 weeks gestation at the Cedars-Sinai Prenatal Diagnostic Center as previously described</blockquote>
+                                    <footer>
+                                    <span>Methods (CVS collection)</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC11328442; PMC7156023</span>
+                                    <span>10.1016/j.fertnstert.2018.11.005; 10.1186/s13293-024-00629-9</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Gestational Age at delivery provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Yes</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>Gestational age at delivery 276 ± 7.5 272 ± 18</blockquote>
+                                    <footer>
+                                    <span>Table 1</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC11328442; PMC5769539; PMC7156023</span>
+                                    <span>10.1016/j.fertnstert.2018.11.005; 10.1186/s13293-018-0165-y; 10.1186/s13293-024-00629-9</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Gestational Age at sample collection provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Yes</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>Gestational age at CVS (days) 82 ± 7.3 82 ± 5.5</blockquote>
+                                    <footer>
+                                    <span>Table 1</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC11328442; PMC5769539; PMC7156023</span>
+                                    <span>10.1016/j.fertnstert.2018.11.005; 10.1186/s13293-018-0165-y; 10.1186/s13293-024-00629-9</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Gestational Age at delivery provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Yes</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>Gestational age at delivery 273 ± 13 270 ± 14 0.2004 272 ± 13 268 ± 15</blockquote>
+                                    <footer>
+                                    <span>Table 1</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC11328442; PMC7156023</span>
+                                    <span>10.1016/j.fertnstert.2018.11.005; 10.1186/s13293-024-00629-9</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                            <article class="evidence-row">
+                                <div class="evidence-field">
+                                    <span>Workbook field</span>
+                                    <strong>Gestational Age at sample collection provided (yes/no)</strong>
+                                </div>
+                                <div class="evidence-answer">
+                                    <span>Reviewed answer</span>
+                                    <strong>Yes</strong>
+                                </div>
+                                <div class="evidence-source">
+                                    <span>Source excerpt</span>
+                                    <blockquote>Gestational age at CVS 83 ± 6.1 82 ± 6.4 0.4572 82 ± 6.6 82 ± 6.4</blockquote>
+                                    <footer>
+                                    <span>Table 1</span>
+                                    <span>Paper/supplement prompt</span>
+                                    <span>high confidence</span>
+                                    <span>PMC11328442; PMC7156023</span>
+                                    <span>10.1016/j.fertnstert.2018.11.005; 10.1186/s13293-024-00629-9</span>
+                                    </footer>
+                                </div>
+                            </article>
+
+                        </div>
+
+
+
+                    </div>
+                </details>
+
+            </div>
+
+            <aside class="record-aside" aria-label="Record sources">
                 <section class="source-note">
-                    <p class="eyebrow">Source notes</p>
-                    <div class="provenance-list">
+                    <h2>Record sources</h2>
+                    <dl class="source-status-list">
+                        <div><dt>Metadata</dt><dd>GEO</dd></div>
                         <div>
-                            <strong>GEO metadata</strong>
-                            <p>Core study, assay, platform, contact, and submission fields come from GEO metadata.</p>
+                            <dt>Publication</dt>
+                            <dd>Linked</dd>
                         </div>
                         <div>
-                            <strong>Publication links</strong>
-                            <p>
-                                
-                                PMID, PMC, or DOI identifiers are available for source inspection.
-                                
-                            </p>
+                            <dt>Review evidence</dt>
+                            <dd>60 notes</dd>
                         </div>
-                        <div>
-                            <strong>Workbook notes</strong>
-                            <p>
-                                
-                                60 evidence notes are linked to this GEO study.
-                                
-                            </p>
-                        </div>
-                        
-                    </div>
-                </section>
 
-                <section class="source-links-block">
-                    <p class="eyebrow">Identifiers</p>
-                    <div class="external-grid">
-                        
+                    </dl>
+
+                    <div class="external-grid" aria-label="Record identifiers">
+
                         <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE215421" target="_blank"
                             rel="noopener">GEO: GSE215421</a>
-                        
-                        
+
+
                         <a href="https://pubmed.ncbi.nlm.nih.gov/30611556/" target="_blank"
                             rel="noopener">PMID: 30611556</a>
-                        
-                        
+
+
                         <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7156023/" target="_blank"
                             rel="noopener">PMC: PMC7156023</a>
-                        
-                        
+
+
                         <a href="https://doi.org/10.1016/j.fertnstert.2018.11.005" target="_blank" rel="noopener">DOI: 10.1016/j.fertnstert.2018.11.005</a>
-                        
+
                     </div>
                 </section>
             </aside>
         </section>
 
-        <section class="record-section curation-section">
-            <div class="section-heading">
-                <p class="eyebrow">Workbook-reviewed fields</p>
-                <h2>Pregnancy, phenotype, and sample context</h2>
-            </div>
-            <div class="technical-grid">
-                <div class="field-group">
-                    <h3>Pregnancy timing and participants</h3>
-                    <dl class="field-list">
-                        <div><dt>Birthweight provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery provided</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at delivery weeks</dt><dd>Not reported</dd></div>
-                        <div><dt>GA at collection provided</dt><dd>Yes</dd></div>
-                        <div><dt>GA at collection weeks</dt><dd>11</dd></div>
-                        <div><dt>Offspring sex provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Parity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Gravidity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Race / ethnicity provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Genetic ancestry provided</dt><dd>Not reported</dd></div>
-                        <div><dt>Mode of delivery provided</dt><dd>Not reported</dd></div>
-                    </dl>
-                </div>
-
-                <div class="field-group">
-                    <h3>Phenotypes and complications</h3>
-                    <dl class="field-list">
-                        <div><dt>Complication samples collected</dt><dd>Not reported</dd></div>
-                        <div><dt>Pregnancy complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications listed</dt><dd>Not reported</dd></div>
-                        <div><dt>Fetal complications</dt><dd>Not reported</dd></div>
-                        <div><dt>Other phenotypes</dt><dd>Maternal medical conditions</dd></div>
-                        <div><dt>Main topic</dt><dd>This study aims to identify differences in the transcriptomic profiles during placentation from pregnancies conceived spontaneously to those with infertility, using non-in vitro fertilization (NIFT) or in vitro fertilization (IVF). It concludes that transcriptomic profiles are similar in pregnancies conceived using NIFT or IVF and spontaneous conceptions.</dd></div>
-                    </dl>
-                </div>
-            </div>
-        </section>
-
-        <details class="evidence-ledger" id="evidence">
-            <summary>
-                <span>
-                    <span class="eyebrow">Workbook excerpt</span>
-                    <strong>Source evidence</strong>
-                </span>
-                <span class="evidence-counts">
-                    <span>60 evidence notes linked</span>
-                    <span>0 supplement repair findings</span>
-                </span>
-            </summary>
-
-            <div class="evidence-body">
-                
-                <div class="evidence-list">
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Main topic of the publication</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Investigating sexually dimorphic DNA methylation and gene expression patterns in human first trimester placenta.</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>Overall, sex dimorphic differential methylation with associated differential gene expression in the first trimester placenta is small, but there remain significant genes that may be regulated through methylation leading to differences in the first trimester placenta.</blockquote>
-                            <footer>
-                            <span>Abstract - Conclusions</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC11328442; PMC5769539; PMC7156023</span>
-                            <span>10.1016/j.fertnstert.2018.11.005; 10.1186/s13293-018-0165-y; 10.1186/s13293-024-00629-9</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Main topic of the publication</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>To identify differences in the transcriptomic profiles of first-trimester placentas (chorionic villi) among pregnancies conceived spontaneously, with in vitro fertilization (IVF), and with non-IVF fertility treatments.</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>Objective: To identify differences in the transcriptomic profiles during placentation from pregnancies conceived spontaneously to those with infertility, using non-in vitro fertilization (NIFT) or in vitro fertilization (IVF).</blockquote>
-                            <footer>
-                            <span>Objective</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC11328442; PMC7156023</span>
-                            <span>10.1016/j.fertnstert.2018.11.005; 10.1186/s13293-024-00629-9</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Sampling timing during pregnancy</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Late first trimester (weeks 10-14)</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>Pregnant subjects were recruited in late first trimester (weeks 10–14) at time of chorionic villus sampling, a prenatal diagnostic test.</blockquote>
-                            <footer>
-                            <span>Methods</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC11328442; PMC5769539; PMC7156023</span>
-                            <span>10.1016/j.fertnstert.2018.11.005; 10.1186/s13293-018-0165-y; 10.1186/s13293-024-00629-9</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Sampling timing during pregnancy</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>11–13 weeks gestation</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>Chorionic villus samples were collected at 11–13 weeks gestation at the Cedars-Sinai Prenatal Diagnostic Center as previously described</blockquote>
-                            <footer>
-                            <span>Methods (CVS collection)</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC11328442; PMC7156023</span>
-                            <span>10.1016/j.fertnstert.2018.11.005; 10.1186/s13293-024-00629-9</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Samples collected at single pregnancy time point (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Yes</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>All placenta samples in this study were normal karyotype, collected within a short window of gestational age (10–14 weeks) in the same hospital</blockquote>
-                            <footer>
-                            <span>Discussion</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC11328442; PMC5769539; PMC7156023</span>
-                            <span>10.1016/j.fertnstert.2018.11.005; 10.1186/s13293-018-0165-y; 10.1186/s13293-024-00629-9</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Samples collected at single pregnancy time point (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Yes</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>Chorionic villus samples were collected at 11–13 weeks gestation at the Cedars-Sinai Prenatal Diagnostic Center as previously described</blockquote>
-                            <footer>
-                            <span>Methods (CVS collection)</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC11328442; PMC7156023</span>
-                            <span>10.1016/j.fertnstert.2018.11.005; 10.1186/s13293-024-00629-9</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Gestational Age at delivery provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Yes</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>Gestational age at delivery 276 ± 7.5 272 ± 18</blockquote>
-                            <footer>
-                            <span>Table 1</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC11328442; PMC5769539; PMC7156023</span>
-                            <span>10.1016/j.fertnstert.2018.11.005; 10.1186/s13293-018-0165-y; 10.1186/s13293-024-00629-9</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Gestational Age at sample collection provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Yes</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>Gestational age at CVS (days) 82 ± 7.3 82 ± 5.5</blockquote>
-                            <footer>
-                            <span>Table 1</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC11328442; PMC5769539; PMC7156023</span>
-                            <span>10.1016/j.fertnstert.2018.11.005; 10.1186/s13293-018-0165-y; 10.1186/s13293-024-00629-9</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Gestational Age at delivery provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Yes</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>Gestational age at delivery 273 ± 13 270 ± 14 0.2004 272 ± 13 268 ± 15</blockquote>
-                            <footer>
-                            <span>Table 1</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC11328442; PMC7156023</span>
-                            <span>10.1016/j.fertnstert.2018.11.005; 10.1186/s13293-024-00629-9</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                    <article class="evidence-row">
-                        <div class="evidence-field">
-                            <span>Workbook field</span>
-                            <strong>Gestational Age at sample collection provided (yes/no)</strong>
-                        </div>
-                        <div class="evidence-answer">
-                            <span>Reviewed answer</span>
-                            <strong>Yes</strong>
-                        </div>
-                        <div class="evidence-source">
-                            <span>Source excerpt</span>
-                            <blockquote>Gestational age at CVS 83 ± 6.1 82 ± 6.4 0.4572 82 ± 6.6 82 ± 6.4</blockquote>
-                            <footer>
-                            <span>Table 1</span>
-                            <span>Paper/supplement prompt</span>
-                            <span>high confidence</span>
-                            <span>PMC11328442; PMC7156023</span>
-                            <span>10.1016/j.fertnstert.2018.11.005; 10.1186/s13293-024-00629-9</span>
-                            </footer>
-                        </div>
-                    </article>
-                    
-                </div>
-                
-
-                
-            </div>
-        </details>
-
         <nav class="entry-navigation">
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/856.html">Previous study</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/repository.html">Studies</a>
-            
+
             <a class="secondary-btn" href="/placenta-research-database/entry/858.html">Next study</a>
-            
+
         </nav>
     </main>
 
