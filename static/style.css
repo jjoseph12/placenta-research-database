@@ -681,10 +681,6 @@ button.primary-btn {
 }
 
 .detail-hero {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 36px;
-    align-items: start;
     padding: 0 0 24px;
 }
 
@@ -718,15 +714,6 @@ button.primary-btn {
     font-weight: 750;
 }
 
-.source-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    justify-content: flex-end;
-    max-width: 330px;
-}
-
-.source-actions a,
 .external-grid a {
     display: inline-flex;
     align-items: center;
@@ -744,7 +731,6 @@ button.primary-btn {
     text-align: left;
 }
 
-.source-actions a:hover,
 .external-grid a:hover {
     color: var(--brand-strong);
     background: var(--surface-subtle);
@@ -1321,18 +1307,8 @@ button.primary-btn {
         grid-template-columns: 88px minmax(0, 1fr);
     }
 
-    .detail-hero {
-        grid-template-columns: 1fr;
-        gap: 18px;
-    }
-
     .detail-hero h1 {
         font-size: 22px;
-    }
-
-    .source-actions {
-        justify-content: flex-start;
-        max-width: none;
     }
 
     .record-strip {
